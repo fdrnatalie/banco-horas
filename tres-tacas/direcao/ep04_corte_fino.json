@@ -1,0 +1,357 @@
+{
+ "cortar": [
+  "S003",
+  "S007",
+  "S010",
+  "S011",
+  "S015",
+  "S018",
+  "S028",
+  "S032",
+  "S033",
+  "S043",
+  "S050",
+  "S051",
+  "S052",
+  "S053",
+  "S055",
+  "S061",
+  "S063",
+  "S064",
+  "S065",
+  "S067",
+  "S069",
+  "S070",
+  "S073",
+  "S078",
+  "S080",
+  "S081",
+  "S082",
+  "S083",
+  "S089",
+  "S090",
+  "S091",
+  "S092",
+  "S095",
+  "S096",
+  "S097",
+  "S098",
+  "S099",
+  "S100",
+  "S101",
+  "S102",
+  "S106",
+  "S107",
+  "S108",
+  "S113",
+  "S114",
+  "S117",
+  "S119",
+  "S120",
+  "S121",
+  "S123",
+  "S124",
+  "S125",
+  "S126",
+  "S134",
+  "S139",
+  "S140",
+  "S141",
+  "S142",
+  "S143",
+  "S144",
+  "S145",
+  "S153",
+  "S154",
+  "S156",
+  "S158",
+  "S162",
+  "S163",
+  "S164",
+  "S166",
+  "S169",
+  "S170",
+  "S173",
+  "S175",
+  "S177",
+  "S178",
+  "S179",
+  "S186",
+  "S189",
+  "S190",
+  "S195",
+  "S197",
+  "S198",
+  "S199",
+  "S200",
+  "S201",
+  "S205",
+  "S209",
+  "S210",
+  "S215",
+  "S217",
+  "S218",
+  "S219",
+  "S231",
+  "S232",
+  "S233",
+  "S236",
+  "S237",
+  "S238",
+  "S239",
+  "S240",
+  "S241",
+  "S242",
+  "S244",
+  "S249",
+  "S251",
+  "S253",
+  "S261",
+  "S263",
+  "S264"
+ ],
+ "aparar": {
+  "S001": [
+   [
+    0,
+    0
+   ]
+  ],
+  "S004": [
+   [
+    0,
+    1
+   ]
+  ],
+  "S006": [
+   [
+    12,
+    13
+   ]
+  ],
+  "S013": [
+   [
+    3,
+    5
+   ],
+   [
+    15,
+    19
+   ]
+  ],
+  "S014": [
+   [
+    1,
+    2
+   ],
+   [
+    11,
+    21
+   ]
+  ],
+  "S016": [
+   [
+    9,
+    11
+   ]
+  ],
+  "S019": [
+   [
+    4,
+    4
+   ]
+  ],
+  "S020": [
+   [
+    10,
+    10
+   ],
+   [
+    14,
+    15
+   ]
+  ],
+  "S022": [
+   [
+    0,
+    0
+   ],
+   [
+    7,
+    11
+   ]
+  ],
+  "S029": [
+   [
+    0,
+    1
+   ]
+  ],
+  "S031": [
+   [
+    8,
+    12
+   ]
+  ],
+  "S062": [
+   [
+    12,
+    12
+   ]
+  ],
+  "S066": [
+   [
+    6,
+    11
+   ]
+  ],
+  "S074": [
+   [
+    1,
+    1
+   ]
+  ],
+  "S129": [
+   [
+    0,
+    0
+   ]
+  ],
+  "S132": [
+   [
+    3,
+    4
+   ]
+  ],
+  "S133": [
+   [
+    1,
+    4
+   ]
+  ],
+  "S146": [
+   [
+    0,
+    1
+   ]
+  ],
+  "S174": [
+   [
+    4,
+    4
+   ],
+   [
+    7,
+    7
+   ]
+  ]
+ },
+ "notas_tela": [
+  {
+   "apos": "S005",
+   "l1": "Sorteio do dia: #21, #41 e #107.",
+   "l2": "Provadas na ordem dos números."
+  },
+  {
+   "apos": "S019",
+   "l1": "A borda (a “unha”) da cor",
+   "l2": "dá pistas da idade do vinho."
+  },
+  {
+   "apos": "S060",
+   "l1": "Hipótese da #21: Touriga Nacional",
+   "l2": "do Brasil (Bento Gonçalves, RS)."
+  },
+  {
+   "apos": "S085",
+   "l1": "Nebbiolo: cor clara e borda alaranjada",
+   "l2": "mesmo jovem. É a uva do Barolo."
+  },
+  {
+   "apos": "S161",
+   "l1": "No placar, a #107 era um Gamay:",
+   "l2": "a uva que eu cogitei e descartei."
+  },
+  {
+   "apos": "S181",
+   "l1": "Gamay: tanino baixo, acidez alta.",
+   "l2": "Baixo, mas presente."
+  },
+  {
+   "apos": "S196",
+   "l1": "Ordem clássica de prova:",
+   "l2": "do mais leve ao mais encorpado e tânico."
+  },
+  {
+   "apos": "S221",
+   "l1": "Barolo envelhece no mínimo 38 meses:",
+   "l2": "uma safra 2024 só chega à venda em 2028."
+  },
+  {
+   "apos": "S230",
+   "l1": "Beaujolais: sul da Borgonha,",
+   "l2": "ao norte de Lyon. A casa da Gamay."
+  },
+  {
+   "apos": "S250",
+   "l1": "Pinot Noir × Gouais Blanc:",
+   "l2": "os mesmos pais da Chardonnay."
+  },
+  {
+   "apos": "S265",
+   "l1": "Quiz: 8 de 10.",
+   "l2": "Os dois erros foram sobre a Nebbiolo."
+  }
+ ],
+ "remover_notas": [
+  "A borda da cor",
+  "Ésteres",
+  "Nebbiolo:",
+  "Ordem clássica de prova:",
+  "Barolo nunca é jovem:",
+  "Gamay: tanino baixo, acidez alta."
+ ],
+ "capitulos": [
+  {
+   "inicio": "S001",
+   "titulo": "Três garrafinhas às cegas",
+   "sub": "#21 · #41 · #107"
+  },
+  {
+   "inicio": "S016",
+   "titulo": "Garrafa #21",
+   "sub": "a menta de novo"
+  },
+  {
+   "inicio": "S062",
+   "titulo": "Garrafa #41",
+   "sub": "o Barolo pela cor"
+  },
+  {
+   "inicio": "S109",
+   "titulo": "Garrafa #107",
+   "sub": "a pegadinha"
+  },
+  {
+   "inicio": "S155",
+   "titulo": "A revelação",
+   "sub": "67 de 100"
+  },
+  {
+   "inicio": "S180",
+   "titulo": "O que a Gamay me ensinou",
+   "sub": "tanino baixo, mas presente"
+  },
+  {
+   "inicio": "S202",
+   "titulo": "Vinho a vinho",
+   "sub": "o que era cada um"
+  },
+  {
+   "inicio": "S234",
+   "titulo": "Quiz da degustação",
+   "sub": "8 de 10"
+  }
+ ],
+ "resumo": "Corte fino do ep04 YT: saem 109 de 265 frases, 19 aparadas. Duração estimada 7:25–7:30 (com cartelas), contra 10:02. Quase todas as frases \"sem sentido\" do corte atual não são falas ruins: o fim do trecho corta a última palavra (as bordas vieram de tempos do Whisper adiantados). Este corte fino MANTÉM as frases-chave contando com 17 correções de borda (lista no .md). As obrigatórias são 596.2→596.45 (Touriga Nacional), 1297.5→1298.15 (da mesma uva), 1365.4→1366.0 (bons taninos), 1437.98–1438.7→1437.85–1439.3 (essa aqui que é a pegadinha) e 1459.6→1460.0 (Touriga também). Sem elas, a história da #107 fica sem a virada. O teaser fica só com o zero, porque o Gamay se repetia aos 5:51. Saíram a ladainha de médio/médio+ das fichas, as leituras de tela, as autocorreções, a lavagem das garrafinhas e as críticas ao app no quiz. Capítulos: Revelação e Ordem das taças viram Revelação e O que a Gamay me ensinou. 11 notas novas, 2 mantidas e 6 removidas ou reposicionadas."
+}

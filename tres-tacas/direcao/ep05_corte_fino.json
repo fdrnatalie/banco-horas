@@ -1,0 +1,520 @@
+{
+ "cortar": [
+  "S010",
+  "S012",
+  "S013",
+  "S014",
+  "S018",
+  "S019",
+  "S020",
+  "S023",
+  "S027",
+  "S029",
+  "S034",
+  "S041",
+  "S044",
+  "S049",
+  "S050",
+  "S052",
+  "S055",
+  "S056",
+  "S058",
+  "S060",
+  "S061",
+  "S062",
+  "S064",
+  "S066",
+  "S068",
+  "S069",
+  "S076",
+  "S077",
+  "S079",
+  "S083",
+  "S084",
+  "S085",
+  "S086",
+  "S087",
+  "S089",
+  "S093",
+  "S094",
+  "S095",
+  "S098",
+  "S099",
+  "S100",
+  "S101",
+  "S102",
+  "S105",
+  "S113",
+  "S116",
+  "S122",
+  "S123",
+  "S124",
+  "S134",
+  "S136",
+  "S138",
+  "S139",
+  "S141",
+  "S150",
+  "S154",
+  "S155",
+  "S156",
+  "S159",
+  "S160",
+  "S162",
+  "S163",
+  "S170",
+  "S174",
+  "S179",
+  "S182",
+  "S183",
+  "S184",
+  "S187",
+  "S188",
+  "S192",
+  "S198",
+  "S199",
+  "S200",
+  "S203",
+  "S206",
+  "S209",
+  "S210",
+  "S211",
+  "S212",
+  "S213",
+  "S216",
+  "S218",
+  "S220",
+  "S221",
+  "S224",
+  "S225",
+  "S227",
+  "S236",
+  "S237",
+  "S245",
+  "S246",
+  "S248",
+  "S250",
+  "S251",
+  "S252",
+  "S254",
+  "S258",
+  "S259",
+  "S260",
+  "S261",
+  "S262",
+  "S263",
+  "S264",
+  "S265",
+  "S266",
+  "S267",
+  "S268",
+  "S274",
+  "S276",
+  "S277",
+  "S278",
+  "S283",
+  "S288",
+  "S292",
+  "S293",
+  "S294",
+  "S295",
+  "S306",
+  "S307",
+  "S308",
+  "S311",
+  "S312",
+  "S313",
+  "S314",
+  "S315",
+  "S323",
+  "S324",
+  "S325",
+  "S329",
+  "S330",
+  "S331",
+  "S332",
+  "S333",
+  "S334",
+  "S335",
+  "S336",
+  "S337",
+  "S338",
+  "S341",
+  "S343",
+  "S344",
+  "S348",
+  "S349",
+  "S350",
+  "S351",
+  "S352",
+  "S353",
+  "S354",
+  "S355",
+  "S356",
+  "S357",
+  "S359",
+  "S361",
+  "S362",
+  "S363",
+  "S364",
+  "S368",
+  "S370",
+  "S372",
+  "S374",
+  "S375",
+  "S378",
+  "S379",
+  "S381",
+  "S382"
+ ],
+ "aparar": {
+  "S006": [
+   [
+    0,
+    0
+   ]
+  ],
+  "S015": [
+   [
+    0,
+    0
+   ]
+  ],
+  "S016": [
+   [
+    0,
+    2
+   ]
+  ],
+  "S025": [
+   [
+    0,
+    0
+   ]
+  ],
+  "S032": [
+   [
+    3,
+    3
+   ]
+  ],
+  "S033": [
+   [
+    0,
+    0
+   ]
+  ],
+  "S035": [
+   [
+    2,
+    3
+   ]
+  ],
+  "S045": [
+   [
+    0,
+    1
+   ]
+  ],
+  "S071": [
+   [
+    4,
+    4
+   ]
+  ],
+  "S072": [
+   [
+    10,
+    11
+   ]
+  ],
+  "S074": [
+   [
+    3,
+    3
+   ]
+  ],
+  "S078": [
+   [
+    0,
+    0
+   ]
+  ],
+  "S080": [
+   [
+    0,
+    4
+   ]
+  ],
+  "S082": [
+   [
+    18,
+    21
+   ]
+  ],
+  "S088": [
+   [
+    0,
+    8
+   ]
+  ],
+  "S091": [
+   [
+    0,
+    23
+   ]
+  ],
+  "S146": [
+   [
+    0,
+    0
+   ]
+  ],
+  "S169": [
+   [
+    0,
+    0
+   ]
+  ],
+  "S151": [
+   [
+    3,
+    5
+   ]
+  ],
+  "S185": [
+   [
+    3,
+    3
+   ]
+  ],
+  "S189": [
+   [
+    4,
+    4
+   ]
+  ],
+  "S253": [
+   [
+    0,
+    0
+   ]
+  ],
+  "S255": [
+   [
+    1,
+    1
+   ]
+  ],
+  "S280": [
+   [
+    5,
+    5
+   ]
+  ],
+  "S302": [
+   [
+    2,
+    2
+   ]
+  ],
+  "S360": [
+   [
+    3,
+    4
+   ]
+  ]
+ },
+ "notas_tela": [
+  {
+   "apos": "S030",
+   "l1": "'Unha' é a borda da cor na taça inclinada:",
+   "l2": "dá pistas da idade do vinho."
+  },
+  {
+   "apos": "S035",
+   "l1": "Dolcetto: meu chute no ep.01 (acertei)",
+   "l2": "e no ep.02 (era Cabernet Franc)."
+  },
+  {
+   "apos": "S039",
+   "l1": "Cor profunda descarta",
+   "l2": "uvas de casca fina, como Gamay e Pinot Noir."
+  },
+  {
+   "apos": "S042",
+   "l1": "Dica:",
+   "l2": "tire da geladeira e espere alguns minutos antes de provar."
+  },
+  {
+   "apos": "S059",
+   "l1": "Lágrima é pista, não régua:",
+   "l2": "açúcar, temperatura e a taça também mudam."
+  },
+  {
+   "apos": "S075",
+   "l1": "#21: rubi mais aberto, fruta vermelha",
+   "l2": "#59: mais escuro, fruta negra"
+  },
+  {
+   "apos": "S097",
+   "l1": "Garrafa #21:",
+   "l2": "muito carvalho no nariz."
+  },
+  {
+   "apos": "S107",
+   "l1": "#124, a terceira taça:",
+   "l2": "notas de estábulo, animal."
+  },
+  {
+   "apos": "S111",
+   "l1": "Ordem de prova:",
+   "l2": "da menos alcoólica para a com mais barrica."
+  },
+  {
+   "apos": "S117",
+   "l1": "Minha pista desde o ep.02:",
+   "l2": "menta me lembra Touriga."
+  },
+  {
+   "apos": "S127",
+   "l1": "Ep.01: o Governador me enganou.",
+   "l2": "Ep.04: chutei Touriga num Gamay."
+  },
+  {
+   "apos": "S169",
+   "l1": "Transparência:",
+   "l2": "eu conheço a minha adega e elimino pelo que tenho guardado."
+  },
+  {
+   "apos": "S180",
+   "l1": "#21 e #124: a mesma cor rubi.",
+   "l2": "Só a #21 tem carvalho. Mesma uva?"
+  },
+  {
+   "apos": "S181",
+   "l1": "Agora, a #59 (a do meio):",
+   "l2": "o que ela não é."
+  },
+  {
+   "apos": "S207",
+   "l1": "Tabaco:",
+   "l2": "aroma de evolução, que também pode vir da barrica."
+  },
+  {
+   "apos": "S235",
+   "l1": "Chutes: #21 Touriga (RS) · #124 Touriga (Douro)",
+   "l2": "#59 Montepulciano (Abruzzo, Itália)"
+  },
+  {
+   "apos": "S243",
+   "l1": "No app, a #21 só contou a uva:",
+   "l2": "a ficha estava incompleta. O que vale: 3 de 3 uvas."
+  },
+  {
+   "apos": "S249",
+   "l1": "#21: Reserva Touriga Nacional 2022 · Iribarrem",
+   "l2": "Vale dos Vinhedos (RS), a mesma do ep.04."
+  },
+  {
+   "apos": "S275",
+   "l1": "#59: Montepulciano d'Abruzzo",
+   "l2": "Duca di Saragnano · Itália · 13,5%"
+  },
+  {
+   "apos": "S301",
+   "l1": "#124: Governador 2023 · Douro · 14%",
+   "l2": "o mesmo que me enganou no ep.01."
+  },
+  {
+   "apos": "S346",
+   "l1": "A Sangiovese costuma ter",
+   "l2": "cor menos intensa que a Montepulciano."
+  },
+  {
+   "apos": "S347",
+   "l1": "Quiz: 9 de 10. Só errei o corpo da Touriga:",
+   "l2": "marquei médio+; ela é encorpada."
+  }
+ ],
+ "remover_notas": [
+  "A borda da cor · dá pistas da idade do vinho.",
+  "Cor profunda descarta · uvas de casca fina, como Gamay e Pinot Noir.",
+  "Dica: · tire da geladeira e espere alguns minutos antes de provar.",
+  "Garrafa #21: · muito carvalho no nariz.",
+  "Pista que aprendi no ep. 02: · menta = Touriga.",
+  "Ordem de prova: · da menos alcoólica para a com mais barrica.",
+  "Transparência: · eu conheço a minha adega e elimino pelo que tenho guardado.",
+  "Tabaco: · aroma de evolução, que também pode vir da barrica.",
+  "No app, a #21 só contou a uva: · a ficha estava incompleta. O que vale: 3 de 3 uvas.",
+  "A Sangiovese costuma ter · cor menos intensa que a Montepulciano."
+ ],
+ "capitulos": [
+  {
+   "inicio": "S001",
+   "titulo": "Abertura",
+   "sub": "a revanche da Touriga"
+  },
+  {
+   "inicio": "S006",
+   "titulo": "Três garrafinhas",
+   "sub": "#21 · #59 · #124"
+  },
+  {
+   "inicio": "S025",
+   "titulo": "Garrafa #21",
+   "sub": "cor profunda, lágrima alta"
+  },
+  {
+   "inicio": "S045",
+   "titulo": "Garrafa #59",
+   "sub": "lágrima lenta, fruta negra"
+  },
+  {
+   "inicio": "S078",
+   "titulo": "Garrafa #124",
+   "sub": "a mais transparente"
+  },
+  {
+   "inicio": "S090",
+   "titulo": "O nariz das três",
+   "sub": "todas se parecem"
+  },
+  {
+   "inicio": "S110",
+   "titulo": "Garrafa #124 na boca",
+   "sub": "eu não posso errar"
+  },
+  {
+   "inicio": "S142",
+   "titulo": "Garrafa #59 na boca",
+   "sub": "parece italiano"
+  },
+  {
+   "inicio": "S173",
+   "titulo": "A dedução",
+   "sub": "mesma cor, outra madeira"
+  },
+  {
+   "inicio": "S201",
+   "titulo": "Os chutes",
+   "sub": "começando pela #21"
+  },
+  {
+   "inicio": "S238",
+   "titulo": "A revelação",
+   "sub": "3 de 3 uvas"
+  },
+  {
+   "inicio": "S339",
+   "titulo": "Quiz",
+   "sub": "9 de 10"
+  },
+  {
+   "inicio": "S358",
+   "titulo": "O que eu aprendi",
+   "sub": "Montepulciano × Sangiovese"
+  }
+ ],
+ "resumo": "Corte fino do YouTube ep.05: saem 166 frases e 26 são aparadas; de 14:55 para cerca de 10:05 (uns 10:12 com a reinserção da reação do quiz). Problemas graves: (1) quatro notas de tela caem todas no teaser (00:04 e 00:06) por erro de ancoragem do render; foram reancoradas por frase; (2) bordas que comem números: S007 diz 'cinquenta e' no lugar de 59 (estender o trecho até 275.1) e S046 diz '2020' no lugar de 2024 (estender até 820.8); (3) o quiz foi cortado em modo 'energy' e ficou ininteligível ('garrafinha V1', '39', 'um profissional?'); ficou só o trecho da Sangiovese, com recorte limpo recomendado. Também saem: leitura arrastada do app, repetições da lágrima e da cor, o '19 garrafas' (são 22), 'usam muito a barrica' (não confirmado) e o 'Barolo' (todos os modelos ouvem 'barulho'; volta só se a Natalie confirmar). Notas novas costuram a continuidade (Governador do ep.01, Gamay do ep.04, Dolcetto do ep.01/02, a #21 do ep.04) e dizem sempre qual garrafa está em cena."
+}
