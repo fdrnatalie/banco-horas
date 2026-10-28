@@ -153,7 +153,7 @@ window.TT_DATA = {
   const A = {status: "aprovacao", dono: "natalie", pendente: "Aprovar"};
   const PATCH = {
     "ep02-quiz":   Object.assign({}, A, {arquivo: "reels_quiz_touriga_v3.mp4", img: "img/quiz_ep02.jpg", pendente: "Aprovar a v3 (pergunta da Touriga Franca reescrita)"}),
-    "ep04-yt":     Object.assign({}, A, {arquivo: "youtube_ep04_v2.mp4 (corte fino, renderizando) + capa + SRT + descrição", img: "img/yt_ep04.jpg", duracao: "7 min", pendente: "Aprovar e trocar [link do app] na descrição"}),
+    "ep04-yt":     Object.assign({}, A, {arquivo: "youtube_ep04_v2.mp4 (corte fino do diretor) + capa + SRT + descrição", img: "img/yt_ep04.jpg", duracao: "7:12", pendente: "Aprovar e trocar [link do app] na descrição"}),
     "ep04-reels":  Object.assign({}, A, {arquivo: "reels_ep4_v2.mp4", img: "img/reels_ep04.jpg"}),
     "ep04-short":  Object.assign({}, A, {arquivo: "reels_ep4_v2.mp4", img: "img/reels_ep04.jpg", pendente: "Mesmo arquivo do Reels"}),
     "ep04-quiz":   Object.assign({}, A, {arquivo: "quiz_gamay_v1.mp4", img: "img/quiz_ep04.jpg"}),
