@@ -1,0 +1,225 @@
+{
+ "cortes_bruto": [
+  [
+   635.2,
+   635.4
+  ],
+  [
+   689.64,
+   689.78
+  ],
+  [
+   701.2,
+   701.86
+  ],
+  [
+   812.68,
+   813.37
+  ],
+  [
+   821.68,
+   821.85
+  ],
+  [
+   823.46,
+   824.15
+  ],
+  [
+   876.66,
+   876.78
+  ],
+  [
+   878.08,
+   878.58
+  ],
+  [
+   957.61,
+   957.91
+  ],
+  [
+   959.79,
+   960.43
+  ],
+  [
+   961.55,
+   961.79
+  ],
+  [
+   976.22,
+   976.42
+  ],
+  [
+   984.76,
+   985.32
+  ],
+  [
+   987.76,
+   988.0
+  ],
+  [
+   993.66,
+   993.9
+  ],
+  [
+   1147.6,
+   1147.95
+  ],
+  [
+   1171.6,
+   1171.77
+  ],
+  [
+   1174.69,
+   1174.92
+  ],
+  [
+   1176.41,
+   1176.84
+  ],
+  [
+   1255.2,
+   1255.78
+  ],
+  [
+   1256.9,
+   1257.24
+  ],
+  [
+   1258.64,
+   1260.34
+  ],
+  [
+   1262.57,
+   1262.8
+  ],
+  [
+   1423.76,
+   1424.34
+  ],
+  [
+   1425.54,
+   1425.77
+  ],
+  [
+   1428.0,
+   1428.33
+  ],
+  [
+   1429.25,
+   1429.47
+  ],
+  [
+   1430.53,
+   1430.69
+  ],
+  [
+   1431.25,
+   1431.47
+  ],
+  [
+   1432.59,
+   1432.71
+  ],
+  [
+   1536.5,
+   1536.7
+  ],
+  [
+   1544.9,
+   1545.3
+  ],
+  [
+   1748.2,
+   1748.39
+  ],
+  [
+   1754.87,
+   1755.08
+  ],
+  [
+   1966.41,
+   1966.59
+  ],
+  [
+   1967.37,
+   1967.6
+  ],
+  [
+   977.86,
+   978.58
+  ],
+  [
+   1777.2,
+   1780.74
+  ],
+  [
+   1859.55,
+   1869.0
+  ],
+  [
+   1872.0,
+   1901.6
+  ],
+  [
+   1940.9,
+   1943.0
+  ],
+  [
+   2101.0,
+   2101.75
+  ]
+ ],
+ "bordas": {
+  "peca_192_inicio": {
+   "de": 2068.9,
+   "para": 2068.7,
+   "volta": "o 'Ta-' de 'tanino' (hoje soa 'E no típico de um Barolo')"
+  }
+ },
+ "notas_tela": {
+  "Barolo envelhece no mínimo 38 meses:": "mover para o início de S107 ('O próximo é o Barolo...'). Hoje cai em 'de Beaujolais, da França'.",
+  "Beaujolais: sul da Borgonha,": "mover para S114 ('Ele é de Beaujolais, da França'). Hoje cai na pergunta do quiz.",
+  "No placar, a #107 era um Gamay:": "trocar a 2a linha por 'a uva que ela cogitou e descartou.' (as outras notas falam dela em 3a pessoa)."
+ },
+ "capitulos_inicio": {
+  "Garrafa #41": "S046"
+ },
+ "comentarios": "Retranscrevi o mix (_yt4f_mix.wav) e os trechos do bruto com o turbo e conferi a energia. Achei um problema de ferramenta: no #41 e no #107 o pw da transcrição está deslocado de 0,5 a 1 s em relação ao áudio. Exemplos: o 'Esse...' da S036 aponta para 814.5, onde está o 'Não sei'; o 'É média' da S050 cai dentro do 'Morango'; o 2o 'Framboesa' da S053 cai dentro do 'Um bom'. Por isso não mandei cortar S036, S050 nem S053 por índice. Quem manda é 'cortes_bruto', que são peças inteiras ou trechos medidos no bruto. O aparar acima só repete subconjuntos seguros dessas mesmas peças. (1) S030: as peças 56-58 colam 'pra / a região' em 'taninos médios' ('taninos médios pra região'). Com o corte fica 'Ele tem taninos médios. Eu não vou colocar Touriga do Douro'. (2) #41: a peça 68 é um 'por que é um Barolo?' picado, que repete a pergunta de 3:13. As peças 70 e 823.46-824.15 são o 'é média' órfão, porque a 'transparência' não está no corte. Sem isso fica 'Não sei se vocês conseguem ver, você consegue enxergar do outro lado do teu dedo'. (3) As peças 80-81 ('Média' solto) e 84-87 são cacos da ladainha da ficha. Sai 'Morango. Framboesa. Um bom álcool, um bom tanino.' As peças 90-92 são 'A intensidade / média / macio' picados. (4) #107: as peças 103-110 viram 'Tem algo... vem ao baixo' (resto de 'herbáceo / de fresco'). Ela pula direto da pimenta-do-reino para 'Engraçado que se eu combinar as cores'. As peças 119-125 são 2 s de sílabas da ficha antes da 'pegadinha'. (5) Revelação: as peças 131-132 ('Pode-' e o 'vamos' de 'vamos ver o resultado') somadas à 133 hoje soam 'vamos... começar a pilar os vinhos'. Sem elas fica 'Vamos revelar os vinhos'. O 'Por isso,' da S079 é esse lixo. (6) As peças 154-155 deixam um 'como' solto depois de 'a Touriga é bem mais'. (7) Quiz: as peças 184-185 são o resto de 'essa aqui não é importante', que o turbo ouve como 'Não achei'. Também vale um painel 'Qual a uva principal do Barolo?' em S124: sem ele a pergunta fica sem objeto. (8) A borda da peça 192 corta o ataque de 'tanino'. O 'mas' da S001 é alucinação: o turbo ouve 'zero. [cartela] Eu dou preferência' limpo. 'Um Barolo' (S042 e S048) também é eco da transcrição e fica. Fatos das notas conferidos (38 meses do Barolo e venda a partir do 4o ano, Suíça, Pinot × Gouais, violeta na Touriga). O problema era só de posição. O corte perde cerca de 9 s.",
+ "notas_texto": {
+  "No placar, a #107 era um Gamay:": "a uva cogitada e descartada na prova."
+ },
+ "notas_novas": [
+  {
+   "em": "S134",
+   "l1": "Pergunta do quiz:",
+   "l2": "qual a uva principal do Barolo?"
+  }
+ ],
+ "nota_ids": "ids remapeados para a transcrição nova (a anterior estava desatualizada); cortar/aparar por índice removidos: valem só os cortes_bruto",
+ "notas_ancora": {
+  "Hipótese da #21: Touriga Nacional": [
+   "então eu vou colocar",
+   "do brasil"
+  ],
+  "Ordem clássica de prova:": [
+   "talvez tenha influenciado",
+   ""
+  ],
+  "Barolo envelhece no mínimo 38 meses:": [
+   "o próximo é o barolo",
+   ""
+  ],
+  "Beaujolais: sul da Borgonha,": [
+   "gamay de beaujolais",
+   ""
+  ],
+  "Pinot Noir × Gouais Blanc:": [
+   "mãe e pai da gamay",
+   "eu iria no pinot noir"
+  ],
+  "Pergunta do quiz:": [
+   "qual era a uva principal",
+   "que interessante"
+  ]
+ }
+}

@@ -9,16 +9,26 @@
   "S183",
   "S184"
  ],
- "aparar": {
-  "S185": [
-   [
-    1,
-    1
-   ]
-  ]
- },
  "comentarios": "Quase lá; o problema está concentrado no Quiz. (1) S180-S184 ('Estomago', 'Columbre', 'Colacional', 'Mais', 'Ver...') são as sobras picadas do recorte 'energy' que a 1a passada mandou cortar (S348-S355 + S356). Voltaram no corte e são ininteligíveis; o 'Mais' da S183 (2741.32) é o MESMO áudio do 'Mais' da S187 (2741.05), então hoje se ouve duas vezes. Depois do 'mais avermelhada' (S179), o corte deve ir direto para a reinserção 2738.9-2749.8. (2) S185: a palavra 0 ('O', 2758.13-2758.61) é resto do trecho 2755-2758 e não pertence à reinserção. Tire só esse pedaço e mantenha a reinserção começando em 2738.9. (3) S131: segundo 'Portugal' de 0,06 s, repetido logo depois da S130. (4) S143: 'Então, eu que...' ocupa uns 4 s e termina no meio da frase. (5) S164: 'A safra dele...' é um começo falso que a S165 repete. Sem erro técnico novo; as notas da 1a passada continuam valendo (Sangiovese mais clara, 9 de 10 com o corpo da Touriga, cartão-resumo dos chutes, que explica o 'Rio Grande do Sul' da S126). Ajuste menor, só se for barato: o marcador do capítulo 'Garrafa #124' deve começar na S048, porque o 'rubi profundo mais médio' já fala da #124.",
  "capitulos_inicio": {
   "Garrafa #124": "S048"
- }
+ },
+ "cortes_bruto": [
+  [
+   2684.9,
+   2738.85
+  ],
+  [
+   2749.85,
+   2758.8
+  ],
+  [
+   1552.95,
+   1554.2
+  ]
+ ],
+ "cortar_pecas_inicio": [
+  2741.16
+ ],
+ "nota_editor": "S185 aparar [1,1] removia 'corpo' da reinserção; trocado por cortes_bruto que tiram as sobras (2685-2738.85 e 2749.85-2758.8, ~7 s de ar morto) e a peça do 'Mais' duplicado."
 }
