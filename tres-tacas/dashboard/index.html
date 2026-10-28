@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Três Taças · Painel</title>
+<style>
+  :root{--bg:#120507;--panel:#1E0B0F;--line:#3A1A20;--wine:#170709;--amber:#E3913C;--cream:#F4EBE2;--gold:#C8A46C;--muted:#9C8580;
+        --ok:#6EBE87;--warn:#E3913C;--bad:#D7586A;--info:#7FA7D9}
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--cream);font:15px/1.45 -apple-system,BlinkMacSystemFont,"Inter","Segoe UI",sans-serif}
+  header{padding:22px 24px 10px;border-bottom:1px solid var(--line);display:flex;flex-wrap:wrap;gap:12px;align-items:flex-end;justify-content:space-between}
+  h1{margin:0;font:italic 600 30px/1 Georgia,"Cormorant Garamond",serif}
+  h1 b{font:700 30px/1 "Oswald","Arial Narrow",sans-serif;color:var(--amber);letter-spacing:.5px;font-style:normal}
+  .sub{color:var(--muted);font-size:13px;margin-top:6px}
+  nav{display:flex;gap:6px;flex-wrap:wrap}
+  nav button,.btn{background:none;border:1px solid var(--line);color:var(--cream);padding:7px 12px;border-radius:20px;cursor:pointer;font-size:13px}
+  nav button.on{border-color:var(--amber);color:var(--amber)}
+  main{padding:20px 24px 60px;max-width:1280px;margin:0 auto}
+  section{display:none} section.on{display:block}
+  h2{font:italic 600 24px Georgia,serif;margin:6px 0 14px} h3{margin:18px 0 8px;font-size:14px;letter-spacing:1.5px;color:var(--gold);text-transform:uppercase}
+  .grid{display:grid;gap:14px}
+  .kpis{grid-template-columns:repeat(auto-fit,minmax(160px,1fr))}
+  .kpi{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:14px}
+  .kpi .n{font:700 34px "Oswald","Arial Narrow",sans-serif;color:var(--amber)} .kpi .l{color:var(--muted);font-size:13px}
+  .card{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:12px;display:flex;gap:12px;align-items:flex-start}
+  .card img{width:72px;height:96px;object-fit:cover;border-radius:8px;flex:none;background:#000}
+  .card.yt img{width:128px;height:72px}
+  .card .t{font-weight:600} .card .m{color:var(--muted);font-size:13px}
+  .pill{display:inline-block;font-size:11px;padding:2px 8px;border-radius:10px;border:1px solid currentColor;margin:4px 4px 0 0;white-space:nowrap}
+  .s-ideia{color:var(--muted)} .s-gravado{color:var(--info)} .s-edicao{color:#B48CE0} .s-aprovacao{color:var(--warn)}
+  .s-aprovado{color:var(--ok)} .s-programado{color:var(--gold)} .s-postado{color:#8a8a8a}
+  .todo{background:var(--panel);border-left:3px solid var(--amber);border-radius:8px;padding:10px 12px;margin-bottom:8px}
+  .todo.nat{border-left-color:var(--bad)}
+  .todo small{color:var(--muted)}
+  /* calendar */
+  .cal{display:grid;grid-template-columns:repeat(7,1fr);gap:6px}
+  .cal .dow{color:var(--muted);font-size:12px;text-align:center}
+  .day{min-height:110px;background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:6px;font-size:12px}
+  .day.today{border-color:var(--amber)} .day .d{color:var(--muted);font-size:11px}
+  .ev{display:block;margin-top:4px;padding:3px 6px;border-radius:6px;background:#2A1117;border-left:3px solid var(--gold);cursor:pointer}
+  .ev.yt{border-left-color:#E05555} .ev.ig{border-left-color:var(--amber)} .ev.sh{border-left-color:#B48CE0}
+  /* feeds */
+  .phone{max-width:420px;background:#000;border-radius:28px;padding:14px;border:1px solid var(--line)}
+  .phone .bio{display:flex;gap:12px;align-items:center;padding:6px 4px 12px}
+  .phone .av{width:58px;height:58px;border-radius:50%;background:var(--wine);border:2px solid var(--gold);display:flex;align-items:center;justify-content:center;font:italic 18px Georgia}
+  .ig{display:grid;grid-template-columns:repeat(3,1fr);gap:2px}
+  .ig .cell{position:relative;aspect-ratio:3/4;background:#111;overflow:hidden;cursor:pointer}
+  .ig .cell img{width:100%;height:100%;object-fit:cover}
+  .ig .cell .b{position:absolute;left:4px;bottom:4px;font-size:10px;background:rgba(0,0,0,.65);padding:1px 6px;border-radius:8px}
+  .ig .cell.future img{opacity:.55} .ig .cell.missing{display:flex;align-items:center;justify-content:center;color:var(--muted);font-size:11px;text-align:center;padding:6px}
+  .yt{grid-template-columns:repeat(auto-fill,minmax(250px,1fr))}
+  .ytc{background:var(--panel);border:1px solid var(--line);border-radius:12px;overflow:hidden;cursor:pointer}
+  .ytc img{width:100%;aspect-ratio:16/9;object-fit:cover;display:block;background:#000}
+  .ytc .x{padding:10px}
+  /* kanban */
+  .kan{display:grid;grid-template-columns:repeat(7,minmax(170px,1fr));gap:10px;overflow-x:auto}
+  .col{background:#170A0D;border:1px solid var(--line);border-radius:12px;padding:8px;min-height:200px}
+  .col h4{margin:2px 4px 8px;font-size:12px;letter-spacing:1px;text-transform:uppercase}
+  .kc{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:8px;margin-bottom:8px;cursor:pointer;font-size:13px}
+  .kc img{width:100%;height:90px;object-fit:cover;border-radius:6px;margin-bottom:6px}
+  /* modal */
+  dialog{background:var(--panel);color:var(--cream);border:1px solid var(--gold);border-radius:16px;max-width:640px;width:92vw;padding:18px}
+  dialog::backdrop{background:rgba(0,0,0,.6)}
+  dialog img{max-width:200px;border-radius:10px;float:right;margin:0 0 10px 12px}
+  dialog pre{white-space:pre-wrap;background:#140609;border:1px solid var(--line);border-radius:10px;padding:10px;font:13px/1.45 inherit}
+  select,input{background:#140609;color:var(--cream);border:1px solid var(--line);border-radius:8px;padding:6px}
+  .row{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin:8px 0}
+  .legend{display:flex;gap:10px;flex-wrap:wrap;margin:6px 0 14px;font-size:12px}
+  .two{grid-template-columns:minmax(0,1fr) minmax(0,1fr)} @media(max-width:900px){.two{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<header>
+  <div><h1>três taças · <b>PAINEL</b></h1><div class="sub" id="upd"></div></div>
+  <nav id="tabs">
+    <button data-t="hoje" class="on">Hoje</button><button data-t="cal">Calendário</button><button data-t="ig">Feed Instagram</button>
+    <button data-t="yt">YouTube</button><button data-t="kan">Produção</button><button data-t="dados">Dados</button>
+  </nav>
+</header>
+<main>
+  <section id="hoje" class="on">
+    <div class="grid kpis" id="kpis"></div>
+    <div class="grid two" style="margin-top:18px">
+      <div><h3>Pendências da Natalie</h3><div id="todoNat"></div><h3>Pendências da equipe (editor · diretor · estrategista)</h3><div id="todoTeam"></div></div>
+      <div><h3>Próximos 7 dias</h3><div id="next"></div></div>
+    </div>
+  </section>
+  <section id="cal"><h2 id="calTitle"></h2><div class="row"><button class="btn" id="prevM">◀</button><button class="btn" id="nextM">▶</button>
+    <span class="legend"><span class="pill" style="color:var(--amber)">Instagram</span><span class="pill" style="color:#E05555">YouTube</span><span class="pill" style="color:#B48CE0">Shorts</span></span></div>
+    <div class="cal" id="calGrid"></div></section>
+  <section id="ig"><div class="grid two"><div><h2>Como o feed vai ficar</h2>
+    <p class="sub">Mais novo em cima. Peças programadas aparecem esmaecidas; quadros sem arquivo ainda são lacunas a produzir.</p>
+    <div class="phone"><div class="bio"><div class="av">3T</div><div><b>@fdrnatalie</b><div class="sub">três taças · degustação às cegas em casa</div></div></div><div class="ig" id="igGrid"></div></div></div>
+    <div><h2>Legendas prontas</h2><div id="igList"></div></div></div></section>
+  <section id="yt"><h2>Canal do YouTube</h2><div class="grid yt" id="ytGrid"></div><h3>Shorts</h3><div class="grid yt" id="shGrid"></div></section>
+  <section id="kan"><h2>Produção</h2><p class="sub">Clique numa peça para ver detalhes e mudar o status (fica salvo neste navegador).</p><div class="kan" id="kanban"></div></section>
+  <section id="dados"><h2>Dados</h2>
+    <p class="sub">O painel lê <code>data.js</code>. Mudanças de status feitas aqui ficam salvas neste navegador; use “Exportar” para mandar ao estrategista atualizar o arquivo.</p>
+    <div class="row"><button class="btn" id="exp">Exportar JSON</button><button class="btn" id="clr">Descartar mudanças locais</button></div>
+    <pre id="raw" style="max-height:420px;overflow:auto"></pre></section>
+</main>
+<dialog id="dlg"><div id="dlgBody"></div><div class="row" style="justify-content:flex-end"><button class="btn" onclick="dlg.close()">Fechar</button></div></dialog>
+<script src="data.js"></script>
+<script>
+const ST = {ideia:"ideia",gravado:"gravado",edicao:"em edição",aprovacao:"aguardando aprovação",aprovado:"aprovado",programado:"programado",postado:"postado"};
+const ORDER = Object.keys(ST);
+const NET = {instagram:"Instagram",youtube:"YouTube",shorts:"Shorts"};
+let D = JSON.parse(JSON.stringify(window.TT_DATA));
+let local = {}; try { local = JSON.parse(localStorage.getItem("tt_local") || "{}"); } catch(e) {}
+D.pecas.forEach(p => { if (local[p.id]) Object.assign(p, local[p.id]); });
+const $ = s => document.querySelector(s);
+const fmt = d => d ? new Date(d + "T12:00").toLocaleDateString("pt-BR",{weekday:"short",day:"2-digit",month:"2-digit"}) : "sem data";
+const pill = s => `<span class="pill s-${s}">${ST[s]||s}</span>`;
+const today = new Date(); today.setHours(0,0,0,0);
+$("#upd").textContent = "dados atualizados em " + D.atualizado + " · " + D.pecas.length + " peças";
+document.querySelectorAll("#tabs button").forEach(b => b.onclick = () => {
+  document.querySelectorAll("#tabs button").forEach(x => x.classList.toggle("on", x === b));
+  document.querySelectorAll("section").forEach(s => s.classList.toggle("on", s.id === b.dataset.t));
+});
+function save(p, patch){ Object.assign(p, patch); local[p.id] = Object.assign(local[p.id]||{}, patch);
+  try { localStorage.setItem("tt_local", JSON.stringify(local)); } catch(e) {} render(); }
+function open(id){
+  const p = D.pecas.find(x => x.id === id); if (!p) return;
+  $("#dlgBody").innerHTML = `${p.img?`<img src="${p.img}">`:""}<h2 style="margin-top:0">${p.titulo}</h2>
+    <div>${NET[p.rede]} · ${p.formato} · ep. ${p.ep}</div><div>${pill(p.status)}</div>
+    <div class="row">Status <select id="selS">${ORDER.map(s=>`<option value="${s}" ${s===p.status?"selected":""}>${ST[s]}</option>`).join("")}</select>
+    Data <input type="date" id="selD" value="${p.data||""}"> <input type="time" id="selH" value="${p.hora||""}"></div>
+    ${p.arquivo?`<div class="sub">arquivo: ${p.arquivo}</div>`:""}
+    ${p.pendente?`<p><b>Pendente:</b> ${p.pendente}</p>`:""}
+    ${p.notas?`<p class="sub">${p.notas}</p>`:""}
+    ${p.legenda?`<h3>Legenda / descrição</h3><pre>${p.legenda}</pre><button class="btn" id="cp">Copiar legenda</button>`:""}`;
+  $("#selS").onchange = e => save(p,{status:e.target.value});
+  $("#selD").onchange = e => save(p,{data:e.target.value});
+  $("#selH").onchange = e => save(p,{hora:e.target.value});
+  if ($("#cp")) $("#cp").onclick = () => navigator.clipboard && navigator.clipboard.writeText(p.legenda);
+  dlg.showModal();
+}
+let calM = new Date(today.getFullYear(), today.getMonth(), 1);
+$("#prevM").onclick = () => { calM.setMonth(calM.getMonth()-1); render(); };
+$("#nextM").onclick = () => { calM.setMonth(calM.getMonth()+1); render(); };
+function render(){
+  const P = D.pecas, cnt = s => P.filter(p => p.status === s).length;
+  $("#kpis").innerHTML = [["aprovacao","esperando você aprovar"],["aprovado","prontos para programar"],["programado","programados"],["postado","postados"],["edicao","em edição"],["gravado","gravados sem edição"]]
+    .map(([s,l]) => `<div class="kpi"><div class="n">${cnt(s)}</div><div class="l">${l}</div></div>`).join("");
+  const nat = P.filter(p => p.dono === "natalie" && p.status !== "postado"), team = P.filter(p => p.dono !== "natalie" && !["postado","programado"].includes(p.status));
+  const td = p => `<div class="todo ${p.dono==="natalie"?"nat":""}" onclick="open('${p.id}')"><b>${p.pendente || ST[p.status]}</b><br><small>${p.titulo} · ${NET[p.rede]} · ${fmt(p.data)}</small></div>`;
+  $("#todoNat").innerHTML = nat.map(td).join("") || "<p class=sub>Nada pendente.</p>";
+  $("#todoTeam").innerHTML = team.map(td).join("") || "<p class=sub>Nada pendente.</p>";
+  const in7 = P.filter(p => p.data && (new Date(p.data+"T12:00") - today)/864e5 >= 0 && (new Date(p.data+"T12:00") - today)/864e5 < 7).sort((a,b)=>(a.data+a.hora).localeCompare(b.data+b.hora));
+  $("#next").innerHTML = in7.map(p => `<div class="card ${p.rede!=="instagram"?"yt":""}" onclick="open('${p.id}')">${p.img?`<img src="${p.img}">`:""}<div><div class="t">${p.titulo}</div><div class="m">${fmt(p.data)} ${p.hora||""} · ${NET[p.rede]} · ${p.formato}</div>${pill(p.status)}</div></div>`).join("") || "<p class=sub>Nada nos próximos 7 dias.</p>";
+  // calendar
+  $("#calTitle").textContent = calM.toLocaleDateString("pt-BR",{month:"long",year:"numeric"});
+  let h = ["dom","seg","ter","qua","qui","sex","sáb"].map(d=>`<div class="dow">${d}</div>`).join("");
+  const first = new Date(calM); first.setDate(1 - first.getDay());
+  for (let i = 0; i < 42; i++){ const d = new Date(first); d.setDate(first.getDate()+i);
+    const iso = d.toISOString().slice(0,10), ev = P.filter(p => p.data === iso);
+    h += `<div class="day ${+d===+today?"today":""}" style="${d.getMonth()!==calM.getMonth()?"opacity:.35":""}"><div class="d">${d.getDate()}</div>${ev.map(p=>`<span class="ev ${p.rede==="youtube"?"yt":p.rede==="shorts"?"sh":"ig"}" onclick="open('${p.id}')">${p.hora||""} ${p.titulo}</span>`).join("")}</div>`; }
+  $("#calGrid").innerHTML = h;
+  // instagram feed (newest first)
+  const ig = P.filter(p => p.rede === "instagram").sort((a,b)=>((b.data||"9999")+(b.hora||"")).localeCompare((a.data||"9999")+(a.hora||"")));
+  $("#igGrid").innerHTML = ig.map(p => p.img ? `<div class="cell ${p.status!=="postado"?"future":""}" onclick="open('${p.id}')"><img src="${p.img}"><span class="b">${p.status==="postado"?"no ar":fmt(p.data)}</span></div>`
+    : `<div class="cell missing" onclick="open('${p.id}')">${p.titulo}<br>${ST[p.status]}</div>`).join("");
+  $("#igList").innerHTML = ig.map(p => `<div class="card" onclick="open('${p.id}')">${p.img?`<img src="${p.img}">`:""}<div><div class="t">${p.titulo}</div><div class="m">${fmt(p.data)} ${p.hora||""}</div>${pill(p.status)}<div class="m" style="margin-top:6px">${(p.legenda||"").split("\n")[0]}</div></div></div>`).join("");
+  const ytc = p => `<div class="ytc" onclick="open('${p.id}')">${p.img?`<img src="${p.img}">`:`<div style="aspect-ratio:16/9;background:#000"></div>`}<div class="x"><div class="t">${p.titulo}</div><div class="m">${fmt(p.data)} · ${p.duracao||""}</div>${pill(p.status)}</div></div>`;
+  $("#ytGrid").innerHTML = P.filter(p => p.rede === "youtube").sort((a,b)=>(b.data||"9999").localeCompare(a.data||"9999")).map(ytc).join("");
+  $("#shGrid").innerHTML = P.filter(p => p.rede === "shorts").sort((a,b)=>(b.data||"9999").localeCompare(a.data||"9999")).map(ytc).join("");
+  $("#kanban").innerHTML = ORDER.map(s => `<div class="col"><h4 class="s-${s}">${ST[s]} · ${cnt(s)}</h4>${P.filter(p=>p.status===s).map(p=>`<div class="kc" onclick="open('${p.id}')">${p.img?`<img src="${p.img}">`:""}<b>${p.titulo}</b><br><span class="sub">${NET[p.rede]} · ${fmt(p.data)}</span></div>`).join("")}</div>`).join("");
+  $("#raw").textContent = JSON.stringify(D, null, 2);
+}
+$("#exp").onclick = () => { const a = document.createElement("a"); a.href = URL.createObjectURL(new Blob([JSON.stringify(D,null,2)],{type:"application/json"})); a.download = "tres-tacas-dados.json"; a.click(); };
+$("#clr").onclick = () => { try { localStorage.removeItem("tt_local"); } catch(e) {} location.reload(); };
+render();
+const hb = location.hash && document.querySelector(`#tabs button[data-t='${location.hash.slice(1)}']`); if (hb) hb.click();
+</script>
+</body>
+</html>
