@@ -1,0 +1,20 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash",
+      "Read",
+      "Edit",
+      "Write",
+      "Glob",
+      "Grep",
+      "WebFetch",
+      "WebSearch",
+      "Artifact",
+      "ArtifactData",
+      "ArtifactComments",
+      "SendUserFile",
+      "mcp__Google_Drive",
+      "mcp__claude-code-remote"
+    ]
+  }
+}
