@@ -1,0 +1,250 @@
+<title>Painel Três Taças</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600&family=Inter:wght@400;500;600&display=swap">
+<style>
+/* layout: one column on the phone, two on wide screens; sticky header with the four views */
+:root {
+  --bg: #F6F1F2; --surface: #FFFFFF; --ink: #2A1418; --muted: #6E5A5E; --line: #E4D8DA;
+  --wine: #7A1F33; --amber: #B5641A; --gold: #9A7A3E;
+  --st-fazer: #8A7F82; --st-editar: #2F6FB0; --st-aprovar: #B5641A; --st-agendado: #6B4FA0; --st-postado: #2E7D4F; --st-confirmar: #B23A48;
+  --yt: #C4302B; --ig: #A8327F;
+  --display: 'Oswald', 'Arial Narrow', Arial, sans-serif; --body: 'Inter', system-ui, -apple-system, Arial, sans-serif;
+}
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
+  --bg: #170A0D; --surface: #24121A; --ink: #F4EBE2; --muted: #BFA9A6; --line: #3A2229;
+  --wine: #E07A8E; --amber: #E3913C; --gold: #C8A46C;
+  --st-fazer: #A99C9E; --st-editar: #6FA8E0; --st-aprovar: #E3913C; --st-agendado: #A98BDB; --st-postado: #5DBB82; --st-confirmar: #EF7B88;
+  --yt: #F06B66; --ig: #E07AC0; color-scheme: dark } }
+:root[data-theme="dark"] {
+  --bg: #170A0D; --surface: #24121A; --ink: #F4EBE2; --muted: #BFA9A6; --line: #3A2229;
+  --wine: #E07A8E; --amber: #E3913C; --gold: #C8A46C;
+  --st-fazer: #A99C9E; --st-editar: #6FA8E0; --st-aprovar: #E3913C; --st-agendado: #A98BDB; --st-postado: #5DBB82; --st-confirmar: #EF7B88;
+  --yt: #F06B66; --ig: #E07AC0; color-scheme: dark }
+* { box-sizing: border-box }
+body { background: var(--bg); color: var(--ink); font: 15px/1.45 var(--body); }
+body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-area-inset-top, 0px); z-index: 10; background: var(--bg) }
+.wrap { max-width: 1080px; margin: 0 auto; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); padding-block: 0 48px }
+header { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 5; background: var(--bg); border-bottom: 1px solid var(--line) }
+.top { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; padding-block: 14px 8px; flex-wrap: wrap }
+.brand { font: 600 22px/1 var(--display); letter-spacing: .5px; color: var(--wine); text-transform: uppercase }
+.brand small { display: block; font: 500 12px/1.4 var(--body); letter-spacing: 1.5px; color: var(--muted); margin-top: 4px }
+.today { font-size: 13px; color: var(--muted) }
+nav { display: flex; gap: 4px; overflow-x: auto; padding-block: 0 8px }
+nav a { flex: none; padding: 7px 14px; border-radius: 999px; color: var(--muted); text-decoration: none; font-weight: 600; font-size: 14px }
+nav a[aria-current="page"] { background: var(--wine); color: var(--bg) }
+nav a:focus-visible, select:focus-visible, button:focus-visible { outline: 2px solid var(--amber); outline-offset: 2px }
+h2 { font: 600 18px/1.2 var(--display); text-transform: uppercase; letter-spacing: .6px; margin: 26px 0 10px; text-wrap: balance }
+h2 .count { color: var(--muted); font: 500 14px var(--body); text-transform: none; letter-spacing: 0; margin-left: 6px }
+.grid2 { display: grid; gap: 0 28px }
+@media (min-width: 860px) { .grid2 { grid-template-columns: 1fr 1fr } }
+.grid2 > * { min-width: 0 }
+.meter { display: flex; gap: 12px; flex-wrap: wrap; margin-top: 18px }
+.meter .m { flex: 1 1 140px; background: var(--surface); border: 1px solid var(--line); border-radius: 12px; padding: 12px 14px }
+.m b { display: block; font: 600 30px/1.1 var(--display); font-variant-numeric: tabular-nums }
+.m span { font-size: 13px; color: var(--muted) }
+.m.alert b { color: var(--st-confirmar) }
+.m.ok b { color: var(--st-postado) }
+.list { display: flex; flex-direction: column; gap: 8px }
+.row { display: grid; grid-template-columns: 58px 1fr; gap: 10px; align-items: start; background: var(--surface); border: 1px solid var(--line); border-left: 4px solid var(--st, var(--line)); border-radius: 10px; padding: 10px 12px }
+.row > div { min-width: 0 }
+.date { text-align: center; font-variant-numeric: tabular-nums; line-height: 1.1 }
+.date b { display: block; font: 600 22px/1 var(--display) }
+.date span { font-size: 12px; color: var(--muted); text-transform: uppercase; letter-spacing: .5px }
+.title { font-weight: 600 }
+.meta { display: flex; gap: 6px; flex-wrap: wrap; align-items: center; margin-top: 4px; font-size: 13px; color: var(--muted) }
+.chip { display: inline-flex; align-items: center; gap: 4px; font: 600 11px/1 var(--body); letter-spacing: .6px; text-transform: uppercase; padding: 4px 7px; border-radius: 6px; border: 1px solid currentColor }
+.chip.youtube { color: var(--yt) } .chip.instagram { color: var(--ig) }
+.next { margin-top: 6px; font-size: 13.5px }
+.next::before { content: "Próximo passo: "; color: var(--muted) }
+select.status { font: 600 12px var(--body); color: var(--st); background: var(--surface); border: 1px solid var(--st); border-radius: 999px; padding: 4px 8px; margin-left: auto }
+.empty { color: var(--muted); background: var(--surface); border: 1px dashed var(--line); border-radius: 10px; padding: 14px }
+.week { margin-top: 18px }
+.week h3 { font: 600 14px var(--display); letter-spacing: .8px; text-transform: uppercase; color: var(--gold); margin: 0 0 8px }
+.feed { display: grid; grid-template-columns: repeat(3, 1fr); gap: 4px; max-width: 520px }
+.tile { aspect-ratio: 4 / 5; background: var(--surface); border: 1px solid var(--line); border-radius: 6px; padding: 8px; display: flex; flex-direction: column; justify-content: space-between; overflow: hidden; border-top: 4px solid var(--st) }
+.tile .t { font: 600 13px/1.2 var(--body); overflow: hidden; display: -webkit-box; -webkit-line-clamp: 4; -webkit-box-orient: vertical }
+.tile .d { font-size: 11px; color: var(--muted); font-variant-numeric: tabular-nums }
+.yt { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 12px }
+.ytc { background: var(--surface); border: 1px solid var(--line); border-radius: 10px; overflow: hidden }
+.ytc .thumb { aspect-ratio: 16 / 9; background: linear-gradient(135deg, var(--wine), var(--amber)); display: flex; align-items: flex-end; padding: 10px; color: #FFF8F0; font: 600 16px/1.15 var(--display); text-transform: uppercase; max-width: 100% }
+.ytc .b { padding: 10px }
+.legend { display: flex; gap: 10px; flex-wrap: wrap; font-size: 12.5px; color: var(--muted); margin-top: 8px }
+.legend i { display: inline-block; width: 10px; height: 10px; border-radius: 3px; background: var(--st); margin-right: 4px; vertical-align: -1px }
+.note { font-size: 13px; color: var(--muted); margin-top: 10px }
+a.ext { color: var(--wine) }
+.toast { position: fixed; left: 50%; transform: translateX(-50%); bottom: calc(16px + env(safe-area-inset-bottom, 0px)); background: var(--ink); color: var(--bg); padding: 8px 14px; border-radius: 999px; font-size: 13px }
+@media (prefers-reduced-motion: no-preference) { .row, .tile { transition: border-color .2s } }
+</style>
+
+<header>
+  <div class="wrap">
+    <div class="top">
+      <div class="brand">Três Taças<small>degustação às cegas · planejamento</small></div>
+      <div class="today" id="today"></div>
+    </div>
+    <nav aria-label="Seções">
+      <a href="#hoje">Hoje</a><a href="#agenda">Agenda</a><a href="#feed">Feed</a><a href="#material">Material</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+  <section id="v-hoje">
+    <div class="meter" id="meter"></div>
+    <div class="grid2">
+      <div><h2>Próximos 7 dias<span class="count" id="c-semana"></span></h2><div class="list" id="semana"></div></div>
+      <div><h2>Precisa de você<span class="count" id="c-voce"></span></h2><div class="list" id="voce"></div>
+        <h2>Material novo no Drive<span class="count" id="c-novo"></span></h2><div class="list" id="novo"></div></div>
+    </div>
+  </section>
+  <section id="v-agenda" hidden>
+    <div class="legend" id="legend"></div>
+    <div id="agenda"></div>
+  </section>
+  <section id="v-feed" hidden>
+    <div class="grid2">
+      <div><h2>Instagram<span class="count">ganchos que levam ao YouTube</span></h2><div class="feed" id="ig"></div>
+        <p class="note">Mais recente primeiro, como no perfil. A cor no topo é o status.</p></div>
+      <div><h2>YouTube<span class="count">episódios completos</span></h2><div class="yt" id="yt"></div></div>
+    </div>
+  </section>
+  <section id="v-material" hidden>
+    <h2>Gravações no Drive</h2>
+    <p class="note">Conferido todo dia de manhã. Pasta: Degustação às cegas em 01.</p>
+    <div class="list" id="mat"></div>
+  </section>
+</main>
+<div class="toast" id="toast" hidden></div>
+
+<script>
+const STATUS = [
+  ["fazer", "A fazer"], ["editar", "Editando"], ["aprovar", "Para aprovar"],
+  ["agendado", "Agendado"], ["postado", "Postado"], ["confirmar", "Confirmar"]];
+const ST_LABEL = Object.fromEntries(STATUS);
+const MAT_LABEL = { novo: "Novo, a analisar", analisando: "Analisando", edicao: "Em edição", usado: "Usado" };
+const DOW = ["dom", "seg", "ter", "qua", "qui", "sex", "sáb"];
+const MON = ["jan", "fev", "mar", "abr", "mai", "jun", "jul", "ago", "set", "out", "nov", "dez"];
+let pecas = [], material = [], db = null;
+
+const $ = id => document.getElementById(id);
+const el = (tag, cls, txt) => { const e = document.createElement(tag); if (cls) e.className = cls; if (txt != null) e.textContent = txt; return e; };
+const stVar = s => `var(--st-${ST_LABEL[s] ? s : "fazer"})`;
+const pdate = s => { const [y, m, d] = (s || "").split("-").map(Number); return y ? new Date(y, m - 1, d) : null; };
+const today0 = () => { const t = new Date(); t.setHours(0, 0, 0, 0); return t; };
+const days = (a, b) => Math.round((a - b) / 864e5);
+
+function toast(msg) { const t = $("toast"); t.textContent = msg; t.hidden = false; clearTimeout(toast.h); toast.h = setTimeout(() => t.hidden = true, 2200); }
+
+function statusSelect(p) {
+  const s = el("select", "status"); s.id = "st-" + p.id; s.setAttribute("aria-label", "Status de " + p.titulo);
+  s.style.setProperty("--st", stVar(p.status));
+  for (const [v, l] of STATUS) { const o = el("option", null, l); o.value = v; if (v === p.status) o.selected = true; s.append(o); }
+  if (!db) s.disabled = true;
+  s.addEventListener("change", async () => {
+    const v = s.value; s.style.setProperty("--st", stVar(v));
+    try { await db.doc("pecas/" + p.id).update({ status: v, atualizado: new Date().toISOString() }); toast("Status salvo: " + ST_LABEL[v]); }
+    catch (e) { toast("Não salvou. Tente de novo."); s.value = p.status; s.style.setProperty("--st", stVar(p.status)); }
+  });
+  return s;
+}
+
+function row(p) {
+  const r = el("div", "row"); r.style.setProperty("--st", stVar(p.status));
+  const d = pdate(p.data), dt = el("div", "date");
+  dt.append(el("b", null, d ? d.getDate() : "–"), el("span", null, d ? DOW[d.getDay()] + " · " + MON[d.getMonth()] : "sem data"));
+  const b = el("div"); b.append(el("div", "title", p.titulo));
+  const m = el("div", "meta");
+  m.append(el("span", "chip " + p.rede, p.rede === "youtube" ? "YouTube" : "Instagram"));
+  if (p.formato) m.append(el("span", null, p.formato));
+  if (p.hora) m.append(el("span", null, p.hora));
+  m.append(statusSelect(p)); b.append(m);
+  if (p.proximo && p.status !== "postado") b.append(el("div", "next", p.proximo));
+  r.append(dt, b); return r;
+}
+
+function fill(id, items, make, emptyMsg, countId) {
+  const box = $(id); box.replaceChildren();
+  if (countId) $(countId).textContent = items.length ? items.length : "";
+  if (!items.length) { box.append(el("div", "empty", emptyMsg)); return; }
+  for (const it of items) box.append(make(it));
+}
+
+function matRow(m) {
+  const r = el("div", "row"); r.style.setProperty("--st", m.status === "novo" ? "var(--st-confirmar)" : m.status === "usado" ? "var(--st-postado)" : "var(--st-editar)");
+  const d = pdate(m.subiu), dt = el("div", "date");
+  dt.append(el("b", null, d ? d.getDate() : "–"), el("span", null, d ? MON[d.getMonth()] : ""));
+  const b = el("div"); b.append(el("div", "title", m.pasta + (m.ep ? " · " + m.ep : "")));
+  const meta = el("div", "meta"); meta.append(el("span", null, MAT_LABEL[m.status] || m.status));
+  if (m.arquivos) meta.append(el("span", null, m.arquivos + " arquivos"));
+  if (m.tamanho) meta.append(el("span", null, m.tamanho));
+  if (m.link) { const a = el("a", "ext", "abrir no Drive"); a.href = m.link; a.target = "_blank"; a.rel = "noopener"; meta.append(a); }
+  b.append(meta); if (m.nota) b.append(el("div", "next", m.nota));
+  r.append(dt, b); return r;
+}
+
+function render() {
+  const t = today0();
+  $("today").textContent = DOW[t.getDay()] + ", " + t.getDate() + " " + MON[t.getMonth()];
+  const sorted = [...pecas].sort((a, b) => (a.data || "9").localeCompare(b.data || "9") || (a.hora || "").localeCompare(b.hora || ""));
+  const open = sorted.filter(p => p.status !== "postado");
+  const semana = open.filter(p => { const d = pdate(p.data); return d && days(d, t) >= 0 && days(d, t) < 7; });
+  const atrasado = open.filter(p => { const d = pdate(p.data); return d && days(d, t) < 0; });
+  const voce = sorted.filter(p => p.status === "aprovar" || p.status === "confirmar");
+  const prontas14 = sorted.filter(p => { const d = pdate(p.data); return d && days(d, t) >= 0 && days(d, t) < 14 && (p.status === "agendado" || p.status === "aprovar"); });
+  const plan14 = sorted.filter(p => { const d = pdate(p.data); return d && days(d, t) >= 0 && days(d, t) < 14; });
+  const novos = material.filter(m => m.status === "novo");
+
+  const meter = $("meter"); meter.replaceChildren();
+  const tile = (n, label, cls) => { const m = el("div", "m " + (cls || "")); m.append(el("b", null, n), el("span", null, label)); return m; };
+  meter.append(
+    tile(prontas14.length + "/" + plan14.length, "posts das próximas 2 semanas prontos", prontas14.length >= plan14.length && plan14.length ? "ok" : prontas14.length < plan14.length / 2 ? "alert" : ""),
+    tile(voce.length, "esperando você aprovar ou confirmar", voce.length ? "alert" : "ok"),
+    tile(atrasado.length, atrasado.length === 1 ? "post com data vencida" : "posts com data vencida", atrasado.length ? "alert" : "ok"),
+    tile(novos.length, novos.length === 1 ? "gravação nova no Drive" : "gravações novas no Drive", novos.length ? "alert" : ""));
+
+  fill("semana", atrasado.concat(semana), row, "Nada marcado para os próximos 7 dias.", "c-semana");
+  fill("voce", voce, row, "Nada esperando por você.", "c-voce");
+  fill("novo", novos, matRow, "Nenhuma gravação nova. O Drive é conferido todo dia.", "c-novo");
+
+  const lg = $("legend"); lg.replaceChildren();
+  for (const [v, l] of STATUS) { const s = el("span"); const i = el("i"); i.style.setProperty("--st", stVar(v)); s.append(i, l); lg.append(s); }
+  const ag = $("agenda"); ag.replaceChildren();
+  const weeks = new Map();
+  for (const p of sorted) {
+    const d = pdate(p.data); let key = "Sem data";
+    if (d) { const mon = new Date(d); mon.setDate(d.getDate() - ((d.getDay() + 6) % 7)); key = "Semana de " + mon.getDate() + " " + MON[mon.getMonth()]; }
+    if (!weeks.has(key)) weeks.set(key, []); weeks.get(key).push(p);
+  }
+  if (!sorted.length) ag.append(el("div", "empty", "O calendário aparece aqui assim que for carregado."));
+  for (const [k, list] of weeks) { const w = el("div", "week"); w.append(el("h3", null, k)); const l = el("div", "list"); list.forEach(p => l.append(row(p))); w.append(l); ag.append(w); }
+
+  const ig = $("ig"); ig.replaceChildren();
+  const igs = sorted.filter(p => p.rede === "instagram").reverse();
+  if (!igs.length) ig.append(el("div", "empty", "Sem posts de Instagram no plano."));
+  for (const p of igs) { const c = el("div", "tile"); c.style.setProperty("--st", stVar(p.status)); const d = pdate(p.data);
+    c.append(el("div", "t", p.titulo), el("div", "d", (p.formato || "") + (d ? " · " + d.getDate() + " " + MON[d.getMonth()] : "") + " · " + (ST_LABEL[p.status] || p.status))); ig.append(c); }
+  const yt = $("yt"); yt.replaceChildren();
+  const yts = sorted.filter(p => p.rede === "youtube");
+  if (!yts.length) yt.append(el("div", "empty", "Sem episódios no plano."));
+  for (const p of yts) { const c = el("div", "ytc"); c.append(el("div", "thumb", p.ep || "Três Taças"));
+    const b = el("div", "b"); b.append(el("div", "title", p.titulo)); const m = el("div", "meta"); const d = pdate(p.data);
+    if (d) m.append(el("span", null, d.getDate() + " " + MON[d.getMonth()] + (p.hora ? " · " + p.hora : ""))); m.append(statusSelect(p)); b.append(m); c.append(b); yt.append(c); }
+
+  fill("mat", [...material].sort((a, b) => (b.subiu || "").localeCompare(a.subiu || "")), matRow, "Nenhuma gravação registrada ainda.");
+}
+
+function route() {
+  const v = (location.hash || "#hoje").slice(1);
+  const views = ["hoje", "agenda", "feed", "material"]; const cur = views.includes(v) ? v : "hoje";
+  for (const k of views) $("v-" + k).hidden = k !== cur;
+  document.querySelectorAll("nav a").forEach(a => { if (a.getAttribute("href") === "#" + cur) a.setAttribute("aria-current", "page"); else a.removeAttribute("aria-current"); });
+}
+addEventListener("hashchange", route); route(); render();
+
+(async () => {
+  db = window.claude?.use ? await window.claude.use("db") : null;
+  if (!db) { toast("Sem conexão com os dados agora."); return; }
+  db.collection("pecas").onSnapshot(s => { pecas = s.docs.map(d => ({ id: d.id, ...d.data() })); render(); }, () => toast("Os dados pararam de atualizar. Recarregue a página."));
+  db.collection("material").onSnapshot(s => { material = s.docs.map(d => ({ id: d.id, ...d.data() })); render(); }, () => {});
+})();
+</script>

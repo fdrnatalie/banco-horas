@@ -83,7 +83,7 @@
     <div class="grid kpis" id="kpis"></div>
     <div class="grid two" style="margin-top:18px">
       <div><h3>Pendências da Natalie</h3><div id="todoNat"></div><h3>Pendências da equipe (editor · diretor · estrategista)</h3><div id="todoTeam"></div></div>
-      <div><h3>Próximos 7 dias</h3><div id="next"></div></div>
+      <div><h3>Próximos 7 dias</h3><div id="next"></div><h3>Material bruto (Drive)</h3><div id="mat"></div></div>
     </div>
   </section>
   <section id="cal"><h2 id="calTitle"></h2><div class="row"><button class="btn" id="prevM">◀</button><button class="btn" id="nextM">▶</button>
@@ -112,6 +112,7 @@ D.pecas.forEach(p => { if (local[p.id]) Object.assign(p, local[p.id]); });
 const $ = s => document.querySelector(s);
 const fmt = d => d ? new Date(d + "T12:00").toLocaleDateString("pt-BR",{weekday:"short",day:"2-digit",month:"2-digit"}) : "sem data";
 const pill = s => `<span class="pill s-${s}">${ST[s]||s}</span>`;
+const conf = p => p.confirmar ? `<span class="pill" style="color:var(--bad)">confirmar</span>` : "";
 const today = new Date(); today.setHours(0,0,0,0);
 $("#upd").textContent = "dados atualizados em " + D.atualizado + " · " + D.pecas.length + " peças";
 document.querySelectorAll("#tabs button").forEach(b => b.onclick = () => {
@@ -123,7 +124,7 @@ function save(p, patch){ Object.assign(p, patch); local[p.id] = Object.assign(lo
 function open(id){
   const p = D.pecas.find(x => x.id === id); if (!p) return;
   $("#dlgBody").innerHTML = `${p.img?`<img src="${p.img}">`:""}<h2 style="margin-top:0">${p.titulo}</h2>
-    <div>${NET[p.rede]} · ${p.formato} · ep. ${p.ep}</div><div>${pill(p.status)}</div>
+    <div>${NET[p.rede]} · ${p.formato} · ep. ${p.ep}</div><div>${pill(p.status)}${conf(p)}</div>
     <div class="row">Status <select id="selS">${ORDER.map(s=>`<option value="${s}" ${s===p.status?"selected":""}>${ST[s]}</option>`).join("")}</select>
     Data <input type="date" id="selD" value="${p.data||""}"> <input type="time" id="selH" value="${p.hora||""}"></div>
     ${p.arquivo?`<div class="sub">arquivo: ${p.arquivo}</div>`:""}
@@ -144,11 +145,12 @@ function render(){
   $("#kpis").innerHTML = [["aprovacao","esperando você aprovar"],["aprovado","prontos para programar"],["programado","programados"],["postado","postados"],["edicao","em edição"],["gravado","gravados sem edição"]]
     .map(([s,l]) => `<div class="kpi"><div class="n">${cnt(s)}</div><div class="l">${l}</div></div>`).join("");
   const nat = P.filter(p => p.dono === "natalie" && p.status !== "postado"), team = P.filter(p => p.dono !== "natalie" && !["postado","programado"].includes(p.status));
-  const td = p => `<div class="todo ${p.dono==="natalie"?"nat":""}" onclick="open('${p.id}')"><b>${p.pendente || ST[p.status]}</b><br><small>${p.titulo} · ${NET[p.rede]} · ${fmt(p.data)}</small></div>`;
+  const td = p => `<div class="todo ${p.dono==="natalie"?"nat":""}" onclick="open('${p.id}')"><b>${p.pendente || ST[p.status]}</b> ${conf(p)}<br><small>${p.titulo} · ${NET[p.rede]} · ${fmt(p.data)}</small></div>`;
   $("#todoNat").innerHTML = nat.map(td).join("") || "<p class=sub>Nada pendente.</p>";
   $("#todoTeam").innerHTML = team.map(td).join("") || "<p class=sub>Nada pendente.</p>";
   const in7 = P.filter(p => p.data && (new Date(p.data+"T12:00") - today)/864e5 >= 0 && (new Date(p.data+"T12:00") - today)/864e5 < 7).sort((a,b)=>(a.data+a.hora).localeCompare(b.data+b.hora));
   $("#next").innerHTML = in7.map(p => `<div class="card ${p.rede!=="instagram"?"yt":""}" onclick="open('${p.id}')">${p.img?`<img src="${p.img}">`:""}<div><div class="t">${p.titulo}</div><div class="m">${fmt(p.data)} ${p.hora||""} · ${NET[p.rede]} · ${p.formato}</div>${pill(p.status)}</div></div>`).join("") || "<p class=sub>Nada nos próximos 7 dias.</p>";
+  $("#mat").innerHTML = (D.material||[]).map(m => `<div class="todo ${m.dono==="natalie"?"nat":""}"><b>${m.pasta}</b> · <span class="pill">${m.status}</span><br><small>gravado ${fmt(m.gravado)} · subiu ${m.subiu} · ${m.arquivos.join(", ")}</small><br>${m.proximo}</div>`).join("") || "<p class=sub>Nenhum material novo.</p>";
   // calendar
   $("#calTitle").textContent = calM.toLocaleDateString("pt-BR",{month:"long",year:"numeric"});
   let h = ["dom","seg","ter","qua","qui","sex","sáb"].map(d=>`<div class="dow">${d}</div>`).join("");
