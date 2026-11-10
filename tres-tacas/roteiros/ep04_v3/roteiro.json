@@ -1,0 +1,1396 @@
+{
+ "titulo": "A Touriga ao contrário",
+ "serie": "três taças · nº 04",
+ "video": "/tmp/claude-0/-home-user-banco-horas/3d5af8d1-792d-5a42-bb7b-ae9930f28a5e/scratchpad/raw/ep04.mov",
+ "trans": "/home/user/banco-horas/tres-tacas/transcricoes/T_ep04.json",
+ "hesit": "/tmp/claude-0/-home-user-banco-horas/3d5af8d1-792d-5a42-bb7b-ae9930f28a5e/scratchpad/trans/F_ep04.json",
+ "saida": "/tmp/claude-0/-home-user-banco-horas/3d5af8d1-792d-5a42-bb7b-ae9930f28a5e/scratchpad/out/youtube_ep04_v3.mp4",
+ "fix": {
+  "toriga": "Touriga",
+  "turiga": "Touriga",
+  "gamet": "Gamay",
+  "gamé": "Gamay",
+  "agamé": "Gamay",
+  "gamê": "Gamay",
+  "gamelha": "Gamay",
+  "bojolet": "Beaujolais",
+  "bojolê": "Beaujolais",
+  "beijolês": "Beaujolais",
+  "bojolês": "Beaujolais",
+  "nebiolo": "Nebbiolo",
+  "nibiolo": "Nebbiolo",
+  "barolo": "Barolo",
+  "barriga": "barrica",
+  "regustação": "degustação",
+  "iribarren": "Iribarrem",
+  "taninhos": "taninos",
+  "tainino": "tanino",
+  "tâninos": "taninos",
+  "pastas": "castas",
+  "valoração": "coloração",
+  "papãozinho": "papelzinho",
+  "decumado": "defumado",
+  "xeroto": "charuto"
+ },
+ "frases_fix": [
+  [
+   "eu gostaria algo",
+   "Eu chutaria algo"
+  ],
+  [
+   "até a oracólica",
+   "Teor alcoólico"
+  ],
+  [
+   "vento gonçalves",
+   "Bento Gonçalves"
+  ],
+  [
+   "presentes importantes",
+   "presença importante"
+  ],
+  [
+   "morango e famosa",
+   "morango, framboesa"
+  ],
+  [
+   "pimenta do reino",
+   "pimenta-do-reino"
+  ],
+  [
+   "12 .5",
+   "12,5"
+  ]
+ ],
+ "destaques": [
+  "Touriga",
+  "Gamay",
+  "Barolo",
+  "Nebbiolo",
+  "Beaujolais",
+  "zero",
+  "menta",
+  "tanino",
+  "taninos",
+  "67"
+ ],
+ "cta_tela": "o app de estudo que eu uso tá na descrição",
+ "gancho": {
+  "bloco": "B00",
+  "fala": 0,
+  "texto": "O último eu errei tudo. Tirei exatamente zero."
+ },
+ "blocos": [
+  {
+   "id": "B00",
+   "capitulo": "Abertura",
+   "sub": "a Touriga ao contrário",
+   "tema": "Gancho: o zero da #107, antes de qualquer contexto. Depois, a capa.",
+   "falas": [
+    {
+     "a": 1840.4,
+     "b": 1843.93,
+     "texto": "O último eu errei tudo. Tirei exatamente zero."
+    },
+    {
+     "a": 31.48,
+     "b": 33.57,
+     "texto": "Começar uma nova degustação."
+    }
+   ],
+   "telas": [
+    {
+     "tipo": "placar",
+     "titulo": "67 / 100",
+     "linhas": [
+      "#21 · 100 pontos",
+      "#41 · 100 pontos",
+      "#107 · 0 pontos"
+     ],
+     "entra_fala": 0,
+     "sai_fala": 0,
+     "fonte": "tela Resultado do app (1596 s e 1847 s do bruto)"
+    },
+    {
+     "tipo": "aula",
+     "titulo": "capa",
+     "linhas": [
+      "três taças · nº 04",
+      "A Touriga ao contrário",
+      "três garrafinhas às cegas"
+     ],
+     "entra_fala": 1,
+     "sai_fala": 1,
+     "fonte": "identidade da série"
+    }
+   ]
+  },
+  {
+   "id": "B01",
+   "capitulo": "Três garrafinhas às cegas",
+   "sub": "#21 · #41 · #107",
+   "tema": "Como eu escolho e cuido das garrafinhas, a ordem da prova e por que a cor às vezes já me dá a resposta.",
+   "falas": [
+    {
+     "a": 35.18,
+     "b": 46.56,
+     "texto": "Eu dou preferência aos que já abri recentemente, porque como tem ar dentro, né, oxigênio, se eu deixar muito tempo as garrafinhas, elas acabam oxidando."
+    },
+    {
+     "a": 94.74,
+     "b": 97.83,
+     "texto": "Quando acaba, o que eu faço é lavar."
+    },
+    {
+     "a": 98.04,
+     "b": 99.65,
+     "texto": "Coloco na água fervendo,"
+    },
+    {
+     "a": 101.28,
+     "b": 106.73,
+     "texto": "depois um pouquinho de álcool e deixo evaporar tudo."
+    },
+    {
+     "a": 60.48,
+     "b": 64.31,
+     "texto": "Como sempre, fica na ordem sequencial."
+    },
+    {
+     "a": 111.76,
+     "b": 115.11,
+     "texto": "Tem alguns que eu consigo já saber pela cor."
+    },
+    {
+     "a": 122.12,
+     "b": 126.66,
+     "texto": "Uma amostragem curta, né? Eu não tenho tantos rótulos."
+    },
+    {
+     "a": 129.38,
+     "b": 134.06,
+     "texto": "Mas é realmente incrível como você consegue diferenciar algumas castas"
+    },
+    {
+     "a": 138.7,
+     "b": 141.37,
+     "texto": "só por causa da coloração."
+    }
+   ],
+   "telas": [
+    {
+     "tipo": "aula",
+     "titulo": "Garrafinha aberta",
+     "linhas": [
+      "Uso primeiro as que abri há pouco.",
+      "Ar dentro da garrafinha = oxigênio: o vinho oxida e perde fruta.",
+      "Meu jeito de reaproveitar: água fervendo, um pouco de álcool, deixar secar."
+     ],
+     "entra_fala": 0,
+     "sai_fala": 3,
+     "fonte": "Linhas 1 e 3: o método dela. Linha 2: WSET Level 2, conservação do vinho aberto."
+    },
+    {
+     "tipo": "comparacao",
+     "titulo": "Sorteio do dia",
+     "linhas": [
+      "#21 · 1ª taça",
+      "#41 · 2ª taça",
+      "#107 · 3ª taça"
+     ],
+     "entra_fala": 4,
+     "sai_fala": 4,
+     "fonte": "tela Nova degustação do app (60–90 s). Ela fala '141' no sorteio: o número sai do áudio."
+    },
+    {
+     "tipo": "aula",
+     "titulo": "A cor como primeira pista",
+     "linhas": [
+      "Minha adega de garrafinhas é pequena: eu já conheço as cores dela.",
+      "A cor ajuda a separar uvas, mas sozinha não fecha a resposta."
+     ],
+     "entra_fala": 5,
+     "sai_fala": 8,
+     "fonte": "Linha 1: transparência dela. Linha 2: WSET L3 (a cor é uma pista entre várias)."
+    }
+   ]
+  },
+  {
+   "id": "B02",
+   "capitulo": "Garrafa #21 · a cor",
+   "sub": "luz branca, rubi e a unha",
+   "tema": "Como ler a cor: luz neutra, intensidade, tom e a unha (borda) como pista de idade.",
+   "falas": [
+    {
+     "a": 236.78,
+     "b": 242.57,
+     "texto": "Um papelzinho branco pra poder enxergar. A gente coloca assim, tem que ter uma luz."
+    },
+    {
+     "a": 244.36,
+     "b": 250.59,
+     "texto": "Eu odeio luz branca, mas para realmente fazer uma análise visual do vinho precisa ser branca."
+    },
+    {
+     "a": 251.68,
+     "b": 253.39,
+     "texto": "Para não influenciar."
+    },
+    {
+     "a": 256.62,
+     "b": 265.6,
+     "texto": "Ele é um rubi, médio para profundo, de intensidade de cor."
+    },
+    {
+     "a": 265.6,
+     "b": 273.11,
+     "texto": "Tem uma unha média, não acho que é um vinho muito, muito velho, tampouco muito jovem."
+    },
+    {
+     "a": 273.8,
+     "b": 278.7,
+     "texto": "Eu chutaria algo em torno de 2024 ou 25."
+    }
+   ],
+   "telas": [
+    {
+     "tipo": "aula",
+     "titulo": "Como eu leio a cor",
+     "linhas": [
+      "Luz branca e fundo branco: a cor aparece sem desvio.",
+      "Intensidade: pálida · média · profunda.",
+      "Tom: púrpura · rubi · granada · atijolado.",
+      "Unha = a borda, com a taça inclinada: pista de idade."
+     ],
+     "entra_fala": 0,
+     "sai_fala": 2,
+     "fonte": "WSET Level 3, Systematic Approach to Tasting Wine (SAT) (aparência: intensidade, cor; borda indica evolução)."
+    },
+    {
+     "tipo": "app",
+     "titulo": "#21 · eu vi",
+     "linhas": [
+      "rubi, médio para profundo · unha média",
+      "meu palpite pela unha: 2024 ou 2025"
+     ],
+     "entra_fala": 3,
+     "sai_fala": 5,
+     "fonte": "percepção dela; tela Visual do app"
+    }
+   ]
+  },
+  {
+   "id": "B03",
+   "capitulo": "Garrafa #21 · o nariz",
+   "sub": "fruta negra, violeta e madeira",
+   "tema": "Como eu procuro aromas (pensar numa fruta e ir atrás dela), a fruta que combina com a cor e o que a madeira deixa.",
+   "falas": [
+    {
+     "a": 309.42,
+     "b": 311.29,
+     "texto": "Ele puxa muito uma fruta madura."
+    },
+    {
+     "a": 328.94,
+     "b": 335.75,
+     "texto": "Ele já está me passando uma banana, mas é mais uma fruta em compota, geleia, uma fruta cozida talvez."
+    },
+    {
+     "a": 351.7,
+     "b": 353.97,
+     "texto": "Eu sinto algo de violeta também nele."
+    },
+    {
+     "a": 369.54,
+     "b": 375.85,
+     "texto": "O legal de você ir vendo quais frutas é que você pensa assim: ah, cereja vermelha tem?"
+    },
+    {
+     "a": 379.02,
+     "b": 384.15,
+     "texto": "Aí você puxa para ver se está vindo alguma coisa de cereja vermelha."
+    },
+    {
+     "a": 384.54,
+     "b": 387.09,
+     "texto": "Se não está vindo, não tem problema."
+    },
+    {
+     "a": 406.44,
+     "b": 411.67,
+     "texto": "Aqui tá me passando um cassis, um mirtilo, uma ameixa."
+    },
+    {
+     "a": 413.06,
+     "b": 416.42,
+     "texto": "Frutas mais voltadas na coloração dele mesmo."
+    },
+    {
+     "a": 416.86,
+     "b": 421.77,
+     "texto": "Não ia numa fruta muito fresca, tipo morango, porque ele não tem essa coloração."
+    },
+    {
+     "a": 452.36,
+     "b": 454.25,
+     "texto": "Tem algo de especiaria."
+    },
+    {
+     "a": 456.46,
+     "b": 457.33,
+     "texto": "Alcaçuz."
+    },
+    {
+     "a": 479.96,
+     "b": 483.45,
+     "texto": "Talvez tem algo de madeira."
+    },
+    {
+     "a": 485.95,
+     "b": 494.25,
+     "texto": "Tem um carvalho, uma defumada, uma caixa de charuto.",
+     "nota": "começa no 2º 'tem' (o 1º é gaguejado); conferido no turbo: 'Tem... tem um carvalho... uma defumada... uma caixa de charuto'"
+    }
+   ],
+   "telas": [
+    {
+     "tipo": "app",
+     "titulo": "#21 · eu senti",
+     "linhas": [
+      "fruta madura, banana, compota, geleia",
+      "violeta"
+     ],
+     "entra_fala": 0,
+     "sai_fala": 2,
+     "fonte": "percepção dela; tela Nariz do app"
+    },
+    {
+     "tipo": "aula",
+     "titulo": "Como eu procuro um aroma",
+     "linhas": [
+      "Penso numa fruta e vou atrás dela na taça.",
+      "Não veio? Tudo bem: passo para a próxima.",
+      "Eu senti: fruta negra (cassis, mirtilo, ameixa), como a cor profunda. Pista minha, não regra."
+     ],
+     "entra_fala": 3,
+     "sai_fala": 8,
+     "fonte": "método dela; famílias de fruta do WSET Level 3, Systematic Approach to Tasting Wine (SAT)"
+    },
+    {
+     "tipo": "aula",
+     "titulo": "O que a madeira deixa",
+     "linhas": [
+      "Carvalho traz aromas como cravo, baunilha, tosta, cedro e defumado.",
+      "A 'caixa de charuto' lembra o cedro.",
+      "Eu senti: alcaçuz, carvalho, defumado, caixa de charuto."
+     ],
+     "entra_fala": 9,
+     "sai_fala": 12,
+     "fonte": "WSET Level 3, Systematic Approach to Tasting Wine (SAT), léxico de aromas de carvalho"
+    }
+   ]
+  },
+  {
+   "id": "B04",
+   "capitulo": "Garrafa #21 · a menta",
+   "sub": "a pista que eu aprendi no ep. 02",
+   "tema": "Continuidade da série: o 'álcool que não é álcool' vira menta, e a menta me leva à Touriga. Logo depois, o que a Touriga é de fato.",
+   "falas": [
+    {
+     "a": 524.76,
+     "b": 532.81,
+     "texto": "Na boca ele me trouxe algo verde, inclusive eu posso voltar e ver se esse verde ainda permanece no nariz."
+    },
+    {
+     "a": 551.32,
+     "b": 553.14,
+     "texto": "No primeiro momento,"
+    },
+    {
+     "a": 556.62,
+     "b": 560.49,
+     "texto": "quando você sente um álcool no nariz bem forte,",
+     "nota": "tira o começo falso 'eu senti um…' (553,7–556,6 s, conferido no turbo)"
+    },
+    {
+     "a": 560.54,
+     "b": 571.27,
+     "texto": "mas eu já entendi que muitas vezes quando eu sinto esse álcool, não seja álcool, poderia ser uma coisa tão fresca que remete ao álcool, por exemplo, o eucalipto."
+    },
+    {
+     "a": 584.2,
+     "b": 588.05,
+     "texto": "Ele me dá alguma coisa de menta, de eucalipto."
+    },
+    {
+     "a": 588.24,
+     "b": 596.51,
+     "texto": "Eu vou na menta, porque agora eu tô começando a achar que é o que eu erro sempre: Touriga Nacional."
+    }
+   ],
+   "telas": [
+    {
+     "tipo": "aula",
+     "titulo": "Minha pista desde o ep. 02",
+     "linhas": [
+      "Ep. 01 e 02: a Touriga Nacional me enganou.",
+      "Ep. 02: aprendi que o 'álcool' no nariz pode ser menta.",
+      "Menta me leva à Touriga. É pista minha, não regra."
+     ],
+     "entra_fala": 0,
+     "sai_fala": 4,
+     "fonte": "ep. 01 e ep. 02 da série (T_ep02, 2327–2342 s)"
+    },
+    {
+     "tipo": "aula",
+     "titulo": "Touriga Nacional",
+     "linhas": [
+      "Marca registrada: violeta, que eu senti nesta taça.",
+      "Fruta negra (amora, mirtilo, ameixa) e bergamota; menta aparece em alguns.",
+      "Tinto encorpado, de tanino alto. A uva símbolo do Douro e do Dão."
+     ],
+     "entra_fala": 5,
+     "sai_fala": 5,
+     "fonte": "Robinson, Harding & Vouillamoz, Wine Grapes (2012); Wines of Portugal; Wine Folly, Touriga Nacional"
+    }
+   ]
+  },
+  {
+   "id": "B05",
+   "capitulo": "Garrafa #21 · a hipótese",
+   "sub": "Douro ou Brasil?",
+   "tema": "A estrutura na boca e o raciocínio da região, com a transparência de que ela sabe o que tem na adega.",
+   "falas": [
+    {
+     "a": 604.16,
+     "b": 610.83,
+     "texto": "Na boca ele é seco, ele tem uma acidez média, ele tem taninos médios pra mais."
+    },
+    {
+     "a": 635.02,
+     "b": 637.11,
+     "texto": "E ele tem um bom corpo."
+    },
+    {
+     "a": 675.86,
+     "b": 676.87,
+     "texto": "Ele é macio."
+    },
+    {
+     "a": 703.95,
+     "b": 715.36,
+     "texto": "Eu não vou colocar um Touriga do Douro, porque ele me parece um pouco mais adocicado.",
+     "nota": "tira 'hum… a região… eu vou,' (começo falso; no turbo, 2º 'eu' em 704,14 s)"
+    },
+    {
+     "a": 715.36,
+     "b": 722.11,
+     "texto": "Então, eu iria mais pra uma região do Novo Mundo."
+    },
+    {
+     "a": 722.2,
+     "b": 726.97,
+     "texto": "Então, eu vou colocar, como eu sei que eu tenho um Touriga aqui do Brasil,"
+    },
+    {
+     "a": 738.2,
+     "b": 740.71,
+     "texto": "Bento Gonçalves."
+    },
+    {
+     "a": 775.36,
+     "b": 779.23,
+     "texto": "Teor alcoólico, eu vou colocar um 14%."
+    }
+   ],
+   "telas": [
+    {
+     "tipo": "app",
+     "titulo": "#21 na boca · eu senti",
+     "linhas": [
+      "seco · acidez média · tanino médio+",
+      "bom corpo · macio"
+     ],
+     "entra_fala": 0,
+     "sai_fala": 2,
+     "fonte": "percepção dela; tela Boca do app"
+    },
+    {
+     "tipo": "aula",
+     "titulo": "Fruta madura, clima mais quente",
+     "linhas": [
+      "Fruta bem madura, com sensação adocicada, costuma apontar para clima mais quente.",
+      "É uma pista de estilo, não um mapa: serve como hipótese.",
+      "E eu sei que tenho uma Touriga do Brasil na adega."
+     ],
+     "entra_fala": 3,
+     "sai_fala": 5,
+     "fonte": "Linhas 1–2: WSET Level 3, Systematic Approach to Tasting Wine (SAT) (efeito do clima na fruta). Linha 3: transparência dela."
+    },
+    {
+     "tipo": "placar",
+     "titulo": "Minha hipótese da #21",
+     "linhas": [
+      "Touriga Nacional",
+      "Bento Gonçalves (RS) · Brasil",
+      "safra 2024 · 14%"
+     ],
+     "entra_fala": 6,
+     "sai_fala": 7,
+     "fonte": "tela Hipótese do app (760 s)"
+    }
+   ]
+  },
+  {
+   "id": "B06",
+   "capitulo": "Garrafa #41 · a cor",
+   "sub": "dá pra ver o dedo",
+   "tema": "A cor separa as uvas de casca fina; o laranja da borda aponta Nebbiolo. A Gamay entra aqui como candidata de cor clara: semente da virada.",
+   "falas": [
+    {
+     "a": 796.84,
+     "b": 802.83,
+     "texto": "Esse aqui é muito fácil, porque já a cor dele me remete, assim, rapidamente a um Barolo."
+    },
+    {
+     "a": 814.44,
+     "b": 816.22,
+     "texto": "Não sei se vocês conseguem ver,"
+    },
+    {
+     "a": 819.94,
+     "b": 824.11,
+     "texto": "transparência, digamos assim, média."
+    },
+    {
+     "a": 824.72,
+     "b": 828.87,
+     "texto": "Você consegue enxergar facilmente do outro lado do teu dedo."
+    },
+    {
+     "a": 831.42,
+     "b": 834.85,
+     "texto": "Poderia ser um Pinot Noir, por exemplo, um Gamay."
+    },
+    {
+     "a": 836.94,
+     "b": 837.95,
+     "texto": "Por que um Barolo?"
+    },
+    {
+     "a": 838.16,
+     "b": 840.1,
+     "texto": "Eu sinto que tem"
+    },
+    {
+     "a": 841.86,
+     "b": 844.65,
+     "texto": "uma coloração mais alaranjada."
+    },
+    {
+     "a": 847.54,
+     "b": 849.87,
+     "texto": "É um laranja tomate."
+    },
+    {
+     "a": 856.8,
+     "b": 860.93,
+     "texto": "Já observando ele, me parece que é um Nebbiolo."
+    },
+    {
+     "a": 861.72,
+     "b": 866.33,
+     "texto": "E Barolo porque eu tenho cadastrado Barolo."
+    }
+   ],
+   "telas": [
+    {
+     "tipo": "app",
+     "titulo": "#41 · eu vi",
+     "linhas": [
+      "transparência média: dá pra ver o dedo",
+      "borda alaranjada: 'laranja tomate'"
+     ],
+     "entra_fala": 0,
+     "sai_fala": 3,
+     "fonte": "percepção dela; tela Visual do app"
+    },
+    {
+     "tipo": "aula",
+     "titulo": "Tintos claros",
+     "linhas": [
+      "Pinot Noir, Gamay e Nebbiolo têm casca fina: dão tintos claros, transparentes.",
+      "A Nebbiolo ganha borda granada, puxando ao laranja, mesmo jovem.",
+      "É a uva do Barolo, no Piemonte."
+     ],
+     "entra_fala": 4,
+     "sai_fala": 9,
+     "fonte": "Robinson, Harding & Vouillamoz, Wine Grapes (2012); WSET Level 3, Systematic Approach to Tasting Wine (SAT)"
+    },
+    {
+     "tipo": "app",
+     "titulo": "Transparência",
+     "linhas": [
+      "o Barolo está cadastrado na minha adega",
+      "no ep. 02 eu provei esse mesmo Barolo"
+     ],
+     "entra_fala": 10,
+     "sai_fala": 10,
+     "fonte": "adega do app; ep. 02 (#43 Barolo Morello)"
+    }
+   ]
+  },
+  {
+   "id": "B07",
+   "capitulo": "Garrafa #41 · nariz e boca",
+   "sub": "fruta vermelha e o tanino que eu marquei",
+   "tema": "Ficha curta do Barolo. O tanino 'médio' que ela marca volta no quiz e explica o erro da #107.",
+   "falas": [
+    {
+     "a": 896.16,
+     "b": 897.43,
+     "texto": "Morango."
+    },
+    {
+     "a": 899.42,
+     "b": 900.75,
+     "texto": "Framboesa."
+    },
+    {
+     "a": 908.23,
+     "b": 908.97,
+     "texto": "Geleia."
+    },
+    {
+     "a": 958.38,
+     "b": 959.89,
+     "texto": "Taninos médios."
+    },
+    {
+     "a": 976.68,
+     "b": 977.99,
+     "texto": "Tem uma ótima acidez."
+    },
+    {
+     "a": 978.4,
+     "b": 979.58,
+     "texto": "Um bom álcool."
+    },
+    {
+     "a": 979.58,
+     "b": 980.49,
+     "texto": "Um bom tanino."
+    },
+    {
+     "a": 981.84,
+     "b": 983.84,
+     "texto": "Vou colocar um corpo médio pra mais."
+    }
+   ],
+   "telas": [
+    {
+     "tipo": "app",
+     "titulo": "#41 · eu senti",
+     "linhas": [
+      "morango, framboesa, geleia",
+      "guarde estas duas frutas: elas voltam na #107"
+     ],
+     "entra_fala": 0,
+     "sai_fala": 2,
+     "fonte": "percepção dela; tela Nariz do app"
+    },
+    {
+     "tipo": "app",
+     "titulo": "#41 na minha ficha",
+     "linhas": [
+      "acidez média+ · tanino médio · corpo médio+",
+      "o tanino 'médio' volta no quiz"
+     ],
+     "entra_fala": 3,
+     "sai_fala": 7,
+     "fonte": "tela Confirmação do app (1060 s)"
+    }
+   ]
+  },
+  {
+   "id": "B08",
+   "capitulo": "Garrafa #107 · a cor",
+   "sub": "essas duas se parecem muito",
+   "tema": "Primeiras impressões da #107 e a comparação de cor com a #21, que planta a ideia de 'mesma uva'.",
+   "falas": [
+    {
+     "a": 1068.54,
+     "b": 1072.68,
+     "texto": "E agora, a última."
+    },
+    {
+     "a": 1072.68,
+     "b": 1074.03,
+     "texto": "Nossa!"
+    },
+    {
+     "a": 1077.68,
+     "b": 1085.01,
+     "texto": "Essa aqui me deu um cheiro inicial de defumado."
+    },
+    {
+     "a": 1089.12,
+     "b": 1091.87,
+     "texto": "É um rubi. Tem uma turbidez."
+    },
+    {
+     "a": 1097.44,
+     "b": 1099.71,
+     "texto": "Ele não me parece muito escuro."
+    },
+    {
+     "a": 1134.02,
+     "b": 1137.29,
+     "texto": "Ele me dá muito uma pimenta-do-reino."
+    },
+    {
+     "a": 1147.96,
+     "b": 1149.71,
+     "texto": "Ele me dá muito uma geleia."
+    },
+    {
+     "a": 1253.66,
+     "b": 1263.63,
+     "texto": "Ele tem algo também de herbáceo, de frescor."
+    },
+    {
+     "a": 1268.88,
+     "b": 1273.47,
+     "texto": "Engraçado que se eu comparar as cores, essas aqui se parecem muito,"
+    },
+    {
+     "a": 1273.74,
+     "b": 1278.3,
+     "texto": "mas a primeira, ela tem um toquezinho"
+    },
+    {
+     "a": 1284.52,
+     "b": 1286.73,
+     "texto": "mais de vermelho."
+    },
+    {
+     "a": 1288.72,
+     "b": 1291.05,
+     "texto": "Um pouquinho mais escura."
+    },
+    {
+     "a": 1291.66,
+     "b": 1293.41,
+     "texto": "Talvez incidência da barrica."
+    },
+    {
+     "a": 1293.64,
+     "b": 1295.04,
+     "texto": "Talvez estejamos falando"
+    },
+    {
+     "a": 1295.88,
+     "b": 1298.21,
+     "texto": "da mesma uva."
+    }
+   ],
+   "telas": [
+    {
+     "tipo": "app",
+     "titulo": "#107 · eu senti",
+     "linhas": [
+      "rubi, não muito escuro, um pouco turvo",
+      "defumado, pimenta-do-reino, geleia, herbáceo"
+     ],
+     "entra_fala": 0,
+     "sai_fala": 7,
+     "fonte": "percepção dela; telas Visual e Nariz do app"
+    },
+    {
+     "tipo": "comparacao",
+     "titulo": "Mesma uva?",
+     "linhas": [
+      "#21 · rubi · um toque mais vermelho · um pouco mais escura · madeira",
+      "#107 · rubi · mais clara · defumado e geleia"
+     ],
+     "entra_fala": 8,
+     "sai_fala": 14,
+     "fonte": "percepção dela (1268–1298 s)"
+    }
+   ]
+  },
+  {
+   "id": "B09",
+   "capitulo": "Garrafa #107 · a pegadinha",
+   "sub": "eu cheguei a dizer Gamay",
+   "tema": "A virada: ela nomeia a Gamay e descarta pelo tanino. O espectador sabe antes dela.",
+   "falas": [
+    {
+     "a": 1356.56,
+     "b": 1361.26,
+     "texto": "Pelo morango, framboesa que me dá na boca e pela coloração, eu poderia até ir para um Gamay."
+    },
+    {
+     "a": 1361.26,
+     "b": 1366.03,
+     "texto": "Mas ele tem bons taninos."
+    },
+    {
+     "a": 1400.28,
+     "b": 1401.67,
+     "texto": "Ele é seco."
+    },
+    {
+     "a": 1430.56,
+     "b": 1431.33,
+     "texto": "Bom corpo."
+    },
+    {
+     "a": 1437.76,
+     "b": 1439.39,
+     "texto": "Essa aqui que é a pegadinha."
+    },
+    {
+     "a": 1448.88,
+     "b": 1453.09,
+     "texto": "Eu vou no Velho Mundo, nessa daqui."
+    },
+    {
+     "a": 1457.18,
+     "b": 1460.09,
+     "texto": "Eu vou no Touriga também."
+    },
+    {
+     "a": 1521.64,
+     "b": 1522.81,
+     "texto": "Por que eu coloquei 2023?"
+    },
+    {
+     "a": 1523.3,
+     "b": 1526.97,
+     "texto": "Porque a unha dele é mais aberta."
+    },
+    {
+     "a": 1527.16,
+     "b": 1534.67,
+     "texto": "Então, como a unha acaba representando muito a idade do vinho, eu coloquei um pouquinho mais velho."
+    }
+   ],
+   "telas": [
+    {
+     "tipo": "app",
+     "titulo": "#107 na boca · eu senti",
+     "linhas": [
+      "morango, framboesa · cor clara: 'poderia ser Gamay'",
+      "tanino médio+: descartei"
+     ],
+     "entra_fala": 0,
+     "sai_fala": 3,
+     "fonte": "percepção dela; tela Boca do app"
+    },
+    {
+     "tipo": "placar",
+     "titulo": "Minhas hipóteses",
+     "linhas": [
+      "#21 · Touriga Nacional · Brasil",
+      "#41 · Nebbiolo · Barolo, Itália",
+      "#107 · Touriga Nacional · Douro, Portugal"
+     ],
+     "entra_fala": 4,
+     "sai_fala": 6,
+     "fonte": "telas Hipótese do app (760, 1060 e 1560 s)"
+    },
+    {
+     "tipo": "app",
+     "titulo": "#107 · safra",
+     "linhas": [
+      "unha mais aberta: chutei 2023, um pouco mais velho",
+      "a unha dá uma faixa de idade, não o ano"
+     ],
+     "entra_fala": 7,
+     "sai_fala": 9,
+     "fonte": "Linha 1: percepção dela. Linha 2: WSET Level 3, Systematic Approach to Tasting Wine (SAT) (a borda indica evolução, sem datar o vinho)"
+    }
+   ]
+  },
+  {
+   "id": "B10",
+   "capitulo": "A revelação",
+   "sub": "67 de 100",
+   "tema": "O placar e o gabarito vinho a vinho, até o zero da #107.",
+   "falas": [
+    {
+     "a": 1557.14,
+     "b": 1559.11,
+     "texto": "Vamos revelar os vinhos."
+    },
+    {
+     "a": 1568.44,
+     "b": 1571.13,
+     "texto": "Acertei duas uvas. Ai, meu Deus."
+    },
+    {
+     "a": 1603.8,
+     "b": 1606.59,
+     "texto": "Uma região apenas. E um país."
+    },
+    {
+     "a": 1790.66,
+     "b": 1794.29,
+     "texto": "E agora eu vou ver o que eu acertei e o que eu errei."
+    },
+    {
+     "a": 1799.12,
+     "b": 1803.29,
+     "texto": "É aquele Touriga da Iribarrem, que é maravilhoso."
+    },
+    {
+     "a": 1803.42,
+     "b": 1804.87,
+     "texto": "Eu super recomendo esse vinho."
+    },
+    {
+     "a": 1813.7,
+     "b": 1817.95,
+     "texto": "O aroma de barrica é muito presente."
+    },
+    {
+     "a": 1819.08,
+     "b": 1822.33,
+     "texto": "Mas ele não só a barrica tem, ele tem muita fruta."
+    },
+    {
+     "a": 1822.56,
+     "b": 1826.27,
+     "texto": "Ele tem uma coisa fresca também."
+    },
+    {
+     "a": 1832.96,
+     "b": 1836.11,
+     "texto": "O próximo é o Barolo, que eu acertei também, 100."
+    },
+    {
+     "a": 1836.32,
+     "b": 1837.77,
+     "texto": "Oh, é engraçado. Ah, tá."
+    },
+    {
+     "a": 1838.08,
+     "b": 1839.63,
+     "texto": "É por isso que eu tirei 67."
+    },
+    {
+     "a": 1840.18,
+     "b": 1843.93,
+     "texto": "Porque o último eu errei tudo. Tirei exatamente zero."
+    },
+    {
+     "a": 1844.44,
+     "b": 1845.65,
+     "texto": "Eu falei que era um Touriga,"
+    },
+    {
+     "a": 1845.88,
+     "b": 1847.42,
+     "texto": "era um Gamay,",
+     "nota": "tira 'era um…' repetido; 'Gamay' termina em 1847,46 s no turbo, depois do fim da transcrição"
+    },
+    {
+     "a": 1847.98,
+     "b": 1849.87,
+     "texto": "de Beaujolais, da França.",
+     "nota": "tira o 'é do…' (autocorreção)"
+    },
+    {
+     "a": 1850.26,
+     "b": 1851.83,
+     "texto": "12,5."
+    },
+    {
+     "a": 1859.18,
+     "b": 1861.63,
+     "texto": "Ele realmente não parecia muito alcoólico."
+    }
+   ],
+   "telas": [
+    {
+     "tipo": "placar",
+     "titulo": "67 / 100",
+     "linhas": [
+      "3 vinhos às cegas",
+      "uvas: 2 de 3"
+     ],
+     "entra_fala": 0,
+     "sai_fala": 2,
+     "fonte": "tela Resultado do app (1596 s)"
+    },
+    {
+     "tipo": "app",
+     "titulo": "#21 · Touriga Nacional ✓",
+     "linhas": [
+      "Reserva Touriga Nacional 2022 · Bodega Iribarrem",
+      "Bento Gonçalves (RS) · 13,5% · pela unha eu chutei 2024"
+     ],
+     "entra_fala": 3,
+     "sai_fala": 8,
+     "fonte": "gabarito do app (1797–1800 s)"
+    },
+    {
+     "tipo": "app",
+     "titulo": "#41 · Barolo ✓",
+     "linhas": [
+      "Nebbiolo · Piemonte, Itália · 14%",
+      "Barolo envelhece no mínimo 38 meses: safra 2024 só sai em 2028"
+     ],
+     "entra_fala": 9,
+     "sai_fala": 9,
+     "fonte": "gabarito do app (1825 s); Disciplinare DOCG Barolo: 38 meses (18 em madeira), venda a partir de 1º/jan do 4º ano após a colheita"
+    },
+    {
+     "tipo": "placar",
+     "titulo": "#107 · 0 pontos",
+     "linhas": [
+      "Era Gamay · Beaujolais, França · 12,5%",
+      "Eu marquei: Touriga Nacional · Douro · 14%"
+     ],
+     "entra_fala": 10,
+     "sai_fala": 17,
+     "fonte": "gabarito do app (1847–1851 s)"
+    }
+   ]
+  },
+  {
+   "id": "B11",
+   "capitulo": "O que a Gamay me ensinou",
+   "sub": "pouco tanino não é tanino zero",
+   "tema": "Por que ela descartou a Gamay: a ideia de 'tanino zero'. O teste da língua compara as duas taças.",
+   "falas": [
+    {
+     "a": 1612.98,
+     "b": 1616.19,
+     "texto": "Eu fiquei bem nessa dúvida sobre o Gamay."
+    },
+    {
+     "a": 1620.72,
+     "b": 1624.15,
+     "texto": "Nossa, mas esse aqui é um Gamay com bastante tanino, por quê?"
+    },
+    {
+     "a": 1637.32,
+     "b": 1644.73,
+     "texto": "Se não me engano, os Beaujolais são conhecidos por vinhos não tão taninosos."
+    },
+    {
+     "a": 1645.44,
+     "b": 1647.67,
+     "texto": "Esse daqui tem um tanino médio."
+    },
+    {
+     "a": 1655.66,
+     "b": 1658.07,
+     "texto": "Ele não me pareceu um Gamay, inicialmente."
+    },
+    {
+     "a": 1658.24,
+     "b": 1665.13,
+     "texto": "Eu cheguei a falar sobre ele, porque ele realmente puxa essa coisa do morango, de uma framboesa."
+    },
+    {
+     "a": 1668.32,
+     "b": 1669.58,
+     "texto": "Eu tinha na cabeça"
+    },
+    {
+     "a": 1669.78,
+     "b": 1670.84,
+     "texto": "que Gamay"
+    },
+    {
+     "a": 1673.6,
+     "b": 1675.51,
+     "texto": "tinha praticamente nada de tanino."
+    },
+    {
+     "a": 1688.84,
+     "b": 1691.99,
+     "texto": "Talvez não é que ele não tenha tanino, mas é que ele não tenha tanto tanino."
+    },
+    {
+     "a": 1692.76,
+     "b": 1694.76,
+     "texto": "Por exemplo, agora fiz o teste da língua, né?"
+    },
+    {
+     "a": 1694.76,
+     "b": 1696.13,
+     "texto": "Passei a língua no céu da boca."
+    },
+    {
+     "a": 1702.9,
+     "b": 1704.23,
+     "texto": "Me deixa a boca seca."
+    },
+    {
+     "a": 1705.6,
+     "b": 1707.09,
+     "texto": "Tá bem astringente."
+    },
+    {
+     "a": 1709.12,
+     "b": 1712.87,
+     "texto": "Vou testar a mesma coisa com o primeiro, com o Touriga."
+    },
+    {
+     "a": 1722.44,
+     "b": 1724.01,
+     "texto": "Claro que o Touriga é bem mais."
+    }
+   ],
+   "telas": [
+    {
+     "tipo": "app",
+     "titulo": "#107 era Gamay",
+     "linhas": [
+      "a uva que eu cogitei e descartei",
+      "pelo tanino"
+     ],
+     "entra_fala": 0,
+     "sai_fala": 3,
+     "fonte": "gabarito do app (1847 s)"
+    },
+    {
+     "tipo": "aula",
+     "titulo": "Gamay",
+     "linhas": [
+      "Casca fina: cor clara e transparente.",
+      "Fruta vermelha: morango, framboesa, cereja.",
+      "Acidez alta, tanino baixo. Baixo, não zero.",
+      "A uva do Beaujolais, logo ao sul da Borgonha, ao norte de Lyon."
+     ],
+     "entra_fala": 4,
+     "sai_fala": 9,
+     "fonte": "Robinson, Harding & Vouillamoz, Wine Grapes (2012); Wine Folly, Gamay e Beaujolais; WSET Level 3, Systematic Approach to Tasting Wine (SAT)"
+    },
+    {
+     "tipo": "aula",
+     "titulo": "O teste da língua",
+     "linhas": [
+      "Tanino se sente como secura: gengiva e céu da boca ásperos.",
+      "Depois do gole, passe a língua no céu da boca: quanto mais seco, mais tanino.",
+      "Compare duas taças lado a lado."
+     ],
+     "entra_fala": 10,
+     "sai_fala": 13,
+     "fonte": "WSET Level 3, Systematic Approach to Tasting Wine (SAT) (tanino: sensação de secura e aspereza). O teste é prática dela."
+    },
+    {
+     "tipo": "comparacao",
+     "titulo": "Tanino · eu senti × típico da uva",
+     "linhas": [
+      "#107 Gamay · eu senti: médio · típico: baixo",
+      "#21 Touriga · eu senti: bem mais seco · típico: alto"
+     ],
+     "entra_fala": 14,
+     "sai_fala": 15,
+     "fonte": "percepção dela; Robinson, Harding & Vouillamoz, Wine Grapes (2012)"
+    }
+   ]
+  },
+  {
+   "id": "B12",
+   "capitulo": "Quiz da degustação",
+   "sub": "8 de 10",
+   "tema": "O quiz do app fixa o que ela aprendeu sobre Gamay e Nebbiolo. Os dois erros são sobre a Nebbiolo, e o do tanino prepara o fecho.",
+   "falas": [
+    {
+     "a": 1870.74,
+     "b": 1873.11,
+     "texto": "Agora eu vou para o meu quiz de degustação."
+    },
+    {
+     "a": 1901.46,
+     "b": 1905.31,
+     "texto": "Em quais desses países a uva Gamay tem presença importante?"
+    },
+    {
+     "a": 1912.52,
+     "b": 1916.07,
+     "texto": "A Gamay é muito famosa em Borgonha, né?"
+    },
+    {
+     "a": 1916.08,
+     "b": 1917.13,
+     "texto": "Na Beaujolais."
+    },
+    {
+     "a": 1917.14,
+     "b": 1918.98,
+     "texto": "Na parte sul da Borgonha."
+    },
+    {
+     "a": 1930.62,
+     "b": 1931.87,
+     "texto": "Ah, é França, né?"
+    },
+    {
+     "a": 1936.7,
+     "b": 1940.75,
+     "texto": "Pela análise de DNA, qual dessas uvas é a mãe e pai da Gamay?"
+    },
+    {
+     "a": 1943.02,
+     "b": 1944.29,
+     "texto": "Eu ia no Pinot Noir."
+    },
+    {
+     "a": 2035.64,
+     "b": 2052.93,
+     "texto": "Olha que interessante: a Nebbiolo tem como aromas típicos a rosa, o couro, anis, alcatrão, violeta, framboesa, trufa, tabaco, ameixa seca. Então ela é muito complexa,"
+    },
+    {
+     "a": 2054.68,
+     "b": 2060.43,
+     "texto": "por isso que o Barolo é um dos principais da Itália."
+    },
+    {
+     "a": 2068.2,
+     "b": 2070.4,
+     "texto": "Tanino típico de um Barolo."
+    },
+    {
+     "a": 2070.4,
+     "b": 2072.32,
+     "texto": "Eu acho que é um médio mais."
+    }
+   ],
+   "telas": [
+    {
+     "tipo": "app",
+     "titulo": "",
+     "linhas": [],
+     "entra_fala": 0,
+     "sai_fala": 1,
+     "fonte": "tela do quiz no app (1903 s)"
+    },
+    {
+     "tipo": "aula",
+     "titulo": "Onde a Gamay brilha",
+     "linhas": [
+      "França: Beaujolais, logo ao sul da Borgonha.",
+      "Suíça: uma das tintas mais plantadas (Valais, Vaud, Genebra).",
+      "Em 1395, Filipe, o Audaz, duque da Borgonha, mandou arrancá-la para proteger a Pinot Noir."
+     ],
+     "entra_fala": 2,
+     "sai_fala": 5,
+     "fonte": "Wine Folly, Beaujolais; swisswine.com, Gamay; Wine Spectator, 'The Exile of Burgundy'"
+    },
+    {
+     "tipo": "aula",
+     "titulo": "A família da Gamay",
+     "linhas": [
+      "Pelo DNA: Pinot Noir × Gouais Blanc.",
+      "Os mesmos pais da Chardonnay."
+     ],
+     "entra_fala": 6,
+     "sai_fala": 7,
+     "fonte": "Bowers et al., Science 285 (1999), 'Historical genetics: the parentage of Chardonnay, Gamay, and other wine grapes of northeastern France'"
+    },
+    {
+     "tipo": "aula",
+     "titulo": "Nebbiolo",
+     "linhas": [
+      "Rosa e alcatrão: a assinatura clássica.",
+      "Cor clara, mas acidez e tanino altos.",
+      "É a uva do Barolo e do Barbaresco."
+     ],
+     "entra_fala": 8,
+     "sai_fala": 9,
+     "fonte": "Robinson, Harding & Vouillamoz, Wine Grapes (2012); WSET Level 3, Systematic Approach to Tasting Wine (SAT)"
+    },
+    {
+     "tipo": "placar",
+     "titulo": "Quiz: 8 de 10",
+     "linhas": [
+      "os dois erros foram na Nebbiolo",
+      "aroma: framboesa (marquei figo seco)",
+      "tanino: alto (marquei médio+)"
+     ],
+     "entra_fala": 10,
+     "sai_fala": 11,
+     "fonte": "tela do quiz no app (2015, 2078 e 2106 s)"
+    }
+   ]
+  },
+  {
+   "id": "B13",
+   "capitulo": "O que eu aprendi",
+   "sub": "a ordem das taças",
+   "tema": "Fecho: o tanino alto do Barolo, provado antes, fez a Gamay parecer tânica. A lição é a ordem de prova.",
+   "falas": [
+    {
+     "a": 2077.28,
+     "b": 2080.03,
+     "texto": "O tanino do Barolo é alto."
+    },
+    {
+     "a": 2090.04,
+     "b": 2095.13,
+     "texto": "Por isso que quando eu fui para a Gamay, me pareceu taninoso, mas não era realmente."
+    },
+    {
+     "a": 1759.94,
+     "b": 1766.44,
+     "texto": "Talvez tenha influenciado, na minha percepção, eu ter tomado vinhos mais tânicos antes."
+    },
+    {
+     "a": 1766.44,
+     "b": 1770.75,
+     "texto": "E o Beaujolais, ele não é muito tânico."
+    },
+    {
+     "a": 1869.14,
+     "b": 1870.63,
+     "texto": "Tá aí mais uma degustação."
+    }
+   ],
+   "telas": [
+    {
+     "tipo": "comparacao",
+     "titulo": "A ordem desta prova",
+     "linhas": [
+      "1ª · #21 Touriga · tanino típico: alto",
+      "2ª · #41 Barolo · tanino típico: alto",
+      "3ª · #107 Gamay · tanino típico: baixo"
+     ],
+     "entra_fala": 0,
+     "sai_fala": 1,
+     "fonte": "ordem do sorteio; perfis de tanino: Robinson, Harding & Vouillamoz, Wine Grapes (2012)"
+    },
+    {
+     "tipo": "aula",
+     "titulo": "Ordem de prova",
+     "linhas": [
+      "Do mais leve ao mais tânico.",
+      "A secura do tanino se acumula de um gole para o outro.",
+      "Na próxima, a Gamay vem primeiro."
+     ],
+     "entra_fala": 2,
+     "sai_fala": 3,
+     "fonte": "prática do WSET e de concursos; Guinard, Pangborn & Lewis, Am. J. Enol. Vitic. 37:184 (1986), adstringência em goles repetidos"
+    },
+    {
+     "tipo": "aula",
+     "titulo": "Qual uva te engana sempre?",
+     "linhas": [
+      "Ep. 01 e 02: a Touriga me enganou.",
+      "Ep. 04: eu vi Touriga onde era Gamay.",
+      "Conta nos comentários."
+     ],
+     "entra_fala": 4,
+     "sai_fala": 4,
+     "fonte": "continuidade da série"
+    }
+   ]
+  }
+ ]
+}

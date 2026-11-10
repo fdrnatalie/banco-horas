@@ -209,8 +209,10 @@ def tela_layer(tela, box):
 
 def face_tile(src, box, w, h):
     """rosto recortado; a janelinha pequena não é ampliada mais de 2x (fica nítida)."""
-    k = min(1.0, 2.0 * (box[2] - 12) / w); w2, h2 = int(w * k), int(h * k)
-    return rosto.recorte(src, box, w2, h2), (w - w2) // 2, (h - h2) // 2
+    W0, H0 = w, h
+    if box[3] > box[2] * 1.1: w, h = int(h * 0.75), h          # janela vertical: recorte 3:4, rosto inteiro
+    k = min(1.0, 2.0 * (box[2] - 12) / w, 2.0 * (box[3] - 12) / h); w2, h2 = int(w * k), int(h * k)
+    return rosto.recorte(src, box, w2, h2), (W0 - w2) // 2, (H0 - h2) // 2
 
 def compose(fr, src, tela, box, layer):
     tipo = tela.get("tipo", "app") if tela else "app"

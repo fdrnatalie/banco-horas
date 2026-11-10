@@ -1,0 +1,1401 @@
+{
+ "titulo": "A revanche da Touriga",
+ "serie": "três taças · nº 05",
+ "video": "/tmp/claude-0/-home-user-banco-horas/3d5af8d1-792d-5a42-bb7b-ae9930f28a5e/scratchpad/raw/ep05.mov",
+ "trans": "/home/user/banco-horas/tres-tacas/transcricoes/T_ep05.json",
+ "hesit": "/tmp/claude-0/-home-user-banco-horas/3d5af8d1-792d-5a42-bb7b-ae9930f28a5e/scratchpad/trans/F_ep05.json",
+ "saida": "/tmp/claude-0/-home-user-banco-horas/3d5af8d1-792d-5a42-bb7b-ae9930f28a5e/scratchpad/out/youtube_ep05_v3.mp4",
+ "fix": {
+  "toriga": "Touriga",
+  "tôrica": "Touriga",
+  "turiga": "Touriga",
+  "touriga": "Touriga",
+  "dolchetto": "Dolcetto",
+  "doutjeto": "Dolcetto",
+  "d'occeto": "Dolcetto",
+  "dolcetto": "Dolcetto",
+  "montepucciano": "Montepulciano",
+  "mateputiano": "Montepulciano",
+  "montagutiana": "Montepulciano",
+  "monteputiana": "Montepulciano",
+  "montaputiana": "Montepulciano",
+  "montepulciano": "Montepulciano",
+  "diabruzzo": "d’Abruzzo",
+  "abruzzo": "Abruzzo",
+  "gamé": "Gamay",
+  "gamay": "Gamay",
+  "nebiolo": "Nebbiolo",
+  "barbeira": "Barbera",
+  "sangiovese": "Sangiovese",
+  "governador": "Governador",
+  "primitivo": "Primitivo",
+  "saninos": "taninos",
+  "restringente": "adstringente",
+  "estringente": "adstringente",
+  "mantolado": "mentolado",
+  "violaços": "violáceos",
+  "abuticaba": "jabuticaba",
+  "teoro": "teor",
+  "arcoólico": "alcoólico",
+  "teorocólico": "teor alcoólico",
+  "teorócalico": "teor alcoólico",
+  "tarócalico": "teor alcoólico",
+  "doutido": "Dolcetto",
+  "dolceato": "Dolcetto"
+ },
+ "frases_fix": [
+  [
+   "pano no ar",
+   "Pinot Noir"
+  ],
+  [
+   "dor de tieto",
+   "Dolcetto"
+  ],
+  [
+   "monta putiana",
+   "Montepulciano"
+  ],
+  [
+   "muta butchano",
+   "Montepulciano"
+  ],
+  [
+   "eu vou no mundo",
+   "Eu vou numa Montepulciano"
+  ],
+  [
+   "montepulciano de abruzzo",
+   "Montepulciano d’Abruzzo"
+  ],
+  [
+   "da d’abruzzo",
+   "d’Abruzzo"
+  ],
+  [
+   "cabernet franco",
+   "Cabernet Franc"
+  ],
+  [
+   "de jabuticaba",
+   "jabuticaba"
+  ],
+  [
+   "de ua mais passada",
+   "uva mais passada"
+  ],
+  [
+   "cero alcoólico",
+   "teor alcoólico"
+  ],
+  [
+   "a acidez mede para menos",
+   "A acidez média pra menos"
+  ],
+  [
+   "pinot no ar",
+   "Pinot Noir"
+  ],
+  [
+   "pontoria nacional",
+   "Touriga Nacional"
+  ],
+  [
+   "essa pontoria",
+   "essa Touriga"
+  ]
+ ],
+ "destaques": [
+  "touriga",
+  "montepulciano",
+  "dolcetto",
+  "primitivo",
+  "sangiovese",
+  "governador",
+  "gamay",
+  "pinot",
+  "cabernet",
+  "nebbiolo",
+  "barbera",
+  "carvalho",
+  "menta",
+  "barrica"
+ ],
+ "cta_tela": "o app que eu uso tá na descrição",
+ "blocos": [
+  {
+   "id": "B00",
+   "capitulo": "Abertura",
+   "sub": "a uva que já me enganou volta, e desta vez em duas taças",
+   "falas": [
+    {
+     "a": 1430.58,
+     "b": 1433.61,
+     "texto": "Eu não posso errar se for Touriga Nacional."
+    },
+    {
+     "a": 2451.98,
+     "b": 2453.83,
+     "texto": "Preciso beber um vinho agora."
+    },
+    {
+     "a": 2454.68,
+     "b": 2456.07,
+     "texto": "Não acredito."
+    }
+   ],
+   "telas": [
+    {
+     "tipo": "aula",
+     "titulo": "capa",
+     "linhas": [
+      "três taças · nº 05",
+      "A revanche da Touriga",
+      "duas taças, a mesma uva?"
+     ],
+     "entra_fala": 0,
+     "sai_fala": 2
+    }
+   ]
+  },
+  {
+   "id": "B01",
+   "capitulo": "O kit",
+   "sub": "como eu monto a prova às cegas",
+   "falas": [
+    {
+     "a": 269.24,
+     "b": 270.69,
+     "texto": "Começando mais uma degustação,"
+    },
+    {
+     "a": 270.92,
+     "b": 273.33,
+     "texto": "hoje temos as garrafinhas"
+    },
+    {
+     "a": 273.95,
+     "b": 275.12,
+     "texto": "59,"
+    },
+    {
+     "a": 280.45,
+     "b": 281.34,
+     "texto": "21"
+    },
+    {
+     "a": 285.55,
+     "b": 286.69,
+     "texto": "e 124"
+    },
+    {
+     "a": 300.92,
+     "b": 302.71,
+     "texto": "nas minhas taças."
+    },
+    {
+     "a": 302.92,
+     "b": 305.15,
+     "texto": "Eu uso a taça ISO,"
+    },
+    {
+     "a": 308.54,
+     "b": 311.41,
+     "texto": "são taças específicas para fazer degustação,"
+    },
+    {
+     "a": 316.6,
+     "b": 317.43,
+     "texto": "meu copo d’água,"
+    },
+    {
+     "a": 319.35,
+     "b": 320.69,
+     "texto": "baldinho para cuspir."
+    },
+    {
+     "a": 370.35,
+     "b": 371.65,
+     "texto": "Essa tem 30 ml,"
+    },
+    {
+     "a": 374.4,
+     "b": 378.47,
+     "texto": "coloco mais ou menos metade, em torno de 15 ml. Isso me basta."
+    },
+    {
+     "a": 387.38,
+     "b": 393.01,
+     "texto": "E aí eu consigo, numa mesma garrafinha, usar para duas degustações."
+    },
+    {
+     "a": 393.34,
+     "b": 398.83,
+     "texto": "O que eu recomendo é: essas que ficam já pela metade, usar o mais rápido possível,"
+    },
+    {
+     "a": 399.48,
+     "b": 405.93,
+     "texto": "porque mesmo assim, estando bem tampadinha, ainda pode oxidar rapidamente."
+    },
+    {
+     "a": 422.48,
+     "b": 426.75,
+     "texto": "Eu sempre coloco um papelzinho branco ou alguma coisa embaixo, só para enxergar."
+    }
+   ],
+   "telas": [
+    {
+     "tipo": "comparacao",
+     "titulo": "Garrafinhas sorteadas",
+     "linhas": [
+      "#21",
+      "#59",
+      "#124"
+     ],
+     "entra_fala": 0,
+     "sai_fala": 5
+    },
+    {
+     "tipo": "aula",
+     "titulo": "O kit da prova",
+     "linhas": [
+      "a mesma taça para as três (taça ISO)",
+      "água entre as provas e cuspideira"
+     ],
+     "entra_fala": 6,
+     "sai_fala": 9
+    },
+    {
+     "tipo": "aula",
+     "titulo": "Garrafinha aberta",
+     "linhas": [
+      "30 ml por garrafinha, 15 ml por prova",
+      "meia garrafinha guarda mais ar dentro",
+      "use logo: o oxigênio muda o vinho"
+     ],
+     "entra_fala": 10,
+     "sai_fala": 14
+    },
+    {
+     "tipo": "aula",
+     "titulo": "Fundo branco",
+     "linhas": [
+      "papel branco embaixo da taça, a cor aparece de verdade"
+     ],
+     "entra_fala": 15,
+     "sai_fala": 15
+    }
+   ]
+  },
+  {
+   "id": "B02",
+   "capitulo": "A cor",
+   "sub": "intensidade, reflexos e unha",
+   "falas": [
+    {
+     "a": 435.76,
+     "b": 442.33,
+     "texto": "Ela tem uma coloração rubi, com uma intensidade de cor profunda."
+    },
+    {
+     "a": 504.22,
+     "b": 505.74,
+     "texto": "A unha,"
+    },
+    {
+     "a": 505.74,
+     "b": 510.81,
+     "texto": "me parece uma unha média, algo em torno de 2024, 2025."
+    },
+    {
+     "a": 766.44,
+     "b": 773.35,
+     "texto": "É um vinho límpido, com uma coloração rubi."
+    },
+    {
+     "a": 808.82,
+     "b": 813.41,
+     "texto": "Rubi, reflexos violáceos."
+    },
+    {
+     "a": 817.06,
+     "b": 819.85,
+     "texto": "Eu daria algo em torno de 2024."
+    },
+    {
+     "a": 1093.6,
+     "b": 1100.47,
+     "texto": "Ela realmente é também um rubi. Mais profundo. Só que ele tá um profundo mais médio."
+    },
+    {
+     "a": 1107.56,
+     "b": 1114.47,
+     "texto": "Se você comparar, por exemplo, com a taça 59, ela tem uma transparência um pouco maior."
+    },
+    {
+     "a": 1128.46,
+     "b": 1133.97,
+     "texto": "É um rubi que me lembra muito também com o primeiro rubi."
+    }
+   ],
+   "telas": [
+    {
+     "tipo": "aula",
+     "titulo": "Como ler a cor",
+     "linhas": [
+      "intensidade (pálida · média · profunda)",
+      "tonalidade (púrpura · rubi · granada · atijolada)",
+      "unha = a borda, com a taça inclinada: pista de idade"
+     ],
+     "entra_fala": 0,
+     "sai_fala": 2
+    },
+    {
+     "tipo": "comparacao",
+     "titulo": "As três taças (o que eu vi)",
+     "linhas": [
+      "#21 · rubi · profunda · unha média",
+      "#59 · rubi · profunda · reflexos violáceos",
+      "#124 · rubi · profunda puxando pra média · lembra o primeiro rubi"
+     ],
+     "entra_fala": 3,
+     "sai_fala": 8
+    }
+   ]
+  },
+  {
+   "id": "B03",
+   "capitulo": "O que a cor descarta",
+   "sub": "Gamay e Pinot Noir fora",
+   "falas": [
+    {
+     "a": 645.68,
+     "b": 648.5,
+     "texto": "Se eu pegar um Dolcetto de novo, vocês vão falar assim:"
+    },
+    {
+     "a": 648.84,
+     "b": 650.97,
+     "texto": "mas só tem Dolcetto nesse lugar?"
+    },
+    {
+     "a": 655.6,
+     "b": 658.18,
+     "texto": "O que que eu faço normalmente? Eu vou mais pela coloração."
+    },
+    {
+     "a": 658.18,
+     "b": 665.11,
+     "texto": "Se me apresentar uma intensidade baixa, ou média, eu já descarto algumas uvas."
+    },
+    {
+     "a": 668.8,
+     "b": 674.11,
+     "texto": "Por exemplo, essa aqui é uma intensidade mais profunda. Então, com certeza não é uma Gamay, não é uma Pinot Noir."
+    }
+   ],
+   "telas": [
+    {
+     "tipo": "app",
+     "titulo": "Dolcetto",
+     "linhas": [
+      "Dolcetto: meu palpite no ep.01 e no ep.02"
+     ],
+     "entra_fala": 0,
+     "sai_fala": 2
+    },
+    {
+     "tipo": "aula",
+     "titulo": "A cor já descarta uvas",
+     "linhas": [
+      "intensidade profunda tira da lista as uvas de cor clara",
+      "Gamay e Pinot Noir têm casca fina: tintos mais claros"
+     ],
+     "entra_fala": 3,
+     "sai_fala": 4
+    }
+   ]
+  },
+  {
+   "id": "B04",
+   "capitulo": "Fruta vermelha ou negra",
+   "sub": "a cor puxou a fruta",
+   "falas": [
+    {
+     "a": 597.98,
+     "b": 606.67,
+     "texto": "Às vezes a fruta, ela nem precisa ser só vermelha. Ela pode ser uma fruta negra, uma fruta branca, uma fruta de caroço."
+    },
+    {
+     "a": 607.34,
+     "b": 610.81,
+     "texto": "Tem várias formas de falar sobre a fruta em si."
+    },
+    {
+     "a": 611.5,
+     "b": 617.59,
+     "texto": "Essa aqui, em específico, ela pode ter também uma fruta negra,"
+    },
+    {
+     "a": 620.42,
+     "b": 623.43,
+     "texto": "tem também aquele frescor de uma fruta mais vermelha."
+    },
+    {
+     "a": 987.74,
+     "b": 994.45,
+     "texto": "Essa aqui eu iria mais numa fruta mais negra do que a anterior. E eu vejo isso até pela coloração."
+    },
+    {
+     "a": 1005.3,
+     "b": 1010.97,
+     "texto": "Ela tem uma coloração um pouco mais avermelhada do que essa daqui. Ambas são rubi."
+    },
+    {
+     "a": 1015.68,
+     "b": 1020.87,
+     "texto": "Mas o rubi dessa daqui é um rubi mais aberto."
+    },
+    {
+     "a": 1021.46,
+     "b": 1023.27,
+     "texto": "Então, realmente me puxa"
+    },
+    {
+     "a": 1025.78,
+     "b": 1027.83,
+     "texto": "morango, framboesa,"
+    },
+    {
+     "a": 1029.96,
+     "b": 1030.95,
+     "texto": "cranberry."
+    },
+    {
+     "a": 1033.5,
+     "b": 1036.97,
+     "texto": "Essa daqui já me puxa pra uma fruta mais negra,"
+    },
+    {
+     "a": 1037.68,
+     "b": 1039.41,
+     "texto": "tipo ameixa,"
+    },
+    {
+     "a": 1049.7,
+     "b": 1051.29,
+     "texto": "jabuticaba."
+    }
+   ],
+   "telas": [
+    {
+     "tipo": "aula",
+     "titulo": "Famílias de fruta",
+     "linhas": [
+      "vermelha (morango, framboesa, cranberry)",
+      "negra (ameixa, cassis, jabuticaba)",
+      "nos brancos (cítricas, de caroço, tropicais)"
+     ],
+     "entra_fala": 0,
+     "sai_fala": 3
+    },
+    {
+     "tipo": "comparacao",
+     "titulo": "Eu senti: a cor puxou a fruta",
+     "linhas": [
+      "#21 · rubi mais aberto · morango, framboesa, cranberry",
+      "#59 · rubi menos avermelhado · ameixa, jabuticaba",
+      "é uma pista minha · não uma regra"
+     ],
+     "entra_fala": 4,
+     "sai_fala": 12
+    }
+   ]
+  },
+  {
+   "id": "B05",
+   "capitulo": "O nariz das três",
+   "sub": "madeira, estábulo e ordem de prova",
+   "falas": [
+    {
+     "a": 1244.76,
+     "b": 1247.79,
+     "texto": "Tá confuso porque todas se parecem muito. Todas as três."
+    },
+    {
+     "a": 1254.8,
+     "b": 1259.55,
+     "texto": "Então, eu poderia ter tanto um Dolcetto, quanto um Primitivo, quanto uma Touriga Nacional."
+    },
+    {
+     "a": 1260.92,
+     "b": 1264.15,
+     "texto": "Mas eu poderia ter também um Montepulciano d’Abruzzo."
+    },
+    {
+     "a": 1280.98,
+     "b": 1284.05,
+     "texto": "Nenhum aroma me soltou diferenciando uma da outra."
+    },
+    {
+     "a": 1284.26,
+     "b": 1285.37,
+     "texto": "Fui nas frutas."
+    },
+    {
+     "a": 1285.72,
+     "b": 1287.77,
+     "texto": "Realmente, os três são bem frutados."
+    },
+    {
+     "a": 1289.68,
+     "b": 1298.03,
+     "texto": "Essa aqui me puxou uma madeira agora. Um carvalho. Nossa, bastante carvalho."
+    },
+    {
+     "a": 1314.62,
+     "b": 1316.13,
+     "texto": "Essa segunda já não tem."
+    },
+    {
+     "a": 1317.44,
+     "b": 1319.19,
+     "texto": "É um vinho mais frutado."
+    },
+    {
+     "a": 1346.14,
+     "b": 1352.05,
+     "texto": "Essa última puxa agora uma coisa mais estábulo, sabe?"
+    },
+    {
+     "a": 1362.84,
+     "b": 1364.81,
+     "texto": "Eu vou sentir na boca agora."
+    },
+    {
+     "a": 1366.16,
+     "b": 1367.69,
+     "texto": "Eu vou começar pela última."
+    },
+    {
+     "a": 1370.5,
+     "b": 1373.99,
+     "texto": "A última eu achei que tem menos teor alcoólico."
+    },
+    {
+     "a": 1375.72,
+     "b": 1380.51,
+     "texto": "E essa daqui, que é a primeira, ela tem barrica."
+    },
+    {
+     "a": 1380.58,
+     "b": 1383.83,
+     "texto": "Então, se eu usar ela agora, ela talvez interfira"
+    },
+    {
+     "a": 1386.06,
+     "b": 1388.79,
+     "texto": "nos meus sentidos."
+    }
+   ],
+   "telas": [
+    {
+     "tipo": "app",
+     "titulo": "Candidatas",
+     "linhas": [
+      "na mesa: Dolcetto · Primitivo · Touriga · Montepulciano"
+     ],
+     "entra_fala": 0,
+     "sai_fala": 2
+    },
+    {
+     "tipo": "comparacao",
+     "titulo": "O nariz das três (eu senti)",
+     "linhas": [
+      "#21 · madeira, muito carvalho",
+      "#59 · fruta, sem madeira",
+      "#124 · estábulo, suor, animal"
+     ],
+     "entra_fala": 3,
+     "sai_fala": 9
+    },
+    {
+     "tipo": "aula",
+     "titulo": "Ordem de prova",
+     "linhas": [
+      "do vinho mais leve para o mais estruturado",
+      "a taça com barrica fica por último",
+      "assim o paladar cansa menos"
+     ],
+     "entra_fala": 10,
+     "sai_fala": 15
+    }
+   ]
+  },
+  {
+   "id": "B06",
+   "capitulo": "#124 na boca",
+   "sub": "a menta",
+   "falas": [
+    {
+     "a": 1456.7,
+     "b": 1459.35,
+     "texto": "Ele puxa algo do mentolado."
+    },
+    {
+     "a": 1459.42,
+     "b": 1465.91,
+     "texto": "Não vou descartar, mas poderia também ser um Cabernet Franc."
+    },
+    {
+     "a": 1509.18,
+     "b": 1511.15,
+     "texto": "Ele tem algo de pimenta-do-reino."
+    },
+    {
+     "a": 1513.5,
+     "b": 1514.97,
+     "texto": "Apareceu bastante para mim agora."
+    },
+    {
+     "a": 1560.52,
+     "b": 1562.63,
+     "texto": "Uma geleia."
+    },
+    {
+     "a": 1592.38,
+     "b": 1599.17,
+     "texto": "Ela realmente me parece Touriga. Não quero errar mais uma vez."
+    },
+    {
+     "a": 1673.44,
+     "b": 1677.69,
+     "texto": "Se for um Touriga Nacional, eu vou ficar muito chateada se eu não acertar."
+    },
+    {
+     "a": 1705.96,
+     "b": 1707.91,
+     "texto": "Tem a acidez média."
+    },
+    {
+     "a": 1709.24,
+     "b": 1713.73,
+     "texto": "Tem taninos médios. Pra mais."
+    },
+    {
+     "a": 1714.0,
+     "b": 1716.67,
+     "texto": "Tem um álcool médio pra mais."
+    },
+    {
+     "a": 1735.62,
+     "b": 1736.89,
+     "texto": "Vou colocar alto."
+    },
+    {
+     "a": 1738.1,
+     "b": 1740.89,
+     "texto": "Corpo médio."
+    }
+   ],
+   "telas": [
+    {
+     "tipo": "aula",
+     "titulo": "Minha pista desde o ep.02",
+     "linhas": [
+      "menta me lembra Touriga",
+      "o Cabernet Franc entrou na dúvida"
+     ],
+     "entra_fala": 0,
+     "sai_fala": 4
+    },
+    {
+     "tipo": "app",
+     "titulo": "Continuidade",
+     "linhas": [
+      "ep.01: o Governador me enganou",
+      "ep.04: chutei Touriga num Gamay"
+     ],
+     "entra_fala": 5,
+     "sai_fala": 6
+    },
+    {
+     "tipo": "app",
+     "titulo": "#124 na boca (eu senti)",
+     "linhas": [
+      "acidez média · tanino médio+",
+      "álcool alto · corpo médio"
+     ],
+     "entra_fala": 7,
+     "sai_fala": 11
+    }
+   ]
+  },
+  {
+   "id": "B07",
+   "capitulo": "#59 na boca",
+   "sub": "Montepulciano por exclusão",
+   "falas": [
+    {
+     "a": 1790.04,
+     "b": 1794.97,
+     "texto": "Essa aqui me parece mais mortinha de aroma. Não tem uma intensidade muito alta."
+    },
+    {
+     "a": 1834.96,
+     "b": 1836.57,
+     "texto": "Ela é bem adstringente."
+    },
+    {
+     "a": 1861.46,
+     "b": 1867.09,
+     "texto": "Ela me parece um italiano. Por quê? Porque tem um aroma característico,"
+    },
+    {
+     "a": 1867.34,
+     "b": 1872.17,
+     "texto": "uva mais passada."
+    },
+    {
+     "a": 1895.9,
+     "b": 1898.85,
+     "texto": "A acidez média pra menos."
+    },
+    {
+     "a": 1901.02,
+     "b": 1904.59,
+     "texto": "Mas os taninos são bem potentes."
+    },
+    {
+     "a": 1918.74,
+     "b": 1921.79,
+     "texto": "Fruta em compota. Geleia."
+    },
+    {
+     "a": 2003.62,
+     "b": 2008.17,
+     "texto": "Mas eu tô indo muito numa Montepulciano."
+    },
+    {
+     "a": 2010.9,
+     "b": 2011.87,
+     "texto": "Por quê?"
+    },
+    {
+     "a": 2016.0,
+     "b": 2018.33,
+     "texto": "O que não deve ser, das coisas que eu tenho."
+    },
+    {
+     "a": 2021.28,
+     "b": 2024.17,
+     "texto": "Eu tenho uma noção do que pode ser e o que não pode ser."
+    },
+    {
+     "a": 2139.72,
+     "b": 2141.03,
+     "texto": "Eu não iria"
+    },
+    {
+     "a": 2141.12,
+     "b": 2143.09,
+     "texto": "num Dolcetto nela."
+    },
+    {
+     "a": 2144.8,
+     "b": 2147.17,
+     "texto": "Não é um Nebbiolo, nem uma Barbera."
+    },
+    {
+     "a": 2148.7,
+     "b": 2150.79,
+     "texto": "Não acredito ser um Primitivo."
+    },
+    {
+     "a": 2157.22,
+     "b": 2162.78,
+     "texto": "Meio uma coisa de pão molhado. Uma coisa diferente nela."
+    },
+    {
+     "a": 2162.78,
+     "b": 2166.87,
+     "texto": "Eu vou numa Montepulciano. Vou me arriscar."
+    }
+   ],
+   "telas": [
+    {
+     "tipo": "app",
+     "titulo": "#59 na boca (eu senti)",
+     "linhas": [
+      "pouca intensidade · adstringente",
+      "taninos potentes · compota"
+     ],
+     "entra_fala": 0,
+     "sai_fala": 7
+    },
+    {
+     "tipo": "aula",
+     "titulo": "Transparência",
+     "linhas": [
+      "eu comparo com as garrafinhas da minha adega",
+      "22 vinhos cadastrados no app"
+     ],
+     "entra_fala": 8,
+     "sai_fala": 10
+    },
+    {
+     "tipo": "aula",
+     "titulo": "Dedução por exclusão",
+     "linhas": [
+      "Dolcetto · Nebbiolo · Barbera · Primitivo riscados",
+      "sobra a Montepulciano"
+     ],
+     "entra_fala": 11,
+     "sai_fala": 16
+    }
+   ]
+  },
+  {
+   "id": "B08",
+   "capitulo": "A dedução",
+   "sub": "mesma cor, outra madeira",
+   "falas": [
+    {
+     "a": 2047.18,
+     "b": 2049.01,
+     "texto": "Ela tem muita madeira."
+    },
+    {
+     "a": 2104.36,
+     "b": 2109.57,
+     "texto": "Lembra que eu falei que esses dois me pareciam muito iguais em relação à cor?"
+    },
+    {
+     "a": 2112.5,
+     "b": 2116.52,
+     "texto": "Eles são diferentes, mas só na questão da madeira."
+    },
+    {
+     "a": 2116.52,
+     "b": 2124.19,
+     "texto": "Ou seja, esse aqui passou por carvalho. E esse aqui não me parece. Ou se passou, foi muito pouco."
+    },
+    {
+     "a": 2125.76,
+     "b": 2128.97,
+     "texto": "Eu acho que talvez elas sejam a mesma uva."
+    },
+    {
+     "a": 2172.94,
+     "b": 2175.73,
+     "texto": "Framboesa, morango."
+    },
+    {
+     "a": 2184.3,
+     "b": 2188.41,
+     "texto": "Tem um hortelãzinho. Uma menta. Um eucalipto."
+    },
+    {
+     "a": 2191.56,
+     "b": 2193.49,
+     "texto": "Carvalho, com certeza."
+    },
+    {
+     "a": 2245.26,
+     "b": 2247.21,
+     "texto": "Essa aqui eu vou chutar. Touriga."
+    },
+    {
+     "a": 2325.04,
+     "b": 2327.93,
+     "texto": "Vou pra 124, só porque é a mesma coisa."
+    },
+    {
+     "a": 2342.24,
+     "b": 2342.87,
+     "texto": "Portugal."
+    },
+    {
+     "a": 2379.82,
+     "b": 2383.25,
+     "texto": "A do meio eu vou colocar um Montepulciano."
+    }
+   ],
+   "telas": [
+    {
+     "tipo": "aula",
+     "titulo": "O que a barrica dá",
+     "linhas": [
+      "aromas de carvalho (baunilha, cravo, coco, tosta, defumado, cedro)",
+      "a uva continua a mesma"
+     ],
+     "entra_fala": 0,
+     "sai_fala": 0
+    },
+    {
+     "tipo": "comparacao",
+     "titulo": "#21 × #124",
+     "linhas": [
+      "#21 · mesma cor · carvalho",
+      "#124 · mesma cor · sem madeira, ou muito pouca",
+      "mesma uva?"
+     ],
+     "entra_fala": 1,
+     "sai_fala": 4
+    },
+    {
+     "tipo": "app",
+     "titulo": "#21 também tem menta",
+     "linhas": [
+      "#21: framboesa, morango, hortelã, eucalipto, carvalho"
+     ],
+     "entra_fala": 5,
+     "sai_fala": 7
+    },
+    {
+     "tipo": "placar",
+     "titulo": "Meus chutes",
+     "linhas": [
+      "#21 Touriga Nacional, Brasil",
+      "#124 Touriga Nacional, Portugal",
+      "#59 Montepulciano, Itália"
+     ],
+     "entra_fala": 8,
+     "sai_fala": 11
+    }
+   ]
+  },
+  {
+   "id": "B09",
+   "capitulo": "A revelação",
+   "sub": "3 de 3 uvas",
+   "falas": [
+    {
+     "a": 2451.98,
+     "b": 2453.83,
+     "texto": "Preciso beber um vinho agora."
+    },
+    {
+     "a": 2454.68,
+     "b": 2456.07,
+     "texto": "Não acredito."
+    },
+    {
+     "a": 2456.5,
+     "b": 2458.49,
+     "texto": "Caraca, errei um ponto só."
+    },
+    {
+     "a": 2499.44,
+     "b": 2502.17,
+     "texto": "Mas ela realmente deu essa coisa"
+    },
+    {
+     "a": 2503.0,
+     "b": 2503.91,
+     "texto": "mentolada"
+    },
+    {
+     "a": 2504.32,
+     "b": 2505.17,
+     "texto": "da Touriga,"
+    },
+    {
+     "a": 2506.68,
+     "b": 2510.63,
+     "texto": "que eu poderia facilmente ter confundido com o Cabernet Franc também."
+    },
+    {
+     "a": 2540.86,
+     "b": 2543.29,
+     "texto": "O segundo foi o Montepulciano d’Abruzzo."
+    },
+    {
+     "a": 2546.44,
+     "b": 2551.75,
+     "texto": "Me pareceu um italiano, só que não me pareceu os italianos que eu já estudava antes."
+    },
+    {
+     "a": 2551.86,
+     "b": 2555.85,
+     "texto": "É a primeira vez que eu pego essa garrafinha. E realmente foi um chute."
+    },
+    {
+     "a": 2587.88,
+     "b": 2590.95,
+     "texto": "E o Governador, graças a Deus, acertei."
+    },
+    {
+     "a": 2591.1,
+     "b": 2593.85,
+     "texto": "E o maldito Governador, Touriga Nacional."
+    },
+    {
+     "a": 2613.98,
+     "b": 2615.57,
+     "texto": "Eu sei que a safra dele é em 2023."
+    },
+    {
+     "a": 2617.62,
+     "b": 2618.69,
+     "texto": "Mas pela"
+    },
+    {
+     "a": 2619.64,
+     "b": 2622.93,
+     "texto": "unha, não me parece em 2023. Me parece um pouco mais jovem."
+    }
+   ],
+   "telas": [
+    {
+     "tipo": "placar",
+     "titulo": "Resultado",
+     "linhas": [
+      "3 de 3 uvas",
+      "99/100 no app",
+      "a #21 contou só a uva (a ficha estava incompleta)"
+     ],
+     "entra_fala": 0,
+     "sai_fala": 2
+    },
+    {
+     "tipo": "app",
+     "titulo": "#21",
+     "linhas": [
+      "Reserva Touriga Nacional 2022 · Bodega Iribarrem",
+      "Bento Gonçalves (RS) · 13,5% · a mesma do ep.04"
+     ],
+     "entra_fala": 3,
+     "sai_fala": 5
+    },
+    {
+     "tipo": "aula",
+     "titulo": "Touriga Nacional",
+     "linhas": [
+      "aromas típicos (mirtilo, violeta, ameixa, menta)",
+      "tinto encorpado, de tanino alto",
+      "casta símbolo do Douro e do Dão"
+     ],
+     "entra_fala": 6,
+     "sai_fala": 6
+    },
+    {
+     "tipo": "app",
+     "titulo": "#59",
+     "linhas": [
+      "Montepulciano d’Abruzzo · Duca di Saragnano",
+      "Abruzzo, Itália · 13,5%"
+     ],
+     "entra_fala": 7,
+     "sai_fala": 9
+    },
+    {
+     "tipo": "app",
+     "titulo": "#124",
+     "linhas": [
+      "Governador 2023 · Douro, Portugal",
+      "Touriga Nacional · 14% · o mesmo do ep.01"
+     ],
+     "entra_fala": 10,
+     "sai_fala": 11
+    },
+    {
+     "tipo": "aula",
+     "titulo": "A unha dá uma faixa, não o ano",
+     "linhas": [
+      "#21, pela unha 2024/25, no rótulo 2022",
+      "#124, lembrei 2023 pela adega, a unha dizia mais jovem",
+      "vinho jovem de 1 a 3 anos tem borda parecida"
+     ],
+     "entra_fala": 12,
+     "sai_fala": 14
+    }
+   ]
+  },
+  {
+   "id": "B10",
+   "capitulo": "Lágrima × boca",
+   "sub": "por que eu errei o teor",
+   "falas": [
+    {
+     "a": 485.76,
+     "b": 492.95,
+     "texto": "Ela tem uma lágrima média para alta, acho que é até um vinho um pouco mais alcoólico."
+    },
+    {
+     "a": 497.86,
+     "b": 501.23,
+     "texto": "Entre 14% e 14,5, chutaria."
+    },
+    {
+     "a": 883.02,
+     "b": 887.29,
+     "texto": "Só pra vocês terem uma ideia: desde o tempo que eu girei a taça, ela ainda tá escorrendo."
+    },
+    {
+     "a": 896.58,
+     "b": 900.45,
+     "texto": "Eu até posso falar já um 15%."
+    },
+    {
+     "a": 919.38,
+     "b": 925.43,
+     "texto": "Ó, tô vendo a mesma lágrima caindo em ambas. Elas me parecem muito parecidas."
+    },
+    {
+     "a": 1145.12,
+     "b": 1151.83,
+     "texto": "Me parece uma lágrima um pouco mais rápida."
+    },
+    {
+     "a": 1187.12,
+     "b": 1194.01,
+     "texto": "Como eu acho que talvez não chegue a 15%, vou colocar 14,5 nessas e 14 nessa."
+    },
+    {
+     "a": 2531.22,
+     "b": 2534.45,
+     "texto": "Caramba, eu achei que era bem mais. Eu coloquei 14,5."
+    },
+    {
+     "a": 2583.1,
+     "b": 2584.81,
+     "texto": "Eu sou ótima com teor alcoólico."
+    },
+    {
+     "a": 2608.18,
+     "b": 2609.61,
+     "texto": "O teor alcoólico de 14%."
+    },
+    {
+     "a": 1969.48,
+     "b": 1971.77,
+     "texto": "Um álcool médio."
+    },
+    {
+     "a": 2227.06,
+     "b": 2228.83,
+     "texto": "Álcool alto."
+    }
+   ],
+   "telas": [
+    {
+     "tipo": "comparacao",
+     "titulo": "Lágrima × rótulo",
+     "linhas": [
+      "#21 · lágrima média-alta · chute 14,5% · rótulo 13,5%",
+      "#59 · lágrima lenta · 15% e depois 14,5% · rótulo 13,5%",
+      "#124 · lágrima mais rápida · 14% · rótulo 14%"
+     ],
+     "entra_fala": 0,
+     "sai_fala": 8
+    },
+    {
+     "tipo": "aula",
+     "titulo": "O que a lágrima mostra",
+     "linhas": [
+      "vem da evaporação do álcool na parede da taça",
+      "açúcar, temperatura e a própria taça mudam o desenho",
+      "é pista, não régua: o número está no rótulo"
+     ],
+     "entra_fala": 9,
+     "sai_fala": 9
+    },
+    {
+     "tipo": "aula",
+     "titulo": "Na escola, o álcool se mede na boca",
+     "linhas": [
+      "escala: baixo menor que 11% · médio 11–13,9% · alto 14% ou mais",
+      "boca: #124 alto (14%) · #59 médio (13,5%) · #21 alto (era 13,5%)",
+      "lágrima acertou 1 de 3, boca acertou 2 de 3"
+     ],
+     "entra_fala": 10,
+     "sai_fala": 11
+    }
+   ]
+  },
+  {
+   "id": "B11",
+   "capitulo": "Quiz",
+   "sub": "9 de 10",
+   "falas": [
+    {
+     "a": 2641.78,
+     "b": 2648.45,
+     "texto": "De qual região era a garrafinha 59? Era d’Abruzzo, da Itália."
+    },
+    {
+     "a": 2651.14,
+     "b": 2655.99,
+     "texto": "Qual era a uva principal da garrafinha 59? Montepulciano."
+    },
+    {
+     "a": 2729.8,
+     "b": 2732.47,
+     "texto": "De qual região era a garrafinha número 21?"
+    },
+    {
+     "a": 2733.52,
+     "b": 2734.53,
+     "texto": "Bento Gonçalves."
+    },
+    {
+     "a": 2735.98,
+     "b": 2738.65,
+     "texto": "Qual é o corpo típico de uma Touriga Nacional?"
+    },
+    {
+     "a": 2738.92,
+     "b": 2740.81,
+     "texto": "O corpo é um corpo médio,"
+    },
+    {
+     "a": 2742.52,
+     "b": 2743.79,
+     "texto": "eu errei isso da outra vez."
+    },
+    {
+     "a": 2746.34,
+     "b": 2747.13,
+     "texto": "Oh, não!"
+    },
+    {
+     "a": 2749.24,
+     "b": 2749.99,
+     "texto": "Encorpado?"
+    }
+   ],
+   "telas": [
+    {
+     "tipo": "app",
+     "titulo": "Perguntas do quiz",
+     "linhas": [],
+     "entra_fala": 0,
+     "sai_fala": 7
+    },
+    {
+     "tipo": "placar",
+     "titulo": "Quiz do app: 9 de 10",
+     "linhas": [
+      "o único erro: o corpo da Touriga"
+     ],
+     "entra_fala": 8,
+     "sai_fala": 8
+    },
+    {
+     "tipo": "aula",
+     "titulo": "Touriga Nacional é encorpada",
+     "linhas": [
+      "tinto encorpado, de tanino alto",
+      "na #124 eu marquei corpo médio"
+     ],
+     "entra_fala": 8,
+     "sai_fala": 8
+    }
+   ]
+  },
+  {
+   "id": "B12",
+   "capitulo": "Montepulciano × Sangiovese",
+   "sub": "o que eu aprendi",
+   "falas": [
+    {
+     "a": 2667.06,
+     "b": 2669.29,
+     "texto": "A Montepulciano costuma ser confundida…"
+    },
+    {
+     "a": 2671.54,
+     "b": 2673.63,
+     "texto": "Então, pode ser uma Sangiovese."
+    },
+    {
+     "a": 2678.24,
+     "b": 2681.85,
+     "texto": "Mas a Sangiovese, ela não pareceu tanto,"
+    },
+    {
+     "a": 2681.88,
+     "b": 2684.73,
+     "texto": "porque a Sangiovese tem uma coloração também um pouco mais avermelhada."
+    },
+    {
+     "a": 2969.2,
+     "b": 2975.61,
+     "texto": "Aqui tem uma comparação entre a Montepulciano e a Sangiovese, que pode ser confundida."
+    },
+    {
+     "a": 2976.1,
+     "b": 2980.13,
+     "texto": "E um dos aromas encontrados na Montepulciano é tomilho."
+    },
+    {
+     "a": 3001.22,
+     "b": 3004.81,
+     "texto": "É engraçado que terra molhada teve na Sangiovese."
+    },
+    {
+     "a": 2556.26,
+     "b": 2559.45,
+     "texto": "Vou até agora pesquisar mais sobre a uva Montepulciano."
+    },
+    {
+     "a": 3011.18,
+     "b": 3013.65,
+     "texto": "Então, eu vou fazer uma pesquisa melhor e saber."
+    },
+    {
+     "a": 2631.52,
+     "b": 2632.35,
+     "texto": "Arrasamos."
+    }
+   ],
+   "telas": [
+    {
+     "tipo": "aula",
+     "titulo": "Por que confundem",
+     "linhas": [
+      "Montepulciano também é uma cidade da Toscana",
+      "o Vino Nobile di Montepulciano é Sangiovese (mínimo 70%)",
+      "a uva Montepulciano é outra, do Abruzzo"
+     ],
+     "entra_fala": 0,
+     "sai_fala": 1
+    },
+    {
+     "tipo": "comparacao",
+     "titulo": "Montepulciano × Sangiovese",
+     "linhas": [
+      "Montepulciano · cor profunda · ameixa, amora, tomilho seco · Abruzzo",
+      "Sangiovese · menos pigmento, mais transparente · Toscana",
+      "eu distingo · pela cor"
+     ],
+     "entra_fala": 2,
+     "sai_fala": 3
+    },
+    {
+     "tipo": "app",
+     "titulo": "Ficha do app",
+     "linhas": [
+      "eu senti pão molhado",
+      "na ficha: tomilho na Montepulciano, terra molhada na Sangiovese"
+     ],
+     "entra_fala": 4,
+     "sai_fala": 8
+    },
+    {
+     "tipo": "aula",
+     "titulo": "Convite",
+     "linhas": [
+      "Qual das três você teria chutado?",
+      "Conta nos comentários.",
+      "As fichas das uvas são do app de estudo que eu uso e recomendo."
+     ],
+     "entra_fala": 9,
+     "sai_fala": 9
+    }
+   ]
+  }
+ ]
+}

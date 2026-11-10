@@ -1,0 +1,1534 @@
+{
+ "titulo": "A Touriga de novo",
+ "serie": "três taças · nº 02",
+ "video": "/tmp/claude-0/-home-user-banco-horas/3d5af8d1-792d-5a42-bb7b-ae9930f28a5e/scratchpad/raw/ep02.mov",
+ "trans": "/home/user/banco-horas/tres-tacas/transcricoes/T_ep02.json",
+ "hesit": "/tmp/claude-0/-home-user-banco-horas/3d5af8d1-792d-5a42-bb7b-ae9930f28a5e/scratchpad/trans/F_ep02.json",
+ "saida": "/tmp/claude-0/-home-user-banco-horas/3d5af8d1-792d-5a42-bb7b-ae9930f28a5e/scratchpad/out/youtube_ep02_v2.mp4",
+ "fix": {
+  "toriga": "Touriga",
+  "torica": "Touriga",
+  "touriga": "Touriga",
+  "douteto": "Dolcetto",
+  "ducheto": "Dolcetto",
+  "dottieto": "Dolcetto",
+  "dolceto": "Dolcetto",
+  "dolcetto": "Dolcetto",
+  "nebiolo": "Nebbiolo",
+  "nebbiolo": "Nebbiolo",
+  "agliânico": "Aglianico",
+  "aglianico": "Aglianico",
+  "barolo": "Barolo",
+  "barola": "Barolo",
+  "frank": "Franc",
+  "orrando": "errando",
+  "teoro": "teor",
+  "erbácio": "herbáceo",
+  "primitivo": "Primitivo",
+  "tentaninos": "têm taninos",
+  "alarejado": "alaranjado",
+  "framuês": "framboesa",
+  "governador": "Governador",
+  "puglia": "Puglia",
+  "piemonte": "Piemonte"
+ },
+ "frases_fix": [
+  [
+   "básico louco",
+   "Basco Loco"
+  ],
+  [
+   "basco louco",
+   "Basco Loco"
+  ],
+  [
+   "barbera dash",
+   "Barbera d'Asti"
+  ],
+  [
+   "foquinha nacional",
+   "Touriga Nacional"
+  ],
+  [
+   "ter o alcoólico",
+   "teor alcoólico"
+  ],
+  [
+   "bruta em cor clara",
+   "Cor clara"
+  ],
+  [
+   "cabernet frank",
+   "Cabernet Franc"
+  ]
+ ],
+ "destaques": [
+  "touriga",
+  "menta",
+  "barolo",
+  "primitivo",
+  "dolcetto",
+  "nebbiolo",
+  "franc",
+  "chocolate",
+  "tabaco",
+  "aglianico",
+  "governador",
+  "lágrima",
+  "amêndoa"
+ ],
+ "cta_tela": "o app que eu uso está na descrição",
+ "blocos": [
+  {
+   "id": "B00",
+   "capitulo": "Abertura",
+   "sub": "a mesma pegadinha",
+   "tema": "Gancho: o mesmo Governador do ep.01 volta às cegas e ela já sabe que pode cair de novo.",
+   "falas": [
+    {
+     "a": 1064.6,
+     "b": 1067.01,
+     "texto": "Tá, é a mesma pegadinha da anterior."
+    },
+    {
+     "a": 1743.26,
+     "b": 1745.55,
+     "texto": "Não consigo acertar nunca essa uva."
+    }
+   ],
+   "telas": [
+    {
+     "tipo": "app",
+     "titulo": "garrafa #134 · às cegas",
+     "linhas": [
+      "o vinho que me enganou no ep.01"
+     ],
+     "entra_fala": 0,
+     "sai_fala": 0,
+     "fonte": "plano_estrategia.md (ep.01: Governador passou por Primitivo, 12 pontos) + resultado do app em 1745 s"
+    },
+    {
+     "tipo": "aula",
+     "titulo": "capa",
+     "linhas": [
+      "três taças · nº 02",
+      "a Touriga de novo",
+      "o mesmo vinho, a mesma pegadinha"
+     ],
+     "entra_fala": 1,
+     "sai_fala": 1,
+     "fonte": "identidade da série"
+    }
+   ]
+  },
+  {
+   "id": "B01",
+   "capitulo": "A cor",
+   "sub": "o primeiro olhar já separa",
+   "tema": "Visual: como ler a cor contra o papel branco, e por que a cor da #43 já grita Barolo.",
+   "falas": [
+    {
+     "a": 659.74,
+     "b": 662.34,
+     "texto": "Minha próxima é a"
+    },
+    {
+     "a": 665.01,
+     "b": 666.11,
+     "texto": "43."
+    },
+    {
+     "a": 668.31,
+     "b": 670.24,
+     "texto": "Olha a coloração desse vinho."
+    },
+    {
+     "a": 670.26,
+     "b": 671.57,
+     "texto": "Bem diferente."
+    },
+    {
+     "a": 671.66,
+     "b": 672.55,
+     "texto": "Ele já me lembra"
+    },
+    {
+     "a": 675.7,
+     "b": 676.73,
+     "texto": "um Barolo."
+    },
+    {
+     "a": 685.19,
+     "b": 690.69,
+     "texto": "Essa coisa meio Itália, assim, que tem um rubi mais pro tomate."
+    },
+    {
+     "a": 693.32,
+     "b": 694.73,
+     "texto": "Claro que não é generalizando, mas"
+    },
+    {
+     "a": 695.34,
+     "b": 696.51,
+     "texto": "me dá essa percepção."
+    },
+    {
+     "a": 705.8,
+     "b": 711.75,
+     "texto": "Mas pode também ser um Barbera d'Asti, alguma dessa região de Piemonte."
+    },
+    {
+     "a": 735.7,
+     "b": 738.78,
+     "texto": "Ele ainda não chega a ser um granada, mas ele é um rubi"
+    },
+    {
+     "a": 739.46,
+     "b": 740.95,
+     "texto": "com reflexos granada."
+    },
+    {
+     "a": 1105.76,
+     "b": 1106.18,
+     "texto": "De"
+    },
+    {
+     "a": 1106.77,
+     "b": 1110.67,
+     "texto": "coloração, límpido, profundo."
+    },
+    {
+     "a": 1112.56,
+     "b": 1116.52,
+     "texto": "Você consegue ver a coloração dele, se é"
+    },
+    {
+     "a": 1117.02,
+     "b": 1122.25,
+     "texto": "a intensidade da cor mais clara, mais média ou mais profunda."
+    },
+    {
+     "a": 1123.72,
+     "b": 1128.05,
+     "texto": "Tonalidade, ele é um rubi. Um rubi bem fechadão."
+    },
+    {
+     "a": 1128.68,
+     "b": 1135.92,
+     "texto": "E aí a gente aponta para o nosso papel branco e vê o reflexo nele."
+    },
+    {
+     "a": 1135.94,
+     "b": 1145.53,
+     "texto": "Ele me parece ser um reflexo mais violáceo mesmo."
+    }
+   ],
+   "telas": [
+    {
+     "tipo": "aula",
+     "titulo": "#43 · a cor",
+     "linhas": [
+      "eu vi: rubi puxando para o tomate",
+      "reflexo granada, intensidade média",
+      "meu palpite pela cor: Barolo"
+     ],
+     "entra_fala": 0,
+     "sai_fala": 11,
+     "fonte": "percepção dela (eu senti), sem afirmação técnica; ficha Visual do app (727–741 s)"
+    },
+    {
+     "tipo": "aula",
+     "titulo": "por que a cor ajuda no Nebbiolo",
+     "linhas": [
+      "a uva tem pouco pigmento: cor clara, translúcida",
+      "a borda puxa para granada e alaranjado",
+      "cor clara, mas tanino e acidez altos"
+     ],
+     "entra_fala": 10,
+     "sai_fala": 11,
+     "fonte": "Jancis Robinson, Nebbiolo (jancisrobinson.com/learn/grape-varieties/red/nebbiolo); Wine Folly, Barolo, Barbaresco e os outros Nebbiolos"
+    },
+    {
+     "tipo": "aula",
+     "titulo": "o visual em 4 olhares",
+     "linhas": [
+      "limpidez: límpido ou turvo",
+      "intensidade: clara, média ou profunda",
+      "tonalidade: rubi, granada, violáceo",
+      "reflexo: a borda da cor contra o papel branco"
+     ],
+     "entra_fala": 12,
+     "sai_fala": 17,
+     "fonte": "WSET Nível 3, Systematic Approach to Tasting (aparência); campos da etapa Visual do app"
+    },
+    {
+     "tipo": "comparacao",
+     "titulo": "as três cores (eu vi)",
+     "linhas": [
+      "#13 · rubi · cor profunda",
+      "#43 · rubi com reflexo granada · intensidade média",
+      "#134 · rubi bem fechado · reflexo violáceo"
+     ],
+     "entra_fala": 18,
+     "sai_fala": 18,
+     "fonte": "percepção dela (eu senti), sem afirmação técnica (falas em 125–136, 735–741 e 1123–1145 s)"
+    }
+   ]
+  },
+  {
+   "id": "B02",
+   "capitulo": "O nariz",
+   "sub": "os aromas abrem com o tempo",
+   "tema": "Nariz da #13: a primeira impressão é só fruta; o vinho gelado ainda está fechado. Hipótese Dolcetto pela amêndoa.",
+   "falas": [
+    {
+     "a": 217.28,
+     "b": 220.81,
+     "texto": "Eu já vou marcando o que vem na cabeça da primeira vez."
+    },
+    {
+     "a": 221.02,
+     "b": 226.13,
+     "texto": "Sempre os aromas, eles vão abrindo com o tempo. Então não é de primeira que você vai sentir tudo."
+    },
+    {
+     "a": 235.1,
+     "b": 240.09,
+     "texto": "Talvez um morango. Framboesa."
+    },
+    {
+     "a": 279.04,
+     "b": 286.17,
+     "texto": "Ela me dá uma coisa também de fruta cozida, uma fruta mais madura."
+    },
+    {
+     "a": 364.86,
+     "b": 369.83,
+     "texto": "Inicialmente ele só me dá fruta, mas acho que ele vai abrir. Tá bem gelado, então eu vou esperar um pouquinho."
+    },
+    {
+     "a": 335.29,
+     "b": 337.57,
+     "texto": "Eu preciso pensar se ela me dá mais essa coisa"
+    },
+    {
+     "a": 340.48,
+     "b": 342.83,
+     "texto": "da amêndoa, pra puxar pra um Dolcetto."
+    },
+    {
+     "a": 417.28,
+     "b": 418.66,
+     "texto": "Na boca, ele"
+    },
+    {
+     "a": 419.17,
+     "b": 420.61,
+     "texto": "me dá algo mais"
+    },
+    {
+     "a": 421.4,
+     "b": 422.33,
+     "texto": "herbáceo."
+    },
+    {
+     "a": 565.02,
+     "b": 567.01,
+     "texto": "Uma grama cortada, um tabaco ou uma amêndoa."
+    },
+    {
+     "a": 572.24,
+     "b": 576.95,
+     "texto": "Intensidade média, persistência média, macio, equilibrado."
+    },
+    {
+     "a": 578.54,
+     "b": 580.95,
+     "texto": "Eu acho que eu vou inicialmente no Dolcetto."
+    },
+    {
+     "a": 585.87,
+     "b": 586.91,
+     "texto": "Da Itália."
+    },
+    {
+     "a": 591.24,
+     "b": 592.27,
+     "texto": "Piemonte."
+    }
+   ],
+   "telas": [
+    {
+     "tipo": "app",
+     "titulo": "#13 · nariz",
+     "linhas": [
+      "primeiro eu marco o que vem de cara"
+     ],
+     "entra_fala": 0,
+     "sai_fala": 1,
+     "fonte": "tela do app Wine Study Lab na gravação"
+    },
+    {
+     "tipo": "app",
+     "titulo": "#13 · eu senti",
+     "linhas": [
+      "morango, framboesa, fruta cozida"
+     ],
+     "entra_fala": 2,
+     "sai_fala": 3,
+     "fonte": "percepção dela (eu senti), sem afirmação técnica"
+    },
+    {
+     "tipo": "aula",
+     "titulo": "vinho gelado fecha o nariz",
+     "linhas": [
+      "quanto mais frio, menos aroma sobe da taça",
+      "aroma tímido? espere o vinho aquecer um pouco"
+     ],
+     "entra_fala": 4,
+     "sai_fala": 4,
+     "fonte": "Wine Folly, Ideal Serving Temperature for Wine (winefolly.com/tips/white-red-wine-temperature)"
+    },
+    {
+     "tipo": "aula",
+     "titulo": "Dolcetto: a pista da amêndoa",
+     "linhas": [
+      "final de amêndoa amarga é a marca da uva"
+     ],
+     "entra_fala": 5,
+     "sai_fala": 6,
+     "fonte": "Wine with Seth, Dolcetto; Vinerra, Dolcetto in-depth; app (Comparar uvas, 'Como reconhecer')"
+    },
+    {
+     "tipo": "app",
+     "titulo": "#13 · boca (eu senti)",
+     "linhas": [
+      "herbáceo, grama cortada, tabaco, amêndoa",
+      "intensidade e persistência médias"
+     ],
+     "entra_fala": 7,
+     "sai_fala": 11,
+     "fonte": "percepção dela (eu senti), sem afirmação técnica"
+    },
+    {
+     "tipo": "aula",
+     "titulo": "#13 · meu palpite",
+     "linhas": [
+      "Dolcetto · Itália · Piemonte"
+     ],
+     "entra_fala": 12,
+     "sai_fala": 14,
+     "fonte": "tela do app Wine Study Lab na gravação (hipótese em 580–650 s)"
+    }
+   ]
+  },
+  {
+   "id": "B03",
+   "capitulo": "#43",
+   "sub": "pimenta, figo e tâmara",
+   "tema": "Nariz e boca da #43: aromas de evolução que reforçam a hipótese do Barolo.",
+   "falas": [
+    {
+     "a": 778.83,
+     "b": 781.31,
+     "texto": "Ele me traz uma pimenta-do-reino."
+    },
+    {
+     "a": 784.46,
+     "b": 786.51,
+     "texto": "Algo mais de evolução."
+    },
+    {
+     "a": 791.74,
+     "b": 793.97,
+     "texto": "Frutos secos."
+    },
+    {
+     "a": 813.66,
+     "b": 815.31,
+     "texto": "Aqui eu iria num figo."
+    },
+    {
+     "a": 817.78,
+     "b": 823.77,
+     "texto": "Tem algo de fruta cozida, mas bem pouca. Talvez uma ameixa seca também, uma tâmara."
+    },
+    {
+     "a": 828.93,
+     "b": 833.87,
+     "texto": "Tô indo muito nessa do Barolo. Vamos ver na boca agora."
+    },
+    {
+     "a": 851.98,
+     "b": 853.31,
+     "texto": "Já na boca me trouxe"
+    },
+    {
+     "a": 855.03,
+     "b": 856.05,
+     "texto": "uma boa acidez"
+    },
+    {
+     "a": 856.78,
+     "b": 857.79,
+     "texto": "e um bom tanino."
+    }
+   ],
+   "telas": [
+    {
+     "tipo": "app",
+     "titulo": "#43 · nariz (eu senti)",
+     "linhas": [
+      "pimenta-do-reino, frutos secos, figo",
+      "ameixa seca, tâmara"
+     ],
+     "entra_fala": 0,
+     "sai_fala": 5,
+     "fonte": "percepção dela (eu senti), sem afirmação técnica"
+    },
+    {
+     "tipo": "app",
+     "titulo": "#43 · boca",
+     "linhas": [
+      "boa acidez, bom tanino"
+     ],
+     "entra_fala": 6,
+     "sai_fala": 8,
+     "fonte": "percepção dela (eu senti), sem afirmação técnica"
+    }
+   ]
+  },
+  {
+   "id": "B04",
+   "capitulo": "A lágrima",
+   "sub": "o que ela conta do álcool",
+   "tema": "Lágrima e teor alcoólico, com o limite da regra (açúcar também deixa a lágrima lenta).",
+   "falas": [
+    {
+     "a": 993.44,
+     "b": 995.44,
+     "texto": "A gente consegue ver isso pela"
+    },
+    {
+     "a": 995.96,
+     "b": 999.81,
+     "texto": "velocidade da lágrima de descer."
+    },
+    {
+     "a": 999.98,
+     "b": 1003.81,
+     "texto": "Você gira a taça e vê ela escorrendo na sua taça."
+    },
+    {
+     "a": 1006.0,
+     "b": 1010.79,
+     "texto": "Quanto mais rápido, menos teor alcoólico tem. Quanto mais devagar, mais teor alcoólico."
+    },
+    {
+     "a": 1011.72,
+     "b": 1013.97,
+     "texto": "Mas às vezes pode confundir"
+    },
+    {
+     "a": 1022.02,
+     "b": 1028.41,
+     "texto": "quando tiver excesso de açúcar residual."
+    },
+    {
+     "a": 1029.74,
+     "b": 1036.67,
+     "texto": "Mas você consegue observar a maioria das vezes essa forma, se um vinho é mais alcoólico que o outro."
+    },
+    {
+     "a": 1036.7,
+     "b": 1040.77,
+     "texto": "Esse aqui eu acredito que é 14%, mas pode ser muito bem 14,5%."
+    }
+   ],
+   "telas": [
+    {
+     "tipo": "aula",
+     "titulo": "a lágrima",
+     "linhas": [
+      "gire a taça e veja as gotas descendo",
+      "mais álcool: mais gotas, descendo devagar",
+      "açúcar também deixa a lágrima lenta",
+      "temperatura e umidade da sala interferem"
+     ],
+     "entra_fala": 0,
+     "sai_fala": 6,
+     "fonte": "Wine Folly, What Do Wine Legs Really Mean? (winefolly.com/tutorial/wine-legs)"
+    },
+    {
+     "tipo": "aula",
+     "titulo": "#43 · meu palpite de teor",
+     "linhas": [
+      "14%, talvez 14,5%"
+     ],
+     "entra_fala": 7,
+     "sai_fala": 7,
+     "fonte": "percepção dela (eu senti), sem afirmação técnica"
+    }
+   ]
+  },
+  {
+   "id": "B05",
+   "capitulo": "Primitivo ou Touriga?",
+   "sub": "a pista que eu levei do ep.01",
+   "tema": "A #134 traz de volta a dúvida do ep.01. Ela leva a pista do chocolate, não encontra e vai de Primitivo.",
+   "falas": [
+    {
+     "a": 1047.86,
+     "b": 1055.45,
+     "texto": "E agora vamos pra última, que é a 134."
+    },
+    {
+     "a": 1072.73,
+     "b": 1074.37,
+     "texto": "Ela me parece duas, que é"
+    },
+    {
+     "a": 1076.67,
+     "b": 1079.39,
+     "texto": "um Primitivo ou uma Touriga Nacional."
+    },
+    {
+     "a": 1079.5,
+     "b": 1082.13,
+     "texto": "A Touriga Nacional me fez errar."
+    },
+    {
+     "a": 1082.16,
+     "b": 1084.36,
+     "texto": "Mas uma coisa que eu entendi é"
+    },
+    {
+     "a": 1085.24,
+     "b": 1086.39,
+     "texto": "que a Touriga Nacional"
+    },
+    {
+     "a": 1089.8,
+     "b": 1090.99,
+     "texto": "tem um chocolate."
+    },
+    {
+     "a": 1091.52,
+     "b": 1093.59,
+     "texto": "Então se eu sentir chocolate nesse,"
+    },
+    {
+     "a": 1095.9,
+     "b": 1097.13,
+     "texto": "eu posso ir na Touriga."
+    },
+    {
+     "a": 1200.06,
+     "b": 1200.8,
+     "texto": "De aromas,"
+    },
+    {
+     "a": 1202.63,
+     "b": 1208.44,
+     "texto": "eu sinto uma fruta em compota, com figo, com tâmara,"
+    },
+    {
+     "a": 1210.31,
+     "b": 1211.27,
+     "texto": "uma geleia."
+    },
+    {
+     "a": 1251.83,
+     "b": 1253.88,
+     "texto": "Bom, eu não consigo sentir"
+    },
+    {
+     "a": 1256.0,
+     "b": 1259.13,
+     "texto": "o chocolate nela."
+    },
+    {
+     "a": 1267.3,
+     "b": 1271.09,
+     "texto": "Vou dar o Primitivo inicialmente, mas vou experimentar primeiro."
+    }
+   ],
+   "telas": [
+    {
+     "tipo": "aula",
+     "titulo": "#134 · Primitivo ou Touriga?",
+     "linhas": [
+      "no ep.01 essa dúvida me derrubou"
+     ],
+     "entra_fala": 0,
+     "sai_fala": 3,
+     "fonte": "plano_estrategia.md (ep.01)"
+    },
+    {
+     "tipo": "aula",
+     "titulo": "a pista que eu trouxe do ep.01",
+     "linhas": [
+      "chocolate = Touriga",
+      "guarda essa: o quiz vai trocar a pista"
+     ],
+     "entra_fala": 4,
+     "sai_fala": 8,
+     "fonte": "fala dela (1082–1097 s) e correção no quiz (1862–1871 s)"
+    },
+    {
+     "tipo": "app",
+     "titulo": "#134 · nariz (eu senti)",
+     "linhas": [
+      "fruta em compota, figo, tâmara, geleia",
+      "procurei o chocolate e achei só fruta"
+     ],
+     "entra_fala": 9,
+     "sai_fala": 14,
+     "fonte": "percepção dela (eu senti), sem afirmação técnica"
+    }
+   ]
+  },
+  {
+   "id": "B06",
+   "capitulo": "#134 na boca",
+   "sub": "álcool alto nas duas",
+   "tema": "Estrutura da #134: tanino, acidez e o álcool alto, que é igual nas duas candidatas.",
+   "falas": [
+    {
+     "a": 1301.73,
+     "b": 1303.25,
+     "texto": "Taninos médios"
+    },
+    {
+     "a": 1304.49,
+     "b": 1305.41,
+     "texto": "pra mais."
+    },
+    {
+     "a": 1339.32,
+     "b": 1343.95,
+     "texto": "Tem uma acidez presente, que ela vem aos poucos, mas é aquela acidez que te enche a boca."
+    },
+    {
+     "a": 1347.52,
+     "b": 1351.98,
+     "texto": "Eu vou no alto porque, se for qualquer uma das duas, eu já sei que"
+    },
+    {
+     "a": 1352.56,
+     "b": 1354.46,
+     "texto": "ela é estudada como"
+    },
+    {
+     "a": 1355.81,
+     "b": 1356.63,
+     "texto": "alta."
+    },
+    {
+     "a": 1357.26,
+     "b": 1360.35,
+     "texto": "Tanto a Touriga Nacional quanto o Primitivo."
+    },
+    {
+     "a": 1362.2,
+     "b": 1365.61,
+     "texto": "Um corpo médio para mais, tem um bom corpo."
+    },
+    {
+     "a": 1367.14,
+     "b": 1370.91,
+     "texto": "Intensidade média alta, persistência longa."
+    },
+    {
+     "a": 1379.08,
+     "b": 1380.05,
+     "texto": "Eu vou no Primitivo."
+    },
+    {
+     "a": 1384.09,
+     "b": 1384.83,
+     "texto": "Itália."
+    },
+    {
+     "a": 1391.52,
+     "b": 1392.07,
+     "texto": "Puglia."
+    }
+   ],
+   "telas": [
+    {
+     "tipo": "app",
+     "titulo": "#134 · boca (eu senti)",
+     "linhas": [
+      "tanino médio+",
+      "acidez que vem aos poucos e enche a boca"
+     ],
+     "entra_fala": 0,
+     "sai_fala": 2,
+     "fonte": "percepção dela (eu senti), sem afirmação técnica"
+    },
+    {
+     "tipo": "aula",
+     "titulo": "álcool: empate",
+     "linhas": [
+      "Primitivo: álcool alto, muitas vezes acima de 15%",
+      "Touriga Nacional: álcool alto",
+      "aqui o álcool deixa as duas no páreo"
+     ],
+     "entra_fala": 3,
+     "sai_fala": 6,
+     "fonte": "Wine Folly, Zinfandel/Primitivo (winefolly.com/grapes/zinfandel); app, Comparar uvas (Touriga Nacional: álcool Alto), quadro em 2010 s"
+    },
+    {
+     "tipo": "app",
+     "titulo": "#134 · estrutura (eu senti)",
+     "linhas": [
+      "corpo médio+, intensidade média+, persistência longa"
+     ],
+     "entra_fala": 7,
+     "sai_fala": 8,
+     "fonte": "percepção dela (eu senti), sem afirmação técnica"
+    },
+    {
+     "tipo": "aula",
+     "titulo": "#134 · meu palpite",
+     "linhas": [
+      "Primitivo · Itália · Puglia"
+     ],
+     "entra_fala": 9,
+     "sai_fala": 11,
+     "fonte": "tela do app Wine Study Lab na gravação (resultado em 1745 s)"
+    }
+   ]
+  },
+  {
+   "id": "B07",
+   "capitulo": "A revelação",
+   "sub": "37 de 100",
+   "tema": "Resultado no app: o placar, a reação e a Touriga de novo.",
+   "falas": [
+    {
+     "a": 1415.58,
+     "b": 1417.61,
+     "texto": "Vamos ao resultado, a melhor parte disso."
+    },
+    {
+     "a": 1417.72,
+     "b": 1418.91,
+     "texto": "Vamos ver se eu errei todas."
+    },
+    {
+     "a": 1457.38,
+     "b": 1458.69,
+     "texto": "Nossa, errei muito."
+    },
+    {
+     "a": 1458.76,
+     "b": 1460.07,
+     "texto": "Só acertei uma uva."
+    },
+    {
+     "a": 1473.52,
+     "b": 1475.31,
+     "texto": "Era uma Touriga. Meu Deus."
+    },
+    {
+     "a": 1475.52,
+     "b": 1476.85,
+     "texto": "Eu tô errando sempre ela."
+    },
+    {
+     "a": 1479.98,
+     "b": 1481.01,
+     "texto": "Caramba."
+    }
+   ],
+   "telas": [
+    {
+     "tipo": "app",
+     "titulo": "",
+     "linhas": [],
+     "entra_fala": 0,
+     "sai_fala": 1,
+     "fonte": "tela do app Wine Study Lab na gravação"
+    },
+    {
+     "tipo": "placar",
+     "titulo": "37 / 100",
+     "linhas": [
+      "#43 Barolo: 100",
+      "#134 Touriga Nacional: 12",
+      "#13 Cabernet Franc: 0"
+     ],
+     "entra_fala": 2,
+     "sai_fala": 3,
+     "fonte": "tela do app Wine Study Lab na gravação (1460 s; #13 em 1490 s, #43 em 1612 s, #134 em 1745 s)"
+    },
+    {
+     "tipo": "app",
+     "titulo": "#134 · Governador 2023",
+     "linhas": [
+      "Touriga Nacional · Douro"
+     ],
+     "entra_fala": 4,
+     "sai_fala": 6,
+     "fonte": "tela do app Wine Study Lab na gravação (1468 s)"
+    }
+   ]
+  },
+  {
+   "id": "B08",
+   "capitulo": "#13",
+   "sub": "era um Cabernet Franc",
+   "tema": "A #13 era um Cabernet Franc brasileiro. Aberto, o vinho mostra tabaco, carvalho e fruta escura.",
+   "falas": [
+    {
+     "a": 1485.16,
+     "b": 1489.51,
+     "texto": "O primeiro era um Basco Loco. Um Cabernet Franc."
+    },
+    {
+     "a": 1527.99,
+     "b": 1531.17,
+     "texto": "Esse vinho do Sul, ele tem uma coisa da barrica."
+    },
+    {
+     "a": 1534.04,
+     "b": 1539.83,
+     "texto": "Agora que abriu é realmente totalmente diferente. Eu tenho que esperar um pouco mais para responder."
+    },
+    {
+     "a": 1543.2,
+     "b": 1550.85,
+     "texto": "Realmente, trouxe muito de um tabaco agora, uma madeira, um carvalho."
+    },
+    {
+     "a": 1555.12,
+     "b": 1560.01,
+     "texto": "E tem essa coisa de uma fruta vermelha mais madura."
+    },
+    {
+     "a": 1567.3,
+     "b": 1568.72,
+     "texto": "Eu iria mais"
+    },
+    {
+     "a": 1571.77,
+     "b": 1576.14,
+     "texto": "pra uma ameixa, um cassis,"
+    },
+    {
+     "a": 1576.73,
+     "b": 1580.13,
+     "texto": "umas frutas mais escuras."
+    },
+    {
+     "a": 1589.2,
+     "b": 1592.11,
+     "texto": "Realmente, aqui preciso estudar mais."
+    },
+    {
+     "a": 1618.97,
+     "b": 1620.25,
+     "texto": "Mas foi ótimo."
+    }
+   ],
+   "telas": [
+    {
+     "tipo": "placar",
+     "titulo": "#13 · Basco Loco Cabernet Franc 2023",
+     "linhas": [
+      "Bodega Iribarrem · Vale dos Vinhedos (RS)",
+      "meu palpite: Dolcetto · Piemonte",
+      "0 pontos (a ficha da #13 estava incompleta)"
+     ],
+     "entra_fala": 0,
+     "sai_fala": 1,
+     "fonte": "tela do app Wine Study Lab na gravação (1490 s)"
+    },
+    {
+     "tipo": "app",
+     "titulo": "#13 · aberta (eu senti)",
+     "linhas": [
+      "tabaco, madeira, carvalho",
+      "fruta vermelha madura, ameixa, cassis"
+     ],
+     "entra_fala": 2,
+     "sai_fala": 9,
+     "fonte": "percepção dela (eu senti), sem afirmação técnica"
+    }
+   ]
+  },
+  {
+   "id": "B09",
+   "capitulo": "#43",
+   "sub": "o Barolo cravado",
+   "tema": "A #43 vale 100. O que confirma o Nebbiolo, por que o álcool pareceu menor e a acidez que apareceu depois.",
+   "falas": [
+    {
+     "a": 1624.6,
+     "b": 1627.95,
+     "texto": "O próximo é um Barolo. Isso aqui eu não podia errar."
+    },
+    {
+     "a": 1629.12,
+     "b": 1632.15,
+     "texto": "É muito diferente dos demais."
+    },
+    {
+     "a": 1634.62,
+     "b": 1635.85,
+     "texto": "Realmente: 14, 14."
+    },
+    {
+     "a": 1651.2,
+     "b": 1658.59,
+     "texto": "A resposta é um álcool alto. E realmente, para 14% é um álcool alto. Mas na boca não se percebe."
+    },
+    {
+     "a": 1716.1,
+     "b": 1718.03,
+     "texto": "Vinhos frios parecem menos alcoólicos."
+    },
+    {
+     "a": 1718.66,
+     "b": 1723.91,
+     "texto": "Pode ser. Eu tomei uma temperatura mais gelada. Então talvez por isso que eu não senti tanto álcool, né?"
+    },
+    {
+     "a": 1671.94,
+     "b": 1675.65,
+     "texto": "O Aglianico é chamado de Barolo do Sul. Os dois têm taninos e acidez altos."
+    },
+    {
+     "a": 1696.04,
+     "b": 1699.35,
+     "texto": "Cor clara, com aro alaranjado."
+    },
+    {
+     "a": 1700.32,
+     "b": 1701.71,
+     "texto": "Rosas e alcatrão."
+    },
+    {
+     "a": 1677.76,
+     "b": 1683.87,
+     "texto": "Eu coloquei a acidez média, porque realmente ele não me dá tanta acidez."
+    },
+    {
+     "a": 1685.84,
+     "b": 1688.29,
+     "texto": "Mas eles costumam falar que o Barolo tem uma boa acidez."
+    },
+    {
+     "a": 1733.51,
+     "b": 1736.35,
+     "texto": "Eu bebi agora, e ele realmente me trouxe bastante acidez."
+    }
+   ],
+   "telas": [
+    {
+     "tipo": "placar",
+     "titulo": "#43 · Barolo · Morello",
+     "linhas": [
+      "Nebbiolo · Piemonte · Itália · 14%",
+      "uva, região, país e teor certos: 100"
+     ],
+     "entra_fala": 0,
+     "sai_fala": 2,
+     "fonte": "tela do app Wine Study Lab na gravação (1612 s)"
+    },
+    {
+     "tipo": "aula",
+     "titulo": "frio esconde o álcool",
+     "linhas": [
+      "o álcool aparece como calor no fim da boca",
+      "vinho servido frio parece menos alcoólico"
+     ],
+     "entra_fala": 3,
+     "sai_fala": 5,
+     "fonte": "tela do app Wine Study Lab na gravação (1665 s) + Wine Folly, Ideal Serving Temperature for Wine"
+    },
+    {
+     "tipo": "aula",
+     "titulo": "Nebbiolo × Aglianico",
+     "linhas": [
+      "os dois: tanino e acidez altos",
+      "Aglianico, o 'Barolo do Sul': cor mais escura, fruta negra",
+      "Nebbiolo: cor clara, borda alaranjada, rosas e alcatrão"
+     ],
+     "entra_fala": 6,
+     "sai_fala": 8,
+     "fonte": "Jancis Robinson, In praise of Aglianico (jancisrobinson.com/articles/in-praise-of-aglianico); Halliday Wine Companion, Aglianico; app (1665 s)"
+    },
+    {
+     "tipo": "app",
+     "titulo": "#43 · acidez",
+     "linhas": [
+      "no primeiro gole eu marquei média",
+      "no gole seguinte: bastante acidez"
+     ],
+     "entra_fala": 9,
+     "sai_fala": 11,
+     "fonte": "percepção dela (eu senti), sem afirmação técnica"
+    }
+   ]
+  },
+  {
+   "id": "B10",
+   "capitulo": "#134",
+   "sub": "o mesmo Governador",
+   "tema": "A #134 era o Governador, Touriga Nacional do Douro: o mesmo vinho e os mesmos 12 pontos do ep.01.",
+   "falas": [
+    {
+     "a": 1736.8,
+     "b": 1741.65,
+     "texto": "E o último. Novamente errei. É uma Touriga Nacional."
+    },
+    {
+     "a": 1753.84,
+     "b": 1757.03,
+     "texto": "Eu coloquei um 14,5 e era um 14."
+    },
+    {
+     "a": 1764.15,
+     "b": 1769.43,
+     "texto": "Safra 2023. Estava pensando em colocar 2023. Coloquei 2024."
+    },
+    {
+     "a": 1772.46,
+     "b": 1775.43,
+     "texto": "Essa daí eu preciso treinar mais."
+    }
+   ],
+   "telas": [
+    {
+     "tipo": "placar",
+     "titulo": "#134 · Governador 2023",
+     "linhas": [
+      "Touriga Nacional · Douro · Portugal · 14%",
+      "meu palpite: Primitivo · Puglia · Itália",
+      "12 pontos: teor certo, safra perto",
+      "no ep.01: o mesmo vinho, os mesmos 12"
+     ],
+     "entra_fala": 0,
+     "sai_fala": 3,
+     "fonte": "tela do app Wine Study Lab na gravação (1745 s) + plano_estrategia.md (ep.01)"
+    }
+   ]
+  },
+  {
+   "id": "B11",
+   "capitulo": "O quiz",
+   "sub": "9 de 10 e a pista nova",
+   "tema": "Quiz do app: o único erro foi de toque, e a pergunta da acidez traz a pista que faltava: a menta.",
+   "falas": [
+    {
+     "a": 1780.28,
+     "b": 1781.81,
+     "texto": "E agora, o que que vem?"
+    },
+    {
+     "a": 1784.64,
+     "b": 1785.81,
+     "texto": "O meu quiz."
+    },
+    {
+     "a": 1790.2,
+     "b": 1796.15,
+     "texto": "Que essa aqui é uma parte muito legal, que após eu estudo mais um pouquinho sobre cada um deles."
+    },
+    {
+     "a": 1796.66,
+     "b": 1802.37,
+     "texto": "Então, por exemplo: em que país fica a região do Rio Grande do Sul? No Brasil. Isso aí é muito mole."
+    },
+    {
+     "a": 1825.52,
+     "b": 1829.13,
+     "texto": "Qual o nível de acidez típico da Touriga Nacional? É uma acidez"
+    },
+    {
+     "a": 1830.53,
+     "b": 1832.57,
+     "texto": "média mais."
+    },
+    {
+     "a": 1850.7,
+     "b": 1852.05,
+     "texto": "Eu falei média mais, marca em média."
+    },
+    {
+     "a": 1860.06,
+     "b": 1861.81,
+     "texto": "Ah, eu tenho que lembrar disso."
+    },
+    {
+     "a": 1862.88,
+     "b": 1864.05,
+     "texto": "Na verdade, eu confundi."
+    },
+    {
+     "a": 1864.08,
+     "b": 1868.33,
+     "texto": "Eu falei muito sobre o chocolate, mas, na verdade, é a menta."
+    },
+    {
+     "a": 1868.88,
+     "b": 1870.13,
+     "texto": "O maior diferencial"
+    },
+    {
+     "a": 1870.54,
+     "b": 1871.49,
+     "texto": "da Touriga Nacional."
+    },
+    {
+     "a": 1878.68,
+     "b": 1884.89,
+     "texto": "Se eu sinto mais menta, eu devo ir pra Touriga Nacional."
+    }
+   ],
+   "telas": [
+    {
+     "tipo": "aula",
+     "titulo": "quiz da degustação",
+     "linhas": [
+      "perguntas sobre as uvas, regiões e vinhos destas taças"
+     ],
+     "entra_fala": 0,
+     "sai_fala": 1,
+     "fonte": "tela do app Wine Study Lab na gravação (tela do quiz, 1790 s)"
+    },
+    {
+     "tipo": "app",
+     "titulo": "",
+     "linhas": [],
+     "entra_fala": 2,
+     "sai_fala": 3,
+     "fonte": "tela do app Wine Study Lab na gravação"
+    },
+    {
+     "tipo": "app",
+     "titulo": "quiz · pergunta 5",
+     "linhas": [
+      "acidez típica da Touriga Nacional"
+     ],
+     "entra_fala": 4,
+     "sai_fala": 5,
+     "fonte": "tela do app Wine Study Lab na gravação (1856 s)"
+    },
+    {
+     "tipo": "placar",
+     "titulo": "quiz: 9 / 10",
+     "linhas": [
+      "o único erro: marquei Média, eu queria Média+",
+      "Touriga Nacional: acidez média+"
+     ],
+     "entra_fala": 6,
+     "sai_fala": 6,
+     "fonte": "tela do app Wine Study Lab na gravação (1935 s: pergunta 10 com 8 acertos antes) + Wine Folly, Touriga Nacional (winefolly.com/grapes/touriga-nacional)"
+    },
+    {
+     "tipo": "aula",
+     "titulo": "a pista nova: menta",
+     "linhas": [
+      "Touriga Nacional: mirtilo, violeta, ameixa, menta, ardósia molhada",
+      "troquei a minha pista: sai o chocolate, entra a menta",
+      "pista de estudo, para testar nas próximas taças"
+     ],
+     "entra_fala": 7,
+     "sai_fala": 12,
+     "fonte": "Wine Folly, Touriga Nacional (winefolly.com/grapes/touriga-nacional); app (1856 s)"
+    }
+   ]
+  },
+  {
+   "id": "B12",
+   "capitulo": "Comparar uvas",
+   "sub": "Cabernet Franc × Dolcetto",
+   "tema": "Comparador do app: onde a #13 se separa do Dolcetto (aroma), com a ligação Cabernet Franc → Cabernet Sauvignon.",
+   "falas": [
+    {
+     "a": 1944.82,
+     "b": 1950.99,
+     "texto": "E aí, uma última coisa que eu faço é comparar as uvas. Então, eu tenho aqui as uvas que eu errei."
+    },
+    {
+     "a": 1952.26,
+     "b": 1954.43,
+     "texto": "Eu coloquei Dolcetto"
+    },
+    {
+     "a": 1959.62,
+     "b": 1961.63,
+     "texto": "e era Cabernet Franc."
+    },
+    {
+     "a": 1968.58,
+     "b": 1979.79,
+     "texto": "A Barolo eu acertei, então eu não vou estudar ela agora. Mas depois foi, de novo, a Primitivo. E a Touriga."
+    },
+    {
+     "a": 1988.04,
+     "b": 1994.51,
+     "texto": "Pra ver o que realmente eu posso melhorar das próximas vezes, né? Tipo, conseguir sentir os aromas e tudo mais."
+    },
+    {
+     "a": 2005.82,
+     "b": 2010.55,
+     "texto": "A acidez: a Dolcetto, comparada com a outra, é uma acidez"
+    },
+    {
+     "a": 2013.5,
+     "b": 2017.71,
+     "texto": "média menos. E a do"
+    },
+    {
+     "a": 2018.78,
+     "b": 2021.47,
+     "texto": "Cabernet Franc é uma acidez alta."
+    },
+    {
+     "a": 2049.86,
+     "b": 2054.65,
+     "texto": "Essa, confundi muito, porque essa garrafinha, ela não me deu uma grande acidez."
+    },
+    {
+     "a": 2088.58,
+     "b": 2096.39,
+     "texto": "De corpo, ele é um corpo médio. Aqui eu poderia confundir as duas sem problema, né?"
+    },
+    {
+     "a": 2096.68,
+     "b": 2099.87,
+     "texto": "E de álcool, é álcool médio, poderia ter confundido as duas."
+    },
+    {
+     "a": 2100.02,
+     "b": 2103.07,
+     "texto": "Mas aí vamos pro principal, que é em relação aos aromas."
+    },
+    {
+     "a": 2113.64,
+     "b": 2121.75,
+     "texto": "De fruta, é frutas negras no Dolcetto com frutas secas e cozidas. E no Cabernet Franc, frutas vermelhas e frutas negras."
+    },
+    {
+     "a": 2122.46,
+     "b": 2124.29,
+     "texto": "Qual a diferença entre eles?"
+    },
+    {
+     "a": 2131.35,
+     "b": 2133.33,
+     "texto": "Ele parece muito"
+    },
+    {
+     "a": 2133.98,
+     "b": 2135.6,
+     "texto": "com a filha,"
+    },
+    {
+     "a": 2138.02,
+     "b": 2139.13,
+     "texto": "Cabernet Sauvignon,"
+    },
+    {
+     "a": 2141.23,
+     "b": 2147.86,
+     "texto": "que tem essa coisa do pimentão verde, do cassis, do tabaco."
+    },
+    {
+     "a": 2484.9,
+     "b": 2492.18,
+     "texto": "A Cabernet Franc, ela vai me trazer, de diferencial, esse toque de tabaco"
+    },
+    {
+     "a": 2493.43,
+     "b": 2497.74,
+     "texto": "e cassis, junto com morango e framboesa."
+    },
+    {
+     "a": 2518.49,
+     "b": 2522.56,
+     "texto": "E o Dolcetto, ele vai puxar mais pra amêndoa."
+    }
+   ],
+   "telas": [
+    {
+     "tipo": "app",
+     "titulo": "comparar uvas",
+     "linhas": [
+      "Dolcetto · Cabernet Franc · Primitivo · Touriga Nacional"
+     ],
+     "entra_fala": 0,
+     "sai_fala": 4,
+     "fonte": "tela do app Wine Study Lab na gravação (2010 s)"
+    },
+    {
+     "tipo": "comparacao",
+     "titulo": "Dolcetto × Cabernet Franc",
+     "linhas": [
+      "Dolcetto · acidez média− · corpo médio+ · álcool médio",
+      "Cabernet Franc · acidez alta · corpo médio · álcool médio"
+     ],
+     "entra_fala": 5,
+     "sai_fala": 10,
+     "fonte": "tela do app Wine Study Lab na gravação (2010 s); Wine Folly, Dolcetto (winefolly.com/grapes/dolcetto); Wine Folly, Cabernet Franc (winefolly.com/grapes/cabernet-franc)"
+    },
+    {
+     "tipo": "comparacao",
+     "titulo": "o que separa: o aroma",
+     "linhas": [
+      "Dolcetto · ameixa, amora, cereja negra · final de amêndoa amarga",
+      "Cabernet Franc · morango, framboesa, cassis · tabaco, pimentão verde"
+     ],
+     "entra_fala": 11,
+     "sai_fala": 13,
+     "fonte": "tela do app Wine Study Lab na gravação (2340 s); Wine Folly, Cabernet Franc (winefolly.com/grapes/cabernet-franc)"
+    },
+    {
+     "tipo": "aula",
+     "titulo": "Cabernet Franc é pai da Cabernet Sauvignon",
+     "linhas": [
+      "cruzamento Cabernet Franc × Sauvignon Blanc",
+      "confirmado por DNA na UC Davis (1997)"
+     ],
+     "entra_fala": 14,
+     "sai_fala": 17,
+     "fonte": "UC Davis, DNA Fingerprinting Reveals Parentage of Classic Wine Grape (ucdavis.edu/news)"
+    },
+    {
+     "tipo": "comparacao",
+     "titulo": "o que separa: o aroma",
+     "linhas": [
+      "Dolcetto · ameixa, amora, cereja negra · final de amêndoa amarga",
+      "Cabernet Franc · morango, framboesa, cassis · tabaco, pimentão verde"
+     ],
+     "entra_fala": 18,
+     "sai_fala": 20,
+     "fonte": "tela do app Wine Study Lab na gravação (2340 s); Wine Folly, Cabernet Franc (winefolly.com/grapes/cabernet-franc)"
+    }
+   ]
+  },
+  {
+   "id": "B13",
+   "capitulo": "Primitivo × Touriga",
+   "sub": "a menta",
+   "tema": "Fechamento: as anotações dela para separar Primitivo de Touriga Nacional na próxima prova.",
+   "falas": [
+    {
+     "a": 2241.63,
+     "b": 2243.82,
+     "texto": "Vamos lá agora, Primitivo e Touriga Nacional."
+    },
+    {
+     "a": 2325.22,
+     "b": 2326.92,
+     "texto": "Tá, pra colocar na cabeça."
+    },
+    {
+     "a": 2327.73,
+     "b": 2329.19,
+     "texto": "Quando você puxa"
+    },
+    {
+     "a": 2331.31,
+     "b": 2337.64,
+     "texto": "e vem essa coisa mais mentolada, que você acha que é álcool, na verdade não é álcool, é menta."
+    },
+    {
+     "a": 2373.02,
+     "b": 2374.32,
+     "texto": "Tem um frescor, realmente."
+    },
+    {
+     "a": 2433.75,
+     "b": 2439.4,
+     "texto": "Touriga Nacional tem aquelas frutas negras, mas um toque de menta"
+    },
+    {
+     "a": 2440.01,
+     "b": 2441.6,
+     "texto": "vai pra Touriga."
+    },
+    {
+     "a": 2464.82,
+     "b": 2469.96,
+     "texto": "O diferencial dela realmente vem da menta e da pedra molhada."
+    },
+    {
+     "a": 2442.35,
+     "b": 2445.68,
+     "texto": "Se ela tiver frutas vermelhas e frutas negras,"
+    },
+    {
+     "a": 2448.67,
+     "b": 2455.0,
+     "texto": "tipo o morango, a framboesa, e tiver um toque de tabaco, vai pro Primitivo."
+    },
+    {
+     "a": 2471.12,
+     "b": 2475.3,
+     "texto": "Então, do Primitivo, lembra de tabaco, anis e pimenta-do-reino."
+    },
+    {
+     "a": 2476.07,
+     "b": 2481.22,
+     "texto": "Vai trazer aquelas coisas de geleia, frutas vermelhas e frutas negras."
+    },
+    {
+     "a": 2528.76,
+     "b": 2529.52,
+     "texto": "Então, é isso."
+    }
+   ],
+   "telas": [
+    {
+     "tipo": "app",
+     "titulo": "comparar uvas",
+     "linhas": [
+      "Primitivo × Touriga Nacional"
+     ],
+     "entra_fala": 0,
+     "sai_fala": 1,
+     "fonte": "tela do app Wine Study Lab na gravação"
+    },
+    {
+     "tipo": "aula",
+     "titulo": "a minha pista: menta",
+     "linhas": [
+      "um frescor que parece álcool",
+      "eu senti como menta: pista de Touriga",
+      "pista de estudo, para testar nas próximas taças"
+     ],
+     "entra_fala": 2,
+     "sai_fala": 4,
+     "fonte": "percepção dela (eu senti), sem afirmação técnica; menta nos aromas da Touriga: Wine Folly, Touriga Nacional (winefolly.com/grapes/touriga-nacional)"
+    },
+    {
+     "tipo": "comparacao",
+     "titulo": "Primitivo × Touriga Nacional",
+     "linhas": [
+      "Touriga Nacional · mirtilo, violeta, ameixa · menta, ardósia molhada",
+      "Primitivo · geleia, morango, framboesa · tabaco, anis, pimenta-do-reino"
+     ],
+     "entra_fala": 5,
+     "sai_fala": 11,
+     "fonte": "Wine Folly, Touriga Nacional (winefolly.com/grapes/touriga-nacional); Wine Folly, Zinfandel/Primitivo (winefolly.com/grapes/zinfandel); app, Comparar uvas (2340 s)"
+    },
+    {
+     "tipo": "aula",
+     "titulo": "no próximo episódio",
+     "linhas": [
+      "a pista da menta vai para a taça"
+     ],
+     "entra_fala": 12,
+     "sai_fala": 12,
+     "fonte": "plano_estrategia.md (ep.04)"
+    }
+   ]
+  }
+ ]
+}
