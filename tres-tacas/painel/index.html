@@ -6,19 +6,19 @@
 :root {
   --bg: #F6F1F2; --surface: #FFFFFF; --ink: #2A1418; --muted: #6E5A5E; --line: #E4D8DA;
   --wine: #7A1F33; --amber: #B5641A; --gold: #9A7A3E;
-  --st-fazer: #8A7F82; --st-editar: #2F6FB0; --st-aprovar: #B5641A; --st-agendado: #6B4FA0; --st-postado: #2E7D4F; --st-confirmar: #B23A48;
+  --st-fazer: #8A7F82; --st-editar: #2F6FB0; --st-aprovar: #B5641A; --st-aprovado: #2A8A8A; --st-agendado: #6B4FA0; --st-postado: #2E7D4F; --st-confirmar: #B23A48;
   --yt: #C4302B; --ig: #A8327F;
   --display: 'Oswald', 'Arial Narrow', Arial, sans-serif; --body: 'Inter', system-ui, -apple-system, Arial, sans-serif;
 }
 @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
   --bg: #170A0D; --surface: #24121A; --ink: #F4EBE2; --muted: #BFA9A6; --line: #3A2229;
   --wine: #E07A8E; --amber: #E3913C; --gold: #C8A46C;
-  --st-fazer: #A99C9E; --st-editar: #6FA8E0; --st-aprovar: #E3913C; --st-agendado: #A98BDB; --st-postado: #5DBB82; --st-confirmar: #EF7B88;
+  --st-fazer: #A99C9E; --st-editar: #6FA8E0; --st-aprovar: #E3913C; --st-aprovado: #5CC2C2; --st-agendado: #A98BDB; --st-postado: #5DBB82; --st-confirmar: #EF7B88;
   --yt: #F06B66; --ig: #E07AC0; color-scheme: dark } }
 :root[data-theme="dark"] {
   --bg: #170A0D; --surface: #24121A; --ink: #F4EBE2; --muted: #BFA9A6; --line: #3A2229;
   --wine: #E07A8E; --amber: #E3913C; --gold: #C8A46C;
-  --st-fazer: #A99C9E; --st-editar: #6FA8E0; --st-aprovar: #E3913C; --st-agendado: #A98BDB; --st-postado: #5DBB82; --st-confirmar: #EF7B88;
+  --st-fazer: #A99C9E; --st-editar: #6FA8E0; --st-aprovar: #E3913C; --st-aprovado: #5CC2C2; --st-agendado: #A98BDB; --st-postado: #5DBB82; --st-confirmar: #EF7B88;
   --yt: #F06B66; --ig: #E07AC0; color-scheme: dark }
 * { box-sizing: border-box }
 body { background: var(--bg); color: var(--ink); font: 15px/1.45 var(--body); }
@@ -72,6 +72,34 @@ select.status { font: 600 12px var(--body); color: var(--st); background: var(--
 .legend i { display: inline-block; width: 10px; height: 10px; border-radius: 3px; background: var(--st); margin-right: 4px; vertical-align: -1px }
 .note { font-size: 13px; color: var(--muted); margin-top: 10px }
 a.ext { color: var(--wine) }
+.row.click { cursor: pointer }
+.row.click:hover { border-color: var(--st) }
+.thumbs { display: flex; gap: 10px; align-items: flex-start }
+.mini { width: 44px; aspect-ratio: 4 / 5; object-fit: cover; border-radius: 6px; flex: none; background: var(--line) }
+.mini.wide { aspect-ratio: 16 / 9; width: 72px }
+.tile { position: relative; cursor: pointer }
+.tile.img { padding: 0; border-top: 0 }
+.tile.img .badge { position: absolute; left: 6px; top: 6px; font: 600 10px/1 var(--body); padding: 4px 6px; border-radius: 5px; background: var(--st); color: #FFF }
+.tile.img img { width: 100%; height: 100%; object-fit: cover; display: block }
+.ytc { cursor: pointer }
+.ytc img.th { aspect-ratio: 16 / 9; width: 100%; object-fit: cover; display: block }
+.overlay { position: fixed; inset: 0; z-index: 20; background: rgba(10, 4, 6, .62); display: flex; align-items: flex-end; justify-content: center; padding-top: env(safe-area-inset-top, 0px) }
+@media (min-width: 760px) { .overlay { align-items: center } }
+.sheet { background: var(--bg); color: var(--ink); width: min(720px, 100%); max-height: 92vh; overflow-y: auto; border-radius: 16px 16px 0 0; padding-block: 16px calc(20px + env(safe-area-inset-bottom, 0px)); padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)) }
+@media (min-width: 760px) { .sheet { border-radius: 16px } }
+.sheet .media { display: flex; justify-content: center; background: var(--surface); border-radius: 12px; overflow: hidden }
+.sheet .media video, .sheet .media img { max-width: 100%; max-height: 62vh; display: block }
+.sheet h3 { font: 600 20px/1.2 var(--display); margin: 14px 0 4px; text-wrap: balance }
+.sheet .cap { white-space: pre-wrap; background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 12px; font-size: 14px; max-height: 260px; overflow-y: auto }
+.sheet label { display: block; font-weight: 600; font-size: 13px; margin: 14px 0 6px }
+.sheet textarea { width: 100%; min-height: 72px; font: 14px var(--body); color: var(--ink); background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 10px }
+.actions { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 14px }
+.btn { font: 600 14px var(--body); border-radius: 999px; padding: 10px 16px; border: 1px solid var(--line); background: var(--surface); color: var(--ink); cursor: pointer }
+.btn.go { background: var(--st-aprovado); border-color: var(--st-aprovado); color: #FFF }
+.btn.fix { border-color: var(--st-confirmar); color: var(--st-confirmar) }
+.btn.small { padding: 6px 12px; font-size: 12.5px }
+.hint { font-size: 13px; color: var(--muted); margin-top: 8px }
+.ajuste { margin-top: 6px; font-size: 13px; color: var(--st-confirmar) }
 .toast { position: fixed; left: 50%; transform: translateX(-50%); bottom: calc(16px + env(safe-area-inset-bottom, 0px)); background: var(--ink); color: var(--bg); padding: 8px 14px; border-radius: 999px; font-size: 13px }
 @media (prefers-reduced-motion: no-preference) { .row, .tile { transition: border-color .2s } }
 </style>
@@ -104,7 +132,7 @@ a.ext { color: var(--wine) }
   <section id="v-feed" hidden>
     <div class="grid2">
       <div><h2>Instagram<span class="count">ganchos que levam ao YouTube</span></h2><div class="feed" id="ig"></div>
-        <p class="note">Mais recente primeiro, como no perfil. A cor no topo é o status.</p></div>
+        <p class="note">Como o perfil vai ficar: mais recente primeiro. Os que ainda não saíram mostram a data e o status. Toque num post para ver o vídeo e a legenda.</p></div>
       <div><h2>YouTube<span class="count">episódios completos</span></h2><div class="yt" id="yt"></div></div>
     </div>
   </section>
@@ -114,11 +142,12 @@ a.ext { color: var(--wine) }
     <div class="list" id="mat"></div>
   </section>
 </main>
+<div class="overlay" id="sheet" hidden></div>
 <div class="toast" id="toast" hidden></div>
 
 <script>
 const STATUS = [
-  ["fazer", "A fazer"], ["editar", "Editando"], ["aprovar", "Para aprovar"],
+  ["fazer", "A fazer"], ["editar", "Editando"], ["aprovar", "Para aprovar"], ["aprovado", "Aprovado"],
   ["agendado", "Agendado"], ["postado", "Postado"], ["confirmar", "Confirmar"]];
 const ST_LABEL = Object.fromEntries(STATUS);
 const MAT_LABEL = { novo: "Novo, a analisar", analisando: "Analisando", edicao: "Em edição", usado: "Usado" };
@@ -152,13 +181,19 @@ function row(p) {
   const r = el("div", "row"); r.style.setProperty("--st", stVar(p.status));
   const d = pdate(p.data), dt = el("div", "date");
   dt.append(el("b", null, d ? d.getDate() : "–"), el("span", null, d ? DOW[d.getDay()] + " · " + MON[d.getMonth()] : "sem data"));
-  const b = el("div"); b.append(el("div", "title", p.titulo));
+  const b = el("div"); const head = el("div", "thumbs");
+  if (p.capa) { const im = el("img", "mini" + (p.rede === "youtube" && p.formato !== "Short" ? " wide" : "")); im.src = p.capa; im.alt = ""; head.append(im); }
+  head.append(el("div", "title", p.titulo)); b.append(head);
   const m = el("div", "meta");
   m.append(el("span", "chip " + p.rede, p.rede === "youtube" ? "YouTube" : "Instagram"));
   if (p.formato) m.append(el("span", null, p.formato));
   if (p.hora) m.append(el("span", null, p.hora));
   m.append(statusSelect(p)); b.append(m);
   if (p.proximo && p.status !== "postado") b.append(el("div", "next", p.proximo));
+  if (p.ajuste && p.status === "editar") b.append(el("div", "ajuste", "Ajuste pedido: " + p.ajuste));
+  r.classList.add("click"); r.tabIndex = 0; r.setAttribute("role", "button");
+  r.addEventListener("click", e => { if (!e.target.closest("select")) openSheet(p.id); });
+  r.addEventListener("keydown", e => { if (e.key === "Enter" && e.target === r) openSheet(p.id); });
   r.append(dt, b); return r;
 }
 
@@ -222,16 +257,63 @@ function render() {
   const igs = sorted.filter(p => p.rede === "instagram").reverse();
   if (!igs.length) ig.append(el("div", "empty", "Sem posts de Instagram no plano."));
   for (const p of igs) { const c = el("div", "tile"); c.style.setProperty("--st", stVar(p.status)); const d = pdate(p.data);
-    c.append(el("div", "t", p.titulo), el("div", "d", (p.formato || "") + (d ? " · " + d.getDate() + " " + MON[d.getMonth()] : "") + " · " + (ST_LABEL[p.status] || p.status))); ig.append(c); }
+    c.setAttribute("role", "button"); c.tabIndex = 0; c.setAttribute("aria-label", p.titulo); c.addEventListener("click", () => openSheet(p.id));
+    if (p.capa) { c.classList.add("img"); const im = el("img"); im.src = p.capa; im.alt = p.titulo; c.append(im);
+      if (p.status !== "postado") c.append(el("span", "badge", (d ? d.getDate() + " " + MON[d.getMonth()] + " · " : "") + (ST_LABEL[p.status] || p.status))); }
+    else c.append(el("div", "t", p.titulo), el("div", "d", (p.formato || "") + (d ? " · " + d.getDate() + " " + MON[d.getMonth()] : "") + " · " + (ST_LABEL[p.status] || p.status)));
+    ig.append(c); }
   const yt = $("yt"); yt.replaceChildren();
   const yts = sorted.filter(p => p.rede === "youtube");
   if (!yts.length) yt.append(el("div", "empty", "Sem episódios no plano."));
-  for (const p of yts) { const c = el("div", "ytc"); c.append(el("div", "thumb", p.ep || "Três Taças"));
+  for (const p of yts) { const c = el("div", "ytc"); c.addEventListener("click", e => { if (!e.target.closest("select")) openSheet(p.id); });
+    if (p.capa) { const im = el("img", "th"); im.src = p.capa; im.alt = ""; c.append(im); } else c.append(el("div", "thumb", p.ep || "Três Taças"));
     const b = el("div", "b"); b.append(el("div", "title", p.titulo)); const m = el("div", "meta"); const d = pdate(p.data);
     if (d) m.append(el("span", null, d.getDate() + " " + MON[d.getMonth()] + (p.hora ? " · " + p.hora : ""))); m.append(statusSelect(p)); b.append(m); c.append(b); yt.append(c); }
 
   fill("mat", [...material].sort((a, b) => (b.subiu || "").localeCompare(a.subiu || "")), matRow, "Nenhuma gravação registrada ainda.");
 }
+
+let sheetId = null;
+function openSheet(id) { sheetId = id; renderSheet(); }
+function closeSheet() { sheetId = null; const ov = $("sheet"); ov.hidden = true; ov.replaceChildren(); }
+function renderSheet() {
+  const ov = $("sheet"); const p = pecas.find(x => x.id === sheetId); if (!p) return closeSheet();
+  ov.hidden = false; ov.replaceChildren();
+  const sh = el("div", "sheet"); sh.setAttribute("role", "dialog"); sh.setAttribute("aria-modal", "true"); sh.setAttribute("aria-label", p.titulo);
+  const media = el("div", "media");
+  if (p.video) { const v = el("video"); v.src = p.video; v.controls = true; v.playsInline = true; v.preload = "metadata"; if (p.capa) v.poster = p.capa; media.append(v); }
+  else if (p.capa) { const im = el("img"); im.src = p.capa; im.alt = "Capa"; media.append(im); }
+  if (media.childNodes.length) sh.append(media);
+  if (!p.video && p.status !== "postado") sh.append(el("p", "hint", p.status === "fazer" ? "Esta peça ainda não foi feita." : "O vídeo desta peça ainda não está no painel."));
+  sh.append(el("h3", null, p.titulo));
+  const m = el("div", "meta"); m.append(el("span", "chip " + p.rede, p.rede === "youtube" ? "YouTube" : "Instagram"));
+  if (p.formato) m.append(el("span", null, p.formato));
+  const d = pdate(p.data); if (d) m.append(el("span", null, DOW[d.getDay()] + " " + d.getDate() + " " + MON[d.getMonth()] + (p.hora ? " · " + p.hora : "")));
+  m.append(statusSelect(p)); sh.append(m);
+  if (p.proximo && p.status !== "postado") sh.append(el("div", "next", p.proximo));
+  if (p.legenda) {
+    sh.append(el("label", null, p.rede === "youtube" && p.formato !== "Short" ? "Título e descrição" : "Legenda"));
+    sh.append(el("div", "cap", p.legenda));
+    const cp = el("button", "btn small", "Copiar"); cp.type = "button";
+    cp.addEventListener("click", () => { try { navigator.clipboard.writeText(p.legenda).then(() => toast("Copiado"), () => toast("Selecione o texto e copie")); } catch (e) { toast("Selecione o texto e copie"); } });
+    const a = el("div", "actions"); a.append(cp); sh.append(a);
+  }
+  if (p.status !== "postado" && p.status !== "fazer") {
+    const lab = el("label", null, "Ajuste que você quer (opcional)"); lab.htmlFor = "aj-" + p.id; sh.append(lab);
+    const ta = el("textarea"); ta.id = "aj-" + p.id; ta.value = p.ajuste || ""; ta.placeholder = "Ex.: tirar a parte em que eu tusso no começo"; sh.append(ta);
+    const a = el("div", "actions");
+    const ok = el("button", "btn go", "Aprovar"); ok.type = "button";
+    const fx = el("button", "btn fix", "Pedir ajuste"); fx.type = "button";
+    const save = async (patch, msg) => { if (!db) return toast("Sem conexão com os dados agora.");
+      try { await db.doc("pecas/" + p.id).update({ ...patch, atualizado: new Date().toISOString() }); toast(msg); closeSheet(); } catch (e) { toast("Não salvou. Tente de novo."); } };
+    ok.addEventListener("click", () => save({ status: "aprovado", ajuste: ta.value.trim() }, "Aprovado. Eu agendo."));
+    fx.addEventListener("click", () => { if (!ta.value.trim()) { ta.focus(); return toast("Escreva o ajuste primeiro"); } save({ status: "editar", ajuste: ta.value.trim() }, "Ajuste enviado"); });
+    a.append(ok, fx); sh.append(a);
+  }
+  const cl = el("div", "actions"); const x = el("button", "btn", "Fechar"); x.type = "button"; x.addEventListener("click", closeSheet); cl.append(x); sh.append(cl);
+  ov.append(sh); x.focus({ preventScroll: true });
+}
+document.addEventListener("keydown", e => { if (e.key === "Escape" && sheetId) closeSheet(); });
 
 function route() {
   const v = (location.hash || "#hoje").slice(1);
@@ -240,11 +322,12 @@ function route() {
   document.querySelectorAll("nav a").forEach(a => { if (a.getAttribute("href") === "#" + cur) a.setAttribute("aria-current", "page"); else a.removeAttribute("aria-current"); });
 }
 addEventListener("hashchange", route); route(); render();
+$("sheet").addEventListener("click", e => { if (e.target.id === "sheet") closeSheet(); });
 
 (async () => {
   db = window.claude?.use ? await window.claude.use("db") : null;
   if (!db) { toast("Sem conexão com os dados agora."); return; }
-  db.collection("pecas").onSnapshot(s => { pecas = s.docs.map(d => ({ id: d.id, ...d.data() })); render(); }, () => toast("Os dados pararam de atualizar. Recarregue a página."));
+  db.collection("pecas").onSnapshot(s => { pecas = s.docs.map(d => ({ id: d.id, ...d.data() })); render(); if (sheetId && !document.activeElement?.matches("textarea")) renderSheet(); }, () => toast("Os dados pararam de atualizar. Recarregue a página."));
   db.collection("material").onSnapshot(s => { material = s.docs.map(d => ({ id: d.id, ...d.data() })); render(); }, () => {});
 })();
 </script>
