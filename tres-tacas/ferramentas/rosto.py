@@ -35,7 +35,8 @@ def localizar(fr, ignorar_marca=True):
 def recorte(fr, box, w_out, h_out, inset=6):
     """recorta a janela (sem a borda) no formato w_out:h_out, centrado."""
     x, y, w, h = box
-    c = fr[y + inset:y + h - inset, x + inset:x + w - inset]
+    y0 = max(y + inset, 44)                                   # nunca a barra de status do iPad
+    c = fr[y0:y + h - inset, x + inset:x + w - inset]
     ch, cw = c.shape[:2]; asp = w_out / h_out
     if cw / ch > asp: nw = int(ch * asp); c = c[:, (cw - nw) // 2:(cw - nw) // 2 + nw]
     else: nh = int(cw / asp); c = c[(ch - nh) // 4:(ch - nh) // 4 + nh]

@@ -17,6 +17,7 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import visual as V, rosto, cleanfala
 
 R = json.load(open(sys.argv[1])); MODE = sys.argv[2]
+R["saida"] = os.path.abspath(R["saida"]); R["video"] = os.path.abspath(R["video"])
 WD = os.path.splitext(R["saida"])[0] + "_trab"; os.makedirs(WD, exist_ok=True)
 FPS, SPEED = 30, 1.1
 W, H = V.W, V.H
@@ -206,6 +207,11 @@ def tela_layer(tela, box):
         return dict(titulo=tt, cols=cols, cw=cw)
     return None
 
+def face_tile(src, box, w, h):
+    """rosto recortado; a janelinha pequena não é ampliada mais de 2x (fica nítida)."""
+    k = min(1.0, 2.0 * (box[2] - 12) / w); w2, h2 = int(w * k), int(h * k)
+    return rosto.recorte(src, box, w2, h2), (w - w2) // 2, (h - h2) // 2
+
 def compose(fr, src, tela, box, layer):
     tipo = tela.get("tipo", "app") if tela else "app"
     if tipo == "app" or layer is None and tipo != "aula":
@@ -217,11 +223,11 @@ def compose(fr, src, tela, box, layer):
         return
     if tela.get("titulo", "").lower() == "capa":
         V.over(fr, layer, 0, 0)
-        if box: f = rosto.recorte(src, box, 560, 420); p, m = V.rounded(f[..., ::-1], 28); V.over(fr, p, 1260 - m, 230 - m)
+        if box: f, dx, dy = face_tile(src, box, 560, 420); p, m = V.rounded(f[..., ::-1], 28); V.over(fr, p, 1260 - m + dx, 230 - m + dy)
         return
     if tipo in ("aula", "placar"):
         V.over(fr, layer, 90, max(70, (950 - layer.shape[0]) // 2))
-        if box: f = rosto.recorte(src, box, 640, 480); p, m = V.rounded(f[..., ::-1], 28); V.over(fr, p, 1200 - m, 260 - m)
+        if box: f, dx, dy = face_tile(src, box, 640, 480); p, m = V.rounded(f[..., ::-1], 28); V.over(fr, p, 1200 - m + dx, 260 - m + dy)
         return
     if tipo == "comparacao":
         import PIL.Image as I, PIL.ImageDraw as D
@@ -229,7 +235,7 @@ def compose(fr, src, tela, box, layer):
         d.text((100, 65), layer["titulo"].upper(), font=V.font("osw600", 64), fill=V.AMBER + (255,), anchor="lm")
         V.over(fr, np.array(im), 0, 50)
         for i, c in enumerate(layer["cols"]): V.over(fr, c, 90 + i * (layer["cw"] + 30), 190)
-        if box: f = rosto.recorte(src, box, 400, 300); p, m = V.rounded(f[..., ::-1], 24); V.over(fr, p, 1440 - m, 600 - m)
+        if box: f, dx, dy = face_tile(src, box, 400, 300); p, m = V.rounded(f[..., ::-1], 24); V.over(fr, p, 1440 - m + dx, 600 - m + dy)
 
 # ---------------------------------------------------------------- final
 def final():
