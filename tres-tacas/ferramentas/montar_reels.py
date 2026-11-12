@@ -35,7 +35,11 @@ def background():
 def header():
     im = Image.new("RGBA", (W, 300)); d = ImageDraw.Draw(im)
     d.text((W // 2, 92), R["serie"], font=V.font("corm_it600", 46), fill=V.CREAM + (255,), anchor="mm")
-    lines = wrap(SP["gancho"].upper(), V.font("osw600", 96), W - 120)
+    f96 = V.font("osw600", 96); lines = wrap(SP["gancho"].upper(), f96, W - 120)
+    if len(lines) == 2:                                  # duas linhas equilibradas, sem palavra sozinha
+        ws = SP["gancho"].upper().split()
+        k = min(range(1, len(ws)), key=lambda i: max(f96.getlength(" ".join(ws[:i])), f96.getlength(" ".join(ws[i:]))))
+        lines = [" ".join(ws[:k]), " ".join(ws[k:])]
     y = 190 if len(lines) == 1 else 165
     for ln in lines[:2]: d.text((W // 2, y), ln, font=V.font("osw600", 96), fill=V.AMBER + (255,), anchor="mm"); y += 104
     return np.array(V.shadowed(im, 10, 200))
