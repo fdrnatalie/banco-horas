@@ -100,6 +100,22 @@ a.ext { color: var(--wine) }
 .btn.small { padding: 6px 12px; font-size: 12.5px }
 .hint { font-size: 13px; color: var(--muted); margin-top: 8px }
 .ajuste { margin-top: 6px; font-size: 13px; color: var(--st-confirmar) }
+.rt-head { display: flex; gap: 12px; flex-wrap: wrap; align-items: baseline; justify-content: space-between; margin-top: 18px }
+.rt-head h2 { margin: 0 }
+.rt-bloco { margin-top: 26px }
+.rt-bloco h3 { font: 600 16px var(--display); letter-spacing: .8px; text-transform: uppercase; color: var(--gold); margin: 0 0 4px }
+.rt-bloco .tema { font-size: 13.5px; color: var(--muted); margin: 0 0 10px }
+.rt-tela { display: grid; gap: 12px; background: var(--surface); border: 1px solid var(--line); border-radius: 12px; padding: 12px; margin-bottom: 12px }
+@media (min-width: 860px) { .rt-tela { grid-template-columns: 1.25fr 1fr } }
+.rt-tela > * { min-width: 0 }
+.rt-tela img { width: 100%; aspect-ratio: 16 / 9; object-fit: cover; border-radius: 8px; display: block }
+.rt-tela .tt { font: 600 12px var(--body); letter-spacing: .8px; text-transform: uppercase; color: var(--gold); margin-bottom: 6px }
+.rt-tela ol { margin: 0; padding-left: 20px; display: flex; flex-direction: column; gap: 6px; font-size: 14.5px }
+.rt-tela .src { font-size: 12px; color: var(--muted); margin-top: 8px }
+.rt-tela textarea { width: 100%; min-height: 44px; font: 13.5px var(--body); color: var(--ink); background: var(--bg); border: 1px solid var(--line); border-radius: 8px; padding: 8px; margin-top: 8px }
+.rt-box { background: var(--surface); border: 1px solid var(--line); border-radius: 12px; padding: 14px; margin-top: 14px }
+.rt-box textarea { width: 100%; min-height: 64px; font: 14px var(--body); color: var(--ink); background: var(--bg); border: 1px solid var(--line); border-radius: 8px; padding: 10px }
+a.btn { text-decoration: none; display: inline-block }
 .toast { position: fixed; left: 50%; transform: translateX(-50%); bottom: calc(16px + env(safe-area-inset-bottom, 0px)); background: var(--ink); color: var(--bg); padding: 8px 14px; border-radius: 999px; font-size: 13px }
 @media (prefers-reduced-motion: no-preference) { .row, .tile { transition: border-color .2s } }
 </style>
@@ -136,6 +152,7 @@ a.ext { color: var(--wine) }
       <div><h2>YouTube<span class="count">episódios completos</span></h2><div class="yt" id="yt"></div></div>
     </div>
   </section>
+  <section id="v-roteiro" hidden><div id="roteiro"></div></section>
   <section id="v-material" hidden>
     <h2>Gravações no Drive</h2>
     <p class="note">Conferido todo dia de manhã. Pasta: Degustação às cegas em 01.</p>
@@ -153,7 +170,7 @@ const ST_LABEL = Object.fromEntries(STATUS);
 const MAT_LABEL = { novo: "Novo, a analisar", analisando: "Analisando", edicao: "Em edição", usado: "Usado" };
 const DOW = ["dom", "seg", "ter", "qua", "qui", "sex", "sáb"];
 const MON = ["jan", "fev", "mar", "abr", "mai", "jun", "jul", "ago", "set", "out", "nov", "dez"];
-let pecas = [], material = [], db = null;
+let pecas = [], material = [], roteiros = {}, db = null;
 
 const $ = id => document.getElementById(id);
 const el = (tag, cls, txt) => { const e = document.createElement(tag); if (cls) e.className = cls; if (txt != null) e.textContent = txt; return e; };
@@ -238,7 +255,14 @@ function render() {
     tile(novos.length, novos.length === 1 ? "gravação nova no Drive" : "gravações novas no Drive", novos.length ? "alert" : ""));
 
   fill("semana", atrasado.concat(semana), row, "Nada marcado para os próximos 7 dias.", "c-semana");
-  fill("voce", voce, row, "Nada esperando por você.", "c-voce");
+  const rtPend = Object.entries(roteiros).filter(([, r]) => r.status === "aprovar").map(([ep, r]) => {
+    const rr = el("a", "row click"); rr.href = "#roteiro-" + ep; rr.style.setProperty("--st", "var(--st-aprovar)"); rr.style.textDecoration = "none"; rr.style.color = "inherit";
+    const dt = el("div", "date"); dt.append(el("b", null, "▶"), el("span", null, "roteiro"));
+    const b = el("div"); b.append(el("div", "title", "Roteiro do " + ep.replace("ep", "ep.") + " · " + (r.titulo || "")));
+    const m = el("div", "meta"); m.append(el("span", "chip youtube", "YouTube"), el("span", null, "≈ " + (r.duracao || "") + " · " + (r.telas || []).length + " telas")); b.append(m);
+    b.append(el("div", "next", "Ver as telas e as falas e aprovar ou pedir ajuste.")); rr.append(dt, b); return rr; });
+  fill("voce", voce, row, rtPend.length ? "" : "Nada esperando por você.", "c-voce");
+  if (rtPend.length) { const box = $("voce"); if (!voce.length) box.replaceChildren(); rtPend.reverse().forEach(x => box.prepend(x)); $("c-voce").textContent = voce.length + rtPend.length; }
   fill("novo", novos, matRow, "Nenhuma gravação nova. O Drive é conferido todo dia.", "c-novo");
 
   const lg = $("legend"); lg.replaceChildren();
@@ -273,6 +297,48 @@ function render() {
   fill("mat", [...material].sort((a, b) => (b.subiu || "").localeCompare(a.subiu || "")), matRow, "Nenhuma gravação registrada ainda.");
 }
 
+let rtUnsub = null, rtEp = null, rtDoc = null;
+function openRoteiro(ep) {
+  if (rtEp === ep && rtUnsub) return renderRoteiro();
+  if (rtUnsub) rtUnsub(); rtEp = ep; rtDoc = null; renderRoteiro();
+  if (!db) return;
+  rtUnsub = db.doc("roteiros/" + ep).onSnapshot(s => { rtDoc = s.exists ? s.data() : null; if (!document.activeElement?.matches("#roteiro textarea")) renderRoteiro(); }, () => {});
+}
+const RT_ST = { aprovar: "Para aprovar", aprovado: "Aprovado", ajuste: "Ajuste pedido" };
+function renderRoteiro() {
+  const box = $("roteiro"); box.replaceChildren();
+  const back = el("a", "btn small", "← Voltar"); back.href = "#agenda"; box.append(el("div", "actions")); box.lastChild.append(back);
+  if (!rtDoc) { box.append(el("div", "empty", db ? "Carregando o roteiro…" : "Sem conexão com os dados agora.")); return; }
+  const d = rtDoc; const head = el("div", "rt-head");
+  head.append(el("h2", null, "Roteiro · " + (d.titulo || d.ep)));
+  const st = el("span", "chip", RT_ST[d.status] || d.status); st.style.color = d.status === "aprovado" ? "var(--st-aprovado)" : d.status === "ajuste" ? "var(--st-confirmar)" : "var(--st-aprovar)";
+  head.append(st); box.append(head);
+  box.append(el("p", "note", `≈ ${d.duracao} de vídeo · ${d.blocos} blocos · ${d.telas.length} telas. Cada tela mostra como fica no vídeo e as falas que tocam nela. Comente a tela que quiser mudar e, no fim, aprove ou peça ajuste.`));
+  let last = null, sec = null;
+  for (const t of d.telas) {
+    if (t.bloco !== last) { last = t.bloco; sec = el("div", "rt-bloco"); sec.append(el("h3", null, t.bloco + " · " + t.capitulo + (t.sub ? " · " + t.sub : "")));
+      if (t.tema) sec.append(el("p", "tema", t.tema)); box.append(sec); }
+    const c = el("div", "rt-tela"); const im = el("img"); im.src = t.img; im.alt = t.titulo || t.tipo; im.loading = "lazy";
+    const right = el("div"); right.append(el("div", "tt", (t.tipo || "") + (t.titulo ? " · " + t.titulo : "")));
+    if (t.falas && t.falas.length) { const ol = el("ol"); for (const f of t.falas) ol.append(el("li", null, "“" + f + "”")); right.append(ol); }
+    else right.append(el("p", "hint", "Sem fala: a tela fica no ar alguns segundos."));
+    if (t.fonte) right.append(el("div", "src", "Fonte: " + t.fonte));
+    const ta = el("textarea"); ta.id = "rt-" + t.id; ta.placeholder = "Comentário sobre esta tela (opcional)"; ta.value = (d.comentarios || {})[t.id] || "";
+    ta.addEventListener("change", async () => { try { await db.doc("roteiros/" + rtEp).update({ comentarios: { [t.id]: ta.value.trim() } }); toast("Comentário salvo"); } catch (e) { toast("Não salvou. Tente de novo."); } });
+    right.append(ta); c.append(im, right); sec.append(c);
+  }
+  const fb = el("div", "rt-box"); const lab = el("label", null, "Ajuste geral (opcional)"); lab.htmlFor = "rt-geral"; fb.append(lab);
+  const ta = el("textarea"); ta.id = "rt-geral"; ta.value = d.ajuste || ""; ta.placeholder = "Ex.: o bloco do kit está longo; quero a revelação antes"; fb.append(ta);
+  const a = el("div", "actions"); const ok = el("button", "btn go", "Aprovar roteiro"); ok.type = "button"; const fx = el("button", "btn fix", "Pedir ajuste"); fx.type = "button";
+  const save = async (patch, msg, peca) => { try { await db.doc("roteiros/" + rtEp).update({ ...patch, atualizado: new Date().toISOString() });
+      if (peca) { try { await db.doc("pecas/" + rtEp + "-yt").update(peca); } catch (e) {} } toast(msg); } catch (e) { toast("Não salvou. Tente de novo."); } };
+  ok.addEventListener("click", () => save({ status: "aprovado", ajuste: ta.value.trim() }, "Roteiro aprovado. Começo a edição.", { status: "editar", proximo: "Roteiro aprovado: editando o vídeo." }));
+  fx.addEventListener("click", () => { const cs = Object.values(d.comentarios || {}).filter(Boolean).length;
+    if (!ta.value.trim() && !cs) { ta.focus(); return toast("Escreva o ajuste ou comente uma tela"); }
+    save({ status: "ajuste", ajuste: ta.value.trim() }, "Ajuste enviado", { status: "editar", proximo: "Ajustando o roteiro com os seus comentários." }); });
+  a.append(ok, fx); fb.append(a); box.append(fb);
+}
+
 let sheetId = null;
 function openSheet(id) { sheetId = id; renderSheet(); }
 function closeSheet() { sheetId = null; const ov = $("sheet"); ov.hidden = true; ov.replaceChildren(); }
@@ -291,6 +357,9 @@ function renderSheet() {
   const d = pdate(p.data); if (d) m.append(el("span", null, DOW[d.getDay()] + " " + d.getDate() + " " + MON[d.getMonth()] + (p.hora ? " · " + p.hora : "")));
   m.append(statusSelect(p)); sh.append(m);
   if (p.proximo && p.status !== "postado") sh.append(el("div", "next", p.proximo));
+  const rtId = p.roteiro || (p.rede === "youtube" && p.formato === "Episódio" && roteiros[p.ep] ? p.ep : null);
+  if (rtId) { p = { ...p, roteiro: rtId }; const a = el("div", "actions"); const l = el("a", "btn go", "Ver o roteiro (telas e falas)"); l.href = "#roteiro-" + p.roteiro;
+    l.addEventListener("click", () => closeSheet()); a.append(l); sh.append(a); }
   if (p.legenda) {
     sh.append(el("label", null, p.rede === "youtube" && p.formato !== "Short" ? "Título e descrição" : "Legenda"));
     sh.append(el("div", "cap", p.legenda));
@@ -317,6 +386,12 @@ document.addEventListener("keydown", e => { if (e.key === "Escape" && sheetId) c
 
 function route() {
   const v = (location.hash || "#hoje").slice(1);
+  if (v.startsWith("roteiro-")) {
+    for (const k of ["hoje", "agenda", "feed", "material"]) $("v-" + k).hidden = true;
+    $("v-roteiro").hidden = false; document.querySelectorAll("nav a").forEach(a => a.removeAttribute("aria-current"));
+    openRoteiro(v.slice(8)); window.scrollTo(0, 0); return;
+  }
+  $("v-roteiro").hidden = true;
   const views = ["hoje", "agenda", "feed", "material"]; const cur = views.includes(v) ? v : "hoje";
   for (const k of views) $("v-" + k).hidden = k !== cur;
   document.querySelectorAll("nav a").forEach(a => { if (a.getAttribute("href") === "#" + cur) a.setAttribute("aria-current", "page"); else a.removeAttribute("aria-current"); });
@@ -328,6 +403,7 @@ $("sheet").addEventListener("click", e => { if (e.target.id === "sheet") closeSh
   db = window.claude?.use ? await window.claude.use("db") : null;
   if (!db) { toast("Sem conexão com os dados agora."); return; }
   db.collection("pecas").onSnapshot(s => { pecas = s.docs.map(d => ({ id: d.id, ...d.data() })); render(); if (sheetId && !document.activeElement?.matches("textarea")) renderSheet(); }, () => toast("Os dados pararam de atualizar. Recarregue a página."));
+  db.collection("roteiros").onSnapshot(s => { roteiros = Object.fromEntries(s.docs.map(d => [d.id, d.data()])); render(); }, () => {});
   db.collection("material").onSnapshot(s => { material = s.docs.map(d => ({ id: d.id, ...d.data() })); render(); }, () => {});
 })();
 </script>
