@@ -62,13 +62,16 @@ def wrap(txt, f, maxw):
     if cur: out.append(cur)
     return out
 
-def ctx_layer(tela, w=960):
+def ctx_layer(tela, w=960, hmax=None):
     if tela is None or tela.get("tipo") == "app" and not (tela.get("titulo") or tela.get("linhas")): return None
     tipo = tela.get("tipo"); tt = tela.get("titulo", ""); ll = tela.get("linhas", [])
     if tt.lower() == "capa": return None
     if tipo == "comparacao":
         ll = [" · ".join(x.strip() for x in re.split(r" · |;", c)) for c in ll]
-    return V.card(w, tt, ll[:4], 64, 52)
+    for ts, ls in ((64, 52), (58, 46), (54, 42), (50, 38), (46, 34)):   # o cartão nunca invade a legenda
+        c = V.card(w, tt, ll[:4], ts, ls)
+        if hmax is None or c.shape[0] <= hmax: break
+    return c
 
 def pecas():
     blocos = {b["id"]: b for b in R["blocos"]}
@@ -196,7 +199,7 @@ def main():
         lay = ("cartao+rosto" if box else "cartao") if ctx_layer(tela) is not None else "rosto"
         CTX, FACE, CAP_Y = LAY[lay]
         key = (json.dumps(tela, sort_keys=True), lay)
-        if key not in cache: cache[key] = ctx_layer(tela, CTX[2]) if CTX else None
+        if key not in cache: cache[key] = ctx_layer(tela, CTX[2], CTX[3] + 30) if CTX else None
         layer = cache[key]
         for k in range(n):
             t = (fidx + k) / FPS; fr = bg.copy(); src = frs[k]
