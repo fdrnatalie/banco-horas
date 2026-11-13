@@ -42,6 +42,53 @@ def recorte(fr, box, w_out, h_out, inset=6):
     else: nh = int(cw / asp); c = c[(ch - nh) // 4:(ch - nh) // 4 + nh]
     return cv2.resize(c, (w_out, h_out), interpolation=cv2.INTER_AREA)
 
+def valido(fr, box):
+    """a caixa tem mesmo a câmera? (parede vermelha + pele; o app é escuro e quase sem cor)"""
+    if not box: return False
+    x, y, w, h = box
+    if w < 150 or h < 150 or not (0.5 < w / h < 1.7): return False
+    c = cv2.resize(fr[y:y + h, x:x + w], (max(1, w // 4), max(1, h // 4)), interpolation=cv2.INTER_AREA)
+    hsv = cv2.cvtColor(c, cv2.COLOR_BGR2HSV); H_, S, V = (hsv[..., i].astype(np.int16) for i in range(3))
+    red = ((H_ < 8) | (H_ > 168)) & (S > 110) & (V > 60)
+    skin = (H_ >= 5) & (H_ <= 22) & (S > 45) & (S < 170) & (V > 100)
+    return (red.mean() + skin.mean()) > 0.2 and (V < 45).mean() < 0.4
+
+def candidatos(grab, dur, n=48):
+    """posições da janelinha ao longo do vídeo inteiro (ela muda de canto às vezes): lista de caixas completas."""
+    det = []
+    for t in np.linspace(5, max(6, dur - 5), n):
+        f = grab(float(t)); b = localizar(f) if f is not None else None
+        if b and valido(f, b): det.append(b)
+    cl = []
+    for b in det:
+        for c in cl:
+            if abs(c[0][0] - b[0]) < 60 and abs(c[0][1] - b[1]) < 60: c.append(b); break
+        else: cl.append([b])
+    out = []
+    for c in cl:
+        a = np.array(c, float)
+        out.append((int(np.median(a[:, 0])), int(np.median(a[:, 1])), int(np.percentile(a[:, 2], 80)), int(np.percentile(a[:, 3], 80))))
+    return out
+
+def escolher(frames, cands=()):
+    """caixa válida em pelo menos 3 de 4 amostras (detecção do trecho ou posição conhecida); senão None."""
+    fs = [f for f in frames if f is not None]
+    if not fs: return None
+    opts = [b for b in (localizar(f) for f in fs) if b] + list(cands)
+    best, bn = None, 0
+    for b in opts:
+        k = sum(valido(f, b) for f in fs)
+        if k > bn or (k == bn and best and b[2] * b[3] > best[2] * best[3]): best, bn = b, k
+    return tuple(int(v) for v in best) if best and bn >= max(1, len(fs) - 1) else None
+
+def estavel(frames):
+    """caixa só se TODAS as amostras acham a câmera no mesmo lugar; senão None (nada de app recortado)."""
+    bs = [localizar(f) if f is not None else None for f in frames]
+    if not bs or any(not valido(f, b) for f, b in zip(frames, bs)): return None
+    a = np.array(bs, float)
+    if (a[:, :2].max(0) - a[:, :2].min(0)).max() > 60: return None
+    return tuple(int(v) for v in np.median(a, axis=0))
+
 def mediana(boxes):
     bs = [b for b in boxes if b]
     if not bs: return None
