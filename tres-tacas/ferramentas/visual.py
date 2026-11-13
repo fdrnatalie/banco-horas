@@ -7,7 +7,9 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 W, H = 1920, 1080
 OX = (23, 7, 9); AMBER = (227, 145, 60); CREAM = (244, 235, 226); GOLD = (200, 164, 108)
 _F = {}
-FONT_FILES = {"osw600": "osw600.woff", "corm_it600": "corm_it600.woff", "corm500": "corm500.woff", "int600": "int600.woff"}
+FONT_FILES = {"osw600": "osw600.woff", "osw500": "osw500.woff", "corm_it600": "corm_it600.woff", "corm_it500": "corm_it500.woff",
+              "corm500": "corm500.woff", "corm600": "corm600.woff", "int600": "int600.woff", "int500": "int500.woff"}
+CHAMPAGNE = (232, 205, 165); LINE = (200, 164, 108)
 
 def font(k, size):
     if (k, size) not in _F: _F[(k, size)] = ImageFont.truetype(os.path.join(HERE, "fontes", FONT_FILES[k]), size)
@@ -33,16 +35,17 @@ def over(dst, rgba, x, y):
     dst[y0:y1, x0:x1] = (d * (1 - a) + s[..., 2::-1].astype(np.float32) * a).astype(np.uint8)
 
 def background(label):
-    yy, xx = np.mgrid[0:H, 0:W]
-    d = np.sqrt(((xx - W * 0.55) / W) ** 2 + ((yy - H * 0.4) / H) ** 2)
-    c1, c2 = np.array([0x22, 0x12, 0x46], np.float32), np.array(OX[::-1], np.float32)
-    t = np.clip(d * 1.5, 0, 1)[..., None]; bg = (c1 * (1 - t) + c2 * t).astype(np.uint8)
-    im = Image.new("RGBA", (W, H)); dr = ImageDraw.Draw(im); g = GOLD + (150,)
-    dr.rectangle([26, 26, W - 26, H - 26], outline=GOLD + (60,), width=2)
-    for (x, y, sx, sy) in [(18, 18, 1, 1), (W - 18, 18, -1, 1), (18, H - 18, 1, -1), (W - 18, H - 18, -1, -1)]:
-        dr.line([(x, y), (x + sx * 40, y)], fill=g, width=3); dr.line([(x, y), (x, y + sy * 40)], fill=g, width=3)
-    dr.text((W - 60, H - 50), label, font=font("osw600", 24), fill=GOLD + (200,), anchor="rm")
-    over(bg, np.array(im), 0, 0); return bg
+    """vinho profundo, luz suave no centro, grão fino; sem molduras."""
+    yy, xx = np.mgrid[0:H, 0:W]; d = np.sqrt(((xx - W * 0.5) / W) ** 2 + ((yy - H * 0.42) / H) ** 2)
+    c1, c2 = np.array([0x22, 0x14, 0x2c], np.float32), np.array([0x0e, 0x06, 0x12], np.float32)   # BGR
+    t = np.clip(d * 1.35, 0, 1)[..., None]; bg = c1 * (1 - t) + c2 * t
+    rng = np.random.default_rng(7); bg += rng.normal(0, 2.2, bg.shape[:2])[..., None]
+    bg = np.clip(bg, 0, 255).astype(np.uint8)
+    if label:
+        im = Image.new("RGBA", (W, H)); dr = ImageDraw.Draw(im)
+        dr.text((W - 64, H - 46), label.upper(), font=font("osw500", 20), fill=LINE + (170,), anchor="rm")
+        over(bg, np.array(im), 0, 0)
+    return bg
 
 def rounded(img_rgb, r=22, border=True):
     """RGB numpy -> RGBA numpy with rounded corners, gold border and shadow margin m; returns (rgba, m)."""
@@ -55,52 +58,64 @@ def rounded(img_rgb, r=22, border=True):
     return np.array(shadowed(im, 10, 170)), m
 
 def card(w, title, lines, tsize=64, lsize=46, bullet=True):
-    """dark card with an amber title and cream italic lines; height fits the content."""
+    """cartão translúcido, filete dourado fino; título em serifa, itens separados por linhas finas."""
     title = title.replace("→", "—"); lines = [l.replace("→", "—") for l in lines]
-    tl = textwrap.wrap(title, max(8, int((w - 112) / (tsize * 0.47)))) if title else []
-    wr = int((w - 120) / (lsize * 0.42))
-    hgt = 56 + len(tl) * int(tsize * 1.15) + (20 if tl and lines else 0) + sum(len(textwrap.wrap(l, wr)) * int(lsize * 1.25) + 10 for l in lines) + 36
+    ts = int(tsize * 0.95); ls_ = int(lsize * 0.9)
+    ft, fl = font("corm600", ts), font("corm500", ls_)
+    def wrap(txt, f, maxw):
+        out, cur = [], ""
+        for wd in txt.split():
+            if cur and f.getlength(cur + " " + wd) > maxw: out.append(cur); cur = wd
+            else: cur = (cur + " " + wd).strip()
+        if cur: out.append(cur)
+        return out
+    pad = 52; inner = w - 2 * pad
+    tl = wrap(title, ft, inner) if title else []
+    blocks = [wrap(l, fl, inner) for l in lines]
+    lh_t, lh_l, gap = int(ts * 1.12), int(ls_ * 1.3), 22
+    hgt = pad + len(tl) * lh_t + (gap if tl and lines else 0) + sum(len(b) * lh_l for b in blocks) + gap * max(0, len(blocks) - 1) + pad - 6
     im = Image.new("RGBA", (w, hgt)); d = ImageDraw.Draw(im)
-    d.rounded_rectangle([4, 4, w - 4, hgt - 4], 26, fill=(23, 7, 9, 235), outline=GOLD + (255,), width=3)
-    y = 56 + int(tsize * 0.15)
-    for ln in tl: d.text((56, y), ln, font=font("osw600", tsize), fill=AMBER + (255,), anchor="lm"); y += int(tsize * 1.15)
-    if tl and lines: y += 20
-    for line in lines:
-        for k, ln in enumerate(textwrap.wrap(line, wr)):
-            d.text((56, y), (("• " if k == 0 else "  ") if bullet else "") + ln, font=font("corm_it600", lsize), fill=CREAM + (255,), anchor="lm")
-            y += int(lsize * 1.25)
-        y += 10
-    return np.array(shadowed(im, 12, 200))
+    d.rounded_rectangle([1, 1, w - 2, hgt - 2], 18, fill=(14, 6, 9, 205), outline=LINE + (150,), width=2)
+    y = pad + lh_t // 2 - 4
+    for ln in tl: d.text((pad, y), ln, font=ft, fill=CHAMPAGNE + (255,), anchor="lm"); y += lh_t
+    if tl and lines: y += gap - lh_t // 2 + lh_l // 2 - 6
+    else: y += lh_l // 2 - lh_t // 2
+    for k, b in enumerate(blocks):
+        if k: d.line([(pad, y - lh_l // 2 - gap // 2 + 2), (pad + 60, y - lh_l // 2 - gap // 2 + 2)], fill=LINE + (110,), width=1)
+        for ln in b: d.text((pad, y), ln, font=fl, fill=CREAM + (240,), anchor="lm"); y += lh_l
+        y += gap
+    return np.array(shadowed(im, 16, 120))
 
 def chapter_banner(n, title, sub):
-    im = Image.new("RGBA", (1100, 190)); d = ImageDraw.Draw(im)
-    for i in range(190): d.line([(0, i), (1100, i)], fill=(18, 6, 8, int(170 * min(1, i / 40))))
-    d.text((0, 30), f"CAPÍTULO {n}", font=font("osw600", 30), fill=GOLD + (255,), anchor="lm")
-    d.text((0, 100), title.upper(), font=font("osw600", 78), fill=AMBER + (255,), anchor="lm")
-    d.text((4, 162), sub, font=font("corm_it600", 44), fill=CREAM + (255,), anchor="lm")
-    return np.array(shadowed(im, 12, 200))
+    im = Image.new("RGBA", (1100, 200)); d = ImageDraw.Draw(im)
+    d.text((2, 34), f"CAPÍTULO {n:02d}", font=font("osw500", 24), fill=LINE + (230,), anchor="lm")
+    d.line([(2, 58), (70, 58)], fill=LINE + (160,), width=1)
+    d.text((0, 112), title, font=font("corm600", 76), fill=CHAMPAGNE + (255,), anchor="lm")
+    if sub: d.text((2, 168), sub, font=font("corm_it500", 40), fill=CREAM + (225,), anchor="lm")
+    return np.array(shadowed(im, 14, 190))
 
 def cover(series, title, sub):
     im = Image.new("RGBA", (W, H)); d = ImageDraw.Draw(im)
-    d.text((100, 330), series.upper(), font=font("osw600", 44), fill=GOLD + (255,), anchor="lm")
-    d.text((96, 450), title.upper(), font=font("osw600", 110), fill=AMBER + (255,), anchor="lm")
-    d.text((100, 570), sub, font=font("corm_it600", 64), fill=CREAM + (255,), anchor="lm")
-    return np.array(shadowed(im, 10, 180))
+    d.text((104, 330), series.upper(), font=font("osw500", 30), fill=LINE + (235,), anchor="lm")
+    d.line([(104, 362), (190, 362)], fill=LINE + (170,), width=1)
+    d.text((98, 450), title, font=font("corm600", 112), fill=CHAMPAGNE + (255,), anchor="lm")
+    d.text((104, 560), sub, font=font("corm_it500", 58), fill=CREAM + (230,), anchor="lm")
+    return np.array(shadowed(im, 14, 170))
 
 def end_card(series, cta):
     im = Image.new("RGBA", (W, H)); d = ImageDraw.Draw(im)
-    d.text((W / 2, 300), series, font=font("osw600", 40), fill=GOLD + (255,), anchor="mm")
-    d.text((W / 2, 440), "obrigada por provar comigo", font=font("corm_it600", 96), fill=CREAM + (255,), anchor="mm")
-    d.text((W / 2, 600), "ATÉ A PRÓXIMA PROVA", font=font("osw600", 120), fill=AMBER + (255,), anchor="mm")
-    d.text((W / 2, 760), cta, font=font("corm_it600", 44), fill=CREAM + (255,), anchor="mm")
-    return np.array(shadowed(im, 12, 180))
+    d.text((W / 2, 330), series.upper(), font=font("osw500", 30), fill=LINE + (235,), anchor="mm")
+    d.text((W / 2, 460), "obrigada por provar comigo", font=font("corm_it500", 90), fill=CREAM + (245,), anchor="mm")
+    d.text((W / 2, 600), "Até a próxima prova", font=font("corm600", 108), fill=CHAMPAGNE + (255,), anchor="mm")
+    d.text((W / 2, 740), cta, font=font("corm_it500", 44), fill=CREAM + (225,), anchor="mm")
+    return np.array(shadowed(im, 14, 170))
 
 def caption(words, emph=(), size=46, maxw=1500):
-    """one caption line (list of words) as RGBA; emphasised words in amber."""
-    f = font("int600", size); sp = f.getlength(" ")
+    """uma linha de legenda: Inter médio, creme, sombra suave; destaque em champanhe."""
+    f = font("int500", size); sp = f.getlength(" ")
     widths = [f.getlength(w) for w in words]; tw = sum(widths) + sp * (len(words) - 1)
-    im = Image.new("RGBA", (int(min(tw, maxw)) + 40, size + 30)); d = ImageDraw.Draw(im); x = 20
+    im = Image.new("RGBA", (int(min(tw, maxw)) + 40, size + 34)); d = ImageDraw.Draw(im); x = 20
     for w, wd in zip(words, widths):
         core = w.lower().strip(".,!?…;:\"'")
-        d.text((x, (size + 30) // 2), w, font=f, fill=(AMBER if core in emph else CREAM) + (255,), anchor="lm"); x += wd + sp
-    return np.array(shadowed(im, 6, 230))
+        d.text((x, (size + 34) // 2), w, font=f, fill=(CHAMPAGNE if core in emph else CREAM) + (255,), anchor="lm"); x += wd + sp
+    return np.array(shadowed(im, 7, 210))

@@ -100,6 +100,11 @@ def legendas():
     x16 = ss.resample_poly(x, 1, 3).astype(np.float32)
     segs, _ = m.transcribe(x16, language="pt", word_timestamps=True, vad_filter=False)
     words = [[ww.word.strip(), ww.start, ww.end] for s in segs for ww in s.words if ww.word.strip(".,!?…;: ")]
+    merged = []                                         # "14" ",5" "%" -> "14,5%"
+    for wd in words:
+        if merged and (wd[0][:1] in ",.%" and (wd[0][1:2].isdigit() or wd[0] == "%")): merged[-1][0] += wd[0]; merged[-1][2] = wd[2]
+        else: merged.append(wd)
+    words = merged
     fix = {k.lower(): v for k, v in R.get("fix", {}).items()}
     for wd in words:
         core = wd[0].strip(".,!?…;:"); k = core.lower()
@@ -234,7 +239,7 @@ def compose(fr, src, tela, box, layer):
     if tipo == "comparacao":
         import PIL.Image as I, PIL.ImageDraw as D
         im = I.new("RGBA", (W, 130)); d = D.Draw(im)
-        d.text((100, 65), layer["titulo"].upper(), font=V.font("osw600", 64), fill=V.AMBER + (255,), anchor="lm")
+        d.text((100, 65), layer["titulo"], font=V.font("corm600", 66), fill=V.CHAMPAGNE + (255,), anchor="lm")
         V.over(fr, np.array(im), 0, 50)
         for i, c in enumerate(layer["cols"]): V.over(fr, c, 90 + i * (layer["cw"] + 30), 190)
         if box: f, dx, dy = face_tile(src, box, 400, 300); p, m = V.rounded(f[..., ::-1], 24); V.over(fr, p, 1440 - m + dx, 600 - m + dy)

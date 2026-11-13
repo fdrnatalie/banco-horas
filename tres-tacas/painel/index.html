@@ -331,12 +331,21 @@ function renderRoteiro() {
   const ta = el("textarea"); ta.id = "rt-geral"; ta.value = d.ajuste || ""; ta.placeholder = "Ex.: o bloco do kit está longo; quero a revelação antes"; fb.append(ta);
   const a = el("div", "actions"); const ok = el("button", "btn go", "Aprovar roteiro"); ok.type = "button"; const fx = el("button", "btn fix", "Pedir ajuste"); fx.type = "button";
   const save = async (patch, msg, peca) => { try { await db.doc("roteiros/" + rtEp).update({ ...patch, atualizado: new Date().toISOString() });
-      if (peca) { try { await db.doc("pecas/" + rtEp + "-yt").update(peca); } catch (e) {} } toast(msg); } catch (e) { toast("Não salvou. Tente de novo."); } };
+      if (peca) { try { await db.doc("pecas/" + rtEp + "-yt").update(peca); } catch (e) {} } toast(msg);
+      const cs = Object.entries(d.comentarios || {}).filter(([, v]) => v).map(([k, v]) => `${k}: ${v}`).join("\n");
+      const ok = await avisar(`[Painel Três Taças] Roteiro ${rtEp}: ${patch.status === "aprovado" ? "APROVADO" : "AJUSTE PEDIDO"}` + (patch.ajuste ? `\nGeral: ${patch.ajuste}` : "") + (cs ? `\nPor tela:\n${cs}` : ""));
+      if (ok) toast(msg + " · editor avisado"); } catch (e) { toast("Não salvou. Tente de novo."); } };
   ok.addEventListener("click", () => save({ status: "aprovado", ajuste: ta.value.trim() }, "Roteiro aprovado. Começo a edição.", { status: "editar", proximo: "Roteiro aprovado: editando o vídeo." }));
   fx.addEventListener("click", () => { const cs = Object.values(d.comentarios || {}).filter(Boolean).length;
     if (!ta.value.trim() && !cs) { ta.focus(); return toast("Escreva o ajuste ou comente uma tela"); }
     save({ status: "ajuste", ajuste: ta.value.trim() }, "Ajuste enviado", { status: "editar", proximo: "Ajustando o roteiro com os seus comentários." }); });
   a.append(ok, fx); fb.append(a); box.append(fb);
+}
+
+const SESSAO = "session_012VBq9U1kAzCeujYWKad6fT";
+async function avisar(msg) {                 // manda o pedido direto para a conversa do editor
+  try { const mcp = window.claude?.use ? await window.claude.use("mcp") : null; if (!mcp) return false;
+    await mcp.callTool("Claude Code Remote", "send_message", { session_id: SESSAO, message: msg }); return true; } catch (e) { return false; }
 }
 
 let sheetId = null;
@@ -374,7 +383,9 @@ function renderSheet() {
     const ok = el("button", "btn go", "Aprovar"); ok.type = "button";
     const fx = el("button", "btn fix", "Pedir ajuste"); fx.type = "button";
     const save = async (patch, msg) => { if (!db) return toast("Sem conexão com os dados agora.");
-      try { await db.doc("pecas/" + p.id).update({ ...patch, atualizado: new Date().toISOString() }); toast(msg); closeSheet(); } catch (e) { toast("Não salvou. Tente de novo."); } };
+      try { await db.doc("pecas/" + p.id).update({ ...patch, atualizado: new Date().toISOString() }); toast(msg); closeSheet();
+        const ok = await avisar(`[Painel Três Taças] ${patch.status === "aprovado" ? "APROVADO" : "AJUSTE PEDIDO"} · ${p.titulo} (${p.id}, ${p.data || "sem data"})` + (patch.ajuste ? `\nPedido: ${patch.ajuste}` : ""));
+        if (ok) toast(msg + " · editor avisado"); } catch (e) { toast("Não salvou. Tente de novo."); } };
     ok.addEventListener("click", () => save({ status: "aprovado", ajuste: ta.value.trim() }, "Aprovado. Eu agendo."));
     fx.addEventListener("click", () => { if (!ta.value.trim()) { ta.focus(); return toast("Escreva o ajuste primeiro"); } save({ status: "editar", ajuste: ta.value.trim() }, "Ajuste enviado"); });
     a.append(ok, fx); sh.append(a);

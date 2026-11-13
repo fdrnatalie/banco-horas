@@ -16,9 +16,9 @@ SP = json.load(open(sys.argv[1])); R = json.load(open(SP["roteiro"]))
 OUT = os.path.abspath(SP["saida"]); WD = os.path.splitext(OUT)[0] + "_trab"; os.makedirs(WD, exist_ok=True)
 VID = os.path.abspath(R["video"]); FPS, SPEED = 30, 1.1
 W, H = 1080, 1920
-CTX = (60, 330, 960, 560)            # x, y, w, h do contexto
-FACE = (90, 930, 900, 675)           # janela do rosto (4:3) — nada é desenhado por cima
-CAP_Y = 1745; END_S = 2.5
+CTX = (60, 470, 960, 420)            # x, y, w, h do contexto
+FACE = (120, 1010, 840, 630)         # janela do rosto (4:3) — nada é desenhado por cima
+CAP_Y = 948; END_S = 2.5             # legenda entre o contexto e o rosto; base livre para a interface do Instagram
 
 def sh(*a): subprocess.run(list(a), check=True)
 
@@ -28,21 +28,24 @@ def grab(t):
     return np.frombuffer(raw, np.uint8)[:1512 * 1050 * 3].reshape(1050, 1512, 3) if len(raw) >= 1512 * 1050 * 3 else None
 
 def background():
-    yy, xx = np.mgrid[0:H, 0:W]; d = np.sqrt(((xx - W * 0.5) / W) ** 2 + ((yy - H * 0.35) / H) ** 2)
-    c1, c2 = np.array([0x22, 0x12, 0x46], np.float32), np.array(V.OX[::-1], np.float32)
-    t = np.clip(d * 1.6, 0, 1)[..., None]; return (c1 * (1 - t) + c2 * t).astype(np.uint8)
+    yy, xx = np.mgrid[0:H, 0:W]; d = np.sqrt(((xx - W * 0.5) / W) ** 2 + ((yy - H * 0.45) / H) ** 2)
+    c1, c2 = np.array([0x22, 0x14, 0x2c], np.float32), np.array([0x0e, 0x06, 0x12], np.float32)
+    t = np.clip(d * 1.3, 0, 1)[..., None]; bg = c1 * (1 - t) + c2 * t
+    bg += np.random.default_rng(7).normal(0, 2.2, bg.shape[:2])[..., None]
+    return np.clip(bg, 0, 255).astype(np.uint8)
 
 def header():
-    im = Image.new("RGBA", (W, 300)); d = ImageDraw.Draw(im)
-    d.text((W // 2, 92), R["serie"], font=V.font("corm_it600", 46), fill=V.CREAM + (255,), anchor="mm")
-    f96 = V.font("osw600", 96); lines = wrap(SP["gancho"].upper(), f96, W - 120)
-    if len(lines) == 2:                                  # duas linhas equilibradas, sem palavra sozinha
-        ws = SP["gancho"].upper().split()
-        k = min(range(1, len(ws)), key=lambda i: max(f96.getlength(" ".join(ws[:i])), f96.getlength(" ".join(ws[i:]))))
+    im = Image.new("RGBA", (W, 430)); d = ImageDraw.Draw(im)
+    d.text((W // 2, 200), R["serie"].upper(), font=V.font("osw500", 26), fill=V.LINE + (230,), anchor="mm")
+    d.line([(W // 2 - 40, 226), (W // 2 + 40, 226)], fill=V.LINE + (150,), width=1)
+    f = V.font("corm600", 82); lines = wrap(SP["gancho"], f, W - 140)
+    if len(lines) >= 2:                                  # duas linhas equilibradas, sem palavra sozinha
+        ws = SP["gancho"].split()
+        k = min(range(1, len(ws)), key=lambda i: max(f.getlength(" ".join(ws[:i])), f.getlength(" ".join(ws[i:]))))
         lines = [" ".join(ws[:k]), " ".join(ws[k:])]
-    y = 190 if len(lines) == 1 else 165
-    for ln in lines[:2]: d.text((W // 2, y), ln, font=V.font("osw600", 96), fill=V.AMBER + (255,), anchor="mm"); y += 104
-    return np.array(V.shadowed(im, 10, 200))
+    y = 300 if len(lines) == 1 else 278
+    for ln in lines[:2]: d.text((W // 2, y), ln, font=f, fill=V.CHAMPAGNE + (255,), anchor="mm"); y += 86
+    return np.array(V.shadowed(im, 12, 170))
 
 def wrap(txt, f, maxw):
     out, cur = [], ""
@@ -76,8 +79,25 @@ def pecas():
                 e = t.get("entra_fala", 0) or 0; s = t.get("sai_fala", len(b["falas"]) - 1)
                 if s is None: s = len(b["falas"]) - 1
                 if e <= fi <= s: tela = t
+            if SP.get("continuo", True): continue
             sub, _ = C.clean(f["a"], f["b"])
             for a, bb in sub: out.append(dict(a=a, b=bb, tela=tela))
+        if SP.get("continuo", True) and b["falas"]:
+            # falas próximas no bruto viram um trecho só (nada do meio se perde); saem só pausas longas, ééé e tosse
+            fs = [(fi, f) for fi, f in enumerate(b["falas"]) if sel is None or fi in sel]
+            runs = []
+            for fi, f in fs:
+                if runs and 0 <= f["a"] - runs[-1][1] < 4.0: runs[-1][1] = max(runs[-1][1], f["b"]); runs[-1][2].append(fi)
+                else: runs.append([f["a"], f["b"], [fi]])
+            for a0, b0, fis in runs:
+              sub, _ = C.clean(a0, b0, gap=0.6, pad=0.12, tail=0.2)
+              for a, bb in sub:
+                tela = None
+                for t in telas:
+                    e = t.get("entra_fala", 0) or 0; s_ = t.get("sai_fala", len(b["falas"]) - 1)
+                    if s_ is None: s_ = len(b["falas"]) - 1
+                    if any(e <= fi <= s_ for fi in fis): tela = t
+                out.append(dict(a=a, b=bb, tela=tela))
     t = 0.0
     for p in out: p["o0"] = t; t += (p["b"] - p["a"]) / SPEED; p["o1"] = t
     return out, t + END_S, wav48
@@ -109,6 +129,11 @@ def legendas():
     w = wave.open(f"{WD}/voz.wav"); x = np.frombuffer(w.readframes(w.getnframes()), np.int16).astype(np.float32) / 32768
     segs, _ = m.transcribe(ss.resample_poly(x, 1, 3).astype(np.float32), language="pt", word_timestamps=True, vad_filter=False)
     words = [[ww.word.strip(), ww.start, ww.end] for s in segs for ww in s.words if ww.word.strip(".,!?…;: ")]
+    merged = []                                         # "14" ",5" "%" -> "14,5%"
+    for wd in words:
+        if merged and (wd[0][:1] in ",.%" and (wd[0][1:2].isdigit() or wd[0] == "%")): merged[-1][0] += wd[0]; merged[-1][2] = wd[2]
+        else: merged.append(wd)
+    words = merged
     fix = {k.lower(): v for k, v in R.get("fix", {}).items()}
     for wd in words:
         core = wd[0].strip(".,!?…;:")
@@ -132,7 +157,7 @@ def legendas():
 def main():
     ps, total, wav48 = pecas(); audio(ps, total, wav48); caps = legendas()
     emph = set(R.get("destaques", []))
-    capimg = [(a, b, V.caption(t, emph, size=62, maxw=980)) for a, b, t in caps]
+    capimg = [(a, b, V.caption(t, emph, size=54, maxw=980)) for a, b, t in caps]
     bg = background(); hd = header(); cache = {}
     enc = subprocess.Popen(["ffmpeg", "-v", "error", "-y", "-f", "rawvideo", "-pix_fmt", "bgr24", "-s", f"{W}x{H}", "-r", str(FPS), "-i", "-",
                             "-i", f"{WD}/mix.wav", "-c:v", "libx264", "-preset", "medium", "-crf", "20", "-pix_fmt", "yuv420p",
@@ -154,7 +179,7 @@ def main():
         layer = cache[key]
         for k in range(n):
             t = (fidx + k) / FPS; fr = bg.copy(); src = frs[k]
-            V.over(fr, hd, 0, 30)
+            V.over(fr, hd, 0, 0)
             if layer is not None: V.over(fr, layer, CTX[0], CTX[1] + max(0, (CTX[3] - layer.shape[0]) // 2))
             else:                                       # sem cartão: mostra o app (sem a janelinha do rosto)
                 app = src[40:1050].copy()
@@ -172,9 +197,9 @@ def main():
             enc.stdin.write(fr.tobytes()); last = fr
         fidx = fe
     endimg = Image.new("RGBA", (W, H)); d = ImageDraw.Draw(endimg)
-    d.text((W // 2, 820), "episódio completo", font=V.font("corm_it600", 70), fill=V.CREAM + (255,), anchor="mm")
-    d.text((W // 2, 940), SP.get("fim", "NO YOUTUBE").upper(), font=V.font("osw600", 110), fill=V.AMBER + (255,), anchor="mm")
-    d.text((W // 2, 1060), "link na bio", font=V.font("corm_it600", 56), fill=V.CREAM + (255,), anchor="mm")
+    d.text((W // 2, 800), "a degustação completa", font=V.font("corm_it500", 64), fill=V.CREAM + (240,), anchor="mm")
+    d.text((W // 2, 910), SP.get("fim", "no YouTube"), font=V.font("corm600", 104), fill=V.CHAMPAGNE + (255,), anchor="mm")
+    d.text((W // 2, 1010), "LINK NA BIO", font=V.font("osw500", 30), fill=V.LINE + (230,), anchor="mm")
     endimg = np.array(V.shadowed(endimg, 12, 200)); base = cv2.GaussianBlur(last, (0, 0), 18)
     for k in range(int(round(total * FPS)) - fidx):
         pr = min(1, k / 10); f2 = (base.astype(np.float32) * (1 - 0.55 * pr)).astype(np.uint8)
