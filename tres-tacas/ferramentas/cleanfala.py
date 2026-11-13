@@ -7,12 +7,15 @@ FILL = re.compile(r"^(é{2,}|eh+|e{3,}|hum+|hm+|ahn+|ah+|uh+|mm+|\(?tosse\)?)[.,
 
 class Cleaner:
     def __init__(self, trans, fillers, audio):
-        self.W = [w for s in json.load(open(trans)) for w in s["words"]]
+        # palavras das duas transcrições (a principal às vezes "inventa" trechos longos); palavra de mais de 2 s é alucinação
+        WT = [w for s in json.load(open(trans)) for w in s["words"]]
+        WF = [w for s in json.load(open(fillers)) for w in s["words"]]
+        self.W = sorted([w for w in WT + WF if 0 < w["e"] - w["s"] <= 2.0 and w["w"].strip(".,!?…;: ")], key=lambda w: w["s"])
         self.F = []
         for s in json.load(open(fillers)):
             for w in s["words"]:
                 t = w["w"].strip().lower()
-                if FILL.match(t) or (t.strip(".,…") == "é" and w["e"] - w["s"] > 0.45): self.F.append((w["s"], w["e"]))
+                if (FILL.match(t) or (t.strip(".,…") == "é" and w["e"] - w["s"] > 0.45)) and w["e"] - w["s"] <= 1.2: self.F.append((w["s"], w["e"]))
         wv = wave.open(audio); self.sr = wv.getframerate(); n = wv.getnframes(); ch = wv.getnchannels()
         x = np.frombuffer(wv.readframes(n), np.int16).astype(np.float32) / 32768
         if ch > 1: x = x.reshape(-1, ch).mean(1)
@@ -46,7 +49,7 @@ class Cleaner:
             for fs, fe in self.F:
                 nxt = []
                 for s_, e_ in segs:
-                    if fe <= s_ or fs >= e_ or fe - fs < 0.3: nxt.append((s_, e_)); continue
+                    if fe <= s_ or fs >= e_ or fe - fs < 0.3 or fe - fs > 1.2: nxt.append((s_, e_)); continue   # >1,2 s não é ééé: é erro da transcrição
                     if fs - s_ > 0.12: nxt.append((s_, fs))
                     if e_ - fe > 0.12: nxt.append((fe, e_))
                     dropped.append((round(fs, 2), round(fe, 2), "filler"))
