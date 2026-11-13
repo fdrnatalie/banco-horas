@@ -1,0 +1,852 @@
+[
+  {
+    "id": "ig-2026-11-13",
+    "ep": "extra",
+    "rede": "instagram",
+    "formato": "Erro ou acerto",
+    "titulo": "Doce de leite ou manteiga?",
+    "data": "2026-11-13",
+    "hora": "19:00",
+    "status": "fazer",
+    "proximo": "Natalie aprova a v3 até sex 13/11 15:00 (com o desafio no 1º segundo, já que tem 1min46) e agenda para 19:00.",
+    "origem": {
+      "gravacao": "2026-10-24",
+      "arquivo": "ep03/teste_aromas_v3.mp4"
+    },
+    "legenda": "Doce de leite ou manteiga? Chocolate ou coco queimado?\n\nTeste de aromas às cegas, em casa: cheira e responde na hora. Acertei doce de leite, canela e pêssego. O coco queimado virou chocolate.\n\nQuantos você acertaria? Conta aqui.\n\n#aromasdovinho #degustacaoascegas #estudodevinho #trestacas"
+  },
+  {
+    "id": "ig-2026-11-14",
+    "ep": "05",
+    "rede": "instagram",
+    "formato": "Curiosidade",
+    "titulo": "A lágrima me disse 15%",
+    "data": "2026-11-14",
+    "hora": "11:00",
+    "status": "fazer",
+    "proximo": "Diretor confere a escala de álcool do WSET no cartão, o editor troca o CTA final para 'quinta no YouTube' e Natalie aprova até sex 13/11.",
+    "origem": {
+      "roteiro": "ep05_v3",
+      "bloco": "B10",
+      "arquivo": "reels_ep5_extra_v2.mp4"
+    },
+    "legenda": "A lágrima me disse 15%. O rótulo disse 13,5%.\n\nA lágrima vem da evaporação do álcool, e o açúcar, a temperatura e até a taça mudam o desenho dela. É pista. Na boca, eu acertei 2 de 3.\n\nA degustação inteira sai quinta, 19/11, no YouTube.\n\n#lagrimadovinho #teoralcoolico #dicadevinho #degustacaoascegas #estudodevinho"
+  },
+  {
+    "id": "ig-2026-11-15",
+    "ep": "05",
+    "rede": "instagram",
+    "formato": "Bastidores",
+    "titulo": "Como eu monto a prova às cegas",
+    "data": "2026-11-15",
+    "hora": "11:00",
+    "status": "fazer",
+    "proximo": "Editor corta o B01 (40–50 s) até sex 13/11 e Natalie aprova na sessão extra de sáb 14/11 10:00.",
+    "origem": {
+      "roteiro": "ep05_v3",
+      "bloco": "B01"
+    },
+    "legenda": "30 ml por garrafinha, 15 ml por prova, a mesma taça para as três.\n\nAssim eu monto cada degustação: garrafinhas sorteadas, água entre as taças e papel branco embaixo para a cor aparecer de verdade. Depois, tudo vai para a ficha no app que eu uso para estudar.\n\nO app que eu uso está no link da bio.\n\n#degustacaoascegas #estudodevinho #vinhoemcasa #trestacas"
+  },
+  {
+    "id": "ig-2026-11-16",
+    "ep": "05",
+    "rede": "instagram",
+    "formato": "Curiosidade",
+    "titulo": "A cor já tira uvas da lista",
+    "data": "2026-11-16",
+    "hora": "19:00",
+    "status": "fazer",
+    "proximo": "Editor corta B02 + o fim do B03 (sem o palavrão) até sex 13/11; diretor confere; Natalie aprova sáb 14/11.",
+    "origem": {
+      "roteiro": "ep05_v3",
+      "bloco": "B02–B03"
+    },
+    "legenda": "Antes do primeiro gole, a cor já tira uvas da lista.\n\nIntensidade, tonalidade e a unha, que é a borda com a taça inclinada. Cor profunda afasta Gamay e Pinot Noir: uvas de casca fina, que dão tintos mais claros.\n\nA degustação inteira sai quinta, 19/11, no YouTube.\n\n#cordovinho #degustacaoascegas #pinotnoir #gamay #estudodevinho"
+  },
+  {
+    "id": "ig-2026-11-17",
+    "ep": "04",
+    "rede": "instagram",
+    "formato": "Bastidores",
+    "titulo": "Como eu procuro um aroma",
+    "data": "2026-11-17",
+    "hora": "19:00",
+    "status": "fazer",
+    "proximo": "Editor corta só o método do B03 (sem o nome da uva, porque o ep.04 sai em 03/12) até sáb 14/11; Natalie aprova sáb 14/11.",
+    "origem": {
+      "roteiro": "ep04_v3",
+      "bloco": "B03"
+    },
+    "legenda": "Eu penso numa fruta e vou atrás dela na taça.\n\nCereja vermelha? Se aparecer, anota. Se demorar, passa para a próxima. A cor ajuda: taça profunda puxa cassis, mirtilo e ameixa. Esse é o meu método, e cada aroma vai para a ficha do app.\n\nO app que eu uso está no link da bio.\n\n#aromasdovinho #estudodevinho #degustacaoascegas #trestacas"
+  },
+  {
+    "id": "ig-2026-11-18",
+    "ep": "02",
+    "rede": "instagram",
+    "formato": "Curiosidade",
+    "titulo": "Vinho gelado esconde o aroma",
+    "data": "2026-11-18",
+    "hora": "19:00",
+    "status": "fazer",
+    "proximo": "Editor corta o trecho 'vinho gelado' do B02 (sem a hipótese Dolcetto) até sáb 14/11; diretor confere; Natalie aprova seg 16/11.",
+    "origem": {
+      "roteiro": "ep02_v1",
+      "bloco": "B02"
+    },
+    "legenda": "Aroma tímido? Dá um tempo para o vinho.\n\nQuanto mais frio, menos aroma sobe da taça. Na #13, o primeiro nariz era só fruta; com alguns minutos na taça, o vinho abriu.\n\nAmanhã tem episódio novo no YouTube (link na bio).\n\n#temperaturadovinho #dicadevinho #degustacaoascegas #estudodevinho"
+  },
+  {
+    "id": "yt-ep05",
+    "ep": "05",
+    "rede": "youtube",
+    "formato": "Episódio",
+    "titulo": "A revanche da Touriga: 3 de 3 às cegas · Três Taças nº 05",
+    "data": "2026-11-19",
+    "hora": "18:00",
+    "status": "fazer",
+    "proximo": "Natalie aprova o vídeo até seg 16/11 (antes, o diretor tira o spoiler do ep.04 das telas B06 e B09, confere as faixas de álcool e o 99 fora) e manda o link do app com UTM; agendar no Studio para 19/11 18:00.",
+    "origem": {
+      "roteiro": "ep05_v3"
+    },
+    "legenda": "TÍTULO\nA revanche da Touriga: 3 de 3 às cegas · Três Taças nº 05\n\nDESCRIÇÃO\nO Governador me enganou nos episódios 1 e 2. Hoje ele voltou, junto com outra Touriga e um italiano que eu provei pela primeira vez.\n\nTrês garrafinhas às cegas (#21, #59 e #124): visual, nariz, boca, a dedução das duas taças de mesma cor e a revelação. Eu conheço a minha adega, e isso entra no raciocínio.\n\nPlacar: 3 de 3 uvas e 9/10 no quiz.\n\nEu estudo com o Wine Study Lab, o app que eu uso e recomendo para registrar as degustações, fazer o quiz e comparar as uvas: [link do app]?utm_source=youtube&utm_medium=descricao&utm_campaign=ep05\n[linha de transparência]\n\nCapítulos (os tempos entram com o arquivo final):\n00:00 Abertura\n--:-- O kit\n--:-- A cor\n--:-- O que a cor descarta\n--:-- Fruta vermelha ou negra\n--:-- O nariz das três\n--:-- #124 na boca\n--:-- #59 na boca\n--:-- A dedução\n--:-- A revelação\n--:-- Lágrima × boca\n--:-- Quiz\n--:-- Montepulciano × Sangiovese\n\nVinhos do episódio:\n#21 Reserva Touriga Nacional 2022 · Bodega Iribarrem · Bento Gonçalves (RS) · 13,5%\n#59 Montepulciano d'Abruzzo · Duca di Saragnano · Abruzzo · 13,5%\n#124 Governador 2023 · Touriga Nacional · Douro · 14%\n\nNo Instagram tem o Quiz da Taça da Montepulciano. Quantas você acerta?\n\n#vinho #degustacaoascegas #touriganacional #montepulciano #douro #estudodevinho"
+  },
+  {
+    "id": "ig-2026-11-19",
+    "ep": "05",
+    "rede": "instagram",
+    "formato": "Reels gancho",
+    "titulo": "Duas taças, a mesma uva?",
+    "data": "2026-11-19",
+    "hora": "19:30",
+    "status": "fazer",
+    "proximo": "Editor corta a dedução do B08 até a reação do B09 a partir do render (sem o 99 e sem 'errei um ponto só'), diferente do Reels '3 de 3' já postado; entrega até 15/11, Natalie aprova seg 16/11.",
+    "origem": {
+      "roteiro": "ep05_v3",
+      "bloco": "B08–B09"
+    },
+    "legenda": "Duas taças com a mesma cor. Uma com madeira, outra sem. Seria a mesma uva?\n\nO Governador me enganou no ep.01 e no ep.02. Hoje ele voltou às cegas e eu fui pela dedução: 3 de 3 uvas.\n\nEpisódio completo no YouTube (link na bio).\n\n#touriganacional #degustacaoascegas #montepulciano #douro #trestacas"
+  },
+  {
+    "id": "ig-2026-11-20",
+    "ep": "05",
+    "rede": "instagram",
+    "formato": "Curiosidade",
+    "titulo": "Montepulciano × Sangiovese",
+    "data": "2026-11-20",
+    "hora": "11:00",
+    "status": "fazer",
+    "proximo": "Diretor confere o mínimo de 70% de Sangiovese do Vino Nobile até 15/11; editor corta o B12; Natalie aprova seg 16/11 (feriado: sai às 11:00).",
+    "origem": {
+      "roteiro": "ep05_v3",
+      "bloco": "B12"
+    },
+    "legenda": "Montepulciano é uva e também é cidade. Daí vem a confusão.\n\nO Vino Nobile di Montepulciano, da Toscana, é feito de Sangiovese (mínimo de 70%). A uva Montepulciano é outra, do Abruzzo: cor profunda, ameixa e amora. Eu separo as duas pela cor.\n\nEpisódio completo no YouTube (link na bio).\n\n#montepulciano #sangiovese #vinhoitaliano #abruzzo #toscana"
+  },
+  {
+    "id": "yt-short-2026-11-20",
+    "ep": "05",
+    "rede": "youtube",
+    "formato": "Short",
+    "titulo": "O vinho que me enganou duas vezes voltou",
+    "data": "2026-11-20",
+    "hora": "12:00",
+    "status": "fazer",
+    "proximo": "Arquivo pronto: Natalie aprova seg 16/11 e agenda ligado ao vídeo do ep.05 (feriado: mais tempo de tela).",
+    "origem": {
+      "roteiro": "ep05_v3",
+      "bloco": "B09",
+      "arquivo": "reels_ep5_v3.mp4 (Reels '3 de 3 uvas' já postado)"
+    },
+    "legenda": "TÍTULO\nO vinho que me enganou duas vezes voltou\n\nDESCRIÇÃO\nTerceira chance com o Governador, às cegas. Episódio completo no canal: Três Taças nº 05.\n#shorts #vinho #degustacaoascegas"
+  },
+  {
+    "id": "ig-2026-11-21",
+    "ep": "05",
+    "rede": "instagram",
+    "formato": "Quiz da Taça",
+    "titulo": "Quiz da Taça · Montepulciano",
+    "data": "2026-11-21",
+    "hora": "11:00",
+    "status": "fazer",
+    "proximo": "Diretor confere os disciplinari (Vino Nobile, Conero) até 15/11 e Natalie aprova seg 16/11.",
+    "origem": {
+      "roteiro": "ep05_v3",
+      "bloco": "B12",
+      "arquivo": "quiz_monte_v1.mp4"
+    },
+    "legenda": "A uva que eu acertei no chute. Você acerta 5 de 5?\n\nQuiz da Taça: Montepulciano. Pausa no 3-2-1 e responde antes de ver. A degustação inteira está no YouTube (link na bio).\n\nComenta o seu placar.\n\n#quizdevinho #montepulciano #abruzzo #vinhoitaliano #degustacaoascegas"
+  },
+  {
+    "id": "ig-2026-11-22",
+    "ep": "05",
+    "rede": "instagram",
+    "formato": "Erro ou acerto",
+    "titulo": "A unha me deu o ano errado",
+    "data": "2026-11-22",
+    "hora": "11:00",
+    "status": "fazer",
+    "proximo": "Editor corta a reação + a tela 'A unha dá uma faixa' do B09 até 15/11; diretor confere; Natalie aprova seg 16/11.",
+    "origem": {
+      "roteiro": "ep05_v3",
+      "bloco": "B09"
+    },
+    "legenda": "Pela unha, eu chutei 2024 ou 2025. O rótulo dizia 2022.\n\nA unha, a borda da cor, dá uma faixa de idade: vinhos de 1 a 3 anos têm borda parecida. Serve para estimar; o ano exato fica com o rótulo.\n\nA revanche inteira está no YouTube (link na bio).\n\n#safra #cordovinho #degustacaoascegas #estudodevinho"
+  },
+  {
+    "id": "ig-2026-11-23",
+    "ep": "05",
+    "rede": "instagram",
+    "formato": "Curiosidade",
+    "titulo": "A cor puxou a fruta",
+    "data": "2026-11-23",
+    "hora": "19:00",
+    "status": "fazer",
+    "proximo": "Editor corta o B04 até 15/11 e Natalie aprova seg 16/11.",
+    "origem": {
+      "roteiro": "ep05_v3",
+      "bloco": "B04"
+    },
+    "legenda": "Rubi mais aberto, fruta vermelha. Rubi mais fechado, fruta negra.\n\nNas três taças do ep.05, a cor me guiou até a fruta: morango e framboesa numa, ameixa e jabuticaba na outra. É pista minha, e funcionou.\n\nEpisódio completo no YouTube (link na bio).\n\n#aromasdovinho #cordovinho #degustacaoascegas #estudodevinho"
+  },
+  {
+    "id": "yt-short-2026-11-24",
+    "ep": "05",
+    "rede": "youtube",
+    "formato": "Short",
+    "titulo": "Duas taças, a mesma uva?",
+    "data": "2026-11-24",
+    "hora": "12:00",
+    "status": "fazer",
+    "proximo": "Mesmo arquivo do Reels gancho de 19/11; sobe junto na aprovação de seg 16/11.",
+    "origem": {
+      "roteiro": "ep05_v3",
+      "bloco": "B08–B09"
+    },
+    "legenda": "TÍTULO\nDuas taças, a mesma uva?\n\nDESCRIÇÃO\nA dedução que fechou a revanche. Episódio completo no canal: Três Taças nº 05.\n#shorts #vinho #degustacaoascegas"
+  },
+  {
+    "id": "ig-2026-11-24",
+    "ep": "05",
+    "rede": "instagram",
+    "formato": "Bastidores",
+    "titulo": "22 vinhos no app: eu conheço a minha adega",
+    "data": "2026-11-24",
+    "hora": "19:00",
+    "status": "fazer",
+    "proximo": "Editor corta a tela 'Transparência' + a exclusão do B07 até 15/11; Natalie aprova seg 16/11.",
+    "origem": {
+      "roteiro": "ep05_v3",
+      "bloco": "B07"
+    },
+    "legenda": "Transparência: eu conheço as garrafinhas da minha adega. São 22 vinhos cadastrados no app.\n\nIsso entra no raciocínio. Na #59, risquei Dolcetto, Nebbiolo, Barbera e Primitivo, e sobrou a Montepulciano. Prova às cegas em casa também é estudo por exclusão.\n\nO app que eu uso está no link da bio.\n\n#degustacaoascegas #estudodevinho #vinhoemcasa #trestacas"
+  },
+  {
+    "id": "ig-2026-11-25",
+    "ep": "06",
+    "rede": "instagram",
+    "formato": "Curiosidade",
+    "titulo": "[ep.06] Curiosidade 1 · título após a análise",
+    "data": "2026-11-25",
+    "hora": "19:00",
+    "status": "fazer",
+    "proximo": "Equipe analisa a gravação de 09/11 até 20/11 e escolhe um tema sem a resposta; editor corta até 22/11; Natalie aprova seg 23/11.",
+    "origem": {
+      "gravacao": "2026-11-09",
+      "bloco": "a definir na análise"
+    },
+    "legenda": "[rascunho após a análise da gravação de 09/11: tema sem a resposta da degustação (o YouTube sai depois)]\n\nEpisódios completos no YouTube (link na bio).\n\n#degustacaoascegas #estudodevinho #trestacas"
+  },
+  {
+    "id": "yt-ep02",
+    "ep": "02",
+    "rede": "youtube",
+    "formato": "Episódio",
+    "titulo": "A Touriga Nacional me enganou DE NOVO · Três Taças nº 02",
+    "data": "2026-11-26",
+    "hora": "18:00",
+    "status": "fazer",
+    "proximo": "Natalie aprova o roteiro por temas até seg 16/11; render e diretor até 21/11; Natalie aprova o vídeo e o link do app seg 23/11 e agenda.",
+    "origem": {
+      "roteiro": "ep02_v1"
+    },
+    "legenda": "TÍTULO\nA Touriga Nacional me enganou DE NOVO | 3 vinhos às cegas · Três Taças nº 02\n\nDESCRIÇÃO\nTrês garrafinhas às cegas (#13, #43 e #134), do visual à revelação, e a mesma pegadinha do episódio 1: Primitivo ou Touriga Nacional? Cravei um Barolo, troquei um Cabernet Franc brasileiro por Dolcetto e saí com a pista que me faltava para a Touriga: a menta.\n\nPlacar: 37/100 na degustação e 9/10 no quiz.\n\nEu estudo com o Wine Study Lab, o app que eu uso e recomendo para registrar as degustações, fazer o quiz e comparar as uvas: [link do app]?utm_source=youtube&utm_medium=descricao&utm_campaign=ep02\n[linha de transparência]\n\nCapítulos (os tempos entram com o arquivo final):\n00:00 Abertura\n--:-- A cor\n--:-- O nariz\n--:-- #43\n--:-- A lágrima\n--:-- Primitivo ou Touriga?\n--:-- #134 na boca\n--:-- A revelação\n--:-- #13\n--:-- #43\n--:-- #134\n--:-- O quiz\n--:-- Comparar uvas\n--:-- Primitivo × Touriga\n\nVinhos do episódio:\n#13 Basco Loco Cabernet Franc 2023 · Bodega Iribarrem · Vale dos Vinhedos (RS)\n#43 Barolo Morello · Nebbiolo · Piemonte · 14%\n#134 Governador 2023 · Touriga Nacional · Douro · 14%\n\nNo Instagram tem o Quiz da Taça da Touriga. Quantas você acerta?\n\n#vinho #degustacaoascegas #touriganacional #barolo #cabernetfranc #estudodevinho"
+  },
+  {
+    "id": "ig-2026-11-26",
+    "ep": "02",
+    "rede": "instagram",
+    "formato": "Reels gancho",
+    "titulo": "Só acertei uma uva",
+    "data": "2026-11-26",
+    "hora": "19:30",
+    "status": "fazer",
+    "proximo": "Editor corta a reação do B07 (com o B00 como abertura de 3 s), diferente do Reels 'A Touriga de novo' já postado; entrega até 21/11, Natalie aprova seg 23/11.",
+    "origem": {
+      "roteiro": "ep02_v1",
+      "bloco": "B07"
+    },
+    "legenda": "Mesmo vinho do ep.01, mesma pegadinha, mesmos 12 pontos.\n\n'Era uma Touriga. Meu Deus.' O Governador voltou às cegas e me pegou de novo. No placar, 37 de 100, com um Barolo cravado no meio.\n\nEpisódio completo no YouTube (link na bio).\n\n#touriganacional #barolo #vinhoportugues #degustacaoascegas #trestacas"
+  },
+  {
+    "id": "yt-short-2026-11-27",
+    "ep": "02",
+    "rede": "youtube",
+    "formato": "Short",
+    "titulo": "Só acertei uma uva",
+    "data": "2026-11-27",
+    "hora": "12:00",
+    "status": "fazer",
+    "proximo": "Mesmo arquivo do Reels gancho de 26/11; aprovação seg 23/11.",
+    "origem": {
+      "roteiro": "ep02_v1",
+      "bloco": "B07"
+    },
+    "legenda": "TÍTULO\nSó acertei uma uva\n\nDESCRIÇÃO\nO Governador me pegou de novo. Episódio completo no canal: Três Taças nº 02.\n#shorts #vinho #degustacaoascegas"
+  },
+  {
+    "id": "ig-2026-11-27",
+    "ep": "02",
+    "rede": "instagram",
+    "formato": "Erro ou acerto",
+    "titulo": "Eu disse Dolcetto. Era Cabernet Franc",
+    "data": "2026-11-27",
+    "hora": "19:00",
+    "status": "fazer",
+    "proximo": "Editor corta o B08 (sem a linha 'ficha incompleta' do app) até 21/11; Natalie aprova seg 23/11.",
+    "origem": {
+      "roteiro": "ep02_v1",
+      "bloco": "B08"
+    },
+    "legenda": "Eu disse Dolcetto. Era um Cabernet Franc brasileiro.\n\nCom o vinho aberto, vieram o tabaco, o carvalho e a fruta escura. Lição anotada: dar tempo ao vinho antes de fechar a ficha.\n\nA degustação completa está no YouTube (link na bio).\n\n#cabernetfranc #dolcetto #vinhobrasileiro #degustacaoascegas #estudodevinho"
+  },
+  {
+    "id": "ig-2026-11-28",
+    "ep": "02",
+    "rede": "instagram",
+    "formato": "Curiosidade",
+    "titulo": "Primitivo ou Touriga? A pista da menta",
+    "data": "2026-11-28",
+    "hora": "11:00",
+    "status": "fazer",
+    "proximo": "Editor corta B05 (a pista antiga) + B13 até 21/11; diretor confere que a menta aparece como pista dela; Natalie aprova seg 23/11.",
+    "origem": {
+      "roteiro": "ep02_v1",
+      "bloco": "B13"
+    },
+    "legenda": "Eu trouxe a pista do chocolate para separar Primitivo e Touriga. Troquei pela menta.\n\nTouriga Nacional: mirtilo, violeta, ameixa, menta. Primitivo: geleia, morango, tabaco, pimenta-do-reino. O frescor que eu achava que era álcool era a menta. Pista de estudo, para testar nas próximas taças.\n\nEpisódio completo no YouTube (link na bio).\n\n#touriganacional #primitivo #aromasdovinho #vinhoportugues #degustacaoascegas"
+  },
+  {
+    "id": "ig-2026-11-29",
+    "ep": "02",
+    "rede": "instagram",
+    "formato": "Bastidores",
+    "titulo": "Como eu comparo duas uvas no app",
+    "data": "2026-11-29",
+    "hora": "11:00",
+    "status": "fazer",
+    "proximo": "Editor corta a tela do comparador do B12 (gravação de tela do app) até 21/11; Natalie aprova seg 23/11.",
+    "origem": {
+      "roteiro": "ep02_v1",
+      "bloco": "B12"
+    },
+    "legenda": "Quando eu erro uma uva, abro as duas lado a lado no app.\n\nDolcetto × Cabernet Franc: acidez, corpo, álcool e, principalmente, o aroma. Amêndoa amarga de um lado, tabaco e pimentão verde do outro. É assim que o erro vira estudo.\n\nO app que eu uso está no link da bio.\n\n#cabernetfranc #dolcetto #estudodevinho #trestacas"
+  },
+  {
+    "id": "ig-2026-11-30",
+    "ep": "02",
+    "rede": "instagram",
+    "formato": "Erro ou acerto",
+    "titulo": "Cravei o Barolo: 100",
+    "data": "2026-11-30",
+    "hora": "19:00",
+    "status": "fazer",
+    "proximo": "Editor corta o B09 (100 + 'frio esconde o álcool') até 21/11; diretor confere; Natalie aprova seg 23/11.",
+    "origem": {
+      "roteiro": "ep02_v1",
+      "bloco": "B09"
+    },
+    "legenda": "Uva, região, país e teor: 100 pontos no Barolo.\n\nA cor me levou até ele: rubi puxando para o tomate, reflexo granada. O Nebbiolo tem pouco pigmento, muito tanino e muita acidez. O álcool pareceu menor porque o vinho estava frio.\n\nEpisódio completo no YouTube (link na bio).\n\n#barolo #nebbiolo #vinhoitaliano #degustacaoascegas #estudodevinho"
+  },
+  {
+    "id": "yt-short-2026-12-01",
+    "ep": "05",
+    "rede": "youtube",
+    "formato": "Short",
+    "titulo": "A lágrima me disse 15%",
+    "data": "2026-12-01",
+    "hora": "12:00",
+    "status": "fazer",
+    "proximo": "Mesmo arquivo do post de 14/11, com o CTA final trocado para 'episódio completo no canal'; aprovação seg 23/11.",
+    "origem": {
+      "roteiro": "ep05_v3",
+      "bloco": "B10",
+      "arquivo": "reels_ep5_extra_v2.mp4"
+    },
+    "legenda": "TÍTULO\nA lágrima me disse 15%\n\nDESCRIÇÃO\nLágrima é pista, o rótulo é a régua. Episódio completo no canal: Três Taças nº 05.\n#shorts #vinho #degustacaoascegas"
+  },
+  {
+    "id": "ig-2026-12-01",
+    "ep": "07",
+    "rede": "instagram",
+    "formato": "Curiosidade",
+    "titulo": "[ep.07] Curiosidade 1 · título após a análise",
+    "data": "2026-12-01",
+    "hora": "19:00",
+    "status": "fazer",
+    "proximo": "Equipe analisa a gravação de 11/11 até 20/11 e escolhe um tema sem a resposta; editor corta até 22/11; Natalie aprova seg 23/11.",
+    "origem": {
+      "gravacao": "2026-11-11",
+      "bloco": "a definir na análise"
+    },
+    "legenda": "[rascunho após a análise da gravação de 11/11: tema sem a resposta da degustação (o YouTube sai depois)]\n\nEpisódios completos no YouTube (link na bio).\n\n#degustacaoascegas #estudodevinho #trestacas"
+  },
+  {
+    "id": "ig-2026-12-02",
+    "ep": "04",
+    "rede": "instagram",
+    "formato": "Bastidores",
+    "titulo": "Garrafinha aberta: como eu cuido",
+    "data": "2026-12-02",
+    "hora": "19:00",
+    "status": "fazer",
+    "proximo": "Editor corta a tela 'Garrafinha aberta' do B01 até 21/11; diretor confere a linha do oxigênio; Natalie aprova seg 23/11.",
+    "origem": {
+      "roteiro": "ep04_v3",
+      "bloco": "B01"
+    },
+    "legenda": "Garrafinha aberta pede pressa: o ar dentro dela oxida o vinho e leva a fruta embora.\n\nPor isso eu provo primeiro as que abri há pouco. Quando acaba, lavo, passo na água fervendo, um pouco de álcool e deixo secar. Pronta para o próximo vinho.\n\nAmanhã tem episódio novo no YouTube (link na bio).\n\n#vinhoemcasa #degustacaoascegas #estudodevinho #trestacas"
+  },
+  {
+    "id": "yt-ep04",
+    "ep": "04",
+    "rede": "youtube",
+    "formato": "Episódio",
+    "titulo": "A Touriga me enganou AO CONTRÁRIO · Três Taças nº 04",
+    "data": "2026-12-03",
+    "hora": "18:00",
+    "status": "fazer",
+    "proximo": "Natalie aprova o roteiro v3 até sex 20/11; render e diretor até 27/11; Natalie aprova o vídeo seg 30/11 e agenda.",
+    "origem": {
+      "roteiro": "ep04_v3"
+    },
+    "legenda": "TÍTULO\nA Touriga me enganou AO CONTRÁRIO | 3 vinhos às cegas · Três Taças nº 04\n\nDESCRIÇÃO\nTrês garrafinhas às cegas (#21, #41 e #107). Depois de dois episódios caindo na Touriga Nacional, agora eu reconheço a uva pela menta… e passo a enxergá-la em todas as taças. Acertei o Barolo pela cor, cheguei a dizer Gamay e mudei de ideia.\n\nPlacar: 67/100 na degustação e 8/10 no quiz.\n\nEu estudo com o Wine Study Lab, o app que eu uso e recomendo para registrar as degustações, fazer o quiz e comparar as uvas: [link do app]?utm_source=youtube&utm_medium=descricao&utm_campaign=ep04\n[linha de transparência]\n\nCapítulos (os tempos entram com o arquivo final):\n00:00 Abertura\n--:-- Três garrafinhas às cegas\n--:-- Garrafa #21 · a cor\n--:-- Garrafa #21 · o nariz\n--:-- Garrafa #21 · a menta\n--:-- Garrafa #21 · a hipótese\n--:-- Garrafa #41 · a cor\n--:-- Garrafa #41 · nariz e boca\n--:-- Garrafa #107 · a cor\n--:-- Garrafa #107 · a pegadinha\n--:-- A revelação\n--:-- O que a Gamay me ensinou\n--:-- Quiz da degustação\n--:-- O que eu aprendi\n\nVinhos do episódio:\n#21 Reserva Touriga Nacional 2022 · Bodega Iribarrem · Bento Gonçalves (RS)\n#41 Barolo Morello · Nebbiolo · Piemonte\n#107 Beaujolais · Gamay · França\n\nNo Instagram tem o Quiz da Taça da Gamay. Quantas você acerta?\n\n#vinho #degustacaoascegas #touriganacional #gamay #barolo #estudodevinho"
+  },
+  {
+    "id": "ig-2026-12-03",
+    "ep": "04",
+    "rede": "instagram",
+    "formato": "Reels gancho",
+    "titulo": "Tirei zero numa taça",
+    "data": "2026-12-03",
+    "hora": "19:30",
+    "status": "fazer",
+    "proximo": "Natalie aprova o reels_ep4_v2 seg 23/11, depois de o editor conferir que ele bate com o roteiro v3 (placar 67 e ordem das taças).",
+    "origem": {
+      "roteiro": "ep04_v3",
+      "bloco": "B00+B10",
+      "arquivo": "reels_ep4_v2.mp4"
+    },
+    "legenda": "Tirei exatamente zero numa das taças. E a culpa foi da Touriga.\n\nNa #21, senti menta e fui de Touriga: acertei. Na #41, a cor me levou direto ao Barolo. Na #107, cheguei a pensar em Gamay… e fui de Touriga de novo. Era Gamay.\n\nEpisódio completo no YouTube (link na bio).\n\n#touriganacional #gamay #beaujolais #barolo #degustacaoascegas"
+  },
+  {
+    "id": "yt-short-2026-12-04",
+    "ep": "04",
+    "rede": "youtube",
+    "formato": "Short",
+    "titulo": "Tirei ZERO numa taça de vinho às cegas",
+    "data": "2026-12-04",
+    "hora": "12:00",
+    "status": "fazer",
+    "proximo": "Mesmo arquivo do Reels gancho de 03/12; aprovação seg 23/11.",
+    "origem": {
+      "roteiro": "ep04_v3",
+      "bloco": "B00+B10",
+      "arquivo": "reels_ep4_v2.mp4"
+    },
+    "legenda": "TÍTULO\nTirei ZERO numa taça de vinho às cegas\n\nDESCRIÇÃO\nA Touriga me enganou ao contrário. Episódio completo no canal: Três Taças nº 04.\n#shorts #vinho #degustacaoascegas"
+  },
+  {
+    "id": "ig-2026-12-04",
+    "ep": "04",
+    "rede": "instagram",
+    "formato": "Curiosidade",
+    "titulo": "O tanino da Gamay: o teste da língua",
+    "data": "2026-12-04",
+    "hora": "19:00",
+    "status": "fazer",
+    "proximo": "Natalie aprova o reels_ep4_extra_v2 seg 23/11 (o diretor já checou o perfil de tanino da Gamay).",
+    "origem": {
+      "roteiro": "ep04_v3",
+      "bloco": "B11",
+      "arquivo": "reels_ep4_extra_v2.mp4"
+    },
+    "legenda": "Um teste de 5 segundos para sentir o tanino.\n\nDepois do gole, passa a língua no céu da boca: quanto mais seca, mais tanino. A Gamay tem tanino baixo, e baixo é diferente de zero. Lado a lado com a Touriga, a diferença aparece na hora.\n\nA degustação completa está no YouTube (link na bio).\n\n#tanino #gamay #dicadevinho #touriganacional #estudodevinho"
+  },
+  {
+    "id": "ig-2026-12-05",
+    "ep": "04",
+    "rede": "instagram",
+    "formato": "Quiz da Taça",
+    "titulo": "Quiz da Taça · Gamay",
+    "data": "2026-12-05",
+    "hora": "11:00",
+    "status": "fazer",
+    "proximo": "Natalie aprova o quiz_gamay_v1 seg 23/11 (perguntas já checadas pelo diretor).",
+    "origem": {
+      "roteiro": "ep04_v3",
+      "bloco": "B12",
+      "arquivo": "quiz_gamay_v1.mp4"
+    },
+    "legenda": "A uva que me deu zero. Você acerta 5 de 5?\n\nQuiz da Taça: Gamay. Pausa no 3-2-1 e responde antes de ver. A degustação inteira está no YouTube (link na bio).\n\nComenta o seu placar.\n\n#quizdevinho #gamay #beaujolais #vinhofrances #degustacaoascegas"
+  },
+  {
+    "id": "ig-2026-12-06",
+    "ep": "04",
+    "rede": "instagram",
+    "formato": "Erro ou acerto",
+    "titulo": "Eu cheguei a dizer Gamay",
+    "data": "2026-12-06",
+    "hora": "11:00",
+    "status": "fazer",
+    "proximo": "Editor corta o B09 com a revelação da #107 (B10) até 28/11; Natalie aprova seg 30/11.",
+    "origem": {
+      "roteiro": "ep04_v3",
+      "bloco": "B09"
+    },
+    "legenda": "'Eu poderia até ir para um Gamay.' Eu disse. E troquei.\n\nMorango, framboesa e cor clara apontavam para a Gamay. O tanino me levou para a Touriga, e a #107 era Gamay mesmo. O motivo está na ordem das taças, e eu conto no episódio.\n\nEpisódio completo no YouTube (link na bio).\n\n#gamay #beaujolais #touriganacional #degustacaoascegas #estudodevinho"
+  },
+  {
+    "id": "ig-2026-12-07",
+    "ep": "04",
+    "rede": "instagram",
+    "formato": "Curiosidade",
+    "titulo": "Barolo: 38 meses até a garrafa",
+    "data": "2026-12-07",
+    "hora": "19:00",
+    "status": "fazer",
+    "proximo": "Editor corta a tela do Barolo do B10 até 28/11; diretor confere de novo o disciplinare; Natalie aprova seg 30/11.",
+    "origem": {
+      "roteiro": "ep04_v3",
+      "bloco": "B10"
+    },
+    "legenda": "Eu chutei safra 2024 para um Barolo. Ele só chegaria ao mercado em 2028.\n\nPela norma da DOCG, o Barolo envelhece no mínimo 38 meses, 18 deles em madeira, e sai a partir de 1º de janeiro do 4º ano depois da colheita. A unha dá uma faixa; a regra da denominação dá a data.\n\nEpisódio completo no YouTube (link na bio).\n\n#barolo #nebbiolo #piemonte #vinhoitaliano #estudodevinho"
+  },
+  {
+    "id": "yt-short-2026-12-08",
+    "ep": "04",
+    "rede": "youtube",
+    "formato": "Short",
+    "titulo": "O teste da língua para sentir o tanino",
+    "data": "2026-12-08",
+    "hora": "12:00",
+    "status": "fazer",
+    "proximo": "Mesmo arquivo do post de 04/12; aprovação seg 30/11.",
+    "origem": {
+      "roteiro": "ep04_v3",
+      "bloco": "B11",
+      "arquivo": "reels_ep4_extra_v2.mp4"
+    },
+    "legenda": "TÍTULO\nO teste da língua para sentir o tanino\n\nDESCRIÇÃO\nCinco segundos e você sente o tanino. Episódio completo no canal: Três Taças nº 04.\n#shorts #vinho #degustacaoascegas"
+  },
+  {
+    "id": "ig-2026-12-08",
+    "ep": "06",
+    "rede": "instagram",
+    "formato": "Bastidores",
+    "titulo": "[ep.06] Bastidores 1 · título após a análise",
+    "data": "2026-12-08",
+    "hora": "19:00",
+    "status": "fazer",
+    "proximo": "Sai do roteiro do ep.06 (como ela montou essa prova ou como usou o app); editor corta até 28/11; Natalie aprova seg 30/11.",
+    "origem": {
+      "gravacao": "2026-11-09",
+      "bloco": "a definir na análise"
+    },
+    "legenda": "[rascunho após a análise da gravação de 09/11: tema sem a resposta da degustação (o YouTube sai depois)]\n\nO app que eu uso está no link da bio.\n\n#degustacaoascegas #estudodevinho #trestacas"
+  },
+  {
+    "id": "ig-2026-12-09",
+    "ep": "06",
+    "rede": "instagram",
+    "formato": "Curiosidade",
+    "titulo": "[ep.06] Curiosidade 2 · título após a análise",
+    "data": "2026-12-09",
+    "hora": "19:00",
+    "status": "fazer",
+    "proximo": "Segundo tema do ep.06 sem a resposta; editor corta até 28/11; Natalie aprova seg 30/11.",
+    "origem": {
+      "gravacao": "2026-11-09",
+      "bloco": "a definir na análise"
+    },
+    "legenda": "[rascunho após a análise da gravação de 09/11: tema sem a resposta da degustação (o YouTube sai depois)]\n\nEpisódios completos no YouTube (link na bio).\n\n#degustacaoascegas #estudodevinho #trestacas"
+  },
+  {
+    "id": "yt-ep06",
+    "ep": "06",
+    "rede": "youtube",
+    "formato": "Episódio",
+    "titulo": "Três Taças nº 06 · título após a análise",
+    "data": "2026-12-10",
+    "hora": "18:00",
+    "status": "fazer",
+    "proximo": "Equipe analisa a gravação até 20/11, roteiro por temas até 25/11, Natalie aprova o roteiro até 27/11; render e diretor até 04/12; Natalie aprova o vídeo seg 07/12.",
+    "origem": {
+      "gravacao": "2026-11-09"
+    },
+    "legenda": "TÍTULO\n[após a análise da gravação de 09/11]\n\nDESCRIÇÃO\n[resumo da degustação, placar e vinhos]\n\nEu estudo com o Wine Study Lab, o app que eu uso e recomendo para registrar as degustações, fazer o quiz e comparar as uvas: [link do app]?utm_source=youtube&utm_medium=descricao&utm_campaign=ep06\n[linha de transparência]\n\n[capítulos do roteiro por temas]\n\n#vinho #degustacaoascegas #estudodevinho"
+  },
+  {
+    "id": "ig-2026-12-10",
+    "ep": "06",
+    "rede": "instagram",
+    "formato": "Reels gancho",
+    "titulo": "[ep.06] Reels gancho · título após a análise",
+    "data": "2026-12-10",
+    "hora": "19:30",
+    "status": "fazer",
+    "proximo": "Editor corta o momento mais forte do ep.06 a partir do render até 05/12; Natalie aprova seg 07/12 junto com o YouTube.",
+    "origem": {
+      "gravacao": "2026-11-09",
+      "bloco": "a definir na análise"
+    },
+    "legenda": "[rascunho após a análise da gravação de 09/11: pode mostrar a resposta (o YouTube já saiu)]\n\nEpisódio completo no YouTube (link na bio).\n\n#degustacaoascegas #estudodevinho #trestacas"
+  },
+  {
+    "id": "yt-short-2026-12-11",
+    "ep": "06",
+    "rede": "youtube",
+    "formato": "Short",
+    "titulo": "[ep.06] Short do gancho",
+    "data": "2026-12-11",
+    "hora": "12:00",
+    "status": "fazer",
+    "proximo": "Mesmo arquivo do Reels gancho de 10/12; aprovação seg 07/12.",
+    "origem": {
+      "gravacao": "2026-11-09"
+    },
+    "legenda": "TÍTULO\n[ep.06] Short do gancho\n\nDESCRIÇÃO\n[após a análise] Episódio completo no canal: Três Taças nº 06.\n#shorts #vinho #degustacaoascegas"
+  },
+  {
+    "id": "ig-2026-12-11",
+    "ep": "04",
+    "rede": "instagram",
+    "formato": "Curiosidade",
+    "titulo": "A ordem das taças muda o tanino",
+    "data": "2026-12-11",
+    "hora": "19:00",
+    "status": "fazer",
+    "proximo": "Editor corta o B13 até 28/11; Natalie aprova seg 30/11.",
+    "origem": {
+      "roteiro": "ep04_v3",
+      "bloco": "B13"
+    },
+    "legenda": "Barolo antes, Gamay depois: a Gamay pareceu tânica.\n\nA secura do tanino se acumula de um gole para o outro. Por isso a ordem clássica vai do vinho mais leve ao mais tânico. Na próxima prova, a Gamay vem primeiro.\n\nA degustação completa está no YouTube (link na bio).\n\n#tanino #gamay #barolo #dicadevinho #degustacaoascegas"
+  },
+  {
+    "id": "ig-2026-12-12",
+    "ep": "06",
+    "rede": "instagram",
+    "formato": "Quiz da Taça",
+    "titulo": "[ep.06] Quiz da Taça · uva após a análise",
+    "data": "2026-12-12",
+    "hora": "11:00",
+    "status": "fazer",
+    "proximo": "Equipe escreve as 5 perguntas até 02/12; diretor confere; Natalie aprova seg 07/12.",
+    "origem": {
+      "gravacao": "2026-11-09",
+      "bloco": "a definir na análise"
+    },
+    "legenda": "[uva do quiz após a análise] Você acerta 5 de 5?\n\nQuiz da Taça: pausa no 3-2-1 e responde antes de ver. A degustação inteira está no YouTube (link na bio).\n\nComenta o seu placar.\n\n#quizdevinho #degustacaoascegas #estudodevinho"
+  },
+  {
+    "id": "ig-2026-12-13",
+    "ep": "02",
+    "rede": "instagram",
+    "formato": "Curiosidade",
+    "titulo": "Cabernet Franc é pai da Cabernet Sauvignon",
+    "data": "2026-12-13",
+    "hora": "11:00",
+    "status": "fazer",
+    "proximo": "Editor corta a tela do DNA do B12 até 05/12; diretor confere a fonte UC Davis; Natalie aprova seg 07/12.",
+    "origem": {
+      "roteiro": "ep02_v1",
+      "bloco": "B12"
+    },
+    "legenda": "A Cabernet Sauvignon é filha da Cabernet Franc com a Sauvignon Blanc.\n\nUma tinta e uma branca. O DNA confirmou em 1997, num estudo da UC Davis. Eu descobri comparando as uvas no app, depois de trocar um Cabernet Franc por Dolcetto.\n\nEpisódio completo no YouTube (link na bio).\n\n#cabernetfranc #cabernetsauvignon #uvasdevinho #estudodevinho"
+  },
+  {
+    "id": "ig-2026-12-14",
+    "ep": "06",
+    "rede": "instagram",
+    "formato": "Erro ou acerto",
+    "titulo": "[ep.06] Erro ou acerto · título após a análise",
+    "data": "2026-12-14",
+    "hora": "19:00",
+    "status": "fazer",
+    "proximo": "Editor corta a reação dela na revelação do ep.06 até 05/12; Natalie aprova seg 07/12.",
+    "origem": {
+      "gravacao": "2026-11-09",
+      "bloco": "a definir na análise"
+    },
+    "legenda": "[rascunho após a análise da gravação de 09/11: pode mostrar a resposta (o YouTube já saiu)]\n\nEpisódio completo no YouTube (link na bio).\n\n#degustacaoascegas #estudodevinho #trestacas"
+  },
+  {
+    "id": "yt-short-2026-12-15",
+    "ep": "02",
+    "rede": "youtube",
+    "formato": "Short",
+    "titulo": "A Cabernet Sauvignon é filha de uma uva branca",
+    "data": "2026-12-15",
+    "hora": "12:00",
+    "status": "fazer",
+    "proximo": "Mesmo arquivo do post de 13/12; aprovação seg 07/12.",
+    "origem": {
+      "roteiro": "ep02_v1",
+      "bloco": "B12"
+    },
+    "legenda": "TÍTULO\nA Cabernet Sauvignon é filha de uma uva branca\n\nDESCRIÇÃO\nCabernet Franc × Sauvignon Blanc, confirmado por DNA em 1997. Episódio completo no canal: Três Taças nº 02.\n#shorts #vinho #degustacaoascegas"
+  },
+  {
+    "id": "ig-2026-12-15",
+    "ep": "06",
+    "rede": "instagram",
+    "formato": "Curiosidade",
+    "titulo": "[ep.06] Curiosidade 3 · título após a análise",
+    "data": "2026-12-15",
+    "hora": "19:00",
+    "status": "fazer",
+    "proximo": "Terceiro tema do ep.06 (pode usar a resposta); editor corta até 05/12; Natalie aprova seg 07/12.",
+    "origem": {
+      "gravacao": "2026-11-09",
+      "bloco": "a definir na análise"
+    },
+    "legenda": "[rascunho após a análise da gravação de 09/11: pode mostrar a resposta (o YouTube já saiu)]\n\nEpisódio completo no YouTube (link na bio).\n\n#degustacaoascegas #estudodevinho #trestacas"
+  },
+  {
+    "id": "ig-2026-12-16",
+    "ep": "07",
+    "rede": "instagram",
+    "formato": "Bastidores",
+    "titulo": "[ep.07] Bastidores 1 · título após a análise",
+    "data": "2026-12-16",
+    "hora": "19:00",
+    "status": "fazer",
+    "proximo": "Sai do roteiro do ep.07; editor corta até 05/12; Natalie aprova seg 07/12.",
+    "origem": {
+      "gravacao": "2026-11-11",
+      "bloco": "a definir na análise"
+    },
+    "legenda": "[rascunho após a análise da gravação de 11/11: tema sem a resposta da degustação (o YouTube sai depois)]\n\nO app que eu uso está no link da bio.\n\n#degustacaoascegas #estudodevinho #trestacas"
+  },
+  {
+    "id": "yt-ep07",
+    "ep": "07",
+    "rede": "youtube",
+    "formato": "Episódio",
+    "titulo": "Três Taças nº 07 · título após a análise",
+    "data": "2026-12-17",
+    "hora": "18:00",
+    "status": "fazer",
+    "proximo": "Equipe analisa a gravação até 20/11, roteiro por temas até 02/12, Natalie aprova o roteiro até 04/12; render e diretor até 11/12; Natalie aprova o vídeo seg 14/12.",
+    "origem": {
+      "gravacao": "2026-11-11"
+    },
+    "legenda": "TÍTULO\n[após a análise da gravação de 11/11]\n\nDESCRIÇÃO\n[resumo da degustação, placar e vinhos]\n\nEu estudo com o Wine Study Lab, o app que eu uso e recomendo para registrar as degustações, fazer o quiz e comparar as uvas: [link do app]?utm_source=youtube&utm_medium=descricao&utm_campaign=ep07\n[linha de transparência]\n\n[capítulos do roteiro por temas]\n\n#vinho #degustacaoascegas #estudodevinho"
+  },
+  {
+    "id": "ig-2026-12-17",
+    "ep": "07",
+    "rede": "instagram",
+    "formato": "Reels gancho",
+    "titulo": "[ep.07] Reels gancho · título após a análise",
+    "data": "2026-12-17",
+    "hora": "19:30",
+    "status": "fazer",
+    "proximo": "Editor corta o momento mais forte do ep.07 a partir do render até 12/12; Natalie aprova seg 14/12 junto com o YouTube.",
+    "origem": {
+      "gravacao": "2026-11-11",
+      "bloco": "a definir na análise"
+    },
+    "legenda": "[rascunho após a análise da gravação de 11/11: pode mostrar a resposta (o YouTube já saiu)]\n\nEpisódio completo no YouTube (link na bio).\n\n#degustacaoascegas #estudodevinho #trestacas"
+  },
+  {
+    "id": "yt-short-2026-12-18",
+    "ep": "07",
+    "rede": "youtube",
+    "formato": "Short",
+    "titulo": "[ep.07] Short do gancho",
+    "data": "2026-12-18",
+    "hora": "12:00",
+    "status": "fazer",
+    "proximo": "Mesmo arquivo do Reels gancho de 17/12; aprovação seg 14/12.",
+    "origem": {
+      "gravacao": "2026-11-11"
+    },
+    "legenda": "TÍTULO\n[ep.07] Short do gancho\n\nDESCRIÇÃO\n[após a análise] Episódio completo no canal: Três Taças nº 07.\n#shorts #vinho #degustacaoascegas"
+  },
+  {
+    "id": "ig-2026-12-18",
+    "ep": "04",
+    "rede": "instagram",
+    "formato": "Curiosidade",
+    "titulo": "Fruta madura, clima quente",
+    "data": "2026-12-18",
+    "hora": "19:00",
+    "status": "fazer",
+    "proximo": "Editor corta o B05 até 05/12; diretor confere a frase do clima; Natalie aprova seg 07/12.",
+    "origem": {
+      "roteiro": "ep04_v3",
+      "bloco": "B05"
+    },
+    "legenda": "Fruta bem madura, quase doce na boca, costuma apontar para clima mais quente.\n\nFoi assim que eu levei a #21 para o Novo Mundo e acertei: uma Touriga Nacional de Bento Gonçalves (RS). É pista de estilo, um ponto de partida para a hipótese.\n\nEpisódio completo no YouTube (link na bio).\n\n#vinhobrasileiro #touriganacional #degustacaoascegas #estudodevinho"
+  },
+  {
+    "id": "ig-2026-12-19",
+    "ep": "07",
+    "rede": "instagram",
+    "formato": "Quiz da Taça",
+    "titulo": "[ep.07] Quiz da Taça · uva após a análise",
+    "data": "2026-12-19",
+    "hora": "11:00",
+    "status": "fazer",
+    "proximo": "Equipe escreve as 5 perguntas até 09/12; diretor confere; Natalie aprova seg 14/12.",
+    "origem": {
+      "gravacao": "2026-11-11",
+      "bloco": "a definir na análise"
+    },
+    "legenda": "[uva do quiz após a análise] Você acerta 5 de 5?\n\nQuiz da Taça: pausa no 3-2-1 e responde antes de ver. A degustação inteira está no YouTube (link na bio).\n\nComenta o seu placar.\n\n#quizdevinho #degustacaoascegas #estudodevinho"
+  },
+  {
+    "id": "ig-2026-12-20",
+    "ep": "07",
+    "rede": "instagram",
+    "formato": "Erro ou acerto",
+    "titulo": "[ep.07] Erro ou acerto · título após a análise",
+    "data": "2026-12-20",
+    "hora": "11:00",
+    "status": "fazer",
+    "proximo": "Editor corta a reação dela na revelação do ep.07 até 12/12; Natalie aprova seg 14/12.",
+    "origem": {
+      "gravacao": "2026-11-11",
+      "bloco": "a definir na análise"
+    },
+    "legenda": "[rascunho após a análise da gravação de 11/11: pode mostrar a resposta (o YouTube já saiu)]\n\nEpisódio completo no YouTube (link na bio).\n\n#degustacaoascegas #estudodevinho #trestacas"
+  },
+  {
+    "id": "ig-2026-12-21",
+    "ep": "07",
+    "rede": "instagram",
+    "formato": "Curiosidade",
+    "titulo": "[ep.07] Curiosidade 2 · título após a análise",
+    "data": "2026-12-21",
+    "hora": "19:00",
+    "status": "fazer",
+    "proximo": "Segundo tema do ep.07 (pode usar a resposta); editor corta até 12/12; Natalie aprova seg 14/12.",
+    "origem": {
+      "gravacao": "2026-11-11",
+      "bloco": "a definir na análise"
+    },
+    "legenda": "[rascunho após a análise da gravação de 11/11: pode mostrar a resposta (o YouTube já saiu)]\n\nEpisódio completo no YouTube (link na bio).\n\n#degustacaoascegas #estudodevinho #trestacas"
+  }
+]

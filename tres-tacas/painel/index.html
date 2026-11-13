@@ -402,7 +402,7 @@ $("sheet").addEventListener("click", e => { if (e.target.id === "sheet") closeSh
 (async () => {
   db = window.claude?.use ? await window.claude.use("db") : null;
   if (!db) { toast("Sem conexão com os dados agora."); return; }
-  db.collection("pecas").onSnapshot(s => { pecas = s.docs.map(d => ({ id: d.id, ...d.data() })); render(); if (sheetId && !document.activeElement?.matches("textarea")) renderSheet(); }, () => toast("Os dados pararam de atualizar. Recarregue a página."));
+  db.collection("pecas").onSnapshot(s => { pecas = s.docs.map(d => ({ id: d.id, ...d.data() })).filter(p => /^(ig|yt)-/.test(p.id) || p.status === "postado"); render(); if (sheetId && !document.activeElement?.matches("textarea")) renderSheet(); }, () => toast("Os dados pararam de atualizar. Recarregue a página."));
   db.collection("roteiros").onSnapshot(s => { roteiros = Object.fromEntries(s.docs.map(d => [d.id, d.data()])); render(); }, () => {});
   db.collection("material").onSnapshot(s => { material = s.docs.map(d => ({ id: d.id, ...d.data() })); render(); }, () => {});
 })();

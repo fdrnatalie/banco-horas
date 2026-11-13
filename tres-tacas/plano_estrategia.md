@@ -1,125 +1,163 @@
-# Três Taças · Plano de conteúdo 28/10 a 30/11/2026
+# Três Taças · Plano de conteúdo 13/11 a 21/12/2026
 
-Atualizado em 28/10/2026 (quarta). O painel (`tres-tacas/dashboard/data.js`) já está com todas as datas, horários, legendas e pendências deste plano.
+Atualizado em 12/11/2026 (quinta). Calendário completo, peça a peça: `tres-tacas/calendario_diario.json` (53 peças: 39 Instagram, 5 episódios, 9 Shorts).
+O painel (`tres-tacas/dashboard/data.js`) ainda segue a grade antiga e precisa ser alinhado a este plano.
 
 ## 1. Objetivo
 
 1. **Crescer o Instagram** (@fdrnatalie) com uma série que a pessoa quer acompanhar: cada episódio responde ao anterior.
 2. **Levar quem gostou para o YouTube**, onde o episódio completo cria vínculo e tempo de tela.
-3. **Recomendar o app de estudo** no lugar em que ele aparece de verdade: na tela das degustações e na descrição do YouTube ("é o app que eu uso"), sempre com transparência (seção 5).
+3. **Recomendar o app de estudo** onde ele aparece de verdade: na tela das degustações, nos posts de bastidores e na descrição do YouTube ("o app que eu uso e recomendo"), sempre com transparência (seção 6).
 
-O fio da história do mês: **a Touriga Nacional**. Ela engana no ep.01 e no ep.02, vira obsessão no ep.04 e perde no ep.05.
+## 2. Regra "Instagram diário"
 
-## 2. Cadência e horários
+- **1 post por dia no Instagram, todos os dias**, inclusive nos dias em que a Natalie estiver atarefada. Quem segura isso é a fila (seção 3), e a Natalie só aprova.
+- **O Instagram mostra o que há de mais legal e curioso de cada episódio** e leva para o episódio completo no YouTube. Cada bloco temático do roteiro (30 a 60 s) é uma peça em potencial.
+- **5 formatos, nunca dois iguais seguidos:**
+  | Formato | O que é | Quando |
+  |---|---|---|
+  | Reels gancho | o momento mais forte do episódio | no dia em que o YouTube sai (qui 19:30) |
+  | Quiz da Taça | 5 perguntas sobre a uva do episódio | 1 por episódio, no sábado depois do YouTube |
+  | Curiosidade | um bloco temático (cor, lágrima, tanino, denominação…) | antes ou depois do YouTube |
+  | Erro ou acerto | a reação dela na revelação | só depois do YouTube |
+  | Bastidores | como ela monta a prova e como estuda com o app | qualquer dia; é o post que leva ao app |
+- **Spoiler:** curiosidade pode sair antes do YouTube daquele episódio, mas sem a resposta da degustação (uva, placar, reação). Gancho, revelação, erro/acerto e quiz só depois do YouTube.
+- **CTA:** um só por post. "Episódio completo no YouTube (link na bio)" depois que o episódio saiu; "quinta no YouTube" antes; "O app que eu uso está no link da bio" nos bastidores.
 
-| Canal | Ritmo | Dia e hora (Brasília) | Por quê |
-|---|---|---|---|
-| YouTube (vídeo longo) | 1/semana | **qui 18:00** | Sai antes do fim de semana, quando o vídeo longo tem mais tempo de tela. As primeiras 48–72 h, que o YouTube usa para testar o vídeo, caem em sex–dom. |
-| Instagram · Reels do episódio | 1/semana | **qui 19:30** | Sai 1h30 depois do YouTube: o "link na bio" já leva ao episódio, e o horário pega o pico da noite. |
-| Instagram · Quiz da Taça | 1/semana | **sáb 11:00** | O quiz pede pausa e resposta. No sábado de manhã a pessoa tem tempo para isso, e os comentários sobem. |
-| Instagram · corte extra | 1/semana | **dom 19:00** | Dica curta e salvável para o domingo à noite, quando o público rola o feed com calma (e muitas vezes com uma taça na mão). |
-| Instagram · ponte (carrossel/teaser) | 1/semana | **ter 19:00** | Mantém o perfil vivo no meio da semana e prepara o episódio de quinta. |
-| Shorts | 1/semana (+ extras opcionais) | **sex 12:00** | No dia seguinte ao episódio, no horário de almoço. O Short devolve gente para o vídeo longo da véspera. |
+### Horários (Brasília)
 
-Esses horários são a hipótese de partida. Depois de 3 semanas, a gente compara com o melhor horário do Insights e do YouTube Studio e ajusta.
-Feriados no período: **Finados (seg 02/11)** fecha um fim de semana prolongado logo na semana 1, e **Consciência Negra (sex 20/11)** cai no dia seguinte ao ep.05, o que pode dar mais tempo de tela ao vídeo longo.
+| Canal | Dia e hora | Por quê |
+|---|---|---|
+| YouTube (episódio) | **qui 18:00** | As primeiras 48–72 h, que o YouTube usa para testar o vídeo, caem em sex–dom. |
+| IG Reels gancho | **qui 19:30** | 1h30 depois do YouTube: o link na bio já leva ao episódio, e pega o pico da noite. |
+| IG demais dias úteis | **19:00** | Pico da noite. |
+| IG fim de semana e feriado | **11:00** | Manhã com tempo para responder quiz e comentar. Sexta 20/11 (Consciência Negra) entra como fim de semana. |
+| Shorts | **sex 12:00** (gancho da semana) e **ter 12:00** (curiosidade de episódio já no ar) | O Short devolve gente ao vídeo longo; custo zero, mesmo arquivo do Reels. |
 
-## 3. Calendário
+Depois de 3 semanas, comparar com o melhor horário do Insights e do YouTube Studio e ajustar.
 
-Status: ✅ aprovado (arquivo pronto) · ⏳ aguardando aprovação · ✂️ em edição · 💡 ideia (ainda sem arquivo). Nenhuma peça está como "programado" porque nada foi agendado na ferramenta ainda.
+## 3. A fila
 
-| Semana | Data | Hora | Rede | Peça | Status | O que falta |
-|---|---|---|---|---|---|---|
-| **1 · A série começa** | qui 29/10 | 19:30 | IG | Reels ep.00 · Como eu estudo vinho | ✅ | Natalie: confirmar se já saiu e qual arquivo (v8 ou v9) |
-| | sex 30/10 | 12:00 | Shorts | ep.00 (Short) | ✅ | junto do Reels |
-| | sáb 31/10 | 10:00 | YouTube | ep.01 · Qual é o intruso? (11 min) | ✅ | Natalie: confirmar + trocar [link do app] |
-| | sáb 31/10 | 11:00 | IG | Reels ep.01 · O intruso | ✅ | Natalie: confirmar se já saiu |
-| | dom 01/11 | 12:00 | Shorts | ep.01 (Short) | ✅ | junto do Reels |
-| | dom 01/11 | 19:00 | IG | Teste de aromas às cegas | ⏳ | Natalie: aprovar a v3 até 31/10 |
-| **2 · A Touriga engana de novo** | ter 03/11 | 19:00 | IG | Carrossel "Primitivo ou Touriga? As pistas que eu anotei" | 💡 | equipe monta até 01/11, Natalie aprova até 02/11 |
-| | qua 04/11 | 12:00 | Shorts | Teste de aromas (Short) | ⏳ | aprovação da v3 |
-| | qui 05/11 | 18:00 | YouTube | ep.02 · A Touriga me enganou DE NOVO (15 min) | ⏳ | Natalie: aprovar + link do app até 03/11 |
-| | qui 05/11 | 19:30 | IG | Reels ep.02 · A Touriga de novo | ⏳ | Natalie: aprovar até 03/11 |
-| | sex 06/11 | 12:00 | Shorts | ep.02 (Short) | ⏳ | junto do Reels |
-| | sáb 07/11 | 11:00 | IG | Quiz da Taça · Touriga Nacional | ✅ | equipe: agendar |
-| | dom 08/11 | 19:00 | IG | Corte extra ep.02 · Como cheirar vinho | 💡 | editor corta do ep.02, Natalie aprova até 06/11 |
-| **3 · A Touriga vira obsessão** | ter 10/11 | 19:00 | IG | Teaser "Tirei exatamente zero" (8 s) | 💡 opcional | sai do pacote do ep.04 |
-| | qui 12/11 | 18:00 | YouTube | ep.04 · A Touriga me enganou AO CONTRÁRIO (~18 min) | ✂️ | direção aprovada até 29/10 → entrega até 31/10 → aprovação até 05/11 |
-| | qui 12/11 | 19:30 | IG | Reels ep.04 | ✂️ | idem |
-| | sex 13/11 | 12:00 | Shorts | ep.04 (Short) | ✂️ | idem |
-| | sáb 14/11 | 11:00 | IG | Quiz da Taça · Gamay | ✂️ | idem |
-| | dom 15/11 | 19:00 | IG | Corte extra ep.04 · O teste da língua | ✂️ | idem |
-| **4 · A revanche** | ter 17/11 | 19:00 | IG | Carrossel "O vinho que me enganou duas vezes" | 💡 | equipe monta até 14/11, Natalie aprova até 16/11 |
-| | qui 19/11 | 18:00 | YouTube | ep.05 · A revanche da Touriga (~17 min) | ✂️ | direção aprovada até 29/10 → entrega até 03/11 → aprovação até 10/11 |
-| | qui 19/11 | 19:30 | IG | Reels ep.05 | ✂️ | idem |
-| | sex 20/11 | 12:00 | Shorts | ep.05 (Short) | ✂️ | idem |
-| | sáb 21/11 | 11:00 | IG | Quiz da Taça · Montepulciano | ✂️ | idem + diretor criativo confere as normas de denominação (disciplinari) |
-| | dom 22/11 | 19:00 | IG | Corte extra ep.05 · A lágrima mentiu | ✂️ | idem |
-| **5 · Próximo capítulo** | ter 24/11 | 19:00 | IG | Carrossel "O placar da série até aqui" | 💡 | baixa prioridade |
-| | qui 26/11 | 18:00 | YouTube | ep.06 | 💡 | **Natalie: gravar até 08/11** |
-| | qui 26/11 | 19:30 | IG | Reels ep.06 | 💡 | depende da gravação |
-| | sex 27/11 | 12:00 | Shorts | ep.06 (Short) | 💡 | depende da gravação |
-| | sáb 28/11 | 11:00 | IG | Quiz da Taça ep.06 | 💡 | depende da gravação |
-| | dom 29/11 | 19:00 | IG | Corte extra ep.06 | 💡 | depende da gravação |
-| | seg 30/11 | — | — | Leitura do mês e ajuste do plano de dezembro | — | trazer os números |
+- **Meta: sempre 7 a 14 dias de posts aprovados e agendados.**
+- **Sessão semanal da Natalie: segunda 20:00, 30 min.** Ela aprova tudo o que sai da terça seguinte até o domingo da outra semana. A equipe entrega cortes, legendas e checagem do diretor até o sábado anterior.
+- **Dia sem peça pronta nunca fica vazio:** se a peça do dia não estiver aprovada até D-2, entra a próxima peça aprovada da fila que respeite a regra de spoiler, e a peça atrasada vai para o fim da fila (depois de 21/12).
+- **Reserva de emergência** (peças que podem sair em qualquer data, sem spoiler): Como eu monto a prova (ep05 B01), A cor já tira uvas da lista (ep05 B02–B03), Como eu procuro um aroma (ep04 B03), Vinho gelado esconde o aroma (ep02 B02), Garrafinha aberta (ep04 B01), Fruta madura, clima quente (ep04 B05). Ter sempre 2 delas aprovadas e fora do calendário é o seguro dos dias corridos.
+- **Diretor criativo confere toda afirmação técnica antes da aprovação** (escala de álcool, disciplinari, DNA da Cabernet, perfis de tanino).
 
-**Totais:** 19 posts no Instagram (3 na semana 1, que começou numa quarta, e 4 nas outras), 5 vídeos longos e 7 Shorts.
-**Shorts extras opcionais**, com o mesmo arquivo e custo zero: teste da língua (seg 16/11) e a lágrima (seg 23/11).
+### Estado da fila hoje (12/11)
 
-**Se o ep.00 e o ep.01 já saíram:** marcar como postados, adiantar o Teste de aromas para qui 29/10 e usar o dom 01/11 para um Story de bastidor. O resto do calendário segue igual.
+Arquivo pronto, só falta a aprovação: Teste de aromas v3, A lágrima (ep05 extra v2), Quiz Montepulciano, Reels "Tirei zero", O teste da língua, Quiz Gamay e o Reels "3 de 3 uvas" (para o Short). **Para os próximos dias, a fila cobre só 13 e 14/11.** Ela fica abaixo da meta até a sessão de seg 16/11. Daí o sprint de abertura:
+
+| Sessão | Natalie aprova | A fila passa a cobrir até |
+|---|---|---|
+| hoje 12/11 – sex 13/11 15:00 | Teste de aromas, A lágrima | 14/11 |
+| sáb 14/11 10:00 (extra) | 4 cortes novos para 15–18/11 | 18/11 |
+| seg 16/11 | YouTube ep.05 e tudo de 19 a 24/11, Short "3 de 3", roteiro do ep.02 | 24/11 |
+| seg 23/11 | YouTube ep.02, peças de 25/11 a 06/12 (inclui o pacote pronto do ep.04) | 06/12 ✅ 13 dias |
+| seg 30/11 | YouTube ep.04, peças de 07 a 13/12 (as do ep.06 que já tiverem corte) | 13/12 |
+| seg 07/12 | YouTube ep.06, peças de 10 a 20/12 | 20/12 |
+| seg 14/12 | YouTube ep.07, peças de 17/12 em diante | 27/12 |
+
+## 4. Calendário 13/11 a 21/12
+
+**YouTube:** ep.05 (19/11) → ep.02 (26/11) → ep.04 (03/12) → ep.06 (10/12) → ep.07 (17/12).
+13/11 é sexta. A primeira quinta do período é 19/11, e é nela que o ep.05 estreia (ele fica pronto para aprovação em 13–14/11). O ep.05 vem primeiro porque o Reels dele já está no ar prometendo o episódio. O ep.02 vem depois pelo mesmo motivo: o Reels e o quiz já saíram.
+
+| Data | IG (formato · peça · origem) | YouTube |
+|---|---|---|
+| sex 13/11 | Erro ou acerto · Doce de leite ou manteiga? · aromas 24/10 | |
+| sáb 14/11 | Curiosidade · A lágrima me disse 15% · ep05 B10 | |
+| dom 15/11 | Bastidores · Como eu monto a prova às cegas · ep05 B01 | |
+| seg 16/11 | Curiosidade · A cor já tira uvas da lista · ep05 B02–B03 | |
+| ter 17/11 | Bastidores · Como eu procuro um aroma · ep04 B03 | |
+| qua 18/11 | Curiosidade · Vinho gelado esconde o aroma · ep02 B02 | |
+| **qui 19/11** | Reels gancho · Duas taças, a mesma uva? · ep05 B08–B09 | **ep.05 · A revanche da Touriga** |
+| sex 20/11 (feriado) | Curiosidade · Montepulciano × Sangiovese · ep05 B12 | Short "3 de 3" |
+| sáb 21/11 | Quiz da Taça · Montepulciano · ep05 | |
+| dom 22/11 | Erro ou acerto · A unha me deu o ano errado · ep05 B09 | |
+| seg 23/11 | Curiosidade · A cor puxou a fruta · ep05 B04 | |
+| ter 24/11 | Bastidores · 22 vinhos no app · ep05 B07 | Short gancho ep.05 |
+| qua 25/11 | Curiosidade · ep.06 nº 1 (sem resposta) · gravação 09/11 | |
+| **qui 26/11** | Reels gancho · Só acertei uma uva · ep02 B07 | **ep.02 · A Touriga me enganou DE NOVO** |
+| sex 27/11 | Erro ou acerto · Eu disse Dolcetto. Era Cabernet Franc · ep02 B08 | Short gancho ep.02 |
+| sáb 28/11 | Curiosidade · Primitivo ou Touriga? A pista da menta · ep02 B13 | |
+| dom 29/11 | Bastidores · Como eu comparo duas uvas no app · ep02 B12 | |
+| seg 30/11 | Erro ou acerto · Cravei o Barolo: 100 · ep02 B09 | |
+| ter 01/12 | Curiosidade · ep.07 nº 1 (sem resposta) · gravação 11/11 | Short lágrima |
+| qua 02/12 | Bastidores · Garrafinha aberta · ep04 B01 | |
+| **qui 03/12** | Reels gancho · Tirei zero numa taça · ep04 B00+B10 | **ep.04 · A Touriga me enganou AO CONTRÁRIO** |
+| sex 04/12 | Curiosidade · O tanino da Gamay (teste da língua) · ep04 B11 | Short gancho ep.04 |
+| sáb 05/12 | Quiz da Taça · Gamay · ep04 | |
+| dom 06/12 | Erro ou acerto · Eu cheguei a dizer Gamay · ep04 B09 | |
+| seg 07/12 | Curiosidade · Barolo: 38 meses até a garrafa · ep04 B10 | |
+| ter 08/12 | Bastidores · ep.06 · gravação 09/11 | Short teste da língua |
+| qua 09/12 | Curiosidade · ep.06 nº 2 (sem resposta) | |
+| **qui 10/12** | Reels gancho · ep.06 | **ep.06** |
+| sex 11/12 | Curiosidade · A ordem das taças muda o tanino · ep04 B13 | Short gancho ep.06 |
+| sáb 12/12 | Quiz da Taça · ep.06 | |
+| dom 13/12 | Curiosidade · Cabernet Franc é pai da Cabernet Sauvignon · ep02 B12 | |
+| seg 14/12 | Erro ou acerto · ep.06 | |
+| ter 15/12 | Curiosidade · ep.06 nº 3 | Short Cabernet |
+| qua 16/12 | Bastidores · ep.07 · gravação 11/11 | |
+| **qui 17/12** | Reels gancho · ep.07 | **ep.07** |
+| sex 18/12 | Curiosidade · Fruta madura, clima quente · ep04 B05 | Short gancho ep.07 |
+| sáb 19/12 | Quiz da Taça · ep.07 | |
+| dom 20/12 | Erro ou acerto · ep.07 | |
+| seg 21/12 | Curiosidade · ep.07 nº 2 | |
+
+**Totais no Instagram (39):** 16 Curiosidade · 7 Erro ou acerto · 7 Bastidores · 5 Reels gancho · 4 Quiz da Taça (o ep.02 já teve o seu).
+**Vagas do ep.06 e do ep.07:** 13 peças (7 do ep.06 a partir de 25/11 e 6 do ep.07 a partir de 01/12), com título e legenda definidos depois da análise das gravações.
 
 ### Prazos de produção (o que destrava o quê)
-- **29/10**: Natalie aprova as direções do ep.04 e do ep.05 → o editor entrega o pacote do ep.04 até **31/10** e o do ep.05 até **03/11** (depois do feriado).
-- **31/10**: aprovação do Teste de aromas v3.
-- **03/11**: aprovação do Reels e do YouTube do ep.02 + troca do link do app.
-- **05/11**: aprovação do pacote ep.04 · **10/11**: aprovação do pacote ep.05. Isso deixa uma semana de folga antes de cada estreia, para refação.
-- **08/11**: gravação do ep.06.
+- **até sex 13/11:** editor corta ep05 B01, B02–B03 e ep04 B03; diretor confere a escala de álcool da lágrima.
+- **até 15/11:** diretor confere os disciplinari (Vino Nobile 70% Sangiovese, Conero) e tira do vídeo do ep.05 as duas telas que entregam o ep.04 (B06 "ep.04: chutei Touriga num Gamay" e B09 "a mesma do ep.04"). O ep.04 só sai em 03/12.
+- **seg 16/11:** Natalie aprova o roteiro do ep.02. **sex 20/11:** aprova o roteiro v3 do ep.04.
+- **até 20/11:** análise das gravações de 09/11 (ep.06) e 11/11 (ep.07): vinhos, placar, momentos curiosos sem spoiler e erros do app na tela.
+- **27/11:** roteiro do ep.06 aprovado · **04/12:** roteiro do ep.07 aprovado.
 
-## 4. A lógica da ordem
+## 5. A lógica da ordem
 
-1. **ep.00 → ep.01**: primeiro o método ("como eu estudo vinho", que termina com "o resultado no próximo vídeo") e depois a primeira queda: o Governador, uma Touriga do Douro, passa por Primitivo (12 pontos).
-2. **Carrossel das pistas → ep.02**: ela mostra as anotações na terça e cai de novo na quinta, no mesmo Governador e com os mesmos 12 pontos. Quem viu o carrossel sabe antes dela. Esse é o motor da série. O quiz da Touriga vem logo depois, quando o público já quer saber mais sobre a uva.
-3. **Teaser → ep.04**: a Touriga vira obsessão. A pista da menta funciona, ela acerta a Touriga brasileira (#21) e passa a ver Touriga até num Gamay. Ela chega a dizer "Gamay" e desiste, e tira zero. O quiz é da Gamay (a uva que deu zero) e o extra ensina a sentir o tanino, o erro do episódio.
-4. **Carrossel do Governador → ep.05**: a terça arma a revanche ("doze pontos, duas vezes, sempre o mesmo vinho"). Na quinta ela acerta as 3 uvas, deduz que duas taças de mesma cor, que só mudavam na madeira, eram a mesma uva, e o Governador cai. O quiz vai para a Montepulciano, a uva nova, para a série respirar fora da Touriga.
-5. **Ep.06**: fecha o mês com a pergunta que o ep.05 deixa no cartão final: "será que a Touriga volta?".
+1. **Semana de abertura (13–18/11):** tudo é método e curiosidade, sem resposta. O teste de aromas abre com um desafio que o público responde, e os bastidores mostram a prova e o app antes do primeiro episódio novo.
+2. **ep.05 primeiro:** é o melhor episódio da série (dedução clara + humor + revanche) e o Reels dele já prometeu o YouTube. O gancho novo é a dedução "mesma cor, outra madeira", diferente do Reels "3 de 3" já postado.
+3. **ep.02 depois:** paga a promessa do Reels e do quiz da Touriga já postados. O gancho é a reação "Era uma Touriga. Meu Deus."
+4. **ep.04 em 03/12:** o pacote (Reels, quiz Gamay, teste da língua) já está editado, e a semana dele é a mais barata do mês.
+5. **ep.06 e ep.07:** entram com curiosidades sem resposta duas semanas antes do YouTube, para o público chegar à quinta já curioso.
 
-Os formatos se alternam toda semana (carrossel ou teaser → Reels → quiz → dica), e o feed nunca repete o mesmo tipo em dois posts seguidos.
+## 6. Funil Instagram → YouTube → app
 
-## 5. Funil Instagram → YouTube → app
+- **Instagram (descoberta):** um CTA por post. Link na bio: **Episódio da semana (YouTube)** em primeiro e **O app que eu uso** em segundo. Os 7 posts de bastidores são os que levam ao app.
+- **YouTube (vínculo):** o vídeo mostra o app em uso real (ficha, revelação, quiz). A descrição traz capítulos, os vinhos e "Eu estudo com o Wine Study Lab, o app que eu uso e recomendo…: [link do app]".
+- **App (conversão):** cada link leva UTM por canal e episódio (`?utm_source=youtube&utm_medium=descricao&utm_campaign=ep05`; no Instagram, `utm_source=instagram&utm_medium=bio`).
+- **Transparência "eu uso e recomendo":** aviso fixo na bio e na página do app. Na descrição do YouTube, uma linha curta logo depois do link ("tenho relação com o app: [página de transparência]"), como pede o Guia de Publicidade por Influenciadores do CONAR. Essa linha ainda está em aberto (decisão 2).
+- **Cuidado de marca:** o número que comunicamos no ep.05 é "3 de 3 uvas", e o 99 do app fica de fora. Fichas incompletas do app (#21 no ep.05, #13 no ep.02) ficam fora dos cortes do Instagram.
+- **Vinícolas:** Bodega Iribarrem, Governador, Duca di Saragnano e Morello aparecem sem @ até confirmarmos o perfil oficial.
 
-- **Instagram (descoberta):** Reels e quiz trazem gente nova. CTA curto e um só: "Episódio completo no YouTube (link na bio)" no Reels; pergunta para comentar no quiz e no extra. Link na bio: página com **Episódio da semana (YouTube)** em primeiro e **O app que eu uso** em segundo.
-- **YouTube (vínculo):** o vídeo longo mostra o app em uso real: ficha, revelação, quiz. A descrição tem capítulos, os vinhos do episódio e a linha "Eu estudo com o Wine Study Lab, o app que eu uso…: [link do app]".
-- **App (conversão):** cada link leva um UTM por canal e episódio (ex.: `?utm_source=youtube&utm_medium=descricao&utm_campaign=ep04`). Assim dá para ver qual episódio leva gente ao app.
-- **Transparência "eu uso e recomendo":** o aviso fixo fica na bio e na página do app. **Ponto de atenção:** quem chega pela descrição do YouTube costuma ver só o link, e o Guia de Publicidade por Influenciadores do CONAR pede que a relação comercial fique clara no próprio conteúdo. Recomendo uma linha curta logo depois do link, por exemplo "(tenho relação com o app: [página de transparência])". É a decisão 3 abaixo.
-- **Cuidado de marca:** o app erra na tela algumas vezes (Sonora no quiz do ep.05, placar inflado do 99, "meio burro" no ep.04). As direções já cortam esses trechos. Os erros foram listados para o time do app corrigir, e o número que a gente comunica é "3 de 3 uvas", não o 99.
-- **Vinícolas:** Bodega Iribarrem e Governador aparecem sem @ até confirmar o perfil oficial. Se surgir permuta, a peça leva o aviso de publi.
-
-## 6. O que medir em cada post
+## 7. O que medir em cada post
 
 | Peça | Métrica principal | Apoio | Sinal de ajuste |
 |---|---|---|---|
-| Reels do episódio | % de alcance em não seguidores | retenção nos 3 s iniciais e tempo médio, compartilhamentos, visitas ao perfil, cliques no link da bio | Se a retenção cai antes de 3 s, troca o gancho. Se há muito alcance e pouco clique, o CTA ou a bio pedem ajuste |
-| Quiz da Taça | comentários com placar ("acertei 4") | salvamentos, tempo médio acima de 100% (gente voltando para responder) | Se há pouco comentário, a 1ª pergunta precisa ser mais pegadinha |
-| Corte extra | salvamentos + compartilhamentos | alcance em não seguidores | É o formato que mais traz seguidor novo. Se for bem, vira série fixa ("dica de taça") |
-| Carrossel / teaser | salvamentos (carrossel) e respostas (teaser) | % de quem chega ao último slide | Se o carrossel fica abaixo do Reels da mesma semana, troca o formato por Reels curto |
-| YouTube | CTR da capa e retenção aos 30 s | duração média (meta: acima de 40%), tráfego de origem externa (Instagram), inscritos por vídeo, cliques no link do app (UTM) | Se a CTR fica abaixo de 4%, troca capa/título em 48 h. Queda forte aos 30 s pede teaser mais curto |
-| Shorts | % "vistos" contra "deslizados" | inscritos vindos do Short, visualizações do longo vindas do Short | Se o Short leva gente ao longo, vale subir também os extras |
-| App | cliques e cadastros por UTM | qual episódio converte mais | Orienta qual tipo de episódio repetir |
+| Reels gancho | % de alcance em não seguidores | retenção nos 3 s iniciais, compartilhamentos, cliques no link da bio | Se a retenção cai antes de 3 s, troca o gancho. Alcance alto com pouco clique pede ajuste no CTA ou na bio |
+| Quiz da Taça | comentários com placar | salvamentos, tempo médio acima de 100% | Se há pouco comentário, a 1ª pergunta precisa ser mais pegadinha |
+| Curiosidade | salvamentos + compartilhamentos | alcance em não seguidores | As 3 melhores viram série fixa ("dica de taça") |
+| Erro ou acerto | comentários e compartilhamentos | visitas ao perfil | Se render mais que o gancho, o gancho passa a ser a reação |
+| Bastidores | cliques no link do app (UTM bio) | salvamentos | Se o clique for baixo, mostrar mais tela do app e menos mesa |
+| YouTube | CTR da capa e retenção aos 30 s | duração média (meta: acima de 40%), tráfego vindo do Instagram, cliques no app | CTR abaixo de 4%: troca capa/título em 48 h |
+| Shorts | % "vistos" contra "deslizados" | visualizações do longo vindas do Short | Se o Short de curiosidade levar gente ao longo, sobem mais curiosidades |
 
-Traga os números toda segunda (Insights + YouTube Studio). Na seg 30/11 a gente fecha o mês e monta dezembro.
+Traga os números toda segunda, na sessão semanal (Insights + YouTube Studio). Leitura grande em **seg 07/12** (3 semanas de diário), quando ajustamos horários e o peso de cada formato.
 
-## 7. Leitura crítica
+## 8. Leitura crítica
 
-- **O estoque não fecha 4 posts/semana sozinho.** Com o que existe e os ep.04 e 05 são 11 posts de Instagram. Os outros 8 dependem de peças leves (3 carrosséis, 1 teaser, 1 extra do ep.02) e do **ep.06**. Se faltar braço na edição, a ordem de corte é: carrossel do placar → teaser "zero" → extra do ep.02 (vão para Stories).
-- **Teste de aromas:** 1min46 é longo para Reels. Ele funciona se o desafio aparecer já no 1º segundo ("doce de leite ou manteiga?"). Senão, peça um cartão de abertura ao editor.
-- **ep.00:** existe uma v9 de 32 s, mais nova que a v8 enviada (1min34). Para Reels a curta tende a reter mais. Vale conferir qual vai ao ar.
-- **Os carrosséis do Governador e das pistas** são as peças de maior potencial fora dos episódios: custam pouco, são salváveis e armam a revanche.
-- **O ep.05 é o melhor episódio da série até aqui** (dedução clara + humor + revanche). Merece capa forte no YouTube e o Reels mais cuidado do mês.
+- **A fila começa curta.** Hoje ela cobre 2 dias, e a meta de 7 só chega em 16/11. Até lá, o diário depende da sessão extra de sábado 14/11. Se ela não acontecer, 15 a 18/11 saem da reserva, que hoje está vazia. Por isso, a primeira coisa a aprovar é a reserva.
+- **16 curiosidades em 39 posts são muitas.** Uma curiosidade só segura o feed se for contada pela Natalie, com o erro ou a dúvida dela. Slide de aula com voz em off tende a render menos que o Reels. Se em 07/12 as curiosidades ficarem abaixo dos outros formatos, metade delas vira Stories e a grade passa a ter 2 posts de erro ou acerto por semana.
+- **O ep.05 entrega o ep.04 antes da hora.** As telas B06 e B09 dizem que o ep.04 teve uma Gamay e a mesma Touriga da #21. Com o ep.04 só em 03/12, elas precisam sair ou virar "no ep.04, que sai em 03/12".
+- **Teste de aromas:** 1min46 é longo para Reels. Ele só segura se o desafio aparecer no 1º segundo.
+- **Vagas do ep.06 e ep.07 (13 posts, 1/3 do mês) ainda são promessa.** Elas dependem da análise das gravações até 20/11. Se uma gravação render pouco, a reserva e os blocos que sobraram (ep05 B05 "estábulo", ep04 B06 "dá pra ver o dedo", ep02 B04/B06) cobrem os buracos.
+- **Ordem do YouTube fora da numeração (05 → 02 → 04).** Cada episódio se sustenta sozinho, mas o título do ep.02 ("DE NOVO") pede o cartão "a revanche já está no canal" no final.
 
-## 8. As 3 decisões que a Natalie precisa tomar agora
+## 9. Decisões da Natalie agora
 
-1. **Aprovar as direções do ep.04 e do ep.05 até amanhã (29/10)**, e no mesmo dia confirmar se o ep.00 e o ep.01 já foram ao ar (e qual versão do ep.00). Isso destrava o editor e todas as datas de novembro.
-2. **Gravar o ep.06 até 08/11.** Sem ele, a semana de 23/11 fica sem vídeo longo e com só 1 post no Instagram.
-3. **Definir a linha de transparência ao lado do [link do app]** e o link definitivo com UTM, até 03/11, antes do YouTube do ep.02.
-
-Pendências curtas, com data: aprovar o Teste de aromas v3 (31/10) e o Reels e o YouTube do ep.02 (03/11).
+1. **Hoje/amanhã (até sex 13/11 15:00):** aprovar o Teste de aromas v3 e A lágrima. Sem isso, o diário já falha na sexta.
+2. **Linha de transparência + link do app com UTM** até seg 16/11, antes do YouTube do ep.05.
+3. **Sábado 14/11 10:00:** sessão extra de 20 min para os 4 cortes de 15 a 18/11. Depois, sessão fixa toda segunda 20:00.
+4. **Seg 16/11:** aprovar o vídeo do ep.05 e o roteiro do ep.02. **Sex 20/11:** roteiro v3 do ep.04.
