@@ -13,7 +13,7 @@
   [53.6, "errado", "goiaba", "chutei pitanga"],
   [55.2, "certo", "hortelã"],
   [60.2, "errado", "maçã verde", "chutei framboesa"],
-  [63.0, "certo", "abacaxi"],
+  [63.0, "errado", "abacaxi", "chutei framboesa"],
   [66.8, "certo", "café"],
   [68.2, "certo", "erva-doce"],
   [70.0, "errado", "ameixa", "chutei cereja"],
