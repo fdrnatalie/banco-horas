@@ -1,0 +1,110 @@
+{
+ "roteiro": "/home/user/banco-horas/tres-tacas/roteiros/ep05_v3/roteiro.json",
+ "blocos": [
+  {
+   "bloco": "B08",
+   "falas": [
+    1,
+    2,
+    3,
+    4,
+    8,
+    9,
+    10,
+    11
+   ]
+  },
+  {
+   "bloco": "B09",
+   "falas": [
+    0,
+    1,
+    10,
+    11
+   ]
+  }
+ ],
+ "telas": {
+  "B09": [
+   {
+    "tipo": "placar",
+    "titulo": "Resultado",
+    "linhas": [
+     "3 de 3 uvas"
+    ],
+    "entra_fala": 0,
+    "sai_fala": 2
+   },
+   {
+    "tipo": "app",
+    "titulo": "#21",
+    "linhas": [
+     "Reserva Touriga Nacional 2022 · Bodega Iribarrem",
+     "Bento Gonçalves (RS) · 13,5%"
+    ],
+    "entra_fala": 3,
+    "sai_fala": 5
+   },
+   {
+    "tipo": "aula",
+    "titulo": "Touriga Nacional",
+    "linhas": [
+     "aromas típicos (mirtilo, violeta, ameixa, menta)",
+     "tinto encorpado, de tanino alto",
+     "casta símbolo do Douro e do Dão"
+    ],
+    "entra_fala": 6,
+    "sai_fala": 6
+   },
+   {
+    "tipo": "app",
+    "titulo": "#59",
+    "linhas": [
+     "Montepulciano d’Abruzzo · Duca di Saragnano",
+     "Abruzzo, Itália · 13,5%"
+    ],
+    "entra_fala": 7,
+    "sai_fala": 9
+   },
+   {
+    "tipo": "app",
+    "titulo": "#124",
+    "linhas": [
+     "Governador 2023 · Douro, Portugal",
+     "Touriga Nacional · 14% · o mesmo do ep.01"
+    ],
+    "entra_fala": 10,
+    "sai_fala": 11
+   },
+   {
+    "tipo": "aula",
+    "titulo": "A unha dá uma faixa, não o ano",
+    "linhas": [
+     "#21, pela unha 2024/25, no rótulo 2022",
+     "#124, lembrei 2023 pela adega, a unha dizia mais jovem",
+     "vinho jovem de 1 a 3 anos tem borda parecida"
+    ],
+    "entra_fala": 12,
+    "sai_fala": 14
+   }
+  ]
+ },
+ "gancho": "Duas taças, a mesma uva?",
+ "fecho": [
+  2166.7,
+  2168.6
+ ],
+ "camadas": true,
+ "saida": "/tmp/claude-0/-home-user-banco-horas/3d5af8d1-792d-5a42-bb7b-ae9930f28a5e/scratchpad/reels/ig_2026-11-19.mp4",
+ "fim": "no YouTube",
+ "frases_fix": [
+  [
+   "cortuga",
+   "Portugal."
+  ],
+  [
+   "um monte por chano",
+   "um Montepulciano."
+  ]
+ ]
+}

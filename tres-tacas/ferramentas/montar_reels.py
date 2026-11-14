@@ -13,6 +13,7 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import visual as V, rosto, cleanfala
 
 SP = json.load(open(sys.argv[1])); R = json.load(open(SP["roteiro"]))
+R["frases_fix"] = R.get("frases_fix", []) + SP.get("frases_fix", []); R.setdefault("fix", {}).update(SP.get("fix", {}))
 OUT = os.path.abspath(SP["saida"]); WD = os.path.splitext(OUT)[0] + "_trab"; os.makedirs(WD, exist_ok=True)
 VID = os.path.abspath(R["video"]); FPS, SPEED = 30, 1.1
 W, H = 1080, 1920
@@ -81,7 +82,7 @@ def pecas():
     out = []
     for item in SP["blocos"]:
         bid, sel = (item, None) if isinstance(item, str) else (item["bloco"], item.get("falas"))
-        b = blocos[bid]; telas = b.get("telas", [])
+        b = blocos[bid]; telas = SP.get("telas", {}).get(bid, b.get("telas", []))
         for fi, f in enumerate(b["falas"]):
             if sel is not None and fi not in sel: continue
             tela = None
@@ -175,6 +176,13 @@ def main():
     enc = subprocess.Popen(["ffmpeg", "-v", "error", "-y", "-f", "rawvideo", "-pix_fmt", "bgr24", "-s", f"{W}x{H}", "-r", str(FPS), "-i", "-",
                             "-i", f"{WD}/mix.wav", "-c:v", "libx264", "-preset", "medium", "-crf", "20", "-pix_fmt", "yuv420p",
                             "-c:a", "aac", "-b:a", "160k", "-shortest", "-movflags", "+faststart", OUT], stdin=subprocess.PIPE)
+    CAM = SP.get("camadas")                              # pacote para o CapCut: vídeo base sem texto + PNGs + .srt + tempos
+    if CAM:
+        PK = os.path.splitext(OUT)[0] + "_capcut"; os.makedirs(PK, exist_ok=True)
+        enc2 = subprocess.Popen(["ffmpeg", "-v", "error", "-y", "-f", "rawvideo", "-pix_fmt", "bgr24", "-s", f"{W}x{H}", "-r", str(FPS), "-i", "-",
+                                 "-i", f"{WD}/mix.wav", "-c:v", "libx264", "-preset", "medium", "-crf", "18", "-pix_fmt", "yuv420p",
+                                 "-c:a", "aac", "-b:a", "192k", "-shortest", "-movflags", "+faststart", f"{PK}/1_video_base.mp4"], stdin=subprocess.PIPE)
+        segs_cart = []
     fidx = 0; last = None; box = None
     cf = f"{WD}/janelas.json"
     if os.path.exists(cf): CANDS = [tuple(c) for c in json.load(open(cf))]
@@ -201,30 +209,65 @@ def main():
         key = (json.dumps(tela, sort_keys=True), lay)
         if key not in cache: cache[key] = ctx_layer(tela, CTX[2], CTX[3] + 30) if CTX else None
         layer = cache[key]
+        if CAM and layer is not None:
+            if segs_cart and segs_cart[-1][0] == key and abs(segs_cart[-1][2] - fidx / FPS) < 0.05: segs_cart[-1][2] = fe / FPS
+            else: segs_cart.append([key, fidx / FPS, fe / FPS, layer, CTX])
         for k in range(n):
             t = (fidx + k) / FPS; fr = bg.copy(); src = frs[k]
-            V.over(fr, hd, 0, 0)
-            if layer is not None: V.over(fr, layer, CTX[0], CTX[1] + max(0, (CTX[3] - layer.shape[0]) // 2))
             if box and FACE:
                 fw, fh = FACE[2], FACE[3]
                 if box[3] > box[2] * 1.1: fw = int(fh * 0.75)
                 kk = min(1.0, 2.2 * (box[2] - 12) / fw, 2.2 * (box[3] - 12) / fh); fw2, fh2 = int(fw * kk), int(fh * kk)
                 face = rosto.recorte(src, box, fw2, fh2); pp, m = V.rounded(face[..., ::-1], 30)
                 V.over(fr, pp, FACE[0] + (FACE[2] - fw2) // 2 - m, FACE[1] + (FACE[3] - fh2) // 2 - m)
+            if CAM: enc2.stdin.write(fr.tobytes()); last_base = fr.copy()
+            V.over(fr, hd, 0, 0)
+            if layer is not None: V.over(fr, layer, CTX[0], CTX[1] + max(0, (CTX[3] - layer.shape[0]) // 2))
             for ca, cb, img in capimg:
                 if ca <= t < cb: V.over(fr, img, (W - img.shape[1]) // 2, CAP_Y - img.shape[0] // 2); break
             enc.stdin.write(fr.tobytes()); last = fr
+
         fidx = fe
     endimg = Image.new("RGBA", (W, H)); d = ImageDraw.Draw(endimg)
     d.text((W // 2, 800), "a degustação completa", font=V.font("corm_it500", 64), fill=V.CREAM + (240,), anchor="mm")
     d.text((W // 2, 910), SP.get("fim", "no YouTube"), font=V.font("corm600", 104), fill=V.CHAMPAGNE + (255,), anchor="mm")
     d.text((W // 2, 1010), "LINK NA BIO", font=V.font("osw500", 30), fill=V.LINE + (230,), anchor="mm")
     endimg = np.array(V.shadowed(endimg, 12, 200)); base = cv2.GaussianBlur(last, (0, 0), 18)
+    if CAM: base2 = cv2.GaussianBlur(last_base, (0, 0), 18)
     for k in range(int(round(total * FPS)) - fidx):
         pr = min(1, k / 10); f2 = (base.astype(np.float32) * (1 - 0.55 * pr)).astype(np.uint8)
+        if CAM: enc2.stdin.write((base2.astype(np.float32) * (1 - 0.55 * pr)).astype(np.uint8).tobytes())
         e = endimg.copy(); e[..., 3] = (e[..., 3] * pr).astype(np.uint8); V.over(f2, e, 0, 0); enc.stdin.write(f2.tobytes())
     enc.stdin.close(); enc.wait()
+    if CAM: enc2.stdin.close(); enc2.wait(); camadas(PK, hd, segs_cart, caps, endimg, fidx / FPS, total)
     sh("ffmpeg", "-v", "error", "-y", "-ss", "1.5", "-i", OUT, "-frames:v", "1", "-vf", "scale=432:-2", os.path.splitext(OUT)[0] + "_capa.jpg")
     print("ok", OUT, f"{total:.1f}s", flush=True)
+
+def tc(t, srt=True):
+    h, r = divmod(t, 3600); m, s_ = divmod(r, 60)
+    return f"{int(h):02d}:{int(m):02d}:{int(s_):02d},{int(round((s_ % 1) * 1000)) % 1000:03d}" if srt else f"{int(m)}:{s_:04.1f}"
+
+def camadas(PK, hd, segs, caps, endimg, t_fim, total):
+    def full(rgba, x, y):
+        im = np.zeros((H, W, 4), np.uint8); h_, w_ = rgba.shape[:2]
+        im[y:y + h_, x:x + w_] = rgba[:H - y, :W - x]; return im
+    Image.fromarray(full(hd, 0, 0)).save(f"{PK}/2_titulo.png")
+    lst = [f"VÍDEO BASE: 1_video_base.mp4 ({tc(total, False)}). Já tem a sua voz limpa, o fundo e o seu rosto no lugar; nada de texto.",
+           "Cada PNG é do tamanho da tela inteira (1080x1920), com o elemento já na posição certa: é só colocar como sobreposição,",
+           "esticar até ocupar a tela toda e ajustar o começo e o fim pelos tempos abaixo.", "",
+           f"2_titulo.png ............ 0:00.0 até {tc(t_fim, False)} (o vídeo todo, menos o final)"]
+    for i, (key, a, b, layer, CTX) in enumerate(segs, 3):
+        nm = f"{i}_cartao.png"; Image.fromarray(full(layer, CTX[0], CTX[1] + max(0, (CTX[3] - layer.shape[0]) // 2))).save(f"{PK}/{nm}")
+        lst.append(f"{nm:<24}{tc(a, False)} até {tc(b, False)}  ({json.loads(key[0]).get('titulo', '')})")
+    nm = f"{len(segs) + 3}_final.png"; Image.fromarray(endimg).save(f"{PK}/{nm}")
+    lst.append(f"{nm:<24}{tc(t_fim, False)} até o fim (entra com um esmaecer curto)")
+    with open(f"{PK}/legendas.srt", "w") as f:
+        for k, (a, b, t) in enumerate(caps, 1): f.write(f"{k}\n{tc(a)} --> {tc(b)}\n{' '.join(t)}\n\n")
+    lst += ["", "LEGENDAS: legendas.srt (já revisadas). No CapCut do iPad o caminho mais rápido é Texto > Legendas automáticas (português)",
+            "e conferir com o .srt; no CapCut do computador dá para importar o .srt direto.",
+            "Posição da legenda que eu uso: entre o cartão e o rosto (nunca em cima do rosto), fonte Inter, creme."]
+    open(f"{PK}/0_LEIA_tempos.txt", "w").write("\n".join(lst) + "\n")
+    sh("bash", "-c", f"cd '{os.path.dirname(PK)}' && rm -f '{PK}.zip' && zip -qr '{PK}.zip' '{os.path.basename(PK)}'")
+    print("pacote", PK + ".zip", flush=True)
 
 main()
