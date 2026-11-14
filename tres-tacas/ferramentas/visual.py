@@ -8,7 +8,8 @@ W, H = 1920, 1080
 OX = (23, 7, 9); AMBER = (227, 145, 60); CREAM = (244, 235, 226); GOLD = (200, 164, 108)
 _F = {}
 FONT_FILES = {"osw600": "osw600.woff", "osw500": "osw500.woff", "corm_it600": "corm_it600.woff", "corm_it500": "corm_it500.woff",
-              "corm500": "corm500.woff", "corm600": "corm600.woff", "int600": "int600.woff", "int500": "int500.woff"}
+              "corm500": "corm500.woff", "corm600": "corm600.woff", "int600": "int600.woff", "int500": "int500.woff",
+              "dmserif": "dmserif.ttf", "dmserif_it": "dmserif_it.ttf", "jost300": "jost300.ttf", "jost400": "jost400.ttf", "jost500": "jost500.ttf"}
 CHAMPAGNE = (232, 205, 165); LINE = (200, 164, 108)
 
 def font(k, size):

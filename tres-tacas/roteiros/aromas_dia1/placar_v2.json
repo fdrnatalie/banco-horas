@@ -1,0 +1,243 @@
+{
+ "video": "/tmp/claude-0/-home-user-banco-horas/3d5af8d1-792d-5a42-bb7b-ae9930f28a5e/scratchpad/aromas_out/aromas_limpo.mp4",
+ "titulo": "Aromas às cegas",
+ "sub": "dia 1",
+ "fim_rodada1": 87.71,
+ "rodada1": [
+  [
+   16.68,
+   "certo",
+   "defumado"
+  ],
+  [
+   21.58,
+   "certo",
+   "coco queimado"
+  ],
+  [
+   23.44,
+   "errado",
+   "mel",
+   "chutei doce de leite"
+  ],
+  [
+   25.35,
+   "certo",
+   "canela"
+  ],
+  [
+   26.02,
+   "certo",
+   "pimentão"
+  ],
+  [
+   27.0,
+   "errado",
+   "gengibre",
+   "chutei eucalipto"
+  ],
+  [
+   31.43,
+   "errado",
+   "goiaba",
+   "chutei pitanga"
+  ],
+  [
+   32.77,
+   "certo",
+   "hortelã"
+  ],
+  [
+   36.63,
+   "errado",
+   "maçã verde",
+   "chutei framboesa"
+  ],
+  [
+   38.9,
+   "errado",
+   "abacaxi",
+   "chutei framboesa"
+  ],
+  [
+   39.45,
+   "certo",
+   "café"
+  ],
+  [
+   40.62,
+   "certo",
+   "erva-doce"
+  ],
+  [
+   41.92,
+   "errado",
+   "ameixa",
+   "chutei cereja"
+  ],
+  [
+   44.55,
+   "errado",
+   "framboesa",
+   "chutei tutti frutti"
+  ],
+  [
+   45.05,
+   "certo",
+   "jasmim"
+  ],
+  [
+   48.57,
+   "errado",
+   "manga",
+   "chutei doce de leite"
+  ],
+  [
+   51.03,
+   "errado",
+   "maracujá",
+   "chutei pêssego"
+  ],
+  [
+   52.29,
+   "errado",
+   "limão",
+   "chutei eucalipto"
+  ],
+  [
+   53.7,
+   "certo",
+   "violeta"
+  ],
+  [
+   55.37,
+   "certo",
+   "chocolate"
+  ],
+  [
+   56.37,
+   "certo",
+   "cereja"
+  ],
+  [
+   58.18,
+   "errado",
+   "amora",
+   "chutei morango"
+  ],
+  [
+   61.21,
+   "certo",
+   "tangerina"
+  ],
+  [
+   61.67,
+   "certo",
+   "cravo"
+  ],
+  [
+   62.9,
+   "errado",
+   "pitanga",
+   "chutei pêssego"
+  ],
+  [
+   68.7,
+   "certo",
+   "banana"
+  ],
+  [
+   70.87,
+   "errado",
+   "casca de laranja",
+   "chutei jabuticaba"
+  ],
+  [
+   73.26,
+   "errado",
+   "jabuticaba",
+   "chutei abacaxi"
+  ],
+  [
+   74.15,
+   "certo",
+   "figo"
+  ],
+  [
+   79.97,
+   "certo",
+   "doce de leite"
+  ],
+  [
+   83.24,
+   "errado",
+   "tutti frutti",
+   "chutei pêssego"
+  ],
+  [
+   84.24,
+   "certo",
+   "eucalipto"
+  ],
+  [
+   84.74,
+   "certo",
+   "manteiga"
+  ],
+  [
+   87.21,
+   "certo",
+   "baunilha"
+  ]
+ ],
+ "rodada2": [
+  [
+   121.48,
+   "manga"
+  ],
+  [
+   136.4,
+   "casca de laranja"
+  ],
+  [
+   148.17,
+   "jabuticaba"
+  ],
+  [
+   155.25,
+   "mel"
+  ],
+  [
+   156.13,
+   "tutti frutti"
+  ],
+  [
+   159.62,
+   "limão"
+  ],
+  [
+   168.44,
+   "ameixa"
+  ],
+  [
+   169.44,
+   "pitanga"
+  ],
+  [
+   171.86,
+   "framboesa"
+  ],
+  [
+   174.36,
+   "maçã verde"
+  ],
+  [
+   174.86,
+   "goiaba"
+  ],
+  [
+   175.86,
+   "*"
+  ]
+ ]
+}
