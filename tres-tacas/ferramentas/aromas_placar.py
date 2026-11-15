@@ -25,8 +25,11 @@ def eventos():
         t, ok, nome = e[0], e[1] == "certo", e[2]
         (esq.append((nome, "1")) if ok else dir_.append(nome))
         out.append((t, (list(esq), list(dir_), ("L" if ok else "R", nome), 1)))
-    for t, nome in P["rodada2"]:
-        if nome == "*": moved = list(dir_); dir_.clear(); esq += [(n, "2") for n in moved]; novo = ("ALL", None)
+    for t, nome, *resto in P["rodada2"]:
+        if nome == "*":                              # fim: passa tudo para a esquerda, menos os que ficaram sem acertar
+            fica = resto[0] if resto else []
+            moved = [n for n in dir_ if n not in fica]; dir_[:] = [n for n in dir_ if n in fica]
+            esq += [(n, "2") for n in moved]; novo = ("ALL", None)
         else: moved = ()
         if nome != "*":
             if nome in dir_: dir_.remove(nome)
@@ -150,7 +153,8 @@ def main():
             c = card.copy(); c[..., 3] = (c[..., 3] * pr).astype(np.uint8); V.over(f2, c, 0, 0); e.stdin.write(f2.tobytes())
         e.stdin.close(); e.wait()
     fecha(ig, last_ig, [("DE PRIMEIRA", F_LBL, 28), (f"{acertos1} acertos", F_TIT, 104), (f"{erros1} para treinar de novo", F_TIT_IT, 52)])
-    fecha(full, last, [("NO FIM", F_LBL, 28), (f"{acertos1 + erros1} de {acertos1 + erros1}", F_TIT, 108), ("todos certos", F_TIT_IT, 56)])
+    fecha(full, last, [tuple(x) for x in P["fim_completo"]] if P.get("fim_completo") else
+          [("NO FIM", F_LBL, 28), (f"{acertos1 + erros1} de {acertos1 + erros1}", F_TIT, 108), ("todos certos", F_TIT_IT, 56)])
     for nm in ("aromas_instagram", "aromas_completo"):
         subprocess.run(["ffmpeg", "-v", "error", "-y", "-ss", "40", "-i", f"{OUTD}/{nm}.mp4", "-frames:v", "1", "-vf", "scale=432:-2", f"{OUTD}/{nm}_capa.jpg"], check=True)
     print("ok", acertos1, erros1, n / FPS, flush=True)

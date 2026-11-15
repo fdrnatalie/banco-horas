@@ -22,6 +22,9 @@ for a, b in C.get("cortes", []):                       # subtrai os cortes
             if e > b: out.append([b, e])
     segs = out
 segs = [s for s in segs if s[1] - s[0] > 0.12]
+if SP == "auto":                                       # velocidade para a 1ª rodada caber no alvo (1,15x a 1,5x)
+    r1 = sum(min(e, P["fim_rodada1"]) - s for s, e in segs if s < P["fim_rodada1"])
+    SP = round(min(1.5, max(1.15, r1 / C.get("alvo_rodada1", 88))), 3); print("velocidade", SP, "fala na 1ª rodada", round(r1, 1))
 def mapa(t):
     acc = 0.0
     for s, e in segs:
@@ -36,6 +39,6 @@ subprocess.run(["ffmpeg", "-v", "error", "-y", "-i", VID, "-vf", vf, "-af", af, 
                 "-pix_fmt", "yuv420p", "-c:a", "aac", "-b:a", "192k", "-ar", "48000", OUT], check=True)
 Q = dict(P); Q["video"] = OUT; Q["fim_rodada1"] = round(mapa(P["fim_rodada1"]), 2)
 Q["rodada1"] = [[round(mapa(e[0]), 2)] + e[1:] for e in P["rodada1"]]
-Q["rodada2"] = [[round(mapa(e[0]), 2)] + e[1:] for e in P["rodada2"]]
+Q["rodada2"] = [[round(mapa(e[0]), 2)] + e[1:] for e in P["rodada2"]]; Q["velocidade"] = SP
 json.dump(Q, open(POUT, "w"), ensure_ascii=False, indent=1)
 print("ok", len(segs), "trechos; rodada 1 =", Q["fim_rodada1"], "s; total =", round(mapa(1e9), 1), "s")
