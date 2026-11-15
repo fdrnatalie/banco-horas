@@ -58,7 +58,7 @@ def overlay(state, fade=1.0, hi=False, rodada_lbl=False):
     d.text((W // 2, 262), P["titulo"], font=V.font(F_TIT, 92), fill=V.CHAMPAGNE + (255,), anchor="mm")
     d.text((W // 2, 338), P.get("sub", ""), font=V.font(F_TIT_IT, 44), fill=V.CREAM + (235,), anchor="mm")
     if rod == 2 or rodada_lbl:
-        spaced(d, W // 2, 398, "REFAZENDO OS QUE ERREI", V.font(F_LBL, 21), V.LINE + (235,), "mm", 3)
+        spaced(d, W // 2, 398, "REFAZENDO OS QUE ERREI", V.font(F_LBL, 23), V.CREAM + (250,), "mm", 3)
     nL, nR = len(esq), len(dir_)
     spaced(d, X_L, Y_HEAD, "ACERTOS", V.font(F_LBL, 22), GREEN + (245,), "lm", 4)
     d.text((X_L, Y_HEAD + 54), str(nL), font=V.font(F_TIT, 64), fill=V.CHAMPAGNE + (255,), anchor="lm")

@@ -217,10 +217,6 @@
    "figo"
   ],
   [
-   114.59,
-   "coco queimado"
-  ],
-  [
    118.49,
    "maçã verde"
   ],
@@ -233,7 +229,8 @@
    "*",
    [
     "jabuticaba",
-    "casca de laranja"
+    "casca de laranja",
+    "coco queimado"
    ]
   ]
  ],
@@ -244,14 +241,19 @@
    28
   ],
   [
-   "2 teimosos",
+   "3 teimosos",
    "dmserif",
    104
   ],
   [
-   "jabuticaba e casca de laranja",
+   "jabuticaba, casca de laranja",
    "dmserif_it",
-   48
+   46
+  ],
+  [
+   "e coco queimado",
+   "dmserif_it",
+   46
   ]
  ],
  "velocidade": 1.301
