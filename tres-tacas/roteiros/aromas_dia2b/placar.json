@@ -1,0 +1,236 @@
+{
+ "video": "/tmp/claude-0/-home-user-banco-horas/3d5af8d1-792d-5a42-bb7b-ae9930f28a5e/scratchpad/raw/aromas_dia2b_1080.mp4",
+ "titulo": "Aromas às cegas",
+ "sub": "dia 2",
+ "fim_rodada1": 646.0,
+ "rodada1": [
+  [
+   62.5,
+   "certo",
+   "manga"
+  ],
+  [
+   87.6,
+   "errado",
+   "figo",
+   "chutei jabuticaba"
+  ],
+  [
+   95.6,
+   "errado",
+   "goiaba",
+   "chutei pitanga"
+  ],
+  [
+   106.6,
+   "certo",
+   "gengibre"
+  ],
+  [
+   116.6,
+   "errado",
+   "tangerina",
+   "chutei casca de laranja"
+  ],
+  [
+   135.3,
+   "errado",
+   "banana",
+   "chutei tutti frutti"
+  ],
+  [
+   195.8,
+   "errado",
+   "casca de laranja",
+   "chutei ameixa"
+  ],
+  [
+   219.4,
+   "errado",
+   "jasmim",
+   "chutei coco queimado"
+  ],
+  [
+   231.6,
+   "certo",
+   "violeta"
+  ],
+  [
+   262.8,
+   "errado",
+   "amora",
+   "chutei framboesa"
+  ],
+  [
+   273.6,
+   "certo",
+   "café"
+  ],
+  [
+   312.6,
+   "errado",
+   "cereja",
+   "chutei morango"
+  ],
+  [
+   340.8,
+   "errado",
+   "baunilha",
+   "chutei jabuticaba"
+  ],
+  [
+   341.6,
+   "certo",
+   "chocolate"
+  ],
+  [
+   388.9,
+   "certo",
+   "framboesa"
+  ],
+  [
+   401.8,
+   "errado",
+   "pitanga",
+   "chutei goiaba"
+  ],
+  [
+   434.6,
+   "certo",
+   "abacaxi"
+  ],
+  [
+   444.3,
+   "certo",
+   "defumado"
+  ],
+  [
+   454.3,
+   "certo",
+   "hortelã"
+  ],
+  [
+   466.8,
+   "certo",
+   "eucalipto"
+  ],
+  [
+   474.9,
+   "certo",
+   "pêssego"
+  ],
+  [
+   485.1,
+   "certo",
+   "limão"
+  ],
+  [
+   494.1,
+   "certo",
+   "pimentão"
+  ],
+  [
+   515.2,
+   "errado",
+   "ameixa",
+   "chutei cereja"
+  ],
+  [
+   546.9,
+   "errado",
+   "jabuticaba",
+   "chutei goiaba"
+  ],
+  [
+   555.3,
+   "certo",
+   "manteiga"
+  ],
+  [
+   562.7,
+   "certo",
+   "cravo"
+  ],
+  [
+   593.2,
+   "errado",
+   "maçã verde",
+   "chutei goiaba"
+  ],
+  [
+   615.3,
+   "errado",
+   "mel",
+   "chutei figo"
+  ],
+  [
+   623.4,
+   "certo",
+   "erva-doce"
+  ],
+  [
+   630.2,
+   "certo",
+   "canela"
+  ],
+  [
+   638.5,
+   "certo",
+   "doce de leite"
+  ]
+ ],
+ "rodada2": [
+  [
+   1425.5,
+   "*",
+   [
+    "amora",
+    "banana",
+    "jabuticaba",
+    "mel",
+    "casca de laranja"
+   ]
+  ],
+  [
+   1639.3,
+   "amora"
+  ],
+  [
+   1670.2,
+   "banana"
+  ],
+  [
+   1702.1,
+   "jabuticaba"
+  ],
+  [
+   1709.0,
+   "mel"
+  ],
+  [
+   1735.5,
+   "casca de laranja"
+  ],
+  [
+   1735.9,
+   "*"
+  ]
+ ],
+ "fim_completo": [
+  [
+   "NO FIM",
+   "jost500",
+   28
+  ],
+  [
+   "32 de 32",
+   "dmserif",
+   108
+  ],
+  [
+   "com uma ajudinha",
+   "dmserif_it",
+   54
+  ]
+ ]
+}
