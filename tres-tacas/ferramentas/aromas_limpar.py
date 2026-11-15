@@ -35,7 +35,9 @@ def mapa(t):
 sel = "+".join(f"between(t,{a:.3f},{b:.3f})" for a, b in segs)
 vf = f"select='{sel}',setpts=N/FRAME_RATE/TB/{SP},fps=30"
 af = f"aselect='{sel}',asetpts=N/SR/TB,atempo={SP},loudnorm=I=-14:TP=-1.5:LRA=9"
-subprocess.run(["ffmpeg", "-v", "error", "-y", "-i", VID, "-vf", vf, "-af", af, "-c:v", "libx264", "-preset", "medium", "-crf", "17",
+import os
+if not os.path.exists(OUT) or "--refazer" in sys.argv:  # vídeo limpo já pronto: só remapeia os tempos
+  subprocess.run(["ffmpeg", "-v", "error", "-y", "-i", VID, "-vf", vf, "-af", af, "-c:v", "libx264", "-preset", "medium", "-crf", "17",
                 "-pix_fmt", "yuv420p", "-c:a", "aac", "-b:a", "192k", "-ar", "48000", OUT], check=True)
 Q = dict(P); Q["video"] = OUT; Q["fim_rodada1"] = round(mapa(P["fim_rodada1"]), 2)
 Q["rodada1"] = [[round(mapa(e[0]), 2)] + e[1:] for e in P["rodada1"]]

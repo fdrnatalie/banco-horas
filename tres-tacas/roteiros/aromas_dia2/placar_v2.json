@@ -114,19 +114,25 @@
    "pêssego"
   ],
   [
-   70.98,
+   68.61,
    "certo",
-   "doce de leite"
+   "tutti frutti"
   ],
   [
    72.31,
-   "certo",
-   "coco queimado"
+   "errado",
+   "coco queimado",
+   "chutei doce de leite"
   ],
   [
    73.4,
    "certo",
    "defumado"
+  ],
+  [
+   74.18,
+   "certo",
+   "doce de leite"
   ],
   [
    74.71,
@@ -209,6 +215,10 @@
   [
    113.83,
    "figo"
+  ],
+  [
+   114.59,
+   "coco queimado"
   ],
   [
    118.49,
