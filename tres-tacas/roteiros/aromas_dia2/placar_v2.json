@@ -1,18 +1,13 @@
 {
  "video": "/tmp/claude-0/-home-user-banco-horas/3d5af8d1-792d-5a42-bb7b-ae9930f28a5e/scratchpad/raw/aromas_dia2_limpo.mp4",
  "titulo": "Aromas às cegas",
- "sub": "dia 2",
+ "sub": "dia 3",
  "fim_rodada1": 88.02,
  "rodada1": [
   [
    6.46,
    "certo",
    "pimentão verde"
-  ],
-  [
-   8.35,
-   "certo",
-   "tutti frutti"
   ],
   [
    10.43,
@@ -38,9 +33,8 @@
   ],
   [
    36.28,
-   "errado",
-   "morango",
-   "chutei framboesa"
+   "certo",
+   "morango"
   ],
   [
    41.85,
