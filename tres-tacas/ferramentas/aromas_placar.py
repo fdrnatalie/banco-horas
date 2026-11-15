@@ -69,7 +69,7 @@ def overlay(state, fade=1.0, hi=False, rodada_lbl=False):
         a = int(255 * (fade if is_new else 1)); c = (V.CHAMPAGNE if (is_new and hi) else cor)
         dx = int((1 - fade) * 24) * (1 if anchor == "lm" else -1) if is_new else 0
         d.text((x - dx, y), nome, font=f, fill=c + (a,), anchor=anchor)
-    if rod == 2:                                     # 2ª rodada: os de primeira viram uma linha só
+    if rod == 2 or rodada_lbl:                       # 2ª rodada: os de primeira viram uma linha só
         n1 = sum(1 for _, r in esq if r == "1")
         esq_v = [(f"{n1} de primeira", "x")] + [(nm, r) for nm, r in esq if r == "2"]
     else: esq_v = esq
