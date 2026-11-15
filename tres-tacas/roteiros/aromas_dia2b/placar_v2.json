@@ -45,10 +45,14 @@
    "chutei ameixa"
   ],
   [
+   20.55,
+   "certo",
+   "coco queimado"
+  ],
+  [
    21.39,
-   "errado",
-   "jasmim",
-   "chutei coco queimado"
+   "certo",
+   "jasmim"
   ],
   [
    23.84,
@@ -67,10 +71,14 @@
    "café"
   ],
   [
+   29.15,
+   "certo",
+   "morango"
+  ],
+  [
    29.73,
-   "errado",
-   "cereja",
-   "chutei morango"
+   "certo",
+   "cereja"
   ],
   [
    33.68,
@@ -223,7 +231,7 @@
    28
   ],
   [
-   "32 de 32",
+   "34 de 34",
    "dmserif",
    108
   ],
