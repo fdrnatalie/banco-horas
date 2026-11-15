@@ -1,0 +1,8 @@
+{
+ "nota": "Kit de aromas da Natalie: 36 potinhos. Todo dia de 'Aromas às cegas' deve ter os 36 no placar (acerto ou erro). Regra dela: quando fala o nome certo logo depois do palpite, foi erro; se não fala nada depois, acertou. Sempre conferir com ela os casos duvidosos antes de publicar.",
+ "aromas": ["abacaxi", "ameixa", "amora", "banana", "baunilha", "café", "canela", "casca de laranja", "cereja", "chocolate",
+            "coco queimado", "cravo", "defumado", "doce de leite", "erva-doce", "eucalipto", "figo", "framboesa", "gengibre", "goiaba",
+            "hortelã", "jabuticaba", "jasmim", "limão", "maçã verde", "manga", "manteiga", "maracujá", "mel", "morango",
+            "pêssego", "pimentão", "pitanga", "tangerina", "tutti frutti", "violeta"],
+ "apelidos": {"pimentão verde": "pimentão", "guaiaba": "goiaba", "jasmin": "jasmim", "tutti-frutti": "tutti frutti", "erva doce": "erva-doce"}
+}

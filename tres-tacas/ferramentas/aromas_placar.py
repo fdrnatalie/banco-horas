@@ -119,7 +119,19 @@ def enc(path, dur, af="apad"):
                              "-map", "0:v", "-map", "[a]", "-t", f"{dur:.3f}", "-c:v", "libx264", "-preset", "medium",
                              "-crf", "19", "-pix_fmt", "yuv420p", "-c:a", "aac", "-b:a", "192k", "-movflags", "+faststart", path], stdin=subprocess.PIPE)
 
+def conferir_kit():
+    """avisa se o placar não tem os 36 aromas do kit (faltando, repetido ou nome fora do kit)."""
+    kf = os.path.join(os.path.dirname(os.path.abspath(sys.argv[1])), "..", "aromas_kit.json")
+    if not os.path.exists(kf): return
+    K = json.load(open(kf)); kit = set(K["aromas"]); ap = K.get("apelidos", {})
+    nomes = [ap.get(e[2], e[2]) for e in P["rodada1"]]
+    falta, fora = sorted(kit - set(nomes)), sorted(set(nomes) - kit)
+    rep = sorted({n for n in nomes if nomes.count(n) > 1})
+    if falta or fora or rep: print("ATENÇÃO kit:", len(nomes), "de", len(kit), "| faltam", falta, "| repetidos", rep, "| fora do kit", fora, flush=True)
+    else: print("kit completo: 36 de 36", flush=True)
+
 def main():
+    conferir_kit()
     dur = float(subprocess.run(["ffprobe", "-v", "error", "-show_entries", "format=duration", "-of", "csv=p=0", VID], capture_output=True, text=True).stdout)
     END = 2.2; fim1 = P["fim_rodada1"]
     ev = eventos(); r1 = [e for e in ev if e[1][3] == 1]
