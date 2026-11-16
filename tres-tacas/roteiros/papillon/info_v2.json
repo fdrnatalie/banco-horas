@@ -2,48 +2,53 @@
  "video": "/tmp/claude-0/-home-user-banco-horas/3d5af8d1-792d-5a42-bb7b-ae9930f28a5e/scratchpad/raw/papillon_limpo.mp4",
  "titulo": "Caixa Papillon",
  "sub": "meu kit de aromas",
- "fim_rodada1": 86.01,
+ "fim_rodada1": 85.99,
  "rodada1": [
   [
-   13.81,
+   9.49,
    "item",
    "aromas concentrados"
   ],
   [
-   25.48,
+   21.47,
    "item",
    "36 aromas (tem a de 75)"
   ],
   [
-   29.69,
+   25.79,
    "item",
    "aromas de cada uva"
   ],
   [
-   34.04,
+   30.25,
    "malbec_on"
   ],
   [
-   38.63,
+   35.81,
    "malbec_off"
   ],
   [
-   41.93,
+   41.61,
+   "item",
+   "comparar com a taça"
+  ],
+  [
+   52.5,
    "item",
    "fitas para testar"
   ],
   [
-   49.2,
+   57.03,
    "item",
-   "roda de aromas e defeitos"
+   "roda de aromas"
   ],
   [
-   55.86,
+   65.27,
    "item",
-   "roda dos aromas do vinho"
+   "primários, secundários, terciários"
   ],
   [
-   66.75,
+   70.67,
    "item",
    "ficha de degustação"
   ]
@@ -66,5 +71,5 @@
    50
   ]
  ],
- "velocidade": 1.33
+ "velocidade": 1.296
 }
