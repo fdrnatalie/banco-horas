@@ -34,6 +34,7 @@ def mapa(t):
     return acc / SP
 sel = "+".join(f"between(t,{a:.3f},{b:.3f})" for a, b in segs)
 vf = f"select='{sel}',setpts=N/FRAME_RATE/TB/{SP},fps=30"
+if C.get("espelhar"): vf += ",hflip"                  # imagem espelhada (rosto do outro lado das listas)
 af = f"aselect='{sel}',asetpts=N/SR/TB,atempo={SP},loudnorm=I=-14:TP=-1.5:LRA=9"
 import os
 if not os.path.exists(OUT) or "--refazer" in sys.argv:  # vídeo limpo já pronto: só remapeia os tempos

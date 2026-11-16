@@ -1,0 +1,200 @@
+{
+ "video": "/tmp/claude-0/-home-user-banco-horas/3d5af8d1-792d-5a42-bb7b-ae9930f28a5e/scratchpad/raw/aromas_dia4_1080.mp4",
+ "titulo": "Aromas às cegas",
+ "sub": "dia 4",
+ "fim_rodada1": 1551.4,
+ "rodada1": [
+  [
+   618.6,
+   "errado",
+   "banana",
+   "chutei framboesa"
+  ],
+  [
+   657.3,
+   "certo",
+   "eucalipto"
+  ],
+  [
+   657.9,
+   "certo",
+   "defumado"
+  ],
+  [
+   671.2,
+   "certo",
+   "canela"
+  ],
+  [
+   685.6,
+   "certo",
+   "gengibre"
+  ],
+  [
+   693.2,
+   "certo",
+   "violeta"
+  ],
+  [
+   711.3,
+   "certo",
+   "cravo"
+  ],
+  [
+   753.3,
+   "errado",
+   "tutti frutti",
+   "chutei framboesa"
+  ],
+  [
+   781.5,
+   "errado",
+   "maracujá",
+   "chutei goiaba"
+  ],
+  [
+   834.5,
+   "errado",
+   "amora",
+   "chutei ameixa"
+  ],
+  [
+   856.2,
+   "errado",
+   "ameixa",
+   "chutei casca de laranja"
+  ],
+  [
+   865.1,
+   "certo",
+   "chocolate"
+  ],
+  [
+   916.6,
+   "errado",
+   "baunilha",
+   "chutei doce de leite"
+  ],
+  [
+   934.4,
+   "certo",
+   "erva-doce"
+  ],
+  [
+   954.3,
+   "certo",
+   "morango"
+  ],
+  [
+   963.8,
+   "certo",
+   "coco queimado"
+  ],
+  [
+   985.6,
+   "certo",
+   "framboesa"
+  ],
+  [
+   994.6,
+   "certo",
+   "manteiga"
+  ],
+  [
+   1002.1,
+   "certo",
+   "hortelã"
+  ],
+  [
+   1036.6,
+   "certo",
+   "tangerina"
+  ],
+  [
+   1068.4,
+   "certo",
+   "figo"
+  ],
+  [
+   1121.8,
+   "errado",
+   "cereja",
+   "chutei ameixa"
+  ],
+  [
+   1136.2,
+   "certo",
+   "abacaxi"
+  ],
+  [
+   1143.6,
+   "certo",
+   "café"
+  ],
+  [
+   1156.6,
+   "certo",
+   "pitanga"
+  ],
+  [
+   1158.4,
+   "errado",
+   "maçã verde",
+   "chutei e errei"
+  ],
+  [
+   1301.8,
+   "errado",
+   "casca de laranja",
+   "chutei tangerina"
+  ],
+  [
+   1305.5,
+   "errado",
+   "jabuticaba",
+   "desisti"
+  ],
+  [
+   1313.8,
+   "certo",
+   "limão"
+  ],
+  [
+   1327.8,
+   "certo",
+   "manga"
+  ],
+  [
+   1337.5,
+   "certo",
+   "jasmim"
+  ],
+  [
+   1349.9,
+   "certo",
+   "goiaba"
+  ],
+  [
+   1446.0,
+   "certo",
+   "doce de leite"
+  ],
+  [
+   1455.3,
+   "certo",
+   "pimentão"
+  ],
+  [
+   1464.5,
+   "certo",
+   "pêssego"
+  ],
+  [
+   1537.7,
+   "errado",
+   "mel",
+   "chutei e errei"
+  ]
+ ],
+ "rodada2": []
+}

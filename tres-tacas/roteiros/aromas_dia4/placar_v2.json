@@ -11,12 +11,7 @@
    "chutei framboesa"
   ],
   [
-   7.68,
-   "certo",
-   "morango"
-  ],
-  [
-   8.71,
+   8.5,
    "certo",
    "eucalipto"
   ],
@@ -52,13 +47,13 @@
    "chutei framboesa"
   ],
   [
-   24.2,
+   24.55,
    "errado",
    "maracujá",
    "chutei goiaba"
   ],
   [
-   33.81,
+   33.65,
    "errado",
    "amora",
    "chutei ameixa"
@@ -84,6 +79,11 @@
    42.92,
    "certo",
    "erva-doce"
+  ],
+  [
+   43.49,
+   "certo",
+   "morango"
   ],
   [
    44.74,
@@ -116,7 +116,7 @@
    "figo"
   ],
   [
-   54.08,
+   54.53,
    "errado",
    "cereja",
    "chutei ameixa"
@@ -127,7 +127,7 @@
    "abacaxi"
   ],
   [
-   55.55,
+   55.87,
    "certo",
    "café"
   ],
@@ -137,9 +137,10 @@
    "pitanga"
   ],
   [
-   56.93,
-   "certo",
-   "maçã verde"
+   57.01,
+   "errado",
+   "maçã verde",
+   "chutei e errei"
   ],
   [
    60.28,
@@ -148,7 +149,7 @@
    "chutei tangerina"
   ],
   [
-   61.64,
+   61.45,
    "errado",
    "jabuticaba",
    "desisti"
@@ -164,22 +165,22 @@
    "manga"
   ],
   [
-   64.87,
+   64.59,
    "certo",
    "jasmim"
   ],
   [
-   66.4,
+   66.09,
    "certo",
    "goiaba"
   ],
   [
-   74.45,
+   74.02,
    "certo",
    "doce de leite"
   ],
   [
-   75.46,
+   74.99,
    "certo",
    "pimentão"
   ],
