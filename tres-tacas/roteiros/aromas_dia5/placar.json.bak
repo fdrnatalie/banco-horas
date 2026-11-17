@@ -1,0 +1,196 @@
+{
+ "video": "/tmp/claude-0/-home-user-banco-horas/3d5af8d1-792d-5a42-bb7b-ae9930f28a5e/scratchpad/raw/aromas_dia5_1080.mp4",
+ "titulo": "Aromas às cegas",
+ "sub": "dia 5",
+ "fim_rodada1": 761.5,
+ "rodada1": [
+  [
+   67.0,
+   "certo",
+   "pimentão"
+  ],
+  [
+   113.7,
+   "errado",
+   "banana",
+   "chutei morango"
+  ],
+  [
+   123.6,
+   "certo",
+   "canela"
+  ],
+  [
+   134.1,
+   "errado",
+   "figo",
+   "chutei jabuticaba"
+  ],
+  [
+   144.1,
+   "certo",
+   "abacaxi"
+  ],
+  [
+   174.5,
+   "errado",
+   "tutti frutti",
+   "chutei framboesa"
+  ],
+  [
+   193.3,
+   "errado",
+   "casca de laranja",
+   "abri os olhos"
+  ],
+  [
+   207.4,
+   "certo",
+   "maçã verde"
+  ],
+  [
+   221.5,
+   "certo",
+   "eucalipto"
+  ],
+  [
+   283.2,
+   "certo",
+   "cereja"
+  ],
+  [
+   295.4,
+   "certo",
+   "erva-doce"
+  ],
+  [
+   309.8,
+   "errado",
+   "jabuticaba",
+   "chutei pitanga"
+  ],
+  [
+   324.1,
+   "certo",
+   "mel"
+  ],
+  [
+   337.0,
+   "certo",
+   "café"
+  ],
+  [
+   360.6,
+   "certo",
+   "morango"
+  ],
+  [
+   419.1,
+   "certo",
+   "manga"
+  ],
+  [
+   430.6,
+   "certo",
+   "defumado"
+  ],
+  [
+   462.1,
+   "certo",
+   "framboesa"
+  ],
+  [
+   481.0,
+   "certo",
+   "amora"
+  ],
+  [
+   493.0,
+   "certo",
+   "violeta"
+  ],
+  [
+   517.0,
+   "errado",
+   "goiaba",
+   "chutei pitanga"
+  ],
+  [
+   526.6,
+   "certo",
+   "jasmim"
+  ],
+  [
+   545.1,
+   "errado",
+   "maracujá",
+   "chutei pitanga"
+  ],
+  [
+   558.7,
+   "certo",
+   "baunilha"
+  ],
+  [
+   579.8,
+   "certo",
+   "manteiga"
+  ],
+  [
+   589.9,
+   "certo",
+   "limão"
+  ],
+  [
+   601.8,
+   "certo",
+   "doce de leite"
+  ],
+  [
+   618.5,
+   "certo",
+   "ameixa"
+  ],
+  [
+   644.4,
+   "certo",
+   "hortelã"
+  ],
+  [
+   657.5,
+   "certo",
+   "coco queimado"
+  ],
+  [
+   671.2,
+   "certo",
+   "cravo"
+  ],
+  [
+   680.5,
+   "certo",
+   "gengibre"
+  ],
+  [
+   707.1,
+   "certo",
+   "tangerina"
+  ],
+  [
+   722.5,
+   "certo",
+   "chocolate"
+  ],
+  [
+   741.5,
+   "certo",
+   "pêssego"
+  ],
+  [
+   742.1,
+   "certo",
+   "pitanga"
+  ]
+ ],
+ "rodada2": []
+}

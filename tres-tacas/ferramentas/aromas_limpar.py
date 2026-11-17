@@ -13,6 +13,13 @@ x = np.frombuffer(subprocess.run(["ffmpeg", "-v", "error", "-i", VID, "-vn", "-a
                                  stdout=subprocess.PIPE, check=True).stdout, np.float32)
 ts = get_speech_timestamps(x, VadOptions(threshold=0.5, min_silence_duration_ms=220, speech_pad_ms=90, min_speech_duration_ms=120))
 segs = [[t["start"] / 16000, t["end"] / 16000] for t in ts]
+for e in P["rodada1"] + [r for r in P.get("rodada2", []) if r[1] != "*"]:   # nunca perde um nome, mesmo falado baixinho
+    segs.append([max(0, e[0] - 0.75), e[0] + 0.2])
+segs.sort(); fund = []
+for s0, e0 in segs:
+    if fund and s0 <= fund[-1][1] + 0.05: fund[-1][1] = max(fund[-1][1], e0)
+    else: fund.append([s0, e0])
+segs = fund
 for a, b in C.get("cortes", []):                       # subtrai os cortes
     out = []
     for s, e in segs:
