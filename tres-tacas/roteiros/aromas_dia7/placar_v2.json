@@ -1,0 +1,201 @@
+{
+ "video": "/tmp/claude-0/-home-user-banco-horas/3d5af8d1-792d-5a42-bb7b-ae9930f28a5e/scratchpad/raw/aromas_dia7_limpo.mp4",
+ "titulo": "Aromas às cegas",
+ "sub": "dia 7",
+ "fim_rodada1": 74.15,
+ "rodada1": [
+  [
+   12.88,
+   "errado",
+   "tangerina",
+   "chutei casca de laranja"
+  ],
+  [
+   16.48,
+   "certo",
+   "hortelã"
+  ],
+  [
+   18.06,
+   "errado",
+   "banana",
+   "chutei tutti frutti"
+  ],
+  [
+   19.9,
+   "certo",
+   "morango"
+  ],
+  [
+   22.11,
+   "certo",
+   "tutti frutti"
+  ],
+  [
+   23.81,
+   "certo",
+   "eucalipto"
+  ],
+  [
+   25.56,
+   "errado",
+   "casca de laranja",
+   "chutei ameixa"
+  ],
+  [
+   26.85,
+   "certo",
+   "cereja"
+  ],
+  [
+   27.72,
+   "certo",
+   "jasmim"
+  ],
+  [
+   29.0,
+   "certo",
+   "pêssego"
+  ],
+  [
+   30.95,
+   "errado",
+   "manteiga",
+   "chutei doce de leite"
+  ],
+  [
+   34.16,
+   "certo",
+   "abacaxi"
+  ],
+  [
+   35.46,
+   "errado",
+   "maracujá",
+   "chutei pitanga"
+  ],
+  [
+   37.63,
+   "errado",
+   "baunilha",
+   "chutei manga"
+  ],
+  [
+   38.41,
+   "certo",
+   "erva-doce"
+  ],
+  [
+   39.33,
+   "certo",
+   "violeta"
+  ],
+  [
+   40.78,
+   "errado",
+   "pitanga",
+   "chutei jabuticaba"
+  ],
+  [
+   41.62,
+   "certo",
+   "framboesa"
+  ],
+  [
+   42.52,
+   "certo",
+   "pimentão"
+  ],
+  [
+   43.34,
+   "certo",
+   "cravo"
+  ],
+  [
+   44.17,
+   "certo",
+   "ameixa"
+  ],
+  [
+   45.89,
+   "errado",
+   "mel",
+   "chutei jabuticaba"
+  ],
+  [
+   47.18,
+   "certo",
+   "café"
+  ],
+  [
+   48.03,
+   "certo",
+   "limão"
+  ],
+  [
+   48.68,
+   "certo",
+   "canela"
+  ],
+  [
+   49.66,
+   "certo",
+   "doce de leite"
+  ],
+  [
+   52.55,
+   "certo",
+   "coco queimado"
+  ],
+  [
+   53.43,
+   "certo",
+   "gengibre"
+  ],
+  [
+   55.97,
+   "errado",
+   "jabuticaba",
+   "chutei goiaba"
+  ],
+  [
+   57.74,
+   "certo",
+   "figo"
+  ],
+  [
+   58.62,
+   "certo",
+   "goiaba"
+  ],
+  [
+   61.72,
+   "certo",
+   "defumado"
+  ],
+  [
+   62.76,
+   "errado",
+   "chocolate",
+   "errei"
+  ],
+  [
+   66.84,
+   "errado",
+   "manga",
+   "chutei maçã verde"
+  ],
+  [
+   70.13,
+   "certo",
+   "maçã verde"
+  ],
+  [
+   71.06,
+   "certo",
+   "amora"
+  ]
+ ],
+ "rodada2": [],
+ "velocidade": 1.15
+}
