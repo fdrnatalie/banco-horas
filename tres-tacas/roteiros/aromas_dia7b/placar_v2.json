@@ -1,0 +1,194 @@
+{
+ "video": "/tmp/claude-0/-home-user-banco-horas/3d5af8d1-792d-5a42-bb7b-ae9930f28a5e/scratchpad/raw/aromas_dia7b_limpo.mp4",
+ "titulo": "Aromas às cegas",
+ "sub": "dia 7",
+ "fim_rodada1": 85.97,
+ "rodada1": [
+  [
+   7.39,
+   "errado",
+   "maçã verde",
+   "chutei abacaxi"
+  ],
+  [
+   11.16,
+   "certo",
+   "doce de leite"
+  ],
+  [
+   13.22,
+   "certo",
+   "pimentão"
+  ],
+  [
+   16.51,
+   "certo",
+   "erva-doce"
+  ],
+  [
+   17.34,
+   "certo",
+   "limão"
+  ],
+  [
+   18.73,
+   "certo",
+   "casca de laranja"
+  ],
+  [
+   21.91,
+   "certo",
+   "violeta"
+  ],
+  [
+   22.72,
+   "certo",
+   "figo"
+  ],
+  [
+   24.24,
+   "certo",
+   "eucalipto"
+  ],
+  [
+   28.84,
+   "certo",
+   "baunilha"
+  ],
+  [
+   30.59,
+   "certo",
+   "gengibre"
+  ],
+  [
+   31.4,
+   "certo",
+   "canela"
+  ],
+  [
+   34.81,
+   "certo",
+   "maracujá"
+  ],
+  [
+   35.62,
+   "certo",
+   "tangerina"
+  ],
+  [
+   37.56,
+   "certo",
+   "morango"
+  ],
+  [
+   38.79,
+   "certo",
+   "abacaxi"
+  ],
+  [
+   39.71,
+   "certo",
+   "manteiga"
+  ],
+  [
+   44.44,
+   "certo",
+   "hortelã"
+  ],
+  [
+   47.49,
+   "certo",
+   "cravo"
+  ],
+  [
+   48.4,
+   "certo",
+   "jasmim"
+  ],
+  [
+   54.22,
+   "errado",
+   "framboesa",
+   "chutei banana"
+  ],
+  [
+   55.04,
+   "certo",
+   "cereja"
+  ],
+  [
+   55.87,
+   "certo",
+   "defumado"
+  ],
+  [
+   57.38,
+   "errado",
+   "jabuticaba",
+   "chutei pitanga"
+  ],
+  [
+   58.8,
+   "errado",
+   "banana",
+   "chutei tutti frutti"
+  ],
+  [
+   59.88,
+   "certo",
+   "chocolate"
+  ],
+  [
+   61.03,
+   "certo",
+   "tutti frutti"
+  ],
+  [
+   63.34,
+   "certo",
+   "pitanga"
+  ],
+  [
+   66.06,
+   "certo",
+   "manga"
+  ],
+  [
+   67.83,
+   "certo",
+   "coco queimado"
+  ],
+  [
+   68.78,
+   "certo",
+   "café"
+  ],
+  [
+   69.66,
+   "certo",
+   "ameixa"
+  ],
+  [
+   71.36,
+   "certo",
+   "goiaba"
+  ],
+  [
+   74.25,
+   "certo",
+   "mel"
+  ],
+  [
+   74.5,
+   "certo",
+   "amora"
+  ],
+  [
+   76.56,
+   "certo",
+   "pêssego"
+  ]
+ ],
+ "rodada2": [],
+ "velocidade": 1.175
+}
